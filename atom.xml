@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>New World</title>
+  
+  <subtitle>YoungWilliam&#39;s Blog</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://youngwilliamz.github.io/"/>
+  <updated>2018-08-11T20:40:07.166Z</updated>
+  <id>https://youngwilliamz.github.io/</id>
+  
+  <author>
+    <name>YoungWilliam</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://youngwilliamz.github.io/2018-08-11-hello-world/"/>
+    <id>https://youngwilliamz.github.io/2018-08-11-hello-world/</id>
+    <published>2018-08-11T20:40:07.166Z</published>
+    <updated>2018-08-11T20:40:07.166Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><a id="more"></a><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Travis-IC-test</title>
+    <link href="https://youngwilliamz.github.io/2018-08-11-Travis-IC-test/"/>
+    <id>https://youngwilliamz.github.io/2018-08-11-Travis-IC-test/</id>
+    <published>2018-08-11T20:29:32.000Z</published>
+    <updated>2018-08-11T20:40:07.166Z</updated>
+    
+    <content type="html"><![CDATA[<p>Hello~</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Hello~&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Mac OS X 下优化 Terminal，一篇就够了！</title>
+    <link href="https://youngwilliamz.github.io/2018-08-11-Optimize-the-terminal-in-Mac-OS-X/"/>
+    <id>https://youngwilliamz.github.io/2018-08-11-Optimize-the-terminal-in-Mac-OS-X/</id>
+    <published>2018-08-11T05:52:00.000Z</published>
+    <updated>2018-08-11T20:40:07.166Z</updated>
+    
+    <content type="html"><![CDATA[<p>先上最终效果图：<br><img src="https://i.imgur.com/0goJQf8.png" alt=""></p><h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><!-- TOC --><ul><li><a href="#目录">目录</a></li><li><a href="#1-相关工具介绍">1. 相关工具介绍</a></li><li><a href="#2-配置总览">2. 配置总览</a></li><li><a href="#3-安装步骤">3. 安装步骤</a><ul><li><a href="#31-安装-iterm2">3.1. 安装 iTerm2</a></li><li><a href="#32-安装xcodes-command-line-tools">3.2. 安装XCode’s Command line tools</a></li><li><a href="#33-检查-zsh-是否已安装">3.3. 检查 <code>zsh</code> 是否已安装</a></li><li><a href="#34-安装-oh-my-zsh">3.4. 安装 <code>Oh-My-Zsh</code></a></li><li><a href="#35-安装-powerline-fonts">3.5. 安装 <code>Powerline fonts</code></a></li><li><a href="#36-安装配置主题">3.6. 安装配置主题</a></li><li><a href="#37-修改命令提示符">3.7. 修改命令提示符</a></li><li><a href="#38-配置-zsh-命令语法高亮">3.8. 配置 <code>zsh</code> 命令语法高亮</a></li></ul></li><li><a href="#4-备用下载链接">4. 备用下载链接</a></li><li><a href="#5-参考及感谢">5. 参考及感谢</a></li></ul><!-- /TOC --><a id="more"></a><h1 id="1-相关工具介绍"><a href="#1-相关工具介绍" class="headerlink" title="1. 相关工具介绍"></a>1. 相关工具介绍</h1><ol><li><strong>iTerm2</strong>： Terminal 终端的替代品，拥有更多强大的功能，想了解更多请戳 <a href="https://www.iterm2.com/" target="_blank" rel="noopener">iTerm2 官网</a>；</li><li><strong>XCode’s Command line tools</strong>: 开发环境集成，包含 git、gcc 等重要工具；</li><li><strong>zsh</strong>：Linux 的一种 shell 外壳，强大的虚拟终端，和 bash 属于同类产品，OS X 已自带；</li><li><strong>Oh-My-Zsh</strong>: 用来管理 zsh 的配置，同时还有很多社区贡献的主题配置以及好用的插件可供使用，了解更多请戳 <a href="https://ohmyz.sh/" target="_blank" rel="noopener">Oh-My-Zsh 官网</a>；</li></ol><h1 id="2-配置总览"><a href="#2-配置总览" class="headerlink" title="2. 配置总览"></a>2. 配置总览</h1><ol><li>iTerm2</li><li>Oh-My-Zsh</li><li>agnoster 主题</li><li>zsh 命令语法高亮</li></ol><h1 id="3-安装步骤"><a href="#3-安装步骤" class="headerlink" title="3. 安装步骤"></a>3. 安装步骤</h1><h2 id="3-1-安装-iTerm2"><a href="#3-1-安装-iTerm2" class="headerlink" title="3.1. 安装 iTerm2"></a>3.1. 安装 iTerm2</h2><p>进入<a href="https://www.iterm2.com/downloads.html" target="_blank" rel="noopener">官网下载页面</a>，点击 <code>Stable Releases</code> 下面的 <code>Download</code> 即可下载，解压后拖到应用程序中。这是简单的一小步，但是却是优化 <code>Terminal</code> 的一大步！</p><p>PS: 网络环境不太好的同学不要担心，我已经把安装包传到百度云了，请到文章最后寻找链接下载。</p><h2 id="3-2-安装XCode’s-Command-line-tools"><a href="#3-2-安装XCode’s-Command-line-tools" class="headerlink" title="3.2. 安装XCode’s Command line tools"></a>3.2. 安装XCode’s Command line tools</h2><p>XCode 13 个 G ,这里我们只需要 XCode’s Command line tools 来支撑 Git 的使用，所以我们不用费时费力装 XCode 来浪费那13个G。<br>(从 Yosemite（10.10+）开始，Command Line Tools 可以单独安装。) </p><p><strong>安装方法</strong>: 打开终端，输入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xcode-select –install</span><br></pre></td></tr></table></figure></p><p>点 <code>install</code> ，同意，即可。</p><h2 id="3-3-检查-zsh-是否已安装"><a href="#3-3-检查-zsh-是否已安装" class="headerlink" title="3.3. 检查 zsh 是否已安装"></a>3.3. 检查 <code>zsh</code> 是否已安装</h2><p>在命令行输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zsh --version</span><br></pre></td></tr></table></figure></p><p>如果显示<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zsh 5.3 (x86_64-apple-darwin17.0)</span><br></pre></td></tr></table></figure></p><p>即zsh的当前版本号，就说明装好了，一般 OS X 自带有的。</p><p>如果没装则需要输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install zsh zsh-completions</span><br></pre></td></tr></table></figure></p><p>这是用Homebrew装，需要 OS X 上有Homebrew，它的网站：<a href="https://brew.sh/" target="_blank" rel="noopener">https://brew.sh/</a></p><h2 id="3-4-安装-Oh-My-Zsh"><a href="#3-4-安装-Oh-My-Zsh" class="headerlink" title="3.4. 安装 Oh-My-Zsh"></a>3.4. 安装 <code>Oh-My-Zsh</code></h2><p>可以通过 <code>curl</code> 或者 <code>wget</code> 来安装</p><ul><li><p>curl</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh -c <span class="string">"<span class="variable">$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)</span>"</span></span><br></pre></td></tr></table></figure></li><li><p>wget</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh -c <span class="string">"<span class="variable">$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)</span>"</span></span><br></pre></td></tr></table></figure></li></ul><p>网络好的话几秒就装好了。</p><p>一般安装程序会自动把默认的 shell 切换为 <code>zsh</code>, 什么！你不懂 shell 是什么？我也不懂，你去问问度娘？或者直接右上角？其实不懂也正常，也不影响你拥有自己美美的终端。</p><p>如果想修改默认 shell 为原来的 bash：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chsh -s /bin/bash</span><br></pre></td></tr></table></figure></p><p>重启 iTerm2 就好了。</p><h2 id="3-5-安装-Powerline-fonts"><a href="#3-5-安装-Powerline-fonts" class="headerlink" title="3.5. 安装 Powerline fonts"></a>3.5. 安装 <code>Powerline fonts</code></h2><p>华丽丽的主题需要 <a href="https://github.com/powerline/fonts" target="_blank" rel="noopener">Powerline 字符集</a>的支持。<br>通过 git 安装, 直接执行以下命令行：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/powerline/fonts.git --depth=1; <span class="built_in">cd</span> fonts; ./install.sh; <span class="built_in">cd</span> ..; rm -rf fonts</span><br></pre></td></tr></table></figure></p><p>然后到 iterm2 配置，设置字体</p><ol><li>打开 <strong>Preferences</strong>，选择 <strong>Profiles</strong><br><img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fu4hnix30uj30ye0d5wfk.jpg" alt=""></li><li>选择 <strong>Text</strong>，点击 <strong>Change Font</strong><br><img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fu4i6ep6kcj30pi0ciaai.jpg" alt=""></li><li>选择<strong>固定宽度</strong>，选择自己喜欢的字体。<strong>注意</strong>： iTerm2 可以实时看到效果，结尾不是 <code>for Powerline</code> 的会乱码。<br><img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fu4i94dy0uj30ht0eqdg3.jpg" alt=""></li><li>接着修改字体颜色，选择另一项 <code>Colors</code>, 点击 <code>Color Presets</code>, 选择<code>Solarized Dark</code><br><img src="https://ws1.sinaimg.cn/large/b48b5d8dly1fu4m84ux8uj20ps0ci40g.jpg" alt=""><br><img src="https://i.imgur.com/T8jzFpm.png" alt=""></li></ol><h2 id="3-6-安装配置主题"><a href="#3-6-安装配置主题" class="headerlink" title="3.6. 安装配置主题"></a>3.6. 安装配置主题</h2><p>装好之后就可以换到 agnoster 主题，Oh My Zsh 一般自带有这个主题。</p><p>可以看看其它的默认主题：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls ~/.oh-my-zsh/themes</span><br></pre></td></tr></table></figure></p><p>需要修改主题只需：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.zshrc</span><br></pre></td></tr></table></figure></p><p>然后把里面 ZSH_THEME 的值改为 ZSH_THEME=”agnoster”，保存退出。</p><p>修改和保存的过程为：</p><ol><li>按下 <code>i</code> 开始编辑</li><li>通过方向键控制光标的位置</li><li>定位到 <code>ZSH_THEME</code></li><li>改为 <code>ZSH_THEME=&quot;agnoster&quot;</code></li><li>按下 <code>ESC</code>, 输入 <code>:wq</code>, 回车</li><li>搞定！</li></ol><p>（<a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Themes#agnoster" target="_blank" rel="noopener">点击这里</a>还有各种主题预览，任君翻牌~）</p><h2 id="3-7-修改命令提示符"><a href="#3-7-修改命令提示符" class="headerlink" title="3.7. 修改命令提示符"></a>3.7. 修改命令提示符</h2><p>默认的命令提示符为 user@userdemackbookPro，这样的提示符配合 powerlevel9k 主题太过冗长，因此我选择将该冗长的提示符去掉，在 <code>~/.zshrc</code> 配置文件后面追加如下内容：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 注意：DEFAULT_USER 的值必须要是系统用户名才能生效</span></span><br><span class="line">DEFAULT_USER=<span class="string">"user"</span></span><br></pre></td></tr></table></figure><p>编辑方法同上。</p><h2 id="3-8-配置-zsh-命令语法高亮"><a href="#3-8-配置-zsh-命令语法高亮" class="headerlink" title="3.8. 配置 zsh 命令语法高亮"></a>3.8. 配置 <code>zsh</code> 命令语法高亮</h2><p><a href="https://github.com/zsh-users/zsh-syntax-highlighting" target="_blank" rel="noopener">zsh-syntax-highlighting</a> 插件可以使你终端输入的命令有语法高亮效果，安装方法如下（oh-my-zsh 插件管理的方式安装）： </p><ol><li><p>复制文件到插件目录</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/zsh-users/zsh-syntax-highlighting.git <span class="variable">$&#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&#125;</span>/plugins/zsh-syntax-highlighting</span><br></pre></td></tr></table></figure></li><li><p>修改 <code>~/.zshrc</code> 添加插件</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 注意：zsh-syntax-highlighting 必须放在最后面（官方推荐）</span></span><br><span class="line">plugins=( [plugins...] zsh-syntax-highlighting)</span><br></pre></td></tr></table></figure><p> <img src="https://i.imgur.com/N6db1vG.png" alt=""></p></li><li><p>应用修改</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> ~/.zshrc</span><br></pre></td></tr></table></figure></li></ol><p>大功告成~有问题欢迎留言讨论~</p><h1 id="4-备用下载链接"><a href="#4-备用下载链接" class="headerlink" title="4. 备用下载链接"></a>4. 备用下载链接</h1><p> iTerm2 ( 3.2.0 )： 链接: <a href="https://pan.baidu.com/s/1Wm7NjtGfA81LpGFYAaEAPQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1Wm7NjtGfA81LpGFYAaEAPQ</a> 密码: ksgv</p><h1 id="5-参考及感谢"><a href="#5-参考及感谢" class="headerlink" title="5. 参考及感谢"></a>5. 参考及感谢</h1><ol><li><a href="https://blog.csdn.net/qianghaohao/article/details/79440961" target="_blank" rel="noopener">我的 Mac 终端配置（Mac OSX + iTerm2 + Zsh + Oh-My-Zsh）</a></li><li><a href="https://blog.csdn.net/huihut/article/details/61418136" target="_blank" rel="noopener">iTerm2 + OhMyZsh + agnoster + Powerline + solarized = 漂亮的Mac终端</a></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;先上最终效果图：&lt;br&gt;&lt;img src=&quot;https://i.imgur.com/0goJQf8.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;目录&quot;&gt;&lt;a href=&quot;#目录&quot; class=&quot;headerlink&quot; title=&quot;目录&quot;&gt;&lt;/a&gt;目录&lt;/h1&gt;&lt;!-- TOC --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#目录&quot;&gt;目录&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#1-相关工具介绍&quot;&gt;1. 相关工具介绍&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#2-配置总览&quot;&gt;2. 配置总览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#3-安装步骤&quot;&gt;3. 安装步骤&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#31-安装-iterm2&quot;&gt;3.1. 安装 iTerm2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#32-安装xcodes-command-line-tools&quot;&gt;3.2. 安装XCode’s Command line tools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#33-检查-zsh-是否已安装&quot;&gt;3.3. 检查 &lt;code&gt;zsh&lt;/code&gt; 是否已安装&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#34-安装-oh-my-zsh&quot;&gt;3.4. 安装 &lt;code&gt;Oh-My-Zsh&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#35-安装-powerline-fonts&quot;&gt;3.5. 安装 &lt;code&gt;Powerline fonts&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#36-安装配置主题&quot;&gt;3.6. 安装配置主题&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#37-修改命令提示符&quot;&gt;3.7. 修改命令提示符&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#38-配置-zsh-命令语法高亮&quot;&gt;3.8. 配置 &lt;code&gt;zsh&lt;/code&gt; 命令语法高亮&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#4-备用下载链接&quot;&gt;4. 备用下载链接&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#5-参考及感谢&quot;&gt;5. 参考及感谢&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- /TOC --&gt;
+    
+    </summary>
+    
+      <category term="工欲善其事" scheme="https://youngwilliamz.github.io/categories/%E5%B7%A5%E6%AC%B2%E5%96%84%E5%85%B6%E4%BA%8B/"/>
+    
+    
+      <category term="Max OS X" scheme="https://youngwilliamz.github.io/tags/Max-OS-X/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo 使用 Markdown 编辑技巧大全</title>
+    <link href="https://youngwilliamz.github.io/2018-07-10-Hexo-Markdown/"/>
+    <id>https://youngwilliamz.github.io/2018-07-10-Hexo-Markdown/</id>
+    <published>2018-07-10T07:29:00.000Z</published>
+    <updated>2018-08-11T20:40:07.166Z</updated>
+    
+    <content type="html"><![CDATA[<p>总结一下，<code>Hexo</code> 下 <code>Markdown</code> 的写法和一些奇技淫巧。</p><p><strong>说明</strong>：<code>Hexo</code> 主题为 <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">Next</a></p><a id="more"></a><h2 id="标题及分类"><a href="#标题及分类" class="headerlink" title="标题及分类"></a>标题及分类</h2><p> 格式：(使用 <a href="https://github.com/zhuzhuyule/HexoEditor" target="_blank" rel="noopener">HexoEditor</a> 新建Post 可以自动生成以下内容)<br><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo 使用 Markdown 编辑技巧大全</span><br><span class="line">tags:</span><br><span class="line">  - Hexo</span><br><span class="line">  - Markdown</span><br><span class="line">categories:</span><br><span class="line">  - Markdown</span><br><span class="line">date: 2018-07-10 15:29:00</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p><h2 id="阅读更多"><a href="#阅读更多" class="headerlink" title="阅读更多"></a>阅读更多</h2><p>Hexo 主页每篇文章可以显示 <code>Read More</code> 按钮，只显示以下这一行以上的文章内容。<br>格式：<br><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure></p><h2 id="Markdown-语法"><a href="#Markdown-语法" class="headerlink" title="Markdown 语法"></a>Markdown 语法</h2><p>Markdown 语法主要分为如下几大部分：</p><ul><li><strong>标题</strong></li><li><strong>段落</strong></li><li><strong>区块引用</strong></li><li><strong>代码区块</strong></li><li><strong>强调</strong></li><li><strong>列表</strong></li><li><strong>分割线</strong></li><li><strong>链接</strong></li><li><strong>图片</strong></li><li><strong>反斜杠 <code>\</code></strong></li><li><strong>符号’`’</strong></li></ul><h4 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h4><p>两种形式：<br>1）使用<code>=</code>和<code>-</code>标记一级和二级标题。</p><blockquote><p>一级标题<br><code>=========</code><br>二级标题<br><code>---------</code></p></blockquote><p>效果：</p><blockquote><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题   "></a>一级标题   </h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2></blockquote><p>2）使用<code>#</code>，可表示1-6级标题。</p><blockquote><p># 一级标题<br>## 二级标题<br>### 三级标题<br>#### 四级标题<br>##### 五级标题<br>###### 六级标题    </p></blockquote><p>效果：</p><blockquote><h1 id="一级标题-1"><a href="#一级标题-1" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题-1"><a href="#二级标题-1" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6></blockquote><h4 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h4><p>段落的前后要有空行，所谓的空行是指没有文字内容。若想在段内强制换行的方式是使用<strong>两个以上</strong>空格加上回车（引用中换行省略回车）。</p><h4 id="区块引用"><a href="#区块引用" class="headerlink" title="区块引用"></a>区块引用</h4><p>在段落的每行或者只在第一行使用符号<code>&gt;</code>,还可使用多个嵌套引用，如：</p><blockquote><p>> 区块引用<br>>&gt; 嵌套引用  </p></blockquote><p>效果：</p><blockquote><p>区块引用  </p><blockquote><p>嵌套引用</p></blockquote></blockquote><h4 id="代码区块"><a href="#代码区块" class="headerlink" title="代码区块"></a>代码区块</h4><p>代码区块的建立是在每行加上4个空格或者一个制表符（如同写代码一样）。如<br>普通段落：</p><p>void main()<br>{<br>    printf(“Hello, Markdown.”);<br>}    </p><p>代码区块：<br>如：</p><blockquote><p>``` C<br>   void main()<br>   {<br>      printf(“Hello, Markdown.”);<br>   }<br>``` </p></blockquote><p>效果：</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"Hello, Markdown."</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><strong>注意</strong>: ``` 之后可以添加语言种类如 <code>C</code>、<code>Java</code>、<code>Bash</code>, 需要和普通段落之间存在空行。</p><h4 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h4><p>在强调内容两侧分别加上<code>*</code>或者<code>_</code>，如：</p><blockquote><p>*斜体*，_斜体_<br>**粗体**，__粗体__</p></blockquote><p>效果：</p><blockquote><p><em>斜体</em>，_斜体_<br><strong>粗体</strong>，<strong>粗体</strong></p></blockquote><h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4><p>使用<code>·</code>、<code>+</code>、或<code>-</code>标记无序列表，如：</p><blockquote><p>-（+*） 第一项<br>-（+*） 第二项<br>- （+*）第三项</p></blockquote><p><strong>注意</strong>：标记后面最少有一个_空格_或<em>制表符</em>。若不在引用区块中，必须和前方段落之间存在空行。</p><p>效果：</p><blockquote><ul><li>第一项</li><li>第二项</li><li>第三项</li></ul></blockquote><p>有序列表的标记方式是将上述的符号换成数字,并辅以<code>.</code>，如：</p><blockquote><p>1 . 第一项<br>2 . 第二项<br>3 . 第三项    </p></blockquote><p>效果：</p><blockquote><ol><li>第一项</li><li>第二项</li><li>第三项</li></ol></blockquote><h4 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h4><p>分割线最常使用就是三个或以上<code>*</code>，还可以使用<code>-</code>和<code>_</code>。</p><h4 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h4><p>链接可以由两种形式生成：<strong>行内式</strong>和<strong>参考式</strong>。<br><strong>行内式</strong>：</p><blockquote><p>[YoungWilliam的博客](<a href="https://youngwilliamz.github.io/">https://youngwilliamz.github.io/</a>)</p></blockquote><p>效果：</p><blockquote><p><a href="https://youngwilliamz.github.io/">YoungWilliam的博客</a></p></blockquote><p><strong>参考式</strong>：</p><blockquote><p>[YoungWilliam的博客1][1]<br>[YoungWilliam的博客2][2]<br>[1]:<a href="https://youngwilliamz.github.io/">https://youngwilliamz.github.io/</a><br>[2]:<a href="https://youngwilliamz.github.io/">https://youngwilliamz.github.io/</a></p></blockquote><p>效果：</p><blockquote><p><a href="https://youngwilliamz.github.io/">YoungWilliam的博客1</a><br><a href="https://youngwilliamz.github.io/">YoungWilliam的博客2</a><br><a href="https://youngwilliamz.github.io/">YoungWilliam的博客3</a>    </p></blockquote><p><strong>注意</strong>：上述的<code>[1]:https://youngwilliamz.github.io/</code>不出现在区块中。</p><h4 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h4><p>添加图片的形式和链接相似，只需在链接的基础上前方加一个<code>！</code>。</p><h4 id="反斜杠"><a href="#反斜杠" class="headerlink" title="反斜杠\"></a>反斜杠<code>\</code></h4><p>相当于<strong>反转义</strong>作用。使符号成为普通符号。</p><h4 id="符号"><a href="#符号" class="headerlink" title="符号 `"></a>符号 <em>`</em></h4><p>起到标记作用。如：</p><blockquote><p>`ctrl+a`</p></blockquote><p>效果：</p><blockquote><p><code>ctrl+a</code>    </p></blockquote><hr><p><strong>注意</strong>：不同的Markdown解释器或工具对相应语法（扩展语法）的解释效果不尽相同，具体可参见工具的使用说明。<br>虽然有人想出面搞一个所谓的标准化的Markdown，[没想到还惹怒了健在的创始人John Gruber]<br>(<a href="http://blog.codinghorror.com/standard-markdown-is-now-common-markdown/)。" target="_blank" rel="noopener">http://blog.codinghorror.com/standard-markdown-is-now-common-markdown/)。</a></p><hr><p>以上基本是所有traditonal markdown的语法。</p><h3 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h3><p>列表的使用(非traditonal markdown)：</p><p>用<code>|</code>表示表格纵向边界，表头和表内容用<code>-</code>隔开，并可用<code>:</code>进行对齐设置，两边都有<code>:</code>则表示居中，若不加<code>:</code>则默认左对齐。<br>格式：</p><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">|代码库                              |链接                                |</span><br><span class="line">|:------------------------------------:|------------------------------------|</span><br><span class="line">|MarkDown                              |[<span class="string">https://github.com/younghz/Markdown</span>](<span class="link">https://github.com/younghz/Markdown "Markdown"</span>)|</span><br><span class="line">|MarkDownCopy                              |[<span class="string">https://github.com/younghz/Markdown</span>](<span class="link">https://github.com/younghz/Markdown "Markdown"</span>)|</span><br></pre></td></tr></table></figure><p>效果:</p><table><thead><tr><th style="text-align:center">代码库</th><th>链接</th></tr></thead><tbody><tr><td style="text-align:center">MarkDown</td><td><a href="https://github.com/younghz/Markdown" title="Markdown" target="_blank" rel="noopener">https://github.com/younghz/Markdown</a></td></tr><tr><td style="text-align:center">MarkDownCopy</td><td><a href="https://github.com/younghz/Markdown" title="Markdown" target="_blank" rel="noopener">https://github.com/younghz/Markdown</a></td></tr></tbody></table><p>关于其它扩展语法可参见具体工具的使用说明。</p><h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><p><a href="https://younghz.github.io/Markdown/" target="_blank" rel="noopener">Markdown 基本语法</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;总结一下，&lt;code&gt;Hexo&lt;/code&gt; 下 &lt;code&gt;Markdown&lt;/code&gt; 的写法和一些奇技淫巧。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;说明&lt;/strong&gt;：&lt;code&gt;Hexo&lt;/code&gt; 主题为 &lt;a href=&quot;https://github.com/iissnan/hexo-theme-next&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Next&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Markdown" scheme="https://youngwilliamz.github.io/categories/Markdown/"/>
+    
+    
+      <category term="Hexo" scheme="https://youngwilliamz.github.io/tags/Hexo/"/>
+    
+      <category term="Markdown" scheme="https://youngwilliamz.github.io/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《30天自制操作系统》笔记——Day 0</title>
+    <link href="https://youngwilliamz.github.io/2018-07-10-%E3%80%8A30%E5%A4%A9%E8%87%AA%E5%88%B6%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E3%80%8B%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94Day0/"/>
+    <id>https://youngwilliamz.github.io/2018-07-10-《30天自制操作系统》笔记——Day0/</id>
+    <published>2018-07-10T07:12:00.000Z</published>
+    <updated>2018-08-11T20:40:07.166Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><blockquote><p>第 0 天 着手开发之前 ………………………………. 1<br>        1 前言 …………………………………………………….. 1<br>        2 何谓操作系统 ……………………………………….. 3<br>        3 开发操作系统的各种方法 ………………………. 4<br>        4 无知则无畏 …………………………………………… 4<br>        5 如何开发操作系统 ………………………………… 6<br>        6 操作系统开发中的困难 ………………………….. 7<br>        7 学习本书时的注意事项（重要！） …………… 9<br>        8 各章内容摘要 ……………………………………… 11</p></blockquote><a id="more"></a><h3 id="读这本书需要的知识"><a href="#读这本书需要的知识" class="headerlink" title="读这本书需要的知识"></a>读这本书需要的知识</h3><p>写过简单的程序就够了（即使没有任何编程经验，应该也是可以的）</p><h3 id="使用语言"><a href="#使用语言" class="headerlink" title="使用语言"></a>使用语言</h3><p>C语言（原因：简单，好学）</p><h3 id="整个系统预计大小"><a href="#整个系统预计大小" class="headerlink" title="整个系统预计大小"></a>整个系统预计大小</h3><p><code>80KB</code></p><h3 id="开发平台"><a href="#开发平台" class="headerlink" title="开发平台"></a>开发平台</h3><blockquote><p>   Windows（主要开发平台）<br>    Linux （使用内容在<a href="http://hrb.osask.jp" target="_blank" rel="noopener">帮助与支持(日文)</a>里）</p></blockquote><h3 id="开发中的困难"><a href="#开发中的困难" class="headerlink" title="开发中的困难"></a>开发中的困难</h3><ul><li>作者改进的 gcc 编译器</li><li>需要控制 CPU 上的寄存器（Register），但 C 无法实现， 只能使用 【汇编语言】（Assembly Language） 来处理</li><li>理解 C 的编译原理（为了与汇编衔接起来）</li></ul><h3 id="学习本书的注意事项："><a href="#学习本书的注意事项：" class="headerlink" title="学习本书的注意事项："></a>学习本书的注意事项：</h3><ul><li>虽然分了 30 天，但难度不是平均划分</li><li>看不懂的时候就往下读</li><li>主要部分是【光盘里的程序】，书仅仅是介绍程序怎么写出来的</li><li>把程序名字改一改吧</li></ul><h3 id="各章摘要"><a href="#各章摘要" class="headerlink" title="各章摘要"></a>各章摘要</h3><ul><li>第一周 <ul><li>写一个【一通电就能运行的程序】，用 C 写比较困难，得用汇编</li><li>【从磁盘读取操作系统的程序】，汇编</li><li>【实现“移动鼠标”】，实现难度较大，得对 CPU 进行细致的设定，并掌握中断处理程序的写法。</li></ul></li></ul><ul><li>第二周<ul><li>基本掌握 C 语言的语法 和 汇编语言</li><li>边学习算法边开发操作系统</li></ul></li></ul><ul><li>第三周<ul><li>技术已经完备，可以随心所欲开发操作系统了</li><li>【支持多任务】</li><li>【命令行窗口】</li><li>【应用程序】</li></ul></li></ul><ul><li>第四周<ul><li>可以尽情添加各种功能</li><li>让操作系统显示文字了</li></ul></li></ul><ul><li>免费赠送两天<ul><li>润色加工</li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;目录&quot;&gt;&lt;a href=&quot;#目录&quot; class=&quot;headerlink&quot; title=&quot;目录&quot;&gt;&lt;/a&gt;目录&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;第 0 天 着手开发之前 ………………………………. 1&lt;br&gt;        1 前言 …………………………………………………….. 1&lt;br&gt;        2 何谓操作系统 ……………………………………….. 3&lt;br&gt;        3 开发操作系统的各种方法 ………………………. 4&lt;br&gt;        4 无知则无畏 …………………………………………… 4&lt;br&gt;        5 如何开发操作系统 ………………………………… 6&lt;br&gt;        6 操作系统开发中的困难 ………………………….. 7&lt;br&gt;        7 学习本书时的注意事项（重要！） …………… 9&lt;br&gt;        8 各章内容摘要 ……………………………………… 11&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="学习" scheme="https://youngwilliamz.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="30天自制操作系统" scheme="https://youngwilliamz.github.io/tags/30%E5%A4%A9%E8%87%AA%E5%88%B6%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo 下特有的编辑图片方式，直接使用 img 标志</title>
+    <link href="https://youngwilliamz.github.io/2018-06-24-Hexo-%E4%B8%8B%E7%89%B9%E6%9C%89%E7%9A%84%E7%BC%96%E8%BE%91%E5%9B%BE%E7%89%87%E6%96%B9%E5%BC%8F/"/>
+    <id>https://youngwilliamz.github.io/2018-06-24-Hexo-下特有的编辑图片方式/</id>
+    <published>2018-06-24T00:02:00.000Z</published>
+    <updated>2018-08-11T20:40:07.166Z</updated>
+    
+    <content type="html"><![CDATA[<p>直接上代码，src对应的是图片 url<br><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src="https://i.loli.net/2018/06/24/5b2edf5139f61.png" width="50%" height="50%"&gt;</span><br></pre></td></tr></table></figure></p><p>效果图如下：（使用的是 <a href="https://sm.ms/" target="_blank" rel="noopener">SM.MS图床</a>）<br><img src="https://i.loli.net/2018/06/24/5b2edf5139f61.png" width="50%" height="50%"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;直接上代码，src对应的是图片 url&lt;br&gt;&lt;figure class=&quot;highlight md&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td clas
+      
+    
+    </summary>
+    
+      <category term="Hexo" scheme="https://youngwilliamz.github.io/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="https://youngwilliamz.github.io/tags/Hexo/"/>
+    
+      <category term="Markdown" scheme="https://youngwilliamz.github.io/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HexoEditor, 一个写 Hexo 非常好用的 Markdown 编辑器</title>
+    <link href="https://youngwilliamz.github.io/2018-06-23-HexoEditor/"/>
+    <id>https://youngwilliamz.github.io/2018-06-23-HexoEditor/</id>
+    <published>2018-06-23T22:08:00.000Z</published>
+    <updated>2018-08-11T20:40:07.166Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://i.loli.net/2018/06/24/5b2edf5139f61.png" width="50%" height="50%"></p><blockquote><p>本文用于记录以及简单的安装</p></blockquote><a id="more"></a><h2 id="简单介绍"><a href="#简单介绍" class="headerlink" title="简单介绍"></a>简单介绍</h2><p><a href="https://github.com/zhuzhuyule/HexoEditor" target="_blank" rel="noopener">HexoEditor</a> 是 Github 上一款开源的 Markdown 编辑器。</p><p>引用原作者说的话：</p><blockquote><p>这是一款为 Hexo 做了优化的 Markdown 编辑器。<br>使用 Electron 做框架<br>修改自 Moeditor, 我只是为了让他更好的去为 Hexo 下的博客更好的去书写内容。</p></blockquote><p>同时它还包括很多功能，其中我觉得最有用的就是：</p><blockquote><p>预览内容与 Hexo 生成页面内容高度相似</p></blockquote><p>更多详情介绍请点击<a href="https://github.com/zhuzhuyule/HexoEditor/blob/master/doc/cn/README.md#%E5%8A%9F%E8%83%BD" target="_blank" rel="noopener">这里</a>。</p><h2 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h2><p>整个过程参照<a href="https://github.com/zhuzhuyule/HexoEditor/blob/master/doc/en/Building.md" target="_blank" rel="noopener">官方文档</a>。</p><h4 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1.准备工作"></a>1.准备工作</h4><h6 id="安装-git"><a href="#安装-git" class="headerlink" title="安装 git"></a>安装 <code>git</code></h6><ul><li><a href="https://git-scm.com/download/mac" target="_blank" rel="noopener">Download Page for Mac OS X</a> </li><li><a href="https://git-scm.com/download/win" target="_blank" rel="noopener">Download Page for Windows</a> </li><li><a href="https://git-scm.com/download/linux" target="_blank" rel="noopener">Download Page for Linux/Unix</a></li></ul><h6 id="安装-nodejs"><a href="#安装-nodejs" class="headerlink" title="安装 nodejs"></a>安装 <code>nodejs</code></h6><ul><li><a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">Download Page</a> (English)</li><li><a href="https://nodejs.org/zh-cn/download/" target="_blank" rel="noopener">下载地址</a> (中文)</li></ul><h4 id="2-下载配置-Hexo"><a href="#2-下载配置-Hexo" class="headerlink" title="2.下载配置 Hexo"></a>2.下载配置 <code>Hexo</code></h4><h4 id="3-设置-npm-缓存路径"><a href="#3-设置-npm-缓存路径" class="headerlink" title="3.设置 npm 缓存路径"></a>3.设置 <code>npm</code> 缓存路径</h4><h6 id="Windows-下"><a href="#Windows-下" class="headerlink" title="Windows 下:"></a>Windows 下:</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> prefix <span class="string">"C:/Program Files/nodejs/npm_global"</span> </span><br><span class="line">npm config <span class="built_in">set</span> cache <span class="string">"C:/Program Files/nodejs/npm_cache"</span></span><br></pre></td></tr></table></figure><h6 id="Linux-Mac-下"><a href="#Linux-Mac-下" class="headerlink" title="Linux\Mac 下:"></a>Linux\Mac 下:</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> prefix <span class="string">"~/nodejs/npm_global"</span></span><br><span class="line">npm config <span class="built_in">set</span> cache <span class="string">"~/nodejs/npm_cache"</span></span><br></pre></td></tr></table></figure><p><strong>注意</strong>：这里的路径是你安装 <code>nodejs</code> 的子目录下对应的路径</p><h4 id="4-设置下载来源（镜像），加速下载"><a href="#4-设置下载来源（镜像），加速下载" class="headerlink" title="4.设置下载来源（镜像），加速下载"></a>4.设置下载来源（镜像），加速下载</h4><p>来自原作者好心提醒：<br>在中国，你应该设置淘宝镜像来加速下载。(PS: 这个我没试过，我是直接通过代理的)<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry <span class="string">"https://registry.npm.taobao.org/"</span></span><br><span class="line">npm config <span class="built_in">set</span> electron_mirror <span class="string">"https://npm.taobao.org/mirrors/electron/"</span></span><br></pre></td></tr></table></figure></p><h4 id="5-下载-GitHub-上最新的版本并安装"><a href="#5-下载-GitHub-上最新的版本并安装" class="headerlink" title="5.下载 GitHub 上最新的版本并安装"></a>5.下载 GitHub 上最新的版本并安装</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/zhuzhuyule/HexoEditor.git</span><br><span class="line"><span class="built_in">cd</span> HexoEditor</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure><h4 id="5-启动"><a href="#5-启动" class="headerlink" title="5.启动"></a>5.启动</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm start</span><br></pre></td></tr></table></figure><p>然后，当当当，启动啦~</p><h2 id="设置快捷方式"><a href="#设置快捷方式" class="headerlink" title="设置快捷方式"></a>设置快捷方式</h2><p>在 HexoEditor 子目录下，新建 <code>start.sh</code> ，编辑（右键-&gt;打开方式-&gt;NotePad++），输入（其实就是启动）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm start</span><br></pre></td></tr></table></figure></p><p>保存，退出，双击一下 <code>start.sh</code> ，看看效果如何~<br>顺利的话，<code>gitbash</code> 会弹出来，然后 HexoEditor就会弹出来了~</p><p><img src="https://i.loli.net/2018/06/24/5b2ede1e2a6cc.png" width="50%" height="50%"></p><p>本教程到此就结束了，希望大家玩的开心~</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/06/24/5b2edf5139f61.png&quot; width=&quot;50%&quot; height=&quot;50%&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本文用于记录以及简单的安装&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="https://youngwilliamz.github.io/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="https://youngwilliamz.github.io/tags/Hexo/"/>
+    
+      <category term="Markdown" scheme="https://youngwilliamz.github.io/tags/Markdown/"/>
+    
+      <category term="编辑器" scheme="https://youngwilliamz.github.io/tags/%E7%BC%96%E8%BE%91%E5%99%A8/"/>
+    
+  </entry>
+  
+</feed>
