@@ -2,7 +2,7 @@
 title: 'Caoz《成长的烦恼》笔记'
 tags:
   - Caoz
-  - 思维方式
+  - 思维方式
 categories:
   - 学习
 date: 2018-12-28 21:48:55
