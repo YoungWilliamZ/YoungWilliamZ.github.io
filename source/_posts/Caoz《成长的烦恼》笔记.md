@@ -1,5 +1,5 @@
 ---
-title: Caoz《成长的烦恼》笔记
+title: 'Caoz《成长的烦恼》笔记'
 tags:
   - Caoz
   - 思维方式
