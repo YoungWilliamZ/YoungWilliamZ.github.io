@@ -33,3 +33,9 @@
   });
   gitalk.render('gitalk-container');
 </script>
+
+{% if page.comments && theme.gitalk.enable %}
+      
+      
+       
+{% endif %}
