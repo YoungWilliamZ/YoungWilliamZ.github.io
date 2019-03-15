@@ -1,51 +1,51 @@
-dist: trusty
-
-language: node_js
-node_js: stable
-sudo: required
-# Travis-CI Caching
-cache:
-  apt: true
-  directories:
-    - node_modules
-
-git:
- depth: false
- submodules: false
+language: node_js # 设置语言
+node_js: stable # 设置相应版本
 
 env:
     global:
         - GH_REF: github.com/YoungWilliamZ/YoungWilliamZ.github.io.git
+
+cache:
+    apt: true
+    directories:
+        - node_modules # 缓存不经常更改的内容
 
 branches:
  only:
    - hexo
 
 before install:
-  - git config user.name "YoungWilliam"
-  - git config user.email "youngwilliam.zheng@gmail.com"
+
   # 替换同目录下的_config.yml文件中gh_token字符串为travis后台刚才配置的变量，注意此处sed命令用了双引号。单引号无效！
-  - sed -i "s/gh_token/${GITHUB_TOKEN}/g" ./_config.yml
+  # - sed -i "s/gh_token/${GITHUB_TOKEN}/g" ./_config.yml
   # - sed -i "s/gitment_id_token/${Gitment_Client_ID}/g" ./themes/next/_config.yml
   # - sed -i "s/gitment_secret_token/${Gitment_Client_Secret}/g" ./themes/next/_config.yml
-  - npm install -g hexo
+  # - npm install -g hexo
   - npm install -g hexo-cli 
 
 # S: Build Lifecycle
 install:
-  - npm install hexo-deployer-git --save
+  # - npm install hexo-deployer-git --save
   - npm install
 
-before_script:
-  # - npm install -g hexo-cli
+# before_script:
+
 
 script:
   - hexo clean
   - hexo g
 
 after_script:
-  # - git add .
-  # - git commit -m "update by Travis-CI"
-  # - git push --force --quiet "https://${GITHUB_TOKEN}@${GH_REF}" master:master #GH_token就是在travis中设置的token
-  - hexo deploy
+  - git clone https://${GH_REF} .deploy_git
+  - cd .deploy_git
+  - git checkout master
+  - cd ../
+  - mv .deploy_git/.git/ ./public/
+  - cd ./public
+  - git config user.name "YoungWilliam"
+  - git config user.email "youngwilliam.zheng@gmail.com"
+  - git add .
+  - git commit -m "Travis CI Auto Builder"
+  - git push --force --quiet "https://${GITHUB_TOKEN}@${GH_REF}" master:master
+  # - hexo deploy
 # E: Build LifeCycle
