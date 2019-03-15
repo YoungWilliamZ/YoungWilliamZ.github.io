@@ -3,34 +3,39 @@ node_js: stable
 sudo: required
 # Travis-CI Caching
 cache:
+  apt: true
   directories:
     - node_modules
 
+git:
+ depth: false
+ submodules: false
+
+branches:
+ only:
+   - hexo
+
 before install:
   - npm install -g hexo-cli 
-
-# S: Build Lifecycle
-install:
-  - npm install
-  - npm install hexo-deployer-git
-
-before_script:
-  - npm install -g hexo-cli
-
-script:
-  - hexo clean
-  - hexo generate
-
-after_script:
   - git config user.name "YoungWilliam"
   - git config user.email "z1016103104@gmail.com"
   # 替换同目录下的_config.yml文件中gh_token字符串为travis后台刚才配置的变量，注意此处sed命令用了双引号。单引号无效！
   - sed -i "s/gh_token/${GITHUB_TOKEN}/g" ./_config.yml
   # - sed -i "s/gitment_id_token/${Gitment_Client_ID}/g" ./themes/next/_config.yml
   # - sed -i "s/gitment_secret_token/${Gitment_Client_Secret}/g" ./themes/next/_config.yml
-  - hexo deploy
-# E: Build LifeCycle
 
-branches:
-  only:
-    - hexo
+# S: Build Lifecycle
+install:
+  - npm install
+  # - npm install hexo-deployer-git
+
+before_script:
+  # - npm install -g hexo-cli
+
+script:
+  - hexo clean
+  - hexo g -d
+
+# after_script:
+#   - hexo deploy
+# E: Build LifeCycle
