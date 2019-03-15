@@ -46,7 +46,7 @@ script:
 after_script:
   - git add .
   - git commit -m "update by Travis-CI"
-  - git push --force --quiet "https://${GITHUB_TOKEN}@${GH_REF}" #GH_token就是在travis中设置的token
+  - git push --force --quiet "https://${GITHUB_TOKEN}@${GH_REF}" HEAD:master #GH_token就是在travis中设置的token
 
 #   - hexo deploy
 # E: Build LifeCycle
