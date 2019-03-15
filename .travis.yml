@@ -24,12 +24,12 @@ before install:
   - sed -i "s/gh_token/${GITHUB_TOKEN}/g" ./_config.yml
   # - sed -i "s/gitment_id_token/${Gitment_Client_ID}/g" ./themes/next/_config.yml
   # - sed -i "s/gitment_secret_token/${Gitment_Client_Secret}/g" ./themes/next/_config.yml
-  - npm install hexo-deployer-git --save
   - npm install -g hexo
   - npm install -g hexo-cli 
 
 # S: Build Lifecycle
 install:
+  - npm install hexo-deployer-git --save
   - npm install
 
 before_script:
