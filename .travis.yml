@@ -13,6 +13,10 @@ git:
  depth: false
  submodules: false
 
+env:
+    global:
+        - GH_REF: github.com/YoungWilliamZ/YoungWilliamZ.github.io.git
+
 branches:
  only:
    - hexo
@@ -37,8 +41,12 @@ before_script:
 
 script:
   - hexo clean
-  - hexo g -d
+  - hexo g
 
-# after_script:
+after_script:
+  - git add .
+  - git commit -m "update by Travis-CI"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master #GH_token就是在travis中设置的token
+
 #   - hexo deploy
 # E: Build LifeCycle
