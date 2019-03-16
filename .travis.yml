@@ -24,10 +24,10 @@ before install:
   - npm install -g hexo-cli 
   - npm install hexo-generator-searchdb --save
   - npm install hexo-generator-feed --save
+    # - npm install hexo-deployer-git --save
 
 # S: Build Lifecycle
 install:
-  # - npm install hexo-deployer-git --save
   - npm install
 
 # before_script:
@@ -38,12 +38,12 @@ script:
   - hexo g
 
 after_script:
-  - git clone https://${GH_REF} .deploy_git
-  - cd .deploy_git
-  - git checkout master
-  - cd ../
-  - mv .deploy_git/.git/ ./public/
-  - cd ./public
+  # - git clone https://${GH_REF} .deploy_git
+  # - cd .deploy_git
+  # - git checkout master
+  # - cd ../
+  # - mv .deploy_git/.git/ ./public/
+  # - cd ./public
   - git config user.name "YoungWilliam"
   - git config user.email "youngwilliam.zheng@gmail.com"
   # - git add .
