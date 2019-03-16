@@ -149,8 +149,8 @@ exturl: false
 # External url should start with http:// or https://
 menu:
   home: / || home
-  categories: /categories/ || th
-  tags: /tags/ || tags
+  # categories: /categories/ || th
+  # tags: /tags/ || tags
   #message: /message
   archives: /archives/ || archive
   #schedule: /schedule/ || calendar
@@ -378,7 +378,7 @@ post_edit:
 # ---------------------------------------------------------------
 
 # Disable Baidu tranformation on mobile devices.
-disable_baidu_tranformation: false
+disable_baidu_tranformation: true
 
 # Reduce padding / margin indents on devices with narrow width.
 mobile_layout_economy: false
@@ -523,7 +523,7 @@ pangu: false
 # Dependencies: https://github.com/theme-next/theme-next-quicklink
 # Visit https://github.com/GoogleChromeLabs/quicklink for details
 quicklink:
-  enable: false
+  enable: true
 
   # Quicklink (quicklink.umd.js script) is loaded on demand
   # Add `quicklink: true` in Front Matter of the page or post you need
@@ -743,7 +743,7 @@ rating:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn to get AppID and AppKey.
 leancloud_visitors:
-  enable: true
+  enable: false
   app_id: tlkQjWXwuBsu5f1EqbT3tQLG-gzGzoHsz #<app_id>
   app_key: pGWt4BXGJOeMJVPgbc6ET0y5 #<app_key>
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
