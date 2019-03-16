@@ -86,6 +86,6 @@ search:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
     type: git
-    repo: https://gh_token@github.com/YoungWilliamZ/YoungWilliamZ.github.io.git
+    repo: https://${GITHUB_TOKEN}@github.com/YoungWilliamZ/YoungWilliamZ.github.io.git
     branch: master
 
