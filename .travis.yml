@@ -21,13 +21,14 @@ before install:
   # - sed -i "s/gitment_id_token/${Gitment_Client_ID}/g" ./themes/next/_config.yml
   # - sed -i "s/gitment_secret_token/${Gitment_Client_Secret}/g" ./themes/next/_config.yml
   # - npm install -g hexo
-  - npm install -g hexo-cli 
-  - npm install hexo-generator-searchdb --save
-  - npm install hexo-generator-feed --save
+
   # - npm install hexo-deployer-git --save
 
 # S: Build Lifecycle
 install:
+  - npm install -g hexo-cli 
+  - npm install hexo-generator-searchdb --save
+  - npm install hexo-generator-feed --save
   - npm install
 
 # before_script:
