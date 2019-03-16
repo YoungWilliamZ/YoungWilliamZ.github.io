@@ -678,12 +678,12 @@ needmoreshare2:
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters
-#google_site_verification:
+google_site_verification: ZpIB_xcBn3O86PGFHvjBTy0zbRhKioedircLR2L07vI
 
 # Google Analytics
-google_analytics: UA-123747966-1
-#  tracking_id:
-#  localhost_ignored: true
+google_analytics: 
+  tracking_id: UA-123747966-1
+  localhost_ignored: true
 
 # Bing Webmaster tools verification setting
 # See: https://www.bing.com/webmaster
