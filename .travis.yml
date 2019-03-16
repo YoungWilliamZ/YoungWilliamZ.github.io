@@ -23,6 +23,7 @@ before install:
   # - npm install -g hexo
   - npm install -g hexo-cli 
   - npm install hexo-generator-searchdb --save
+  - npm install hexo-generator-feed --save
 
 # S: Build Lifecycle
 install:
