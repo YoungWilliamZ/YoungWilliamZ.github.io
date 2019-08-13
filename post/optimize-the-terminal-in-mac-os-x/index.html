@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.4.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="YoungWilliam">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Mac 大法好">
+
+  
+  <link rel="alternate" hreflang="zh-Hans" href="https://youngwilliamz.github.io/post/optimize-the-terminal-in-mac-os-x/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.dd629241ea9333c62c071f4a25f829ff.css">
+
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-123747966-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://youngwilliamz.github.io/post/optimize-the-terminal-in-mac-os-x/">
+
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="New World">
+  <meta property="og:url" content="https://youngwilliamz.github.io/post/optimize-the-terminal-in-mac-os-x/">
+  <meta property="og:title" content="Mac OS X 下优化 Terminal，一篇就够了！ | New World">
+  <meta property="og:description" content="Mac 大法好"><meta property="og:image" content="https://youngwilliamz.github.io/img/icon-192.png">
+  <meta property="twitter:image" content="https://youngwilliamz.github.io/img/icon-192.png"><meta property="og:locale" content="zh-Hans">
+  
+    
+      <meta property="article:published_time" content="2018-08-11T13:52:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2018-08-11T13:52:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Mac OS X 下优化 Terminal，一篇就够了！ | New World</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>搜索</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="搜索..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">New World</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="切换导航">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>笔记</span><span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/note/leetcode/"><span>LeetCode-Notes</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/note/docker/"><span>Docker-Notes</span></a>
+            </li>
+            
+          </ul>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>项目</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>博客</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>联系方式</span></a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Mac OS X 下优化 Terminal，一篇就够了！</h1>
+
+  
+
+  
+    
+
+
+
+<meta content="2018-08-11 13:52:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2018-08-11 13:52:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">YoungWilliam</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Aug 11, 2018</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 分钟阅读时间
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="">工欲善其事</a></span>
+  
+
+  
+    
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>先上最终效果图：</p>
+
+<p><img src="https://i.imgur.com/0goJQf8.png" alt="" /></p>
+
+<h2 id="目录">目录</h2>
+
+<!-- TOC -->
+
+<ul>
+<li><a href="#%08%e7%9b%ae%e5%bd%95">目录</a></li>
+<li><a href="#1-%e7%9b%b8%e5%85%b3%e5%b7%a5%e5%85%b7%e4%bb%8b%e7%bb%8d">1. 相关工具介绍</a></li>
+<li><a href="#2-%e9%85%8d%e7%bd%ae%e6%80%bb%e8%a7%88">2. 配置总览</a></li>
+<li><a href="#3-%e5%ae%89%e8%a3%85%e6%ad%a5%e9%aa%a4">3. 安装步骤</a>
+
+<ul>
+<li><a href="#31-%e5%ae%89%e8%a3%85-iterm2">3.1. 安装 iTerm2</a></li>
+<li><a href="#32-%e5%ae%89%e8%a3%85xcodes-command-line-tools">3.2. 安装XCode’s Command line tools</a></li>
+<li><a href="#33-%e6%a3%80%e6%9f%a5-zsh-%e6%98%af%e5%90%a6%e5%b7%b2%e5%ae%89%e8%a3%85">3.3. 检查 <code>zsh</code> 是否已安装</a></li>
+<li><a href="#34-%e5%ae%89%e8%a3%85-oh-my-zsh">3.4. 安装 <code>Oh-My-Zsh</code></a></li>
+<li><a href="#35-%e5%ae%89%e8%a3%85-powerline-fonts">3.5. 安装 <code>Powerline fonts</code></a></li>
+<li><a href="#36-%e5%ae%89%e8%a3%85%e9%85%8d%e7%bd%ae%e4%b8%bb%e9%a2%98">3.6. 安装配置主题</a></li>
+<li><a href="#37-%e4%bf%ae%e6%94%b9%e5%91%bd%e4%bb%a4%e6%8f%90%e7%a4%ba%e7%ac%a6">3.7. 修改命令提示符</a></li>
+<li><a href="#38-%e9%85%8d%e7%bd%ae-zsh-%e5%91%bd%e4%bb%a4%e8%af%ad%e6%b3%95%e9%ab%98%e4%ba%ae">3.8. 配置 <code>zsh</code> 命令语法高亮</a></li>
+</ul></li>
+<li><a href="#4-%e5%a4%87%e7%94%a8%e4%b8%8b%e8%bd%bd%e9%93%be%e6%8e%a5">4. 备用下载链接</a></li>
+<li><a href="#5-%e5%8f%82%e8%80%83%e5%8f%8a%e6%84%9f%e8%b0%a2">5. 参考及感谢</a></li>
+</ul>
+
+<!-- /TOC -->
+
+<!-- more -->
+
+<h2 id="1-相关工具介绍">1. 相关工具介绍</h2>
+
+<ol>
+<li><strong>iTerm2</strong>： Terminal 终端的替代品，拥有更多强大的功能，想了解更多请戳 <a href="https://www.iterm2.com/" target="_blank">iTerm2 官网</a>；</li>
+<li><strong>XCode’s Command line tools</strong>: 开发环境集成，包含 git、gcc 等重要工具；</li>
+<li><strong>zsh</strong>：Linux 的一种 shell 外壳，强大的虚拟终端，和 bash 属于同类产品，OS X 已自带；</li>
+<li><strong>Oh-My-Zsh</strong>: 用来管理 zsh 的配置，同时还有很多社区贡献的主题配置以及好用的插件可供使用，了解更多请戳 <a href="https://ohmyz.sh/" target="_blank">Oh-My-Zsh 官网</a>；</li>
+</ol>
+
+<h2 id="2-配置总览">2. 配置总览</h2>
+
+<ol>
+<li>iTerm2</li>
+<li>Oh-My-Zsh</li>
+<li>agnoster 主题</li>
+<li>zsh 命令语法高亮</li>
+</ol>
+
+<h2 id="3-安装步骤">3. 安装步骤</h2>
+
+<h3 id="3-1-安装-iterm2">3.1. 安装 iTerm2</h3>
+
+<p>进入<a href="https://www.iterm2.com/downloads.html" target="_blank">官网下载页面</a>，点击 <code>Stable Releases</code> 下面的 <code>Download</code> 即可下载，解压后拖到应用程序中。这是简单的一小步，但是却是优化 <code>Terminal</code> 的一大步！</p>
+
+<p>PS: 网络环境不太好的同学不要担心，我已经把安装包传到百度云了，请到文章最后寻找链接下载。</p>
+
+<h3 id="3-2-安装xcode-s-command-line-tools">3.2. 安装XCode’s Command line tools</h3>
+
+<p>XCode 13 个 G ,这里我们只需要 XCode’s Command line tools 来支撑 Git 的使用，所以我们不用费时费力装 XCode 来浪费那13个G。
+(从 Yosemite（10.10+）开始，Command Line Tools 可以单独安装。)</p>
+
+<p><strong>安装方法</strong>: 打开终端，输入</p>
+
+<pre><code class="language-bash">xcode-select –install
+</code></pre>
+
+<p>点 <code>install</code> ，同意，即可。</p>
+
+<h3 id="3-3-检查-zsh-是否已安装">3.3. 检查 <code>zsh</code> 是否已安装</h3>
+
+<p>在命令行输入：</p>
+
+<pre><code class="language-bash">zsh --version
+</code></pre>
+
+<p>如果显示</p>
+
+<pre><code class="language-bash">zsh 5.3 (x86_64-apple-darwin17.0)
+</code></pre>
+
+<p>即zsh的当前版本号，就说明装好了，一般 OS X 自带有的。</p>
+
+<p>如果没装则需要输入：</p>
+
+<pre><code class="language-bash">brew install zsh zsh-completions
+</code></pre>
+
+<p>这是用Homebrew装，需要 OS X 上有Homebrew，它的网站：<a href="https://brew.sh/" target="_blank">https://brew.sh/</a></p>
+
+<h3 id="3-4-安装-oh-my-zsh">3.4. 安装 <code>Oh-My-Zsh</code></h3>
+
+<p>可以通过 <code>curl</code> 或者 <code>wget</code> 来安装</p>
+
+<ul>
+<li><p>curl</p>
+
+<pre><code class="language-bash">sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;
+</code></pre></li>
+
+<li><p>wget</p>
+
+<pre><code class="language-bash">sh -c &quot;$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)&quot;
+</code></pre></li>
+</ul>
+
+<p>网络好的话几秒就装好了。</p>
+
+<p>一般安装程序会自动把默认的 shell 切换为 <code>zsh</code>, 什么！你不懂 shell 是什么？我也不懂，你去问问度娘？或者直接右上角？其实不懂也正常，也不影响你拥有自己美美的终端。</p>
+
+<p>如果想修改默认 shell 为原来的 bash：</p>
+
+<pre><code class="language-bash">chsh -s /bin/bash
+</code></pre>
+
+<p>重启 iTerm2 就好了。</p>
+
+<h3 id="3-5-安装-powerline-fonts">3.5. 安装 <code>Powerline fonts</code></h3>
+
+<p>华丽丽的主题需要 <a href="https://github.com/powerline/fonts" target="_blank">Powerline 字符集</a>的支持。
+通过 git 安装, 直接执行以下命令行：</p>
+
+<pre><code class="language-bash">git clone https://github.com/powerline/fonts.git --depth=1; cd fonts; ./install.sh; cd ..; rm -rf fonts
+</code></pre>
+
+<p>然后到 iterm2 配置，设置字体
+1. 打开 <strong>Preferences</strong>，选择 <strong>Profiles</strong>
+<img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fu4hnix30uj30ye0d5wfk.jpg" alt="" />
+2. 选择 <strong>Text</strong>，点击 <strong>Change Font</strong>
+<img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fu4i6ep6kcj30pi0ciaai.jpg" alt="" />
+3. 选择<strong>固定宽度</strong>，选择自己喜欢的字体。<strong>注意</strong>： iTerm2 可以实时看到效果，结尾不是 <code>for Powerline</code> 的会乱码。
+<img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fu4i94dy0uj30ht0eqdg3.jpg" alt="" />
+4. 接着修改字体颜色，选择另一项 <code>Colors</code>, 点击 <code>Color Presets</code>, 选择<code>Solarized Dark</code>
+<img src="https://ws1.sinaimg.cn/large/b48b5d8dly1fu4m84ux8uj20ps0ci40g.jpg" alt="" />
+<img src="https://i.imgur.com/T8jzFpm.png" alt="" /></p>
+
+<h3 id="3-6-安装配置主题">3.6. 安装配置主题</h3>
+
+<p>装好之后就可以换到 agnoster 主题，Oh My Zsh 一般自带有这个主题。</p>
+
+<p>可以看看其它的默认主题：</p>
+
+<pre><code class="language-bash">ls ~/.oh-my-zsh/themes
+</code></pre>
+
+<p>需要修改主题只需：</p>
+
+<pre><code class="language-bash">vim ~/.zshrc
+</code></pre>
+
+<p>然后把里面 ZSH_THEME 的值改为 ZSH_THEME=&ldquo;agnoster&rdquo;，保存退出。</p>
+
+<p>修改和保存的过程为：
+1. 按下 <code>i</code> 开始编辑
+2. 通过方向键控制光标的位置
+3. 定位到 <code>ZSH_THEME</code>
+4. 改为 <code>ZSH_THEME=&quot;agnoster&quot;</code>
+5. 按下 <code>ESC</code>, 输入 <code>:wq</code>, 回车
+6. 搞定！</p>
+
+<p>（<a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Themes#agnoster" target="_blank">点击这里</a>还有各种主题预览，任君翻牌~）</p>
+
+<h3 id="3-7-修改命令提示符">3.7. 修改命令提示符</h3>
+
+<p>默认的命令提示符为 user@userdemackbookPro，这样的提示符配合 powerlevel9k 主题太过冗长，因此我选择将该冗长的提示符去掉，在 <code>~/.zshrc</code> 配置文件后面追加如下内容：</p>
+
+<pre><code class="language-bash"># 注意：DEFAULT_USER 的值必须要是系统用户名才能生效
+DEFAULT_USER=&quot;user&quot;
+</code></pre>
+
+<p>编辑方法同上。</p>
+
+<h3 id="3-8-配置-zsh-命令语法高亮">3.8. 配置 <code>zsh</code> 命令语法高亮</h3>
+
+<p><a href="https://github.com/zsh-users/zsh-syntax-highlighting" target="_blank">zsh-syntax-highlighting</a> 插件可以使你终端输入的命令有语法高亮效果，安装方法如下（oh-my-zsh 插件管理的方式安装）：
+1. 复制文件到插件目录
+    <code>bash
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+</code>
+2. 修改 <code>~/.zshrc</code> 添加插件
+    <code>bash
+    # 注意：zsh-syntax-highlighting 必须放在最后面（官方推荐）
+    plugins=( [plugins...] zsh-syntax-highlighting)
+</code>
+    <img src="https://i.imgur.com/N6db1vG.png" alt="" /></p>
+
+<ol>
+<li><p>应用修改</p>
+
+<pre><code class="language-bash">source ~/.zshrc
+</code></pre></li>
+</ol>
+
+<p>大功告成~有问题欢迎留言讨论~</p>
+
+<h2 id="4-备用下载链接">4. 备用下载链接</h2>
+
+<p>iTerm2 ( 3.2.0 )： 链接: <a href="https://pan.baidu.com/s/1Wm7NjtGfA81LpGFYAaEAPQ" target="_blank">https://pan.baidu.com/s/1Wm7NjtGfA81LpGFYAaEAPQ</a> 密码: ksgv</p>
+
+<h2 id="5-参考及感谢">5. 参考及感谢</h2>
+
+<ol>
+<li><a href="https://blog.csdn.net/qianghaohao/article/details/79440961" target="_blank">我的 Mac 终端配置（Mac OSX + iTerm2 + Zsh + Oh-My-Zsh）</a></li>
+<li><a href="https://blog.csdn.net/huihut/article/details/61418136" target="_blank">iTerm2 + OhMyZsh + agnoster + Powerline + solarized = 漂亮的Mac终端</a></li>
+</ol>
+
+    </div>
+
+    
+
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/max-os-x/">Max OS X</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+      
+      
+    
+
+    
+
+    
+<section id="comments">
+  
+    
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <aside id=comments>
+    <div id="gitalkContainer"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+    <script>
+        var gitalk = new Gitalk({
+            clientID: "d6e5e76d4a62818bb13b",
+            clientSecret: "4ca45620cd38f36e254fda2ea288ddcde569409e",
+            repo: "Gitment_Store",
+            owner: "youngwilliamz",
+            admin: ["youngwilliamz"],
+            id: '2018-08-11 13:52:00 \x2b0000 UTC',      
+            labels: ["Comments"],
+            distractionFreeMode:  false ,  
+            pagerDirection: "last",
+            createIssueManually:  false ,
+            enableHotKey:  true ,
+            flipMoveOptions: {
+                staggerDelayBy:  null ,
+                appearAnimation:  null ,
+                enterAnimation:  null ,
+                leaveAnimation:  null ,
+            },
+        });
+        gitalk.render('gitalkContainer');
+    </script>
+</aside>
+</div>
+
+  
+</section>
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "搜索...",
+        'results': "搜索结果",
+        'no_results': "没有找到结果"
+      };
+      const content_type = {
+        'post': "文章",
+        'project': "项目",
+        'publication' : "出版物",
+        'talk' : "演讲"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.16bbb3750feb7244c9bc409a5a4fe678.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">引用</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> 复制
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> 下载
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
