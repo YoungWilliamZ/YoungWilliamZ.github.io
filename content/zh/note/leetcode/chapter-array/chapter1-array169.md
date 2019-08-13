@@ -1,0 +1,115 @@
+---
+# Documentation: https://sourcethemes.com/academic/docs/managing-content/
+
+title: 169. Majority Element 求众数
+linktitle: LeetCode-Array169
+summary: 
+date: 2019-08-13T23:58:26+08:00
+lastmod: 2019-08-13T23:58:26+08:00
+draft: false  # Is this a draft? true/false
+toc: true  # Show table of contents? true/false
+type: docs  # Do not modify.
+
+# Add menu entry to sidebar.
+# - Substitute `example` with the name of your course/documentation folder.
+# - name: Declare this menu item as a parent with ID `name`.
+# - parent: Reference a parent ID if this page is a child.
+# - weight: Position of link in menu.
+menu:
+  leetcode:
+    name: 169. Majority Element 求众数
+    parent: Array 数组
+    weight: 2
+---
+
+## 题目
+
+难度：易
+
+给定一个大小为 n 的数组，找到其中的众数。众数是指在数组中出现次数大于 ⌊ n/2 ⌋ 的元素。
+
+你可以假设数组是非空的，并且给定的数组总是存在众数。
+
+示例 1:
+
+```
+输入: [3,2,3]
+输出: 3
+```
+
+示例 2:
+
+```
+输入: [2,2,1,1,1,2,2]
+输出: 2
+```
+
+传送门：
+
+* [English](https://leetcode.com/problems/majority-element/)
+* [中文](https://leetcode-cn.com/problems/majority-element/solution/)
+
+## 思路
+
+| 算法                 | 时间复杂度 | 空间复杂度 |
+| -------------------- | ---------- | ---------- |
+| 暴力                 | O(n^2)     | O(n)       |
+| 哈希表               | O(n)       | O(n)       |
+| 排序                 | O(nlogn)   | O(1)       |
+| 分治                 | O(nlogn)   | O(logn)    |
+| Boyer-Moore 投票算法 | O(n)       | O(1)       |
+
+#### 分治
+
+一分为二，求两边众数的次数，很复杂。
+
+#### Boyer-Moore 投票算法
+
+寻找数组中超过一半的数字，这意味着数组中**其他数字出现次数的总和都是比不上这个数字出现的次数**
+
+即如果把 该众数记为 `+1` ，把其他数记为 `−1` ，将它们全部加起来，和是大于 0 的。
+
+## 代码
+
+大致操作：
+
+1. 设置两个变量 candidate 和 count，candidate 用来保存数组中遍历到的某个数字，count 表示当前数字的出现次数，一开始 candidate 保存为数组中的第一个数字，count 为 1
+
+2. 遍历整个数组
+
+   * 如果数字与之前 candidate 保存的数字相同，则 count 加 1
+
+   * 如果数字与之前 candidate 保存的数字不同，则 count 减 1
+   * **如果出现次数 count 变为 0 ，candidate 进行变化，保存为当前遍历的那个数字，并且同时把 count 重置为 1**（这里是细节，同时也需要好好理解）
+   * 遍历完数组中的所有数字即可得到结果
+
+参考：https://leetcode-cn.com/problems/two-sum/solution/du-le-le-bu-ru-zhong-le-le-ru-he-zhuang-bi-de-q
+
+```c++
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        int candidate = nums[0]; 
+        int counter = 1;
+        for (int i = 1; i < nums.size(); i++)
+        {       
+            if (nums[i] == candidate) {
+                ++counter;
+            } else {
+                --counter;
+            }
+            if (counter == 0) {
+                candidate = nums[i];
+                counter = 1;
+            }
+        }
+        return candidate;
+    }
+};
+```
+
+
+
+## 小结
+
+这种题的最优解普通人的很难想到，既简单又高效，这个摩尔有点东西。果然还是得多刷题，不过这道题得注意一下细节。
