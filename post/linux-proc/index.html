@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.4.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="YoungWilliam">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="我的 Docker 原理探索之路">
+
+  
+  <link rel="alternate" hreflang="zh-Hans" href="https://youngwilliamz.github.io/post/linux-proc/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.dd629241ea9333c62c071f4a25f829ff.css">
+
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-123747966-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://youngwilliamz.github.io/post/linux-proc/">
+
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="New World">
+  <meta property="og:url" content="https://youngwilliamz.github.io/post/linux-proc/">
+  <meta property="og:title" content="Docker 背后： Linux 的 /proc | New World">
+  <meta property="og:description" content="我的 Docker 原理探索之路"><meta property="og:image" content="https://youngwilliamz.github.io/img/icon-192.png">
+  <meta property="twitter:image" content="https://youngwilliamz.github.io/img/icon-192.png"><meta property="og:locale" content="zh-Hans">
+  
+    
+      <meta property="article:published_time" content="2019-08-02T02:04:09&#43;00:00">
+    
+    <meta property="article:modified_time" content="2019-08-02T02:04:09&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Docker 背后： Linux 的 /proc | New World</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>搜索</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="搜索..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">New World</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="切换导航">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>笔记</span><span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/note/leetcode/"><span>LeetCode-Notes</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/note/docker/"><span>Docker-Notes</span></a>
+            </li>
+            
+          </ul>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>项目</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>博客</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>联系方式</span></a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Docker 背后： Linux 的 /proc</h1>
+
+  
+
+  
+    
+
+
+
+<meta content="2019-08-02 02:04:09 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2019-08-02 02:04:09 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">YoungWilliam</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Aug 2, 2019</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    4 分钟阅读时间
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="">学习</a></span>
+  
+
+  
+    
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<h2 id="为什么要有-proc">为什么要有 <code>/proc</code>？</h2>
+
+<p>想必在日常开发<del>写</del>查 BUG 中，你会经常用到像 <code>top</code>、<code>ps</code> 这样的 Linux 命令来查看进程、CPU 的状态吧。</p>
+
+<p>那你是否有想过：这些不都是内核才知道的吗？而作为身处 shell （用户态）的我们又是通过什么途径知道这些的呢？</p>
+
+<p>是有什么 system call 吗？是有什么高级的接口吗？</p>
+
+<p>不不不，其实是通过一个神奇的目录，也就是今天的主角 <code>/proc</code>。</p>
+
+<p>实际上，<code>top</code> 中的数据就是读取 <code>/proc/stat</code> 文件获得的，<code>/proc/stat</code> 文件被读取时会自动更新，从而 <code>top</code> 获得最新的 CPU 占用率情况。</p>
+
+<h2 id="proc-是什么"><code>/proc</code> 是什么？</h2>
+
+<p><code>/proc</code> 其实不是一个“真正”的文件目录，而是一个“虚拟”的文件系统（virtual filesystem）。</p>
+
+<p>为什么是虚拟的呢？因为它不写入<strong>外存</strong>空间，只存在于<strong>内存</strong>中。</p>
+
+<p>它包含了系统运行时的信息，包括：</p>
+
+<ul>
+<li>当前运行进程信息</li>
+<li>系统内存</li>
+<li>mount 设备信息</li>
+<li>一些硬件配置</li>
+<li>&hellip;等。</li>
+</ul>
+
+<p>因此，可以把它当作<strong>内核</strong>的信息中心。</p>
+
+<p>当然许多系统工具都是通过简单读取该目录下的某些内容。</p>
+
+<p>比如：</p>
+
+<ol>
+<li><code>lsmod</code> = <code>cat /proc/modules</code></li>
+<li><code>lspci</code> = <code>cat /proc/pci</code></li>
+</ol>
+
+<p>在系统正在运行时，你甚至可以通过修改 <code>/proc</code> 目录下文件，来读取修改系统的内核参数（sysctl）。</p>
+
+<h2 id="proc-基本目录结构"><code>/proc</code> 基本目录结构</h2>
+
+<p>因为文件都在内存中，如果你去看每个文件的大小，你会发现都是 0，除了 <code>kcore</code>, <code>mtrr</code> and <code>self</code>。</p>
+
+<p>当遍历这个目录的时候，会发现有些数字，这些都是为每个进程创建的空间，数字就是它们的 PID。</p>
+
+<pre><code class="language-shell">[go_dev@0f8b372ed635 proc]$ ll /proc
+total 0
+dr-xr-xr-x  9 go_dev go_dev     0 Aug  1 18:43 1
+dr-xr-xr-x  9 go_dev go_dev     0 Aug  1 18:44 30
+drwxrwxrwt  2 root   root      40 Aug  1 18:43 acpi
+-r--r--r--  1 root   root       0 Aug  1 18:44 buddyinfo
+dr-xr-xr-x  4 root   root       0 Aug  1 18:43 bus
+-r--r--r--  1 root   root       0 Aug  1 18:44 cgroups
+-r--r--r--  1 root   root       0 Aug  1 18:44 cmdline
+-r--r--r--  1 root   root   23709 Aug  1 18:44 config.gz
+-r--r--r--  1 root   root       0 Aug  1 18:44 consoles
+-r--r--r--  1 root   root       0 Aug  1 18:44 cpuinfo
+-r--r--r--  1 root   root       0 Aug  1 18:44 crypto
+-r--r--r--  1 root   root       0 Aug  1 18:44 devices
+-r--r--r--  1 root   root       0 Aug  1 18:44 diskstats
+-r--r--r--  1 root   root       0 Aug  1 18:44 dma
+dr-xr-xr-x  2 root   root       0 Aug  1 18:44 driver
+-r--r--r--  1 root   root       0 Aug  1 18:44 execdomains
+-r--r--r--  1 root   root       0 Aug  1 18:44 fb
+-r--r--r--  1 root   root       0 Aug  1 18:44 filesystems
+dr-xr-xr-x  8 root   root       0 Aug  1 18:43 fs
+-r--r--r--  1 root   root       0 Aug  1 18:44 interrupts
+-r--r--r--  1 root   root       0 Aug  1 18:44 iomem
+-r--r--r--  1 root   root       0 Aug  1 18:44 ioports
+dr-xr-xr-x 31 root   root       0 Aug  1 18:43 irq
+-r--r--r--  1 root   root       0 Aug  1 18:44 kallsyms
+crw-rw-rw-  1 root   root    1, 3 Aug  1 18:43 kcore
+-r--r--r--  1 root   root       0 Aug  1 18:44 key-users
+crw-rw-rw-  1 root   root    1, 3 Aug  1 18:43 keys
+-r--------  1 root   root       0 Aug  1 18:44 kmsg
+-r--------  1 root   root       0 Aug  1 18:44 kpagecgroup
+-r--------  1 root   root       0 Aug  1 18:44 kpagecount
+-r--------  1 root   root       0 Aug  1 18:44 kpageflags
+-r--r--r--  1 root   root       0 Aug  1 18:44 loadavg
+-r--r--r--  1 root   root       0 Aug  1 18:44 locks
+-r--r--r--  1 root   root       0 Aug  1 18:44 meminfo
+-r--r--r--  1 root   root       0 Aug  1 18:44 misc
+-r--r--r--  1 root   root       0 Aug  1 18:44 modules
+lrwxrwxrwx  1 root   root      11 Aug  1 18:44 mounts -&gt; self/mounts
+dr-xr-xr-x  2 root   root       0 Aug  1 18:44 mpt
+-rw-r--r--  1 root   root       0 Aug  1 18:44 mtrr
+lrwxrwxrwx  1 root   root       8 Aug  1 18:44 net -&gt; self/net
+-r--r--r--  1 root   root       0 Aug  1 18:44 pagetypeinfo
+-r--r--r--  1 root   root       0 Aug  1 18:44 partitions
+crw-rw-rw-  1 root   root    1, 3 Aug  1 18:43 sched_debug
+lrwxrwxrwx  1 root   root       0 Aug  1 18:43 self -&gt; 30
+-rw-------  1 root   root       0 Aug  1 18:44 slabinfo
+-r--r--r--  1 root   root       0 Aug  1 18:44 softirqs
+-r--r--r--  1 root   root       0 Aug  1 18:44 stat
+-r--r--r--  1 root   root       0 Aug  1 18:44 swaps
+dr-xr-xr-x  1 root   root       0 Aug  1 18:43 sys
+--w-------  1 root   root       0 Aug  1 18:43 sysrq-trigger
+dr-xr-xr-x  2 root   root       0 Aug  1 18:44 sysvipc
+lrwxrwxrwx  1 root   root       0 Aug  1 18:43 thread-self -&gt; 30/task/30
+crw-rw-rw-  1 root   root    1, 3 Aug  1 18:43 timer_list
+dr-xr-xr-x  4 root   root       0 Aug  1 18:44 tty
+-r--r--r--  1 root   root       0 Aug  1 18:44 uptime
+-r--r--r--  1 root   root       0 Aug  1 18:44 version
+-r--------  1 root   root       0 Aug  1 18:44 vmallocinfo
+-r--r--r--  1 root   root       0 Aug  1 18:44 vmstat
+-r--r--r--  1 root   root       0 Aug  1 18:44 zoneinfo
+</code></pre>
+
+<p>在此介绍几个比较重要的部分：</p>
+
+<table>
+<thead>
+<tr>
+<th>/proc/N</th>
+<th>PID 为 N 的进程信息</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>/proc/N/cmdline</td>
+<td>进程启动命令</td>
+</tr>
+
+<tr>
+<td>/proc/N/cwd</td>
+<td>链接到进程当前工作目录</td>
+</tr>
+
+<tr>
+<td>/proc/N/environ</td>
+<td>进程环境变量列表</td>
+</tr>
+
+<tr>
+<td>/proc/N/exe</td>
+<td>链接到进程的执行命令文件</td>
+</tr>
+
+<tr>
+<td>/proc/N/fd</td>
+<td>包含进程相关的所有文件描述符</td>
+</tr>
+
+<tr>
+<td>/proc/N/maps</td>
+<td>与进程相关的内存映射信息</td>
+</tr>
+
+<tr>
+<td>/proc/N/mem</td>
+<td>指代进程持有的内存，不可读</td>
+</tr>
+
+<tr>
+<td>/proc/N/root</td>
+<td>链接到进程的根目录</td>
+</tr>
+
+<tr>
+<td>/proc/N/stat</td>
+<td>进程的状态</td>
+</tr>
+
+<tr>
+<td>/proc/N/statm</td>
+<td>进程使用的内存状态</td>
+</tr>
+
+<tr>
+<td>/proc/N/status</td>
+<td>进程状态信息，比 stat/statm 更具可读性</td>
+</tr>
+
+<tr>
+<td>/proc/self/</td>
+<td>链接到当前正在运行的进程</td>
+</tr>
+</tbody>
+</table>
+
+<p>如果像了解更多的话，请自行 google 或者看看 <a href="https://www.tldp.org/LDP/Linux-Filesystem-Hierarchy/html/proc.html" target="_blank">Linux Filesystem Hierarchy: 1.14. /proc</a>。</p>
+
+<h2 id="docker-如何利用到-proc">Docker 如何利用到 <code>/proc</code>？</h2>
+
+<h2 id="参考">参考</h2>
+
+<ol>
+<li><a href="https://www.tldp.org/LDP/Linux-Filesystem-Hierarchy/html/proc.html" target="_blank">Linux Filesystem Hierarchy: 1.14. /proc</a></li>
+
+<li><p><a href="https://book.douban.com/subject/27082348/" target="_blank">《自己动手写Docker》</a></p></li>
+
+<li><p><a href="https://en.wikipedia.org/wiki/Procfs" target="_blank">wiki: procfs</a></p></li>
+</ol>
+
+    </div>
+
+    
+
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/linux/">linux</a>
+  
+  <a class="badge badge-light" href="/tags/docker/">docker</a>
+  
+  <a class="badge badge-light" href="/tags/proc/">proc</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+      
+      
+    
+
+    
+
+    
+<section id="comments">
+  
+    
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <aside id=comments>
+    <div id="gitalkContainer"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+    <script>
+        var gitalk = new Gitalk({
+            clientID: "d6e5e76d4a62818bb13b",
+            clientSecret: "4ca45620cd38f36e254fda2ea288ddcde569409e",
+            repo: "Gitment_Store",
+            owner: "youngwilliamz",
+            admin: ["youngwilliamz"],
+            id: '2019-08-02 02:04:09 \x2b0000 UTC',      
+            labels: ["Comments"],
+            distractionFreeMode:  false ,  
+            pagerDirection: "last",
+            createIssueManually:  false ,
+            enableHotKey:  true ,
+            flipMoveOptions: {
+                staggerDelayBy:  null ,
+                appearAnimation:  null ,
+                enterAnimation:  null ,
+                leaveAnimation:  null ,
+            },
+        });
+        gitalk.render('gitalkContainer');
+    </script>
+</aside>
+</div>
+
+  
+</section>
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "搜索...",
+        'results': "搜索结果",
+        'no_results': "没有找到结果"
+      };
+      const content_type = {
+        'post': "文章",
+        'project': "项目",
+        'publication' : "出版物",
+        'talk' : "演讲"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.16bbb3750feb7244c9bc409a5a4fe678.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">引用</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> 复制
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> 下载
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

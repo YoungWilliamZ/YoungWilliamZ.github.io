@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>学习 | New World</title>
+    <link>https://youngwilliamz.github.io/categories/%E5%AD%A6%E4%B9%A0/</link>
+      <atom:link href="https://youngwilliamz.github.io/categories/%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
+    <description>学习</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><lastBuildDate>Sun, 11 Aug 2019 01:49:46 +0800</lastBuildDate>
+    <image>
+      <url>https://youngwilliamz.github.io/img/icon-192.png</url>
+      <title>学习</title>
+      <link>https://youngwilliamz.github.io/categories/%E5%AD%A6%E4%B9%A0/</link>
+    </image>
+    
+    <item>
+      <title>从 0 实现 Docker</title>
+      <link>https://youngwilliamz.github.io/project/mydocker/</link>
+      <pubDate>Sun, 11 Aug 2019 01:49:46 +0800</pubDate>
+      <guid>https://youngwilliamz.github.io/project/mydocker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker 背后： Linux 的 /proc</title>
+      <link>https://youngwilliamz.github.io/post/linux-proc/</link>
+      <pubDate>Fri, 02 Aug 2019 02:04:09 +0000</pubDate>
+      <guid>https://youngwilliamz.github.io/post/linux-proc/</guid>
+      <description>
+
+&lt;h2 id=&#34;为什么要有-proc&#34;&gt;为什么要有 &lt;code&gt;/proc&lt;/code&gt;？&lt;/h2&gt;
+
+&lt;p&gt;想必在日常开发&lt;del&gt;写&lt;/del&gt;查 BUG 中，你会经常用到像 &lt;code&gt;top&lt;/code&gt;、&lt;code&gt;ps&lt;/code&gt; 这样的 Linux 命令来查看进程、CPU 的状态吧。&lt;/p&gt;
+
+&lt;p&gt;那你是否有想过：这些不都是内核才知道的吗？而作为身处 shell （用户态）的我们又是通过什么途径知道这些的呢？&lt;/p&gt;
+
+&lt;p&gt;是有什么 system call 吗？是有什么高级的接口吗？&lt;/p&gt;
+
+&lt;p&gt;不不不，其实是通过一个神奇的目录，也就是今天的主角 &lt;code&gt;/proc&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;实际上，&lt;code&gt;top&lt;/code&gt; 中的数据就是读取 &lt;code&gt;/proc/stat&lt;/code&gt; 文件获得的，&lt;code&gt;/proc/stat&lt;/code&gt; 文件被读取时会自动更新，从而 &lt;code&gt;top&lt;/code&gt; 获得最新的 CPU 占用率情况。&lt;/p&gt;
+
+&lt;h2 id=&#34;proc-是什么&#34;&gt;&lt;code&gt;/proc&lt;/code&gt; 是什么？&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;/proc&lt;/code&gt; 其实不是一个“真正”的文件目录，而是一个“虚拟”的文件系统（virtual filesystem）。&lt;/p&gt;
+
+&lt;p&gt;为什么是虚拟的呢？因为它不写入&lt;strong&gt;外存&lt;/strong&gt;空间，只存在于&lt;strong&gt;内存&lt;/strong&gt;中。&lt;/p&gt;
+
+&lt;p&gt;它包含了系统运行时的信息，包括：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;当前运行进程信息&lt;/li&gt;
+&lt;li&gt;系统内存&lt;/li&gt;
+&lt;li&gt;mount 设备信息&lt;/li&gt;
+&lt;li&gt;一些硬件配置&lt;/li&gt;
+&lt;li&gt;&amp;hellip;等。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;因此，可以把它当作&lt;strong&gt;内核&lt;/strong&gt;的信息中心。&lt;/p&gt;
+
+&lt;p&gt;当然许多系统工具都是通过简单读取该目录下的某些内容。&lt;/p&gt;
+
+&lt;p&gt;比如：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;lsmod&lt;/code&gt; = &lt;code&gt;cat /proc/modules&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lspci&lt;/code&gt; = &lt;code&gt;cat /proc/pci&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;在系统正在运行时，你甚至可以通过修改 &lt;code&gt;/proc&lt;/code&gt; 目录下文件，来读取修改系统的内核参数（sysctl）。&lt;/p&gt;
+
+&lt;h2 id=&#34;proc-基本目录结构&#34;&gt;&lt;code&gt;/proc&lt;/code&gt; 基本目录结构&lt;/h2&gt;
+
+&lt;p&gt;因为文件都在内存中，如果你去看每个文件的大小，你会发现都是 0，除了 &lt;code&gt;kcore&lt;/code&gt;, &lt;code&gt;mtrr&lt;/code&gt; and &lt;code&gt;self&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;当遍历这个目录的时候，会发现有些数字，这些都是为每个进程创建的空间，数字就是它们的 PID。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;[go_dev@0f8b372ed635 proc]$ ll /proc
+total 0
+dr-xr-xr-x  9 go_dev go_dev     0 Aug  1 18:43 1
+dr-xr-xr-x  9 go_dev go_dev     0 Aug  1 18:44 30
+drwxrwxrwt  2 root   root      40 Aug  1 18:43 acpi
+-r--r--r--  1 root   root       0 Aug  1 18:44 buddyinfo
+dr-xr-xr-x  4 root   root       0 Aug  1 18:43 bus
+-r--r--r--  1 root   root       0 Aug  1 18:44 cgroups
+-r--r--r--  1 root   root       0 Aug  1 18:44 cmdline
+-r--r--r--  1 root   root   23709 Aug  1 18:44 config.gz
+-r--r--r--  1 root   root       0 Aug  1 18:44 consoles
+-r--r--r--  1 root   root       0 Aug  1 18:44 cpuinfo
+-r--r--r--  1 root   root       0 Aug  1 18:44 crypto
+-r--r--r--  1 root   root       0 Aug  1 18:44 devices
+-r--r--r--  1 root   root       0 Aug  1 18:44 diskstats
+-r--r--r--  1 root   root       0 Aug  1 18:44 dma
+dr-xr-xr-x  2 root   root       0 Aug  1 18:44 driver
+-r--r--r--  1 root   root       0 Aug  1 18:44 execdomains
+-r--r--r--  1 root   root       0 Aug  1 18:44 fb
+-r--r--r--  1 root   root       0 Aug  1 18:44 filesystems
+dr-xr-xr-x  8 root   root       0 Aug  1 18:43 fs
+-r--r--r--  1 root   root       0 Aug  1 18:44 interrupts
+-r--r--r--  1 root   root       0 Aug  1 18:44 iomem
+-r--r--r--  1 root   root       0 Aug  1 18:44 ioports
+dr-xr-xr-x 31 root   root       0 Aug  1 18:43 irq
+-r--r--r--  1 root   root       0 Aug  1 18:44 kallsyms
+crw-rw-rw-  1 root   root    1, 3 Aug  1 18:43 kcore
+-r--r--r--  1 root   root       0 Aug  1 18:44 key-users
+crw-rw-rw-  1 root   root    1, 3 Aug  1 18:43 keys
+-r--------  1 root   root       0 Aug  1 18:44 kmsg
+-r--------  1 root   root       0 Aug  1 18:44 kpagecgroup
+-r--------  1 root   root       0 Aug  1 18:44 kpagecount
+-r--------  1 root   root       0 Aug  1 18:44 kpageflags
+-r--r--r--  1 root   root       0 Aug  1 18:44 loadavg
+-r--r--r--  1 root   root       0 Aug  1 18:44 locks
+-r--r--r--  1 root   root       0 Aug  1 18:44 meminfo
+-r--r--r--  1 root   root       0 Aug  1 18:44 misc
+-r--r--r--  1 root   root       0 Aug  1 18:44 modules
+lrwxrwxrwx  1 root   root      11 Aug  1 18:44 mounts -&amp;gt; self/mounts
+dr-xr-xr-x  2 root   root       0 Aug  1 18:44 mpt
+-rw-r--r--  1 root   root       0 Aug  1 18:44 mtrr
+lrwxrwxrwx  1 root   root       8 Aug  1 18:44 net -&amp;gt; self/net
+-r--r--r--  1 root   root       0 Aug  1 18:44 pagetypeinfo
+-r--r--r--  1 root   root       0 Aug  1 18:44 partitions
+crw-rw-rw-  1 root   root    1, 3 Aug  1 18:43 sched_debug
+lrwxrwxrwx  1 root   root       0 Aug  1 18:43 self -&amp;gt; 30
+-rw-------  1 root   root       0 Aug  1 18:44 slabinfo
+-r--r--r--  1 root   root       0 Aug  1 18:44 softirqs
+-r--r--r--  1 root   root       0 Aug  1 18:44 stat
+-r--r--r--  1 root   root       0 Aug  1 18:44 swaps
+dr-xr-xr-x  1 root   root       0 Aug  1 18:43 sys
+--w-------  1 root   root       0 Aug  1 18:43 sysrq-trigger
+dr-xr-xr-x  2 root   root       0 Aug  1 18:44 sysvipc
+lrwxrwxrwx  1 root   root       0 Aug  1 18:43 thread-self -&amp;gt; 30/task/30
+crw-rw-rw-  1 root   root    1, 3 Aug  1 18:43 timer_list
+dr-xr-xr-x  4 root   root       0 Aug  1 18:44 tty
+-r--r--r--  1 root   root       0 Aug  1 18:44 uptime
+-r--r--r--  1 root   root       0 Aug  1 18:44 version
+-r--------  1 root   root       0 Aug  1 18:44 vmallocinfo
+-r--r--r--  1 root   root       0 Aug  1 18:44 vmstat
+-r--r--r--  1 root   root       0 Aug  1 18:44 zoneinfo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;在此介绍几个比较重要的部分：&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;/proc/N&lt;/th&gt;
+&lt;th&gt;PID 为 N 的进程信息&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;/proc/N/cmdline&lt;/td&gt;
+&lt;td&gt;进程启动命令&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;/proc/N/cwd&lt;/td&gt;
+&lt;td&gt;链接到进程当前工作目录&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;/proc/N/environ&lt;/td&gt;
+&lt;td&gt;进程环境变量列表&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;/proc/N/exe&lt;/td&gt;
+&lt;td&gt;链接到进程的执行命令文件&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;/proc/N/fd&lt;/td&gt;
+&lt;td&gt;包含进程相关的所有文件描述符&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;/proc/N/maps&lt;/td&gt;
+&lt;td&gt;与进程相关的内存映射信息&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;/proc/N/mem&lt;/td&gt;
+&lt;td&gt;指代进程持有的内存，不可读&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;/proc/N/root&lt;/td&gt;
+&lt;td&gt;链接到进程的根目录&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;/proc/N/stat&lt;/td&gt;
+&lt;td&gt;进程的状态&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;/proc/N/statm&lt;/td&gt;
+&lt;td&gt;进程使用的内存状态&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;/proc/N/status&lt;/td&gt;
+&lt;td&gt;进程状态信息，比 stat/statm 更具可读性&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;/proc/self/&lt;/td&gt;
+&lt;td&gt;链接到当前正在运行的进程&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;如果像了解更多的话，请自行 google 或者看看 &lt;a href=&#34;https://www.tldp.org/LDP/Linux-Filesystem-Hierarchy/html/proc.html&#34; target=&#34;_blank&#34;&gt;Linux Filesystem Hierarchy: 1.14. /proc&lt;/a&gt;。&lt;/p&gt;
+
+&lt;h2 id=&#34;docker-如何利用到-proc&#34;&gt;Docker 如何利用到 &lt;code&gt;/proc&lt;/code&gt;？&lt;/h2&gt;
+
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.tldp.org/LDP/Linux-Filesystem-Hierarchy/html/proc.html&#34; target=&#34;_blank&#34;&gt;Linux Filesystem Hierarchy: 1.14. /proc&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://book.douban.com/subject/27082348/&#34; target=&#34;_blank&#34;&gt;《自己动手写Docker》&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Procfs&#34; target=&#34;_blank&#34;&gt;wiki: procfs&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>《剑指Offer》笔记</title>
+      <link>https://youngwilliamz.github.io/post/coding-interviews-note-1/</link>
+      <pubDate>Sun, 28 Jul 2019 18:17:25 +0000</pubDate>
+      <guid>https://youngwilliamz.github.io/post/coding-interviews-note-1/</guid>
+      <description>
+
+&lt;p&gt;还没好好看一遍《剑指Offer》，希望在阅读的过程中能记录一下，同时也方便以后复习。&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;h2 id=&#34;3-高质量的代码&#34;&gt;3. 高质量的代码&lt;/h2&gt;
+
+&lt;h3 id=&#34;3-2-代码的规范性&#34;&gt;3.2 代码的规范性&lt;/h3&gt;
+
+&lt;h4 id=&#34;代码的完整性&#34;&gt;代码的完整性:&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;功能测试：要满足基本功能、尽量突破常规思维的限制&lt;/li&gt;
+&lt;li&gt;边界测试：考虑循环、递归终止条件；字符串转整数时确保极大极小值等。&lt;/li&gt;
+&lt;li&gt;负面测试：各种可能的错误输入&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;3-种错误处理的方法&#34;&gt;3 种错误处理的方法：&lt;/h4&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;优点&lt;/th&gt;
+&lt;th&gt;缺点&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;返回值&lt;/td&gt;
+&lt;td&gt;和系统 API 一致，0 为正常，其他为错误&lt;/td&gt;
+&lt;td&gt;不能方便使用计算结果&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;全局变量&lt;/td&gt;
+&lt;td&gt;可以直接得到计算结果，方便使用&lt;/td&gt;
+&lt;td&gt;很容易忘记检查&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;异常&lt;/td&gt;
+&lt;td&gt;逻辑清晰，明确定义错误类型&lt;/td&gt;
+&lt;td&gt;一些语言不支持，对性能有负面影响&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;具体用哪种需要考虑具体场景，可以和面试讨论一下采用哪种比较合适。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Docker 学习笔记之 docker build 背后</title>
+      <link>https://youngwilliamz.github.io/post/learn-docker-behind-docker-build/</link>
+      <pubDate>Mon, 22 Apr 2019 23:20:14 +0000</pubDate>
+      <guid>https://youngwilliamz.github.io/post/learn-docker-behind-docker-build/</guid>
+      <description>
+
+&lt;p&gt;今天面试 CSIG 被问到 &lt;code&gt;docker build&lt;/code&gt; 的原理。感觉自己答的不是面试官想要的结果。于是特此整理一下。&lt;/p&gt;
+
+&lt;p&gt;以下是我的原回答：&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;docker build&lt;/code&gt; 就是通过 &lt;code&gt;Dockerfile&lt;/code&gt; 编译出一个自定义的镜像（image）。具体过程是：&lt;code&gt;Dockerfile&lt;/code&gt; 里面的一行一行的命令一层层地生成镜像。如果某一行被改了，那么如果再 build 一次的话就会从这一行开始 build 新的镜像，而之前上一行所 build 的镜像并不会改变。&lt;/p&gt;
+
+&lt;p&gt;然后我就被打断了。面试官问：&lt;/p&gt;
+
+&lt;p&gt;其实我问的不是 &lt;code&gt;Dockerfile&lt;/code&gt; 内部的语句是怎么运行的。我问的是 &lt;code&gt;docker build&lt;/code&gt; 这背后发生了什么？&lt;/p&gt;
+
+&lt;p&gt;然后我就懵圈了，我又简单复述了一遍刚刚说所的，然后就果断说就了解这些。（真的不会了。。。）&lt;/p&gt;
+
+&lt;p&gt;面试官一听就感觉我不太行就换了其他的问题。&lt;/p&gt;
+
+&lt;p&gt;废话不多说，进入正题。&lt;/p&gt;
+
+&lt;h2 id=&#34;what-is-docker-build&#34;&gt;What is &lt;code&gt;Docker build&lt;/code&gt; ?&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Build an image from a Dockerfile&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cnblogs.com/sparkdev/p/9092082.html&#34; target=&#34;_blank&#34;&gt;Docker 镜像之进阶篇&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Caoz《成长的烦恼》笔记</title>
+      <link>https://youngwilliamz.github.io/post/caoz-class-node/</link>
+      <pubDate>Fri, 28 Dec 2018 21:48:55 +0000</pubDate>
+      <guid>https://youngwilliamz.github.io/post/caoz-class-node/</guid>
+      <description>
+
+&lt;p&gt;&lt;h2&gt;目录&lt;/h2&gt;
+HAHAHUGOSHORTCODE-TOC0-HBHB&lt;/p&gt;
+
+&lt;h2 id=&#34;背景&#34;&gt;背景&lt;/h2&gt;
+
+&lt;p&gt;这门课是张哥（stormzhang）在朋友圈推荐的，买的话可以直接进入 Caoz 的星球。我主要是冲着星球去的，因为星球价值真的高啊。其实之前本来就打算进星球的，无奈刚换电脑，比较拮据，就只好等待机会。进了星球，发现一堆创业大佬，就是一个人脉圈啊，有没有作用，就看你的本事了。以上就是星球附赠的课程《成长的烦恼》的由来。因为时间限制，28 号晚上就会无法访问，就想称此机会好好读读。&lt;/p&gt;
+
+&lt;h2 id=&#34;1-读书时代&#34;&gt;1. 读书时代&lt;/h2&gt;
+
+&lt;h3 id=&#34;1-1-尽早确立职场目标并准备&#34;&gt;1.1. 尽早确立职场目标并准备&lt;/h3&gt;
+
+&lt;p&gt;曹大在这里描述了一下自己的学生生涯，悔恨自己当初没有好好学好专业课，以至于错失许多机会。&lt;/p&gt;
+
+&lt;p&gt;摘录：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;对于专业技能，特别是计算机的专业技能，我建议是一精多通：你能在某个特定领域达到足够的高度，而其他相关领域达到一定的标准。原因：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;需要跟不同领域的人沟通时，更好地理解对方，换位思考，降低沟通成本。&lt;/li&gt;
+&lt;li&gt;可以在特殊情况下自己干。&lt;/li&gt;
+&lt;li&gt;企业喜欢这种全才。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;1-2-切忌陷入自以为是的境地&#34;&gt;1.2. 切忌陷入自以为是的境地&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;为什么自以为是？信息获取的渠道很窄。=》价值观趋同，社会认知趋同。&lt;/p&gt;
+
+&lt;p&gt;很多真正很有价值的真相，在读书的时候是看不见的。你从媒体看互联网，你从那些成功者的演说里看互联网，你是看不到真相的。&lt;/p&gt;
+
+&lt;p&gt;如何解决？
+多跟不同人群沟通。
+尽早实习，多跟不同部门沟通。&lt;/p&gt;
+
+&lt;p&gt;例子1:
+遇到没有听说过的的公司可以去搜一下资料，并且听听他们的宣讲。
+“今天见到李开复咯，收获好大哦～收获了啥呢？朋友圈的赞。。。”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;1-3-基础思想和逻辑需要尽早培养&#34;&gt;1.3. 基础思想和逻辑需要尽早培养&lt;/h3&gt;
+
+&lt;p&gt;理解公式来锻炼自己的理解能力。&lt;/p&gt;
+
+&lt;p&gt;世界上大部分人不具备逻辑能力。无法用最优解的思想去思考。&lt;/p&gt;
+
+&lt;p&gt;学好基础，培养思想，而不是去学工具。&lt;/p&gt;
+
+&lt;h2 id=&#34;2-关于求职&#34;&gt;2. 关于求职&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;经常的错误：不尊重职场。
+求职前要有准备，要调研，要在简历中体现你的准备和思考。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;要谦虚和积极。
+愿意从基层做起，从小事做起。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;职场要体面一点。
+初次相遇，一切重要场合还是需要的。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;面试问问题。要有准备。基于企业的公开信息进行提问，挖掘出深度问题。&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;3-个人职场定位&#34;&gt;3. 个人职场定位&lt;/h2&gt;
+
+&lt;h3 id=&#34;3-1-找到个人专长&#34;&gt;3.1. 找到个人专长&lt;/h3&gt;
+
+&lt;p&gt;“看上去很全能，其实不堪一击。”&lt;/p&gt;
+
+&lt;h3 id=&#34;3-2-好奇心是动力之源&#34;&gt;3.2. 好奇心是动力之源&lt;/h3&gt;
+
+&lt;p&gt;“一定要知道自己最痴迷什么？”&lt;/p&gt;
+
+&lt;p&gt;“我是怎么甄别信息的，其实很简单，就是好奇心。对某一个新闻，有些人有好奇心就会去挖掘这些信息，而大多数人是不关心的。”&lt;/p&gt;
+
+&lt;h3 id=&#34;3-3-要建立全局意识和整体感&#34;&gt;3.3. 要建立全局意识和整体感&lt;/h3&gt;
+
+&lt;p&gt;“对行业、专业的要有认知，知道机会和方向在哪儿，要知道自己更上台阶需要去哪儿。”&lt;/p&gt;
+
+&lt;p&gt;“所以我经常建议年轻人，读书的，没毕业的或刚毕业的多多看看行业内顶尖企业的财报，了解行业发展的规模/竞争态势。”&lt;/p&gt;
+
+&lt;p&gt;“新兴领域、新兴机会也要多看看，比如百度的热榜，爱站指数，认真挖掘，对行业认知的其实会增加许多。”&lt;/p&gt;
+
+&lt;p&gt;提到几位人物：余军、边江、高少星&lt;/p&gt;
+
+&lt;p&gt;“多去了解企业整体架构。了解公司的核心价值和主要方向。”&lt;/p&gt;
+
+&lt;p&gt;“职场秘密：快速拓展的公司，很多中层为了自己的发展，快速启动新的项目团队，每个项目看上去都很有价值很有机会，然后大家忙忙碌碌为了新的机会各种打拼。但是，其实从公司战略和格局来说，绝大多数都是试验品、甚至是垃圾。等到市场风向逆转的时候，老板开始核查成本，这些乱七八糟的玩意儿全部砍掉。你觉自己很拼，很有贡献，可在老板眼里一文不值。”&lt;/p&gt;
+
+&lt;p&gt;“一定要站的高一点，站在上司的位置看问题，看机会，看方向。如果看不到，多问！”&lt;/p&gt;
+
+&lt;p&gt;“把四五个人的工作量给一个人做，可能会发现只有少数的事有必要做。”&lt;/p&gt;
+
+&lt;p&gt;佩服的人：李兴平，做网站特别强。在没有资源的情况下，比专业人士做的好。&lt;/p&gt;
+
+&lt;h3 id=&#34;3-4-关于个人待遇的话题&#34;&gt;3.4. 关于个人待遇的话题&lt;/h3&gt;
+
+&lt;p&gt;“职场定位，你要对自己的发展目标有整体的认识。”&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;发展期：20-30 关注成长，只有吃苦。只有少数人能真正踩对路，少走弯路。&lt;/li&gt;
+&lt;li&gt;成熟期：30-35 达到Top10% 提高企业职位、提高业界影响力、建立人脉。
+
+&lt;ul&gt;
+&lt;li&gt;“不需要顶尖水平，因为很多顶尖水平的人没意识到这一点。”&lt;/li&gt;
+&lt;li&gt;“达到领域内 Top 10% 并不难，绝大部分人又懒又爱给自己找借口。”&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;变现期：35之后务必快速走入变现期。能力够了，影响力和口碑够了。这个时候就要让自己价值最大化。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;索要期权，知道整个期权的比例。要有概念。&lt;/p&gt;
+
+&lt;p&gt;创业要确定好退出条款。毕竟「能共患难，不一定能共享福。」&lt;/p&gt;
+
+&lt;h3 id=&#34;3-5-互相成就&#34;&gt;3.5. 互相成就&lt;/h3&gt;
+
+&lt;p&gt;写工作报告的时候将帮助过自己的人写进去，不仅可以帮助别人，对自己也没什么损失，何乐而不为呢？&lt;/p&gt;
+
+&lt;h2 id=&#34;4-谈谈创业&#34;&gt;4. 谈谈创业&lt;/h2&gt;
+
+&lt;p&gt;这个部分曹大讲了许多自己的例子。大部分内容在曹大的文章都有提及，就不一一粘贴了。&lt;/p&gt;
+
+&lt;h3 id=&#34;4-1-创业需要视野和格局&#34;&gt;4.1. 创业需要视野和格局&lt;/h3&gt;
+
+&lt;p&gt;“所以创业有几个教训：1. 居安思危，眼光要长远。 2. 动作要快，行动力要强。 3. 必要的时候需要魄力，需要团队，需要资金，不能当干。单干格局太低。”&lt;/p&gt;
+
+&lt;p&gt;“你写了很多代码，很酷的技术，没有人用，很少人用，你技术再牛又怎么样呢？&lt;strong&gt;你代码很简单，被广泛用起来，而且为别人真正带来了价值，你的工作就是很有价值。&lt;/strong&gt;”&lt;/p&gt;
+
+&lt;p&gt;创业历程：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;上世纪末：
+
+&lt;ul&gt;
+&lt;li&gt;交换链。错失 hao123&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;2004：
+
+&lt;ul&gt;
+&lt;li&gt;OA系统，一个人，安装包压缩到 5m。代码量大，但用的人不多。&lt;/li&gt;
+&lt;li&gt;统计系统。代码量少，但很多人用。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;4-2-创业需要懂得价值评估&#34;&gt;4.2. 创业需要懂得价值评估&lt;/h3&gt;
+
+&lt;h3 id=&#34;4-3-更好的理解人性&#34;&gt;4.3. 更好的理解人性&lt;/h3&gt;
+
+&lt;h3 id=&#34;4-4-财务和数据&#34;&gt;4.4. 财务和数据&lt;/h3&gt;
+
+&lt;h2 id=&#34;5-总结与回复&#34;&gt;5. 总结与回复&lt;/h2&gt;
+
+&lt;h2 id=&#34;6-最后的感受&#34;&gt;6. 最后的感受&lt;/h2&gt;
+
+&lt;p&gt;这是我自己听完曹大课的感受。曹大在这期课程里着重强调了看待事物的全局观和自己的好奇心。&lt;/p&gt;
+
+&lt;p&gt;先说说全局观，我觉得全局观就是在多个角度想问题：从领导角度也好，从别的部门角度也好，总之就是多想想，多看看，搞明白市场的变化方向，理解最重要的核心，理解好利益冲突。&lt;/p&gt;
+
+&lt;p&gt;再说说好奇心，曹大的信息筛选全凭好奇心。而曹大的好奇心有点跟我的不太一样，他对许多未知的事物都感到好奇，希望更多地了解，会从一则小新闻里衍生地去查很多相关资料。&lt;/p&gt;
+
+&lt;p&gt;另外说一句，有实效性的课程真的能够克服懒癌，能够逼着自己去读完听完而不浪费难得的机会。想想躺在书架上的那么多书还没怎么翻过，还有「极客时间」里的十几个课程还只看了一点点，而我却没有一丝愧疚。可能我还不够优秀吧。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

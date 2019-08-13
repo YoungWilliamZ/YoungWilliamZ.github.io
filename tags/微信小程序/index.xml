@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>微信小程序 | New World</title>
+    <link>https://youngwilliamz.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</link>
+      <atom:link href="https://youngwilliamz.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/index.xml" rel="self" type="application/rss+xml" />
+    <description>微信小程序</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><lastBuildDate>Sat, 13 Oct 2018 23:32:16 +0800</lastBuildDate>
+    <image>
+      <url>https://youngwilliamz.github.io/img/icon-192.png</url>
+      <title>微信小程序</title>
+      <link>https://youngwilliamz.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</link>
+    </image>
+    
+    <item>
+      <title>南科通 微信小程序</title>
+      <link>https://youngwilliamz.github.io/project/sustctong/</link>
+      <pubDate>Sat, 13 Oct 2018 23:32:16 +0800</pubDate>
+      <guid>https://youngwilliamz.github.io/project/sustctong/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors | New World</title>
+    <link>https://youngwilliamz.github.io/authors/</link>
+      <atom:link href="https://youngwilliamz.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
+    <description>Authors</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><lastBuildDate>Tue, 13 Aug 2019 23:20:49 +0800</lastBuildDate>
+    <image>
+      <url>https://youngwilliamz.github.io/img/icon-192.png</url>
+      <title>Authors</title>
+      <link>https://youngwilliamz.github.io/authors/</link>
+    </image>
+    
+    <item>
+      <title></title>
+      <link>https://youngwilliamz.github.io/authors/admin/</link>
+      <pubDate>Tue, 13 Aug 2019 23:20:49 +0800</pubDate>
+      <guid>https://youngwilliamz.github.io/authors/admin/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;初出茅庐开发仔&lt;/li&gt;
+&lt;li&gt;拖延症晚期患者&lt;/li&gt;
+&lt;li&gt;熬夜不累早起难&lt;/li&gt;
+&lt;li&gt;云撸猫受益者&lt;/li&gt;
+&lt;li&gt;B 站白嫖大师&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
