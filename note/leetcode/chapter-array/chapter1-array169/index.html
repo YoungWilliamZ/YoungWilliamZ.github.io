@@ -28,10 +28,16 @@
   
     
   
-  <meta name="description" content="">
+  <meta name="description" content="题目 难度：易
+给定一个大小为 n 的数组，找到其中的众数。众数是指在数组中出现次数大于 ⌊ n/2 ⌋ 的元素。
+你可以假设数组是非空的，并且给定的数组总是存在众数。
+示例 1:
+输入: [3,2,3] 输出: 3  示例 2:
+输入: [2,2,1,1,1,2,2] 输出: 2  传送门：
+ English 中文  思路    算法 时间复杂度 空间复杂度     暴力 O(n^2) O(n)   哈希表 O(n) O(n)   排序 O(nlogn) O(1)   分治 O(nlogn) O(logn)   Boyer-Moore 投票算法 O(n) O(1)    分治 一分为二，求两边众数的次数，很复杂。">
 
   
-  <link rel="alternate" hreflang="zh-Hans" href="https://youngwilliamz.github.io/note/leetcode/chapter8/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://youngwilliamz.github.io/note/leetcode/chapter-array/chapter1-array169/">
 
   
 
@@ -110,7 +116,7 @@
   <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://youngwilliamz.github.io/note/leetcode/chapter8/">
+  <link rel="canonical" href="https://youngwilliamz.github.io/note/leetcode/chapter-array/chapter1-array169/">
 
   
   
@@ -123,9 +129,15 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="New World">
-  <meta property="og:url" content="https://youngwilliamz.github.io/note/leetcode/chapter8/">
-  <meta property="og:title" content="Math 数学 | New World">
-  <meta property="og:description" content=""><meta property="og:image" content="https://youngwilliamz.github.io/img/icon-192.png">
+  <meta property="og:url" content="https://youngwilliamz.github.io/note/leetcode/chapter-array/chapter1-array169/">
+  <meta property="og:title" content="169. Majority Element 求众数 | New World">
+  <meta property="og:description" content="题目 难度：易
+给定一个大小为 n 的数组，找到其中的众数。众数是指在数组中出现次数大于 ⌊ n/2 ⌋ 的元素。
+你可以假设数组是非空的，并且给定的数组总是存在众数。
+示例 1:
+输入: [3,2,3] 输出: 3  示例 2:
+输入: [2,2,1,1,1,2,2] 输出: 2  传送门：
+ English 中文  思路    算法 时间复杂度 空间复杂度     暴力 O(n^2) O(n)   哈希表 O(n) O(n)   排序 O(nlogn) O(1)   分治 O(nlogn) O(logn)   Boyer-Moore 投票算法 O(n) O(1)    分治 一分为二，求两边众数的次数，很复杂。"><meta property="og:image" content="https://youngwilliamz.github.io/img/icon-192.png">
   <meta property="twitter:image" content="https://youngwilliamz.github.io/img/icon-192.png"><meta property="og:locale" content="zh-Hans">
   
     
@@ -143,7 +155,7 @@
 
 
 
-  <title>Math 数学 | New World</title>
+  <title>169. Majority Element 求众数 | New World</title>
 
 </head>
 
@@ -370,7 +382,7 @@
     <a class="docs-toc-link" href="/note/leetcode/chapter1-array/">Array 数组</a>
     <ul class="nav docs-sidenav">
       
-      <li >
+      <li class="active">
         <a href="/note/leetcode/chapter-array/chapter1-array169/">169. Majority Element 求众数</a>
       </li>
       
@@ -409,7 +421,7 @@
 
   </div>
   
-  <div class="docs-toc-item active">
+  <div class="docs-toc-item">
     <a class="docs-toc-link" href="/note/leetcode/chapter8/">Math 数学</a>
 
   </div>
@@ -430,7 +442,24 @@
         <li><a href="#" id="back_to_top" class="docs-toc-title">在本页</a></li>
       </ul>
 
-      
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#题目">题目</a></li>
+<li><a href="#思路">思路</a>
+<ul>
+<li>
+<ul>
+<li><a href="#分治">分治</a></li>
+<li><a href="#boyer-moore-投票算法">Boyer-Moore 投票算法</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#代码">代码</a></li>
+<li><a href="#小结">小结</a></li>
+</ul></li>
+</ul>
+</nav>
 
       
     </div>
@@ -441,10 +470,140 @@
       <article class="article" itemscope itemtype="http://schema.org/Article">
 
         <div class="docs-article-container">
-          <h1 itemprop="name">Math 数学</h1>
+          <h1 itemprop="name">169. Majority Element 求众数</h1>
 
           <div class="article-style" itemprop="articleBody">
             
+
+<h2 id="题目">题目</h2>
+
+<p>难度：易</p>
+
+<p>给定一个大小为 n 的数组，找到其中的众数。众数是指在数组中出现次数大于 ⌊ n/2 ⌋ 的元素。</p>
+
+<p>你可以假设数组是非空的，并且给定的数组总是存在众数。</p>
+
+<p>示例 1:</p>
+
+<pre><code>输入: [3,2,3]
+输出: 3
+</code></pre>
+
+<p>示例 2:</p>
+
+<pre><code>输入: [2,2,1,1,1,2,2]
+输出: 2
+</code></pre>
+
+<p>传送门：</p>
+
+<ul>
+<li><a href="https://leetcode.com/problems/majority-element/" target="_blank">English</a></li>
+<li><a href="https://leetcode-cn.com/problems/majority-element/solution/" target="_blank">中文</a></li>
+</ul>
+
+<h2 id="思路">思路</h2>
+
+<table>
+<thead>
+<tr>
+<th>算法</th>
+<th>时间复杂度</th>
+<th>空间复杂度</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>暴力</td>
+<td>O(n^2)</td>
+<td>O(n)</td>
+</tr>
+
+<tr>
+<td>哈希表</td>
+<td>O(n)</td>
+<td>O(n)</td>
+</tr>
+
+<tr>
+<td>排序</td>
+<td>O(nlogn)</td>
+<td>O(1)</td>
+</tr>
+
+<tr>
+<td>分治</td>
+<td>O(nlogn)</td>
+<td>O(logn)</td>
+</tr>
+
+<tr>
+<td>Boyer-Moore 投票算法</td>
+<td>O(n)</td>
+<td>O(1)</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="分治">分治</h4>
+
+<p>一分为二，求两边众数的次数，很复杂。</p>
+
+<h4 id="boyer-moore-投票算法">Boyer-Moore 投票算法</h4>
+
+<p>寻找数组中超过一半的数字，这意味着数组中<strong>其他数字出现次数的总和都是比不上这个数字出现的次数</strong></p>
+
+<p>即如果把 该众数记为 <code>+1</code> ，把其他数记为 <code>−1</code> ，将它们全部加起来，和是大于 0 的。</p>
+
+<h2 id="代码">代码</h2>
+
+<p>大致操作：</p>
+
+<ol>
+<li><p>设置两个变量 candidate 和 count，candidate 用来保存数组中遍历到的某个数字，count 表示当前数字的出现次数，一开始 candidate 保存为数组中的第一个数字，count 为 1</p></li>
+
+<li><p>遍历整个数组</p>
+
+<ul>
+<li><p>如果数字与之前 candidate 保存的数字相同，则 count 加 1</p></li>
+
+<li><p>如果数字与之前 candidate 保存的数字不同，则 count 减 1</p></li>
+
+<li><p><strong>如果出现次数 count 变为 0 ，candidate 进行变化，保存为当前遍历的那个数字，并且同时把 count 重置为 1</strong>（这里是细节，同时也需要好好理解）</p></li>
+
+<li><p>遍历完数组中的所有数字即可得到结果</p></li>
+</ul></li>
+</ol>
+
+<p>参考：<a href="https://leetcode-cn.com/problems/two-sum/solution/du-le-le-bu-ru-zhong-le-le-ru-he-zhuang-bi-de-q" target="_blank">https://leetcode-cn.com/problems/two-sum/solution/du-le-le-bu-ru-zhong-le-le-ru-he-zhuang-bi-de-q</a></p>
+
+<pre><code class="language-c++">class Solution {
+public:
+    int majorityElement(vector&lt;int&gt;&amp; nums) {
+        int candidate = nums[0]; 
+        int counter = 1;
+        for (int i = 1; i &lt; nums.size(); i++)
+        {       
+            if (nums[i] == candidate) {
+                ++counter;
+            } else {
+                --counter;
+            }
+            if (counter == 0) {
+                candidate = nums[i];
+                counter = 1;
+            }
+        }
+        return candidate;
+    }
+};
+</code></pre>
+
+<h2 id="小结">小结</h2>
+
+<p>这种题的最优解普通人的很难想到，既简单又高效，这个摩尔有点东西。果然还是得多刷题，不过这道题得注意一下细节。</p>
+
           </div>
 
           
@@ -460,14 +619,14 @@
   
   <div class="post-nav-item">
     <div class="meta-nav">上一页</div>
-    <a href="/note/leetcode/chapter3/" rel="next">Linked List 链表</a>
+    <a href="/note/leetcode/chapter1-array/" rel="next">Array 数组</a>
   </div>
   
   
   
   <div class="post-nav-item">
     <div class="meta-nav">下一页</div>
-    <a href="/note/leetcode/chapter9/" rel="prev">Others 其他</a>
+    <a href="/note/leetcode/chapter7/" rel="prev">Desgin 设计</a>
   </div>
   
 </div>

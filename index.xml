@@ -14,10 +14,148 @@
     
     <item>
       <title>Array 数组</title>
-      <link>https://youngwilliamz.github.io/note/leetcode/chapter1/</link>
+      <link>https://youngwilliamz.github.io/note/leetcode/chapter1-array/</link>
       <pubDate>Tue, 13 Aug 2019 23:58:26 +0800</pubDate>
-      <guid>https://youngwilliamz.github.io/note/leetcode/chapter1/</guid>
+      <guid>https://youngwilliamz.github.io/note/leetcode/chapter1-array/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>169. Majority Element 求众数</title>
+      <link>https://youngwilliamz.github.io/note/leetcode/chapter-array/chapter1-array169/</link>
+      <pubDate>Tue, 13 Aug 2019 23:58:26 +0800</pubDate>
+      <guid>https://youngwilliamz.github.io/note/leetcode/chapter-array/chapter1-array169/</guid>
+      <description>
+
+&lt;h2 id=&#34;题目&#34;&gt;题目&lt;/h2&gt;
+
+&lt;p&gt;难度：易&lt;/p&gt;
+
+&lt;p&gt;给定一个大小为 n 的数组，找到其中的众数。众数是指在数组中出现次数大于 ⌊ n/2 ⌋ 的元素。&lt;/p&gt;
+
+&lt;p&gt;你可以假设数组是非空的，并且给定的数组总是存在众数。&lt;/p&gt;
+
+&lt;p&gt;示例 1:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;输入: [3,2,3]
+输出: 3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;示例 2:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;输入: [2,2,1,1,1,2,2]
+输出: 2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;传送门：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://leetcode.com/problems/majority-element/&#34; target=&#34;_blank&#34;&gt;English&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://leetcode-cn.com/problems/majority-element/solution/&#34; target=&#34;_blank&#34;&gt;中文&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;思路&#34;&gt;思路&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;算法&lt;/th&gt;
+&lt;th&gt;时间复杂度&lt;/th&gt;
+&lt;th&gt;空间复杂度&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;暴力&lt;/td&gt;
+&lt;td&gt;O(n^2)&lt;/td&gt;
+&lt;td&gt;O(n)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;哈希表&lt;/td&gt;
+&lt;td&gt;O(n)&lt;/td&gt;
+&lt;td&gt;O(n)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;排序&lt;/td&gt;
+&lt;td&gt;O(nlogn)&lt;/td&gt;
+&lt;td&gt;O(1)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;分治&lt;/td&gt;
+&lt;td&gt;O(nlogn)&lt;/td&gt;
+&lt;td&gt;O(logn)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Boyer-Moore 投票算法&lt;/td&gt;
+&lt;td&gt;O(n)&lt;/td&gt;
+&lt;td&gt;O(1)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&#34;分治&#34;&gt;分治&lt;/h4&gt;
+
+&lt;p&gt;一分为二，求两边众数的次数，很复杂。&lt;/p&gt;
+
+&lt;h4 id=&#34;boyer-moore-投票算法&#34;&gt;Boyer-Moore 投票算法&lt;/h4&gt;
+
+&lt;p&gt;寻找数组中超过一半的数字，这意味着数组中&lt;strong&gt;其他数字出现次数的总和都是比不上这个数字出现的次数&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;即如果把 该众数记为 &lt;code&gt;+1&lt;/code&gt; ，把其他数记为 &lt;code&gt;−1&lt;/code&gt; ，将它们全部加起来，和是大于 0 的。&lt;/p&gt;
+
+&lt;h2 id=&#34;代码&#34;&gt;代码&lt;/h2&gt;
+
+&lt;p&gt;大致操作：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;设置两个变量 candidate 和 count，candidate 用来保存数组中遍历到的某个数字，count 表示当前数字的出现次数，一开始 candidate 保存为数组中的第一个数字，count 为 1&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;遍历整个数组&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;如果数字与之前 candidate 保存的数字相同，则 count 加 1&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;如果数字与之前 candidate 保存的数字不同，则 count 减 1&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;如果出现次数 count 变为 0 ，candidate 进行变化，保存为当前遍历的那个数字，并且同时把 count 重置为 1&lt;/strong&gt;（这里是细节，同时也需要好好理解）&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;遍历完数组中的所有数字即可得到结果&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;参考：&lt;a href=&#34;https://leetcode-cn.com/problems/two-sum/solution/du-le-le-bu-ru-zhong-le-le-ru-he-zhuang-bi-de-q&#34; target=&#34;_blank&#34;&gt;https://leetcode-cn.com/problems/two-sum/solution/du-le-le-bu-ru-zhong-le-le-ru-he-zhuang-bi-de-q&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;class Solution {
+public:
+    int majorityElement(vector&amp;lt;int&amp;gt;&amp;amp; nums) {
+        int candidate = nums[0]; 
+        int counter = 1;
+        for (int i = 1; i &amp;lt; nums.size(); i++)
+        {       
+            if (nums[i] == candidate) {
+                ++counter;
+            } else {
+                --counter;
+            }
+            if (counter == 0) {
+                candidate = nums[i];
+                counter = 1;
+            }
+        }
+        return candidate;
+    }
+};
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;小结&#34;&gt;小结&lt;/h2&gt;
+
+&lt;p&gt;这种题的最优解普通人的很难想到，既简单又高效，这个摩尔有点东西。果然还是得多刷题，不过这道题得注意一下细节。&lt;/p&gt;
+</description>
     </item>
     
     <item>
