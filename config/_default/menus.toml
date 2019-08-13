@@ -19,14 +19,26 @@
   weight = 30
 
 [[main]]
-  name = "Publications"
-  url = "#featured"
-  weight = 40
-
-[[main]]
   name = "Contact"
   url = "#contact"
   weight = 60
+
+[[main]]
+    identifier = "Notes"
+    name = "Notes"
+    weight = 15
+
+[[main]]
+    parent = "Notes"
+    name = "LeetCode-Notes"
+    url = "post/"
+    weight = 1
+
+[[main]]
+    parent = "Notes"
+    name = "Docker-Notes"
+    url = "post/2017-03-05-math-sample"
+    weight = 2
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
