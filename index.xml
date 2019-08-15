@@ -13,23 +13,15 @@
     </image>
     
     <item>
-      <title>Array 数组</title>
-      <link>https://youngwilliamz.github.io/note/leetcode/chapter1-array/</link>
-      <pubDate>Tue, 13 Aug 2019 23:58:26 +0800</pubDate>
-      <guid>https://youngwilliamz.github.io/note/leetcode/chapter1-array/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>169. Majority Element 求众数</title>
-      <link>https://youngwilliamz.github.io/note/leetcode/chapter-array/chapter1-array169/</link>
+      <link>https://youngwilliamz.github.io/note/leetcode/array/169/</link>
       <pubDate>Tue, 13 Aug 2019 23:58:26 +0800</pubDate>
-      <guid>https://youngwilliamz.github.io/note/leetcode/chapter-array/chapter1-array169/</guid>
+      <guid>https://youngwilliamz.github.io/note/leetcode/array/169/</guid>
       <description>
 
 &lt;h2 id=&#34;题目&#34;&gt;题目&lt;/h2&gt;
 
-&lt;p&gt;难度：易&lt;/p&gt;
+&lt;p&gt;难度：&lt;code&gt;易&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;给定一个大小为 n 的数组，找到其中的众数。众数是指在数组中出现次数大于 ⌊ n/2 ⌋ 的元素。&lt;/p&gt;
 
@@ -159,6 +151,14 @@ public:
     </item>
     
     <item>
+      <title>Array 数组</title>
+      <link>https://youngwilliamz.github.io/note/leetcode/chapter1-array/</link>
+      <pubDate>Tue, 13 Aug 2019 23:58:26 +0800</pubDate>
+      <guid>https://youngwilliamz.github.io/note/leetcode/chapter1-array/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Desgin 设计</title>
       <link>https://youngwilliamz.github.io/note/leetcode/chapter7/</link>
       <pubDate>Tue, 13 Aug 2019 23:58:26 +0800</pubDate>
@@ -200,9 +200,9 @@ public:
     
     <item>
       <title>Sorting &amp; Searching 排序与搜索</title>
-      <link>https://youngwilliamz.github.io/note/leetcode/chapter5/</link>
+      <link>https://youngwilliamz.github.io/note/leetcode/chapter5-sorting-searching/</link>
       <pubDate>Tue, 13 Aug 2019 23:58:26 +0800</pubDate>
-      <guid>https://youngwilliamz.github.io/note/leetcode/chapter5/</guid>
+      <guid>https://youngwilliamz.github.io/note/leetcode/chapter5-sorting-searching/</guid>
       <description></description>
     </item>
     
