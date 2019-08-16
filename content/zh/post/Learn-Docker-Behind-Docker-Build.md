@@ -11,6 +11,7 @@ reading_time: true  # Show estimated reading time?
 share: false  # Show social sharing links?
 profile: false  # Show author profile?
 comments: true  # Show comments?
+draft: true
 summary: "我的 Docker 原理探索之路"
 ---
 

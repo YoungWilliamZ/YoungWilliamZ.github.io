@@ -9,14 +9,14 @@ categories: ["学习"]
 date: 2019-08-11T01:49:46+08:00
 
 # Optional external URL for project (replaces project detail page).
-external_link: ""
+external_link: "https://github.com/YoungWilliamZ/Re-docker"
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: ""
-  focal_point: ""
+  caption: Photo from docker website.
+  focal_point: Top
   preview_only: false
 
 # Custom links (optional).
@@ -27,7 +27,7 @@ image:
 #   icon_pack: fab
 #   icon: twitter
 
-url_code: ""
+url_code: "https://github.com/YoungWilliamZ/Re-docker"
 url_pdf: ""
 url_slides: ""
 url_video: ""
