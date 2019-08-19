@@ -5,12 +5,60 @@
     <link>https://youngwilliamz.github.io/tags/</link>
       <atom:link href="https://youngwilliamz.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><lastBuildDate>Tue, 13 Aug 2019 23:20:49 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><lastBuildDate>Tue, 20 Aug 2019 02:10:40 +0800</lastBuildDate>
     <image>
       <url>https://youngwilliamz.github.io/img/icon-192.png</url>
       <title>Tags</title>
       <link>https://youngwilliamz.github.io/tags/</link>
     </image>
+    
+    <item>
+      <title>LINUX</title>
+      <link>https://youngwilliamz.github.io/tags/linux/</link>
+      <pubDate>Tue, 20 Aug 2019 02:10:40 +0800</pubDate>
+      <guid>https://youngwilliamz.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>POSIX</title>
+      <link>https://youngwilliamz.github.io/tags/posix/</link>
+      <pubDate>Tue, 20 Aug 2019 02:10:40 +0800</pubDate>
+      <guid>https://youngwilliamz.github.io/tags/posix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UNIX</title>
+      <link>https://youngwilliamz.github.io/tags/unix/</link>
+      <pubDate>Tue, 20 Aug 2019 02:10:40 +0800</pubDate>
+      <guid>https://youngwilliamz.github.io/tags/unix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TED</title>
+      <link>https://youngwilliamz.github.io/tags/ted/</link>
+      <pubDate>Sat, 17 Aug 2019 02:48:55 +0000</pubDate>
+      <guid>https://youngwilliamz.github.io/tags/ted/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>思维方式</title>
+      <link>https://youngwilliamz.github.io/tags/%E6%80%9D%E7%BB%B4%E6%96%B9%E5%BC%8F/</link>
+      <pubDate>Sat, 17 Aug 2019 02:48:55 +0000</pubDate>
+      <guid>https://youngwilliamz.github.io/tags/%E6%80%9D%E7%BB%B4%E6%96%B9%E5%BC%8F/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>笔记</title>
+      <link>https://youngwilliamz.github.io/tags/%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Sat, 17 Aug 2019 02:48:55 +0000</pubDate>
+      <guid>https://youngwilliamz.github.io/tags/%E7%AC%94%E8%AE%B0/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Blockchain</title>
@@ -29,14 +77,6 @@
     </item>
     
     <item>
-      <title>linux</title>
-      <link>https://youngwilliamz.github.io/tags/linux/</link>
-      <pubDate>Fri, 02 Aug 2019 02:04:09 +0000</pubDate>
-      <guid>https://youngwilliamz.github.io/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>proc</title>
       <link>https://youngwilliamz.github.io/tags/proc/</link>
       <pubDate>Fri, 02 Aug 2019 02:04:09 +0000</pubDate>
@@ -49,14 +89,6 @@
       <link>https://youngwilliamz.github.io/tags/%E5%89%91%E6%8C%87offer/</link>
       <pubDate>Sun, 28 Jul 2019 18:17:25 +0000</pubDate>
       <guid>https://youngwilliamz.github.io/tags/%E5%89%91%E6%8C%87offer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>笔记</title>
-      <link>https://youngwilliamz.github.io/tags/%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Sun, 28 Jul 2019 18:17:25 +0000</pubDate>
-      <guid>https://youngwilliamz.github.io/tags/%E7%AC%94%E8%AE%B0/</guid>
       <description></description>
     </item>
     
@@ -81,14 +113,6 @@
       <link>https://youngwilliamz.github.io/tags/caoz/</link>
       <pubDate>Fri, 28 Dec 2018 21:48:55 +0000</pubDate>
       <guid>https://youngwilliamz.github.io/tags/caoz/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>思维方式</title>
-      <link>https://youngwilliamz.github.io/tags/%E6%80%9D%E7%BB%B4%E6%96%B9%E5%BC%8F/</link>
-      <pubDate>Fri, 28 Dec 2018 21:48:55 +0000</pubDate>
-      <guid>https://youngwilliamz.github.io/tags/%E6%80%9D%E7%BB%B4%E6%96%B9%E5%BC%8F/</guid>
       <description></description>
     </item>
     

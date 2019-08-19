@@ -5,12 +5,41 @@
     <link>https://youngwilliamz.github.io/tags/%E7%AC%94%E8%AE%B0/</link>
       <atom:link href="https://youngwilliamz.github.io/tags/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     <description>笔记</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><lastBuildDate>Sun, 28 Jul 2019 18:17:25 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><lastBuildDate>Sat, 17 Aug 2019 02:48:55 +0000</lastBuildDate>
     <image>
       <url>https://youngwilliamz.github.io/img/icon-192.png</url>
       <title>笔记</title>
       <link>https://youngwilliamz.github.io/tags/%E7%AC%94%E8%AE%B0/</link>
     </image>
+    
+    <item>
+      <title>TED 演讲吸收笔记与总结</title>
+      <link>https://youngwilliamz.github.io/post/ted/</link>
+      <pubDate>Sat, 17 Aug 2019 02:48:55 +0000</pubDate>
+      <guid>https://youngwilliamz.github.io/post/ted/</guid>
+      <description>
+
+&lt;h2 id=&#34;what-do-top-students-do-differently&#34;&gt;What do top students do differently?&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Na8m4GPqA30&#34; target=&#34;_blank&#34;&gt;视频连接&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;重点：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Don&amp;rsquo;t worry about IQ. 获得高分的决定因素不是 IQ，而是方法与努力。而且或者 IQ 是天生的，是你无法控制的。&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t &lt;code&gt;just&lt;/code&gt; aim to work hard. 方法至关重要，只会努力可能还会带来更坏的结果。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;例子：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;通过调查发现，考前大部分考生会一直重复地看书或者笔记，而考高分的那一部分同学则会一直做练习题。因为考试考的不是记忆，而是知识的运用。&lt;/li&gt;
+&lt;li&gt;许多人会指定短期的计划，比如一周的时间表。但实际上很少人能够坚持自己的时间表。通过研究那些能够坚持的人例子，发现他们经常会在每天某一个时间段设置一个自己喜欢的活动，比如打篮球，这样每天过的有盼头。而那些早早放弃的人一般会把时间安排的非常经凑，没有一个时间段是自己喜欢真心喜欢的（娱乐）活动，因此容易厌倦，坚持不下去。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>《剑指Offer》笔记</title>

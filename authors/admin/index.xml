@@ -5,12 +5,85 @@
     <link>https://youngwilliamz.github.io/authors/admin/</link>
       <atom:link href="https://youngwilliamz.github.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     <description>New World</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><lastBuildDate>Tue, 13 Aug 2019 23:20:49 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><lastBuildDate>Tue, 20 Aug 2019 02:10:40 +0800</lastBuildDate>
     <image>
       <url>https://youngwilliamz.github.io/img/icon-192.png</url>
       <title>New World</title>
       <link>https://youngwilliamz.github.io/authors/admin/</link>
     </image>
+    
+    <item>
+      <title>What is POSIX?</title>
+      <link>https://youngwilliamz.github.io/post/what-is-posix/</link>
+      <pubDate>Tue, 20 Aug 2019 02:10:40 +0800</pubDate>
+      <guid>https://youngwilliamz.github.io/post/what-is-posix/</guid>
+      <description>
+
+&lt;h2 id=&#34;定义&#34;&gt;定义&lt;/h2&gt;
+
+&lt;p&gt;可移植操作系统接口（英语：&lt;code&gt;Portable Operating System Interface&lt;/code&gt;，缩写为&lt;code&gt;POSIX&lt;/code&gt;）是IEEE为要在各种 &lt;code&gt;UNIX&lt;/code&gt; 操作系统上运行软件，而定义 API 的一系列互相关联的&lt;strong&gt;标准的总称&lt;/strong&gt;，其正式称呼为&lt;code&gt;IEEE Std 1003&lt;/code&gt;，而国际标准名称为 &lt;code&gt;ISO/IEC 9945&lt;/code&gt;。&lt;/p&gt;
+
+&lt;h2 id=&#34;来源&#34;&gt;来源&lt;/h2&gt;
+
+&lt;p&gt;此标准源于一个大约开始于1985年的项目。&lt;/p&gt;
+
+&lt;p&gt;POSIX 这个名称是由理查德·斯托曼（RMS）应IEEE的要求而提议的一个易于记忆的名称。&lt;/p&gt;
+
+&lt;p&gt;它基本上是 Portable Operating System Interface（可移植操作系统接口）的缩写，而X则表明其对Unix API的传承。&lt;/p&gt;
+
+&lt;h2 id=&#34;组成&#34;&gt;组成&lt;/h2&gt;
+
+&lt;p&gt;当前的POSIX主要分为四个部分：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Base Definitions&lt;/li&gt;
+&lt;li&gt;System Interfaces&lt;/li&gt;
+&lt;li&gt;Shell and Utilities&lt;/li&gt;
+&lt;li&gt;Rationale&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;posix-操作系统&#34;&gt;POSIX 操作系统&lt;/h2&gt;
+
+&lt;p&gt;正式认证的包括 macOS 等。&lt;/p&gt;
+
+&lt;p&gt;未得到正式认证，但基本符合 POSIX 标准的有 Android、FreeBSD 等。&lt;/p&gt;
+
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/POSIX&#34; target=&#34;_blank&#34;&gt;Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TED 演讲吸收笔记与总结</title>
+      <link>https://youngwilliamz.github.io/post/ted/</link>
+      <pubDate>Sat, 17 Aug 2019 02:48:55 +0000</pubDate>
+      <guid>https://youngwilliamz.github.io/post/ted/</guid>
+      <description>
+
+&lt;h2 id=&#34;what-do-top-students-do-differently&#34;&gt;What do top students do differently?&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Na8m4GPqA30&#34; target=&#34;_blank&#34;&gt;视频连接&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;重点：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Don&amp;rsquo;t worry about IQ. 获得高分的决定因素不是 IQ，而是方法与努力。而且或者 IQ 是天生的，是你无法控制的。&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t &lt;code&gt;just&lt;/code&gt; aim to work hard. 方法至关重要，只会努力可能还会带来更坏的结果。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;例子：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;通过调查发现，考前大部分考生会一直重复地看书或者笔记，而考高分的那一部分同学则会一直做练习题。因为考试考的不是记忆，而是知识的运用。&lt;/li&gt;
+&lt;li&gt;许多人会指定短期的计划，比如一周的时间表。但实际上很少人能够坚持自己的时间表。通过研究那些能够坚持的人例子，发现他们经常会在每天某一个时间段设置一个自己喜欢的活动，比如打篮球，这样每天过的有盼头。而那些早早放弃的人一般会把时间安排的非常经凑，没有一个时间段是自己喜欢真心喜欢的（娱乐）活动，因此容易厌倦，坚持不下去。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>OpenCredit</title>
@@ -1117,7 +1190,7 @@ npm install
     <item>
       <title></title>
       <link>https://youngwilliamz.github.io/authors/admin/</link>
-      <pubDate>Tue, 13 Aug 2019 23:20:49 +0800</pubDate>
+      <pubDate>Tue, 20 Aug 2019 02:10:40 +0800</pubDate>
       <guid>https://youngwilliamz.github.io/authors/admin/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;初出茅庐开发仔&lt;/li&gt;
