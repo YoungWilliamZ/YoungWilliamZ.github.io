@@ -13,14 +13,6 @@
     </image>
     
     <item>
-      <title>LINUX</title>
-      <link>https://youngwilliamz.github.io/tags/linux/</link>
-      <pubDate>Tue, 20 Aug 2019 02:10:40 +0800</pubDate>
-      <guid>https://youngwilliamz.github.io/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>POSIX</title>
       <link>https://youngwilliamz.github.io/tags/posix/</link>
       <pubDate>Tue, 20 Aug 2019 02:10:40 +0800</pubDate>
@@ -33,6 +25,14 @@
       <link>https://youngwilliamz.github.io/tags/unix/</link>
       <pubDate>Tue, 20 Aug 2019 02:10:40 +0800</pubDate>
       <guid>https://youngwilliamz.github.io/tags/unix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://youngwilliamz.github.io/tags/linux/</link>
+      <pubDate>Tue, 20 Aug 2019 02:10:40 +0800</pubDate>
+      <guid>https://youngwilliamz.github.io/tags/linux/</guid>
       <description></description>
     </item>
     

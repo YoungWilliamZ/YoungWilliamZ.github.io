@@ -3,6 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://youngwilliamz.github.io/note/leetcode/array/26/</loc>
+    <lastmod>2019-08-22T23:58:26+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://youngwilliamz.github.io/</loc>
+    <lastmod>2019-08-22T23:58:26+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://youngwilliamz.github.io/authors/admin/</loc>
     <lastmod>2019-08-20T02:10:40+08:00</lastmod>
   </url>
@@ -15,18 +26,6 @@
   
   <url>
     <loc>https://youngwilliamz.github.io/categories/</loc>
-    <lastmod>2019-08-20T02:10:40+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://youngwilliamz.github.io/tags/linux/</loc>
-    <lastmod>2019-08-20T02:10:40+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://youngwilliamz.github.io/</loc>
     <lastmod>2019-08-20T02:10:40+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -52,6 +51,12 @@
   <url>
     <loc>https://youngwilliamz.github.io/post/what-is-posix/</loc>
     <lastmod>2019-08-20T02:10:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://youngwilliamz.github.io/tags/linux/</loc>
+    <lastmod>2019-08-20T02:10:40+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -114,7 +119,7 @@
   </url>
   
   <url>
-    <loc>https://youngwilliamz.github.io/note/leetcode/chapter3/</loc>
+    <loc>https://youngwilliamz.github.io/note/leetcode/chapter3-linked-list/</loc>
     <lastmod>2019-08-13T23:58:26+08:00</lastmod>
   </url>
   
@@ -278,13 +283,13 @@
   </url>
   
   <url>
-    <loc>https://youngwilliamz.github.io/categories/markdown/</loc>
+    <loc>https://youngwilliamz.github.io/tags/markdown/</loc>
     <lastmod>2018-07-10T15:29:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://youngwilliamz.github.io/tags/markdown/</loc>
+    <loc>https://youngwilliamz.github.io/categories/markdown/</loc>
     <lastmod>2018-07-10T15:29:00+00:00</lastmod>
     <priority>0</priority>
   </url>

@@ -13,6 +13,69 @@
     </image>
     
     <item>
+      <title>26. Remove Duplicates from Sorted Array 消去重复数</title>
+      <link>https://youngwilliamz.github.io/note/leetcode/array/26/</link>
+      <pubDate>Thu, 22 Aug 2019 23:58:26 +0800</pubDate>
+      <guid>https://youngwilliamz.github.io/note/leetcode/array/26/</guid>
+      <description>
+
+&lt;h2 id=&#34;题目&#34;&gt;题目&lt;/h2&gt;
+
+&lt;p&gt;难度：&lt;code&gt;易&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;传送门：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://leetcode.com/problems/remove-duplicates-from-sorted-array/&#34; target=&#34;_blank&#34;&gt;English&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/&#34; target=&#34;_blank&#34;&gt;中文&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;思路&#34;&gt;思路&lt;/h2&gt;
+
+&lt;p&gt;一开始没有仔细看题，以为只要求出消去重复数之后数组的长度就行了，没看到还要求最后的数组。于是用了很笨的方法。&lt;/p&gt;
+
+&lt;p&gt;后来看了解答，双指针，很快就出来了。&lt;/p&gt;
+
+&lt;p&gt;不过，但是还是卡了一下，因为没有判断数组为空的情况。以后得引起注意啊。&lt;/p&gt;
+
+&lt;h2 id=&#34;代码&#34;&gt;代码&lt;/h2&gt;
+
+&lt;p&gt;时间复杂度：O(n)&lt;/p&gt;
+
+&lt;p&gt;空间复杂度：O(1)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution {
+public:
+    int removeDuplicates(vector&amp;lt;int&amp;gt;&amp;amp; nums) {
+        if (nums.size() == 0) {
+            return 0;
+        }
+        
+        int i = 0;
+        for (int j = 1; j &amp;lt; nums.size(); j++) {
+            if (nums[i] != nums[j]) {
+                i++;
+                nums[i] = nums[j];
+            }
+        }
+        return i + 1;
+    }
+};
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;结果&#34;&gt;结果&lt;/h2&gt;
+
+&lt;p&gt;Runtime: 24 ms, faster than 59.96% of C++ online submissions&amp;hellip;.&lt;/p&gt;
+
+&lt;p&gt;Memory Usage: 9.9 MB, less than 83.75% of C++ online submissions&amp;hellip;.&lt;/p&gt;
+
+&lt;h2 id=&#34;可能优化的点&#34;&gt;可能优化的点&lt;/h2&gt;
+
+&lt;p&gt;运行时间还是太慢，但一时找不到优化的点。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>169. Majority Element 求众数</title>
       <link>https://youngwilliamz.github.io/note/leetcode/array/169/</link>
       <pubDate>Tue, 13 Aug 2019 23:58:26 +0800</pubDate>
@@ -176,9 +239,9 @@ public:
     
     <item>
       <title>Linked List 链表</title>
-      <link>https://youngwilliamz.github.io/note/leetcode/chapter3/</link>
+      <link>https://youngwilliamz.github.io/note/leetcode/chapter3-linked-list/</link>
       <pubDate>Tue, 13 Aug 2019 23:58:26 +0800</pubDate>
-      <guid>https://youngwilliamz.github.io/note/leetcode/chapter3/</guid>
+      <guid>https://youngwilliamz.github.io/note/leetcode/chapter3-linked-list/</guid>
       <description></description>
     </item>
     

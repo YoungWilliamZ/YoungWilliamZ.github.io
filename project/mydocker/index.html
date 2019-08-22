@@ -673,6 +673,39 @@
     
 <section id="comments">
   
+    
+<div>
+    <aside id=comments>
+    <div id="gitalkContainer"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+    <script>
+        var gitalk = new Gitalk({
+            clientID: "d6e5e76d4a62818bb13b",
+            clientSecret: "4ca45620cd38f36e254fda2ea288ddcde569409e",
+            repo: "Gitment_Store",
+            owner: "youngwilliamz",
+            admin: ["youngwilliamz"],
+            id: '2019-08-11 01:49:46 \x2b0800 CST',      
+            labels: ["Comments"],
+            distractionFreeMode:  false ,  
+            pagerDirection: "last",
+            createIssueManually:  false ,
+            enableHotKey:  true ,
+            flipMoveOptions: {
+                staggerDelayBy:  null ,
+                appearAnimation:  null ,
+                enterAnimation:  null ,
+                leaveAnimation:  null ,
+            },
+        });
+        gitalk.render('gitalkContainer');
+    </script>
+</aside>
+</div>
+
+  
 </section>
 
 
