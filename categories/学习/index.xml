@@ -5,12 +5,183 @@
     <link>https://youngwilliamz.github.io/categories/%E5%AD%A6%E4%B9%A0/</link>
       <atom:link href="https://youngwilliamz.github.io/categories/%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
     <description>学习</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><lastBuildDate>Tue, 20 Aug 2019 02:10:40 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><lastBuildDate>Sun, 01 Sep 2019 22:40:06 +0800</lastBuildDate>
     <image>
       <url>https://youngwilliamz.github.io/img/icon-192.png</url>
       <title>学习</title>
       <link>https://youngwilliamz.github.io/categories/%E5%AD%A6%E4%B9%A0/</link>
     </image>
+    
+    <item>
+      <title>CSAPP 笔记 第一章《计算机系统漫游》</title>
+      <link>https://youngwilliamz.github.io/post/csapp-note-1/</link>
+      <pubDate>Sun, 01 Sep 2019 22:40:06 +0800</pubDate>
+      <guid>https://youngwilliamz.github.io/post/csapp-note-1/</guid>
+      <description>
+
+&lt;p&gt;最近开始忙秋招，「码农翻身」公众号及同名书的作者老刘在知识星球里举办了读《CSAPP》的活动，之前一直没啃下来，希望能够借此机会逼自己一把，把这本厚厚的经典看完，并好好写笔记。&lt;/p&gt;
+
+&lt;p&gt;计算机系统 = 硬件 + 系统软件&lt;/p&gt;
+
+&lt;p&gt;作者如是说：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;“如果你全力投身学习本书中的概念，完全理解底 层计算机系统以及它对应用程序的影响，那么你会步上成为为数不多的“大牛&amp;rdquo;的道路。”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;看完这本书你将会学到：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;实践技巧&lt;/li&gt;
+&lt;li&gt;优化代码小窍门&lt;/li&gt;
+&lt;li&gt;了解编译器如何实现&lt;/li&gt;
+&lt;li&gt;如何识别和避免连接时那些令人讨厌的错误&lt;/li&gt;
+&lt;li&gt;如何编写自己的 Unix shell&lt;/li&gt;
+&lt;li&gt;认识并发的陷阱&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;1-信息就是-位-上下文&#34;&gt;1. 信息就是「位+上下文」&lt;/h2&gt;
+
+&lt;p&gt;hello 程序生命周期开端：hello.c 源文件&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;由2进制的 ASCII 编码后的字符组成&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;文本文件：只有ASCII字符构成的文件。如：hello.c&lt;/p&gt;
+
+&lt;p&gt;二进制文件：非文本文件。&lt;/p&gt;
+
+&lt;p&gt;因此，在计算机的世界中，所有的信息都是由一串比特表示。&lt;/p&gt;
+
+&lt;p&gt;区分不同数据对象的唯一方法是我们读到这些数据对象时的上下文。&lt;/p&gt;
+
+&lt;h2 id=&#34;2-程序被其他程序翻译成不同的格式&#34;&gt;2. 程序被其他程序翻译成不同的格式&lt;/h2&gt;
+
+&lt;p&gt;hello 程序生命周期：可执行文件，或者叫「目标程序」&lt;/p&gt;
+
+&lt;p&gt;编译器驱动程序：能够将「源文件」转化「目标文件」，如&lt;code&gt;gcc&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;例子：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;linux&amp;gt; gee -o hello hello.c
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这一过程又叫翻译，可分为四个阶段：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;./image/CSAPP1-3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;执行这四个阶段的程序一起构成「编译系统」(compilation system)。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;预处理阶段：修改源文件，得到另一个 C 程序。
+
+&lt;ul&gt;
+&lt;li&gt;删除部分#开头的命令&lt;/li&gt;
+&lt;li&gt;插入一些系统头文件，如&lt;code&gt;stdio.h&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;编译阶段：翻译成汇编文本文件。&lt;/li&gt;
+&lt;li&gt;汇编阶段：将汇编文本文件翻译成机器语言指令，并打包成「可重定位目标程序」(relocatable object program)的格式。&lt;/li&gt;
+&lt;li&gt;链接阶段：合并一些调用的头文件，得到最终的可执行文件。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;3-了解编译系统如何工作&#34;&gt;3. 了解编译系统如何工作&lt;/h2&gt;
+
+&lt;p&gt;程序员必须知道编译系统如何工作的重要原因：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;优化程序性能&lt;/li&gt;
+&lt;li&gt;理解连接时出现的错误&lt;/li&gt;
+&lt;li&gt;避免安全漏洞&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;4-处理器读并解释储存在内存中的指令&#34;&gt;4. 处理器读并解释储存在内存中的指令&lt;/h2&gt;
+
+&lt;p&gt;系统的硬件：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;总线（BUS）
+
+&lt;ul&gt;
+&lt;li&gt;贯穿整个系统的一组电子管道&lt;/li&gt;
+&lt;li&gt;通常总线被设计成传送定长的字节块，也就是字 (word)。字长是一个基本的系统参数，一般为 4 个字节( 32 位）或者 8 个字节（64位）。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;I/O设备
+
+&lt;ul&gt;
+&lt;li&gt;系统与外部世界的联系通道。&lt;/li&gt;
+&lt;li&gt;每个I/O设备都通过一个控制器或适配器与I/O总线相连。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;主存(Main Memory)
+
+&lt;ul&gt;
+&lt;li&gt;临时存储设备&lt;/li&gt;
+&lt;li&gt;物理上：动态随机存取储存器(DRAM)。&lt;/li&gt;
+&lt;li&gt;逻辑上：线性字节数组，每个字节都有其唯一的地址。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;处理器（CPU）
+
+&lt;ul&gt;
+&lt;li&gt;解释(或执行)存储在主存中指令的引擎&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;运行 hello 文件：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;在 shell 中输入&lt;code&gt;./hello&lt;/code&gt; 之后，shell 程序将字符逐一读入寄存器，再把它放入内存。&lt;/li&gt;
+&lt;li&gt;回车后，shell知道输入完成，开始执行一系列指令来加载可执行的 hello 文件。&lt;/li&gt;
+&lt;li&gt;这些指令将 hello 目标文件从磁盘复制到内存中。&lt;/li&gt;
+&lt;li&gt;处理器将目标文件中的机器语言指令复制到寄存器中，开始解析里面的指令并执行。&lt;/li&gt;
+&lt;li&gt;数据被现实在屏幕上。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;注：利用 DMA 技术可以不通过处理器而直接从磁盘到达主存。&lt;/p&gt;
+
+&lt;h2 id=&#34;5-高速缓存至关重要&#34;&gt;5. 高速缓存至关重要&lt;/h2&gt;
+
+&lt;p&gt;上一个运行 hello 程序的例子中，信息需要依次经过：磁盘，主存，寄存器。&lt;/p&gt;
+
+&lt;p&gt;这样会造成开销，减慢程序。&lt;/p&gt;
+
+&lt;p&gt;因此，需要使得这些复制操作尽可能快的完成。&lt;/p&gt;
+
+&lt;h2 id=&#34;6-储存设备形成层次结构&#34;&gt;6 储存设备形成层次结构&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;./image/CSAPP1-9.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;7-操作系统管理硬件&#34;&gt;7 操作系统管理硬件&lt;/h2&gt;
+
+&lt;p&gt;操作系统：应用程序和硬件之间插入的一层软件。&lt;/p&gt;
+
+&lt;p&gt;操作系统两大基本功能：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;防止硬件被失控的应用程序滥用&lt;/li&gt;
+&lt;li&gt;向应用程序提供简单一致的机制来控制复杂而又通常大不相同的低级硬件设备。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;操作系统提供三种基本的抽象：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;文件是对I/O设备的抽象&lt;/li&gt;
+&lt;li&gt;虚拟内存是对主存和磁盘的抽象&lt;/li&gt;
+&lt;li&gt;进程是处理器、主存和I/O设备的抽象&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;8-系统之间利用网络通信&#34;&gt;8 系统之间利用网络通信&lt;/h2&gt;
+
+&lt;p&gt;网络可视为一个I/O设备。&lt;/p&gt;
+
+&lt;h2 id=&#34;9-重要主题&#34;&gt;9 重要主题&lt;/h2&gt;
+
+&lt;p&gt;Amdahl定律：&lt;/p&gt;
+
+&lt;p&gt;并发和并行&lt;/p&gt;
+
+&lt;p&gt;计算机抽象&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>What is POSIX?</title>
@@ -82,6 +253,39 @@
 &lt;li&gt;通过调查发现，考前大部分考生会一直重复地看书或者笔记，而考高分的那一部分同学则会一直做练习题。因为考试考的不是记忆，而是知识的运用。&lt;/li&gt;
 &lt;li&gt;许多人会指定短期的计划，比如一周的时间表。但实际上很少人能够坚持自己的时间表。通过研究那些能够坚持的人例子，发现他们经常会在每天某一个时间段设置一个自己喜欢的活动，比如打篮球，这样每天过的有盼头。而那些早早放弃的人一般会把时间安排的非常经凑，没有一个时间段是自己喜欢真心喜欢的（娱乐）活动，因此容易厌倦，坚持不下去。&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h2 id=&#34;how-to-learn-everything-jsoh-kaufman-tedxcsu&#34;&gt;How to learn everything | Jsoh Kaufman | TEDxCSU&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;问题：人到中年，突然意识到没有自由时间去学习了。&lt;/p&gt;
+
+&lt;p&gt;然后讲者发现：Florida State university 的一位教授，K. Anders Ericsson 最先提出 1万小时理论，即花费1万小时去学习一个新知识，最终能够成为这个领域的专家。随后还有一本书专门讲 1w 小时理论。&lt;/p&gt;
+
+&lt;p&gt;但是，讲者时间有限，没有1w小时慢慢学啊。&lt;/p&gt;
+
+&lt;p&gt;学习是有曲线的，前期只要一点点练习就可以达到相对高的高度。&lt;/p&gt;
+
+&lt;p&gt;讲者研究出来的最有效的时间是 &lt;strong&gt;20 小时&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;四步学习法：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Deconstruct the skill 分解技能/知识点。&lt;/li&gt;
+&lt;li&gt;Learn enough to self-correct&lt;/li&gt;
+&lt;li&gt;Remove the practice barrier 降低学习门槛&lt;/li&gt;
+&lt;li&gt;Practice at least 20 hours 最少练习/学习 20 小时&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;时间分段：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;前2小时，保证所需要的东西齐全。&lt;/li&gt;
+&lt;li&gt;开始练习&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;现在阻止你的不是学习的难度了，而是你想学什么？What do you want to learn？&lt;/p&gt;
 </description>
     </item>
     
