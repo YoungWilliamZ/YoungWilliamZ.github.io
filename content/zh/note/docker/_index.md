@@ -2,8 +2,8 @@
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
 title: Overview
-linktitle: docker
-summary: ？？？
+linktitle: Docker
+summary: 万事开头难，Docker也不难。
 date: 2019-08-13T23:58:26+08:00
 lastmod: 2019-08-13T23:58:26+08:00
 draft: false  # Is this a draft? true/false
