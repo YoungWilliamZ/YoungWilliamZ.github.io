@@ -42,7 +42,7 @@
 
 &lt;h2 id=&#34;1-信息就是-位-上下文&#34;&gt;1. 信息就是「位+上下文」&lt;/h2&gt;
 
-&lt;p&gt;hello 程序生命周期开端：hello.c 源文件&lt;/p&gt;
+&lt;p&gt;hello 程序生命周期开端：hel lo.c 源文件&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;由2进制的 ASCII 编码后的字符组成&lt;/li&gt;
