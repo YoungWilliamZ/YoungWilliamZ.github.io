@@ -1,5 +1,5 @@
 ---
-# Documentation: https://sourcethemes.com/academic/docs/managing-content/
+ # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
 title: "CSAPP 笔记 第一章《计算机系统漫游》"
 subtitle: "《深入理解计算机》学计算机必读书目"
@@ -59,7 +59,7 @@ projects: []
 
 ## 1. 信息就是「位+上下文」
 
-hello 程序生命周期开端：hello.c 源文件
+hello 程序生命周期开端：hel lo.c 源文件
 
 * 由2进制的 ASCII 编码后的字符组成
 
