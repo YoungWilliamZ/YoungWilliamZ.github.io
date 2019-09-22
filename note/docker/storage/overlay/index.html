@@ -28,10 +28,12 @@
   
     
   
-  <meta name="description" content="万事开头难，Docker也不难。">
+  <meta name="description" content="前言 最近需要把之前做的 openCredit 项目重新部署一下，发现好久不用的 aliyun 云服务器的磁盘已经快满了。
+使用 df -h 命令一看：
+➜ ~ df -h Filesystem Size Used Avail Use% Mounted on /dev/vda1 40G 37G 820M 98% / devtmpfs 910M 0 910M 0% /dev tmpfs 920M 0 920M 0% /dev/shm tmpfs 920M 716K 919M 1% /run tmpfs 920M 0 920M 0% /sys/fs/cgroup overlay 40G 37G 820M 98% /var/lib/docker/overlay2/55aedbcf20a0380e7e03075a7a97a59869ba9c61848a28c3eb8dacc6df00e01d/merged overlay 40G 37G 820M 98% /var/lib/docker/overlay2/7bc1cd18dea024f05c9f4db97a2d144ffb72da89bbe2e20d1804766f38689900/merged overlay 40G 37G 820M 98% /var/lib/docker/overlay2/095e388787b7a9c59e79531e509f9dd803d61e328c650836affa7dd110d4052f/merged shm 64M 0 64M 0% /var/lib/docker/containers/8fd937ba70f9864088e0f6a88a791ff2d1768a38c0acc68a7a51e9ca9b5dbd86/mounts/shm shm 64M 0 64M 0% /var/lib/docker/containers/33dfef9c8bd1382aad26944ba6dcd946cbb9457588fa1fb81c14bd3261a024f2/mounts/shm shm 64M 0 64M 0% /var/lib/docker/containers/937a5222d4a6143655844d881a3a2d7f4b42bf50c312c257b43e31d5e024e14c/mounts/shm tmpfs 184M 0 184M 0% /run/user/0  基本都是被 Docker 占用了，37G/40G。好家伙，这个 overlay 文件系统竟然这么大，看我怎么治你。">
 
   
-  <link rel="alternate" hreflang="zh-Hans" href="https://youngwilliamz.github.io/note/docker/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://youngwilliamz.github.io/note/docker/storage/overlay/">
 
   
 
@@ -107,14 +109,12 @@
   
 
   
-  <link rel="alternate" href="/note/docker/index.xml" type="application/rss+xml" title="New World">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://youngwilliamz.github.io/note/docker/">
+  <link rel="canonical" href="https://youngwilliamz.github.io/note/docker/storage/overlay/">
 
   
   
@@ -127,12 +127,17 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="New World">
-  <meta property="og:url" content="https://youngwilliamz.github.io/note/docker/">
-  <meta property="og:title" content="Overview | New World">
-  <meta property="og:description" content="万事开头难，Docker也不难。"><meta property="og:image" content="https://youngwilliamz.github.io/img/icon-192.png">
+  <meta property="og:url" content="https://youngwilliamz.github.io/note/docker/storage/overlay/">
+  <meta property="og:title" content="Overlay 文件系统 | New World">
+  <meta property="og:description" content="前言 最近需要把之前做的 openCredit 项目重新部署一下，发现好久不用的 aliyun 云服务器的磁盘已经快满了。
+使用 df -h 命令一看：
+➜ ~ df -h Filesystem Size Used Avail Use% Mounted on /dev/vda1 40G 37G 820M 98% / devtmpfs 910M 0 910M 0% /dev tmpfs 920M 0 920M 0% /dev/shm tmpfs 920M 716K 919M 1% /run tmpfs 920M 0 920M 0% /sys/fs/cgroup overlay 40G 37G 820M 98% /var/lib/docker/overlay2/55aedbcf20a0380e7e03075a7a97a59869ba9c61848a28c3eb8dacc6df00e01d/merged overlay 40G 37G 820M 98% /var/lib/docker/overlay2/7bc1cd18dea024f05c9f4db97a2d144ffb72da89bbe2e20d1804766f38689900/merged overlay 40G 37G 820M 98% /var/lib/docker/overlay2/095e388787b7a9c59e79531e509f9dd803d61e328c650836affa7dd110d4052f/merged shm 64M 0 64M 0% /var/lib/docker/containers/8fd937ba70f9864088e0f6a88a791ff2d1768a38c0acc68a7a51e9ca9b5dbd86/mounts/shm shm 64M 0 64M 0% /var/lib/docker/containers/33dfef9c8bd1382aad26944ba6dcd946cbb9457588fa1fb81c14bd3261a024f2/mounts/shm shm 64M 0 64M 0% /var/lib/docker/containers/937a5222d4a6143655844d881a3a2d7f4b42bf50c312c257b43e31d5e024e14c/mounts/shm tmpfs 184M 0 184M 0% /run/user/0  基本都是被 Docker 占用了，37G/40G。好家伙，这个 overlay 文件系统竟然这么大，看我怎么治你。"><meta property="og:image" content="https://youngwilliamz.github.io/img/icon-192.png">
   <meta property="twitter:image" content="https://youngwilliamz.github.io/img/icon-192.png"><meta property="og:locale" content="zh-Hans">
   
-    <meta property="og:updated_time" content="2019-08-13T23:58:26&#43;08:00">
+    
+      <meta property="article:published_time" content="2019-09-14T16:33:30&#43;08:00">
+    
+    <meta property="article:modified_time" content="2019-09-14T16:33:30&#43;08:00">
   
 
   
@@ -144,7 +149,7 @@
 
 
 
-  <title>Overview | New World</title>
+  <title>Overlay 文件系统 | New World</title>
 
 </head>
 
@@ -362,7 +367,7 @@
 <nav class="collapse docs-links" id="docs-nav">
   
   
-  <div class="docs-toc-item active">
+  <div class="docs-toc-item">
     <a class="docs-toc-link" href="/note/docker/">Overview</a>
 
   </div>
@@ -371,7 +376,7 @@
     <a class="docs-toc-link" href="/note/docker/storage/">Storage 存储相关</a>
     <ul class="nav docs-sidenav">
       
-      <li >
+      <li class="active">
         <a href="/note/docker/storage/overlay/">Overlay</a>
       </li>
       
@@ -391,7 +396,24 @@
         <li><a href="#" id="back_to_top" class="docs-toc-title">在本页</a></li>
       </ul>
 
-      
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#前言">前言</a></li>
+<li><a href="#overlay-是什么">Overlay 是什么</a></li>
+<li><a href="#overlay-在-docker-中的作用">Overlay 在 Docker 中的作用</a>
+<ul>
+<li><a href="#那什么是-storage-drivers-呢">那什么是 <code>Storage drivers</code> 呢？</a></li>
+</ul></li>
+<li><a href="#overlay-与-overlay2-的区别">Overlay 与 Overlay2 的区别</a></li>
+<li><a href="#overlay-如何工作的">Overlay 如何工作的</a></li>
+<li><a href="#overlay2-如何工作的">Overlay2 如何工作的</a></li>
+<li><a href="#杂谈-overlay-的缔造者">杂谈：Overlay 的缔造者</a></li>
+<li><a href="#参考">参考</a></li>
+</ul></li>
+</ul>
+</nav>
 
       
     </div>
@@ -402,12 +424,98 @@
       <article class="article" itemscope itemtype="http://schema.org/Article">
 
         <div class="docs-article-container">
-          <h1 itemprop="name">Overview</h1>
+          <h1 itemprop="name">Overlay 文件系统</h1>
 
           <div class="article-style" itemprop="articleBody">
-            <p>自从 2018 年的那个暑假第一次接触 Docker 以来，几乎每个项目几乎都用到了 Docker。</p>
+            
 
-<p>虽然我对 Docker 如此感兴趣，但一直没有深入去了解 Docker 底层的实现，因此我希望能够通过这本笔记，记录一下我学习 Docker 的过程以及最近打算手撸一个简易版本 Docker。</p>
+<h2 id="前言">前言</h2>
+
+<p>最近需要把之前做的 <a href="https://github.com/YoungWilliamZ/openCredit" target="_blank">openCredit</a> 项目重新部署一下，发现好久不用的 <code>aliyun</code> 云服务器的磁盘已经快满了。</p>
+
+<p>使用 <code>df -h</code> 命令一看：</p>
+
+<pre><code class="language-bash">➜  ~ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/vda1        40G   37G  820M  98% /
+devtmpfs        910M     0  910M   0% /dev
+tmpfs           920M     0  920M   0% /dev/shm
+tmpfs           920M  716K  919M   1% /run
+tmpfs           920M     0  920M   0% /sys/fs/cgroup
+overlay          40G   37G  820M  98% /var/lib/docker/overlay2/55aedbcf20a0380e7e03075a7a97a59869ba9c61848a28c3eb8dacc6df00e01d/merged
+overlay          40G   37G  820M  98% /var/lib/docker/overlay2/7bc1cd18dea024f05c9f4db97a2d144ffb72da89bbe2e20d1804766f38689900/merged
+overlay          40G   37G  820M  98% /var/lib/docker/overlay2/095e388787b7a9c59e79531e509f9dd803d61e328c650836affa7dd110d4052f/merged
+shm              64M     0   64M   0% /var/lib/docker/containers/8fd937ba70f9864088e0f6a88a791ff2d1768a38c0acc68a7a51e9ca9b5dbd86/mounts/shm
+shm              64M     0   64M   0% /var/lib/docker/containers/33dfef9c8bd1382aad26944ba6dcd946cbb9457588fa1fb81c14bd3261a024f2/mounts/shm
+shm              64M     0   64M   0% /var/lib/docker/containers/937a5222d4a6143655844d881a3a2d7f4b42bf50c312c257b43e31d5e024e14c/mounts/shm
+tmpfs           184M     0  184M   0% /run/user/0
+</code></pre>
+
+<p>基本都是被 Docker 占用了，37G/40G。好家伙，这个 <code>overlay</code> 文件系统竟然这么大，看我怎么治你。</p>
+
+<h2 id="overlay-是什么">Overlay 是什么</h2>
+
+<blockquote>
+<p>OverlayFS is a modern union filesystem that is similar to AUFS, but faster and with a simpler implementation.</p>
+</blockquote>
+
+<p><code>OverlayFS</code> 是一个现代化的联合挂载文件系统，跟 <code>AUFS</code> 很像。</p>
+
+<p>什么是联合挂载呢？</p>
+
+<p>它能够将两个文件目录融合成一个，既：两个目录经过联合挂载之后，用户看到只有一个目录。</p>
+
+<p><code>OverlayFS</code> 于2014年被合并到Linux内核的3.18版本。其4.0版本带来了必要的改进，例如Docker中所需的overlay2存储驱动程序。</p>
+
+<p>OverlayFS呈现其中一个所产生的对象（如果有），“上层”文件系统优先。OverlayFS与其他覆盖型文件系统不同，OverlayFS合并的目录子树不一定是来自不同的文件系统。</p>
+
+<p>OverlayFS支持在上层文件系统中的 <code>whiteout</code> 和 <code>opaque</code> 目录，以允许删除文件和目录。</p>
+
+<h2 id="overlay-在-docker-中的作用">Overlay 在 Docker 中的作用</h2>
+
+<p>Overlay 文件系统是 Docker 中的一种 <code>storage driver</code>，同时 <code>overlay2</code> 也是官方推荐的联合挂载文件系统。</p>
+
+<h3 id="那什么是-storage-drivers-呢">那什么是 <code>Storage drivers</code> 呢？</h3>
+
+<blockquote>
+<p>Storage drivers allow you to create data in the writable layer of your container. The files won’t be persisted after the container is deleted, and both read and write speeds are lower than native file system performance.</p>
+</blockquote>
+
+<p><code>Storage drivers</code>，或者说 <code>存储驱动</code>（我自己翻译的，不知道对不对哈），允许在容器中创建一层可写的数据层。容器一旦被删除，这一层可写数据层也被删除，而且这层数据层的读写速度要比原生的的文件系统要慢。</p>
+
+<p>除了 <code>overlay2</code> 之外，Docker 还支持其他的 <code>storage drivers</code>:</p>
+
+<ul>
+<li><code>aufs</code>(Another Union File System)，在老系统不支持 <code>overlay2</code> 时，<code>aufs</code> 是官方推荐的，包括Docker 18.06及以下的版本。</li>
+<li><code>devicemapper</code></li>
+<li><code>btrfs</code> and <code>zfs</code></li>
+<li><code>vfs</code></li>
+</ul>
+
+<h2 id="overlay-与-overlay2-的区别">Overlay 与 Overlay2 的区别</h2>
+
+<blockquote>
+<p>If you use OverlayFS, use the overlay2 driver rather than the overlay driver, because it is more efficient in terms of inode utilization.</p>
+</blockquote>
+
+<p>使用 <code>OverlayFS</code> 最好使用 <code>overlay2</code>， 因为它对 <code>inode</code> 的使用更加有效。（这里的 <code>inode</code> 是某些文件系统一种记录文件的方式，可以把它当作一个数据结构，具体可以自己查阅相关资料。）</p>
+
+<h2 id="overlay-如何工作的">Overlay 如何工作的</h2>
+
+<blockquote>
+<p>OverlayFS layers two directories on a single Linux host and presents them as a single directory. These directories are called layers and the unification process is referred to as a union mount. OverlayFS refers to the lower directory as lowerdir and the upper directory a upperdir. The unified view is exposed through its own directory called merged.</p>
+</blockquote>
+
+<p>OverlayFS 可以将两个目录「层化」（layer，注意这里是动词），并对外展示为一个单独的目录。这些被「层化」的目录叫做「层」（layers，注意这里是名词），这个统一目录的过程就叫做「union mount」（联合挂载）。</p>
+
+<h2 id="overlay2-如何工作的">Overlay2 如何工作的</h2>
+
+<h2 id="杂谈-overlay-的缔造者">杂谈：Overlay 的缔造者</h2>
+
+<h2 id="参考">参考</h2>
+
+<p>1.<a href="https://docs.docker.com/storage/storagedriver/overlayfs-driver/" target="_blank">Use the OverlayFS storage driver</a>
+2.<a href="https://zh.wikipedia.org/wiki/OverlayFS" target="_blank">维基百科：OverlayFS</a></p>
 
           </div>
 
@@ -421,6 +529,12 @@
 <div class="post-nav">
   
   
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">下一页</div>
+    <a href="/note/docker/storage/" rel="prev">Storage 存储相关</a>
+  </div>
+  
 </div>
 
           </div>
@@ -428,7 +542,7 @@
         </div>
 
         <div class="body-footer">
-          <p>最近更新于 Aug 13, 2019</p>
+          <p>最近更新于 Sep 14, 2019</p>
 
           
 
@@ -450,7 +564,7 @@
             repo: "Gitment_Store",
             owner: "youngwilliamz",
             admin: ["youngwilliamz"],
-            id: '2019-08-13 23:58:26 \x2b0800 CST',      
+            id: '2019-09-14 16:33:30 \x2b0800 CST',      
             labels: ["Comments"],
             distractionFreeMode:  false ,  
             pagerDirection: "last",
