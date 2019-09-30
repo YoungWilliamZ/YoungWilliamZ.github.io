@@ -38,23 +38,19 @@
 
 &lt;p&gt;但他们都有的共有特性。&lt;/p&gt;
 
-&lt;p&gt;要提供对过程的机器级支持，必须要处理许多不同的属性。为了讨论方便，假设过程 p 调用过程 Q, Q 执行后返回到 P。这些动作包括下面一个或多个机制:
-1. &lt;strong&gt;传递控制。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;要提供对过程的机器级支持，必须要处理许多不同的属性。&lt;/p&gt;
 
-&lt;p&gt;在进入过程 Q 的时候，程序计数器必须被设置为 Q 的代码的起始地址，然 后在返回时，要把程序计数器设置为 P 中调用 Q 后面那条指令的地址。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;传递数据&lt;/strong&gt;。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;P 必须能够向 Q 提供一个或多个参数， Q 必须能够向 P 返回一个值。&lt;/p&gt;
+&lt;p&gt;为了讨论方便，假设过程 p 调用过程 Q, Q 执行后返回到 P。这些动作包括下面一个或多个机制:&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;分配和释放内存&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;传递控制。&lt;/strong&gt;
+在进入过程 Q 的时候，程序计数器必须被设置为 Q 的代码的起始地址，然后在返回时，要把程序计数器设置为 P 中调用 Q 后面那条指令的地址。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;传递数据&lt;/strong&gt;。
+P 必须能够向 Q 提供一个或多个参数， Q 必须能够向 P 返回一个值。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;分配和释放内存&lt;/strong&gt;。
+在开始时， Q 可能需要为局部变量分配空间，而在返回前，又必须
+释放这些存储空间。&lt;/li&gt;
 &lt;/ol&gt;
-
-&lt;p&gt;在开始时， Q 可能需要为局部变量分配空间，而在返回前，又必须
-   释放这些存储空间。&lt;/p&gt;
 </description>
     </item>
     

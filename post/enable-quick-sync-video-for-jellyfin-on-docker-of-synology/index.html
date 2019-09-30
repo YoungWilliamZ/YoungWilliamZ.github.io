@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="New World | YoungWilliam">
+  <meta name="description" content="把踩的坑总结一下，记录下来">
 
   
-  <link rel="alternate" hreflang="zh-Hans" href="https://youngwilliamz.github.io/tags/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://youngwilliamz.github.io/post/enable-quick-sync-video-for-jellyfin-on-docker-of-synology/">
 
   
 
@@ -107,14 +107,12 @@
   
 
   
-  <link rel="alternate" href="/tags/index.xml" type="application/rss+xml" title="New World">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://youngwilliamz.github.io/tags/">
+  <link rel="canonical" href="https://youngwilliamz.github.io/post/enable-quick-sync-video-for-jellyfin-on-docker-of-synology/">
 
   
   
@@ -127,12 +125,15 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="New World">
-  <meta property="og:url" content="https://youngwilliamz.github.io/tags/">
-  <meta property="og:title" content="Tags | New World">
-  <meta property="og:description" content="New World | YoungWilliam"><meta property="og:image" content="https://youngwilliamz.github.io/img/icon-192.png">
+  <meta property="og:url" content="https://youngwilliamz.github.io/post/enable-quick-sync-video-for-jellyfin-on-docker-of-synology/">
+  <meta property="og:title" content="群晖系统中为 Jellyfin 开启硬件加速(Quick Sync Video) | New World">
+  <meta property="og:description" content="把踩的坑总结一下，记录下来"><meta property="og:image" content="https://youngwilliamz.github.io/img/icon-192.png">
   <meta property="twitter:image" content="https://youngwilliamz.github.io/img/icon-192.png"><meta property="og:locale" content="zh-Hans">
   
-    <meta property="og:updated_time" content="2019-10-01T03:16:51&#43;08:00">
+    
+      <meta property="article:published_time" content="2019-10-01T03:16:51&#43;08:00">
+    
+    <meta property="article:modified_time" content="2019-10-01T03:16:51&#43;08:00">
   
 
   
@@ -144,7 +145,7 @@
 
 
 
-  <title>Tags | New World</title>
+  <title>群晖系统中为 Jellyfin 开启硬件加速(Quick Sync Video) | New World</title>
 
 </head>
 
@@ -338,126 +339,390 @@
 </nav>
 
 
-  
-
-
-
-
-
-
-
-
-
-
-
+  <article class="article" itemscope itemtype="http://schema.org/Article">
 
   
 
+
+
+
+
+
+
+
+
+
+
+
+  
+
   
   
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">群晖系统中为 Jellyfin 开启硬件加速(Quick Sync Video)</h1>
+
+  
+
   
     
-  
-<div class="universal-wrapper pt-3">
-  <h1 itemprop="name">Tags</h1>
-
-  
-
-  
-</div>
 
 
 
-<div class="universal-wrapper">
-  
+<meta content="2019-10-01 03:16:51 &#43;0800 CST" itemprop="datePublished">
+<meta content="2019-10-01 03:16:51 &#43;0800 CST" itemprop="dateModified">
+
+<div class="article-metadata">
 
   
   
-  <div>
-    <h2><a href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a></h2>
-    <div class="article-style">
-      
-    </div>
-  </div>
+  
   
   <div>
-    <h2><a href="/tags/blockchain/">Blockchain</a></h2>
-    <div class="article-style">
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/tags/proc/">proc</a></h2>
-    <div class="article-style">
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/tags/%E5%89%91%E6%8C%87offer/">剑指Offer</a></h2>
-    <div class="article-style">
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/tags/ipv6/">IPv6</a></h2>
-    <div class="article-style">
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/tags/openwrt/">OpenWRT</a></h2>
-    <div class="article-style">
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/tags/caoz/">Caoz</a></h2>
-    <div class="article-style">
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">微信小程序</a></h2>
-    <div class="article-style">
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/tags/max-os-x/">Max OS X</a></h2>
-    <div class="article-style">
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/tags/hexo/">Hexo</a></h2>
-    <div class="article-style">
-      
-    </div>
-  </div>
-  
-
-  
-<nav>
-  <ul class="pagination justify-content-center">
     
-    <li class="page-item"><a class="page-link" href="/tags/">&laquo;</a></li>
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">YoungWilliam</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
     
     
-    <li class="page-item"><a class="page-link" href="/tags/page/3/">&raquo;</a></li>
+      
+    
+    <time>Oct 1, 2019</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    1 阅读时间（分钟）
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="">搞机</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://youngwilliamz.github.io/post/enable-quick-sync-video-for-jellyfin-on-docker-of-synology/&amp;text=%e7%be%a4%e6%99%96%e7%b3%bb%e7%bb%9f%e4%b8%ad%e4%b8%ba%20Jellyfin%20%e5%bc%80%e5%90%af%e7%a1%ac%e4%bb%b6%e5%8a%a0%e9%80%9f%28Quick%20Sync%20Video%29" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://youngwilliamz.github.io/post/enable-quick-sync-video-for-jellyfin-on-docker-of-synology/&amp;t=%e7%be%a4%e6%99%96%e7%b3%bb%e7%bb%9f%e4%b8%ad%e4%b8%ba%20Jellyfin%20%e5%bc%80%e5%90%af%e7%a1%ac%e4%bb%b6%e5%8a%a0%e9%80%9f%28Quick%20Sync%20Video%29" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=%e7%be%a4%e6%99%96%e7%b3%bb%e7%bb%9f%e4%b8%ad%e4%b8%ba%20Jellyfin%20%e5%bc%80%e5%90%af%e7%a1%ac%e4%bb%b6%e5%8a%a0%e9%80%9f%28Quick%20Sync%20Video%29&amp;body=https://youngwilliamz.github.io/post/enable-quick-sync-video-for-jellyfin-on-docker-of-synology/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://youngwilliamz.github.io/post/enable-quick-sync-video-for-jellyfin-on-docker-of-synology/&amp;title=%e7%be%a4%e6%99%96%e7%b3%bb%e7%bb%9f%e4%b8%ad%e4%b8%ba%20Jellyfin%20%e5%bc%80%e5%90%af%e7%a1%ac%e4%bb%b6%e5%8a%a0%e9%80%9f%28Quick%20Sync%20Video%29" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=%e7%be%a4%e6%99%96%e7%b3%bb%e7%bb%9f%e4%b8%ad%e4%b8%ba%20Jellyfin%20%e5%bc%80%e5%90%af%e7%a1%ac%e4%bb%b6%e5%8a%a0%e9%80%9f%28Quick%20Sync%20Video%29%20https://youngwilliamz.github.io/post/enable-quick-sync-video-for-jellyfin-on-docker-of-synology/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://youngwilliamz.github.io/post/enable-quick-sync-video-for-jellyfin-on-docker-of-synology/&amp;title=%e7%be%a4%e6%99%96%e7%b3%bb%e7%bb%9f%e4%b8%ad%e4%b8%ba%20Jellyfin%20%e5%bc%80%e5%90%af%e7%a1%ac%e4%bb%b6%e5%8a%a0%e9%80%9f%28Quick%20Sync%20Video%29" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
     
   </ul>
-</nav>
+</div>
 
+
+  
 
 </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<h2 id="起因">起因</h2>
+
+<p>最近折腾群晖，发现 <code>Jellyfin</code> 这个玩具，可以解决用网页看视频的需求。</p>
+
+<p>折腾的途中发现有硬件加速的功能，然后发现确实有些编码格式的视频播放的时候CPU占用很高。</p>
+
+<p>看了一些<a href="http://tech.feng.com/2015-12-23/Synology_DiskStation_DS716+_FengLab_2.shtml" target="_blank">评测</a>之后发现硬件加速可以很大程度上提升视频解码的能力，同时CPU占用不会很高。</p>
+
+<p>然后发现我的 U，<code>J1900</code> 在 <a href="https://ark.intel.com/content/www/us/en/ark/products/78867/intel-celeron-processor-j1900-2m-cache-up-to-2-42-ghz.html" target="_blank">Intel 官网的介绍</a> 中是支持 <code>Quick Sync Video</code>。</p>
+
+<p>于是开始了新一轮的折腾之路。</p>
+
+<h2 id="过程">过程</h2>
+
+<p>查阅一些资料之后发现，起硬件加速作用的主要是 <code>/dev/dri</code>。</p>
+
+<p>在映射 <code>/dev/dri</code> 到 docker 之后，选择 Jellyfin 硬件加速的 <code>Intel Quick Sync Video</code> 选项发现CPU的占用率几乎没有改变。这是怎么回事？</p>
+
+<p>正百思不得其解时，突然在<a href="https://www.reddit.com/r/jellyfin/comments/bgbkye/trancoding_in_docker_using_qnap_nas_with_intel/" target="_blank">论坛</a>中发现 <code>Intel Quick Sync Video</code> 选项只对 <code>Windows</code> 的版本有用。 <code>Linux</code> 都是统一用 <code>VA API</code> 这个选项。</p>
+
+<h2 id="结果">结果</h2>
+
+<p>在使用硬件加速之后，确实效果有提升，而且CPU占用是肉眼可见的降低了，由原来的 99% 降低到 50%。播放也不卡顿了。</p>
+
+<h2 id="参考">参考</h2>
+
+<ol>
+<li><a href="https://wildestpixel.co.uk/enabling-quick-sync-video-on-handbrake-for-docker-on-synology/" target="_blank">Enabling Quick Sync Video on Handbrake for Docker on Synology</a></li>
+<li><a href="https://www.reddit.com/r/jellyfin/comments/bgbkye/trancoding_in_docker_using_qnap_nas_with_intel/" target="_blank">https://www.reddit.com/r/jellyfin/comments/bgbkye/trancoding_in_docker_using_qnap_nas_with_intel/</a></li>
+<li><a href="https://ark.intel.com/content/www/us/en/ark/products/78867/intel-celeron-processor-j1900-2m-cache-up-to-2-42-ghz.html)" target="_blank">https://ark.intel.com/content/www/us/en/ark/products/78867/intel-celeron-processor-j1900-2m-cache-up-to-2-42-ghz.html)</a></li>
+</ol>
+
+    </div>
+
+    
+
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="">群晖</a>
+  
+  <a class="badge badge-light" href="/tags/docker/">docker</a>
+  
+  <a class="badge badge-light" href="/tags/jellyfin/">Jellyfin</a>
+  
+  <a class="badge badge-light" href="">硬件加速</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+      <img class="portrait mr-3" src="https://s.gravatar.com/avatar/e0346ad067447d32122d495c65d9c70c?s=200')" itemprop="image" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="https://youngwilliamz.github.io/">YoungWilliam</a></h5>
+      
+      <p class="card-text" itemprop="description">喜欢熬夜幻想早睡的重度拖延症患者</p>
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="/#contact" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/YoungWilliamZ" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>相关</h3>
+        <ul>
+          
+          <li><a href="/post/linux-proc/">Docker 背后： Linux 的 /proc</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+<section id="comments">
+  
+    
+<div>
+    <aside id=comments>
+    <div id="gitalkContainer"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+    <script>
+        var gitalk = new Gitalk({
+            clientID: "d6e5e76d4a62818bb13b",
+            clientSecret: "4ca45620cd38f36e254fda2ea288ddcde569409e",
+            repo: "Gitment_Store",
+            owner: "youngwilliamz",
+            admin: ["youngwilliamz"],
+            id: '2019-10-01 03:16:51 \x2b0800 CST',      
+            labels: ["Comments"],
+            distractionFreeMode:  false ,  
+            pagerDirection: "last",
+            createIssueManually:  false ,
+            enableHotKey:  true ,
+            flipMoveOptions: {
+                staggerDelayBy:  null ,
+                appearAnimation:  null ,
+                enterAnimation:  null ,
+                leaveAnimation:  null ,
+            },
+        });
+        gitalk.render('gitalkContainer');
+    </script>
+</aside>
+</div>
+
+  
+</section>
+
+
+
+  </div>
+</article>
 
       
 

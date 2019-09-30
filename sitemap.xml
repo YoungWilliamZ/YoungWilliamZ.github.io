@@ -4,13 +4,71 @@
   
   <url>
     <loc>https://youngwilliamz.github.io/authors/admin/</loc>
-    <lastmod>2019-09-22T21:01:13+08:00</lastmod>
+    <lastmod>2019-10-01T03:16:51+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://youngwilliamz.github.io/authors/</loc>
-    <lastmod>2019-09-22T21:01:13+08:00</lastmod>
+    <lastmod>2019-10-01T03:16:51+08:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://youngwilliamz.github.io/categories/</loc>
+    <lastmod>2019-10-01T03:16:51+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://youngwilliamz.github.io/tags/jellyfin/</loc>
+    <lastmod>2019-10-01T03:16:51+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://youngwilliamz.github.io/</loc>
+    <lastmod>2019-10-01T03:16:51+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://youngwilliamz.github.io/tags/</loc>
+    <lastmod>2019-10-01T03:16:51+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://youngwilliamz.github.io/tags/docker/</loc>
+    <lastmod>2019-10-01T03:16:51+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://youngwilliamz.github.io/categories/%E6%90%9E%E6%9C%BA/</loc>
+    <lastmod>2019-10-01T03:16:51+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://youngwilliamz.github.io/post/</loc>
+    <lastmod>2019-10-01T03:16:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://youngwilliamz.github.io/tags/%E7%A1%AC%E4%BB%B6%E5%8A%A0%E9%80%9F/</loc>
+    <lastmod>2019-10-01T03:16:51+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://youngwilliamz.github.io/tags/%E7%BE%A4%E6%99%96/</loc>
+    <lastmod>2019-10-01T03:16:51+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://youngwilliamz.github.io/post/enable-quick-sync-video-for-jellyfin-on-docker-of-synology/</loc>
+    <lastmod>2019-10-01T03:16:51+08:00</lastmod>
   </url>
   
   <url>
@@ -25,32 +83,9 @@
   </url>
   
   <url>
-    <loc>https://youngwilliamz.github.io/categories/</loc>
-    <lastmod>2019-09-22T21:01:13+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://youngwilliamz.github.io/</loc>
-    <lastmod>2019-09-22T21:01:13+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://youngwilliamz.github.io/tags/</loc>
-    <lastmod>2019-09-22T21:01:13+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://youngwilliamz.github.io/categories/%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2019-09-22T21:01:13+08:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://youngwilliamz.github.io/post/</loc>
-    <lastmod>2019-09-22T21:01:13+08:00</lastmod>
   </url>
   
   <url>
@@ -79,12 +114,6 @@
   </url>
   
   <url>
-    <loc>https://youngwilliamz.github.io/tags/linux/</loc>
-    <lastmod>2019-08-20T02:10:40+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://youngwilliamz.github.io/tags/posix/</loc>
     <lastmod>2019-08-20T02:10:40+08:00</lastmod>
     <priority>0</priority>
@@ -99,6 +128,12 @@
   <url>
     <loc>https://youngwilliamz.github.io/post/what-is-posix/</loc>
     <lastmod>2019-08-20T02:10:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://youngwilliamz.github.io/tags/linux/</loc>
+    <lastmod>2019-08-20T02:10:40+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -202,12 +237,6 @@
   </url>
   
   <url>
-    <loc>https://youngwilliamz.github.io/tags/docker/</loc>
-    <lastmod>2019-08-11T01:49:46+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://youngwilliamz.github.io/project/mydocker/</loc>
     <lastmod>2019-08-11T01:49:46+08:00</lastmod>
   </url>
@@ -249,12 +278,6 @@
   <url>
     <loc>https://youngwilliamz.github.io/post/openwrt-ipv6-relay/</loc>
     <lastmod>2019-03-10T09:48:55+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://youngwilliamz.github.io/categories/%E6%90%9E%E6%9C%BA/</loc>
-    <lastmod>2019-03-10T09:48:55+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
