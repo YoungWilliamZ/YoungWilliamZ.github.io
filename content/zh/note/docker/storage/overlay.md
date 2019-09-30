@@ -1,7 +1,7 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Overlay"
+title: "Overlay 文件系统"
 linktitle: "Overlay"
 summary:
 date: 2019-09-14T16:33:30+08:00
@@ -61,21 +61,42 @@ tmpfs           184M     0  184M   0% /run/user/0
 
 OverlayFS呈现其中一个所产生的对象（如果有），“上层”文件系统优先。OverlayFS与其他覆盖型文件系统不同，OverlayFS合并的目录子树不一定是来自不同的文件系统。
 
-OverlayFS支持在上层文件系统中的whiteout和opaque目录，以允许删除文件和目录。
+OverlayFS支持在上层文件系统中的 `whiteout` 和 `opaque` 目录，以允许删除文件和目录。
+
+## Overlay 在 Docker 中的作用
+
+Overlay 文件系统是 Docker 中的一种 `storage driver`，同时 `overlay2` 也是官方推荐的联合挂载文件系统。
+
+### 那什么是 `Storage drivers` 呢？
+
+> Storage drivers allow you to create data in the writable layer of your container. The files won’t be persisted after the container is deleted, and both read and write speeds are lower than native file system performance.
+
+`Storage drivers`，或者说 `存储驱动`（我自己翻译的，不知道对不对哈），允许在容器中创建一层可写的数据层。容器一旦被删除，这一层可写数据层也被删除，而且这层数据层的读写速度要比原生的的文件系统要慢。
+
+除了 `overlay2` 之外，Docker 还支持其他的 `storage drivers`:
+
+* `aufs`(Another Union File System)，在老系统不支持 `overlay2` 时，`aufs` 是官方推荐的，包括Docker 18.06及以下的版本。
+* `devicemapper`
+* `btrfs` and `zfs`
+* `vfs`
 
 ## Overlay 与 Overlay2 的区别
 
 > If you use OverlayFS, use the overlay2 driver rather than the overlay driver, because it is more efficient in terms of inode utilization.
 
-
+使用 `OverlayFS` 最好使用 `overlay2`， 因为它对 `inode` 的使用更加有效。（这里的 `inode` 是某些文件系统一种记录文件的方式，可以把它当作一个数据结构，具体可以自己查阅相关资料。）
 
 ## Overlay 如何工作的
 
+> OverlayFS layers two directories on a single Linux host and presents them as a single directory. These directories are called layers and the unification process is referred to as a union mount. OverlayFS refers to the lower directory as lowerdir and the upper directory a upperdir. The unified view is exposed through its own directory called merged.
+
+OverlayFS 可以将两个目录「层化」（layer，注意这里是动词），并对外展示为一个单独的目录。这些被「层化」的目录叫做「层」（layers，注意这里是名词），这个统一目录的过程就叫做「union mount」（联合挂载）。
+
+
+
 ## Overlay2 如何工作的
 
-## Overlay 在 Docker 中的作用
 
-Overlay 文件系统被当作 storage driver
 
 ## 杂谈：Overlay 的缔造者
 
