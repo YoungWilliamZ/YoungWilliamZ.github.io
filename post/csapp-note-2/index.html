@@ -458,7 +458,7 @@
 <h2 id="为什么要用-二进制">为什么要用「二进制」</h2>
 
 <blockquote>
-<p>二值信号能够很容易地被表示、存储和传输，例如，可以表 示为穿孔卡片上有洞或无洞、导线上的高电压或低电压，或者顺时针或逆时针的磁场。对 二值信号进行存储和执行计算的电子电路非常简单和可靠，制造商能够在 一 个单独的硅片 上集成数百万甚至数十亿个这样的电路。</p>
+<p>“二值信号能够很容易地被表示、存储和传输，例如，可以表示为穿孔卡片上有洞或无洞、导线上的高电压或低电压，或者顺时针或逆时针的磁场。对二值信号进行存储和执行计算的电子电路非常简单和可靠，制造商能够在一个单独的硅片上集成数百万甚至数十亿个这样的电路。”</p>
 </blockquote>
 
 <h2 id="little-endian-小端-和-big-endian-大端">&ldquo;little endian(小端)&ldquo;和 &ldquo;big endian(大端)&rdquo;</h2>
@@ -500,6 +500,34 @@
 </tr>
 </tbody>
 </table>
+
+<h3 id="如何分辨一台机器是大端还是小端">如何分辨一台机器是大端还是小端</h3>
+
+<p>以下代码从 <code>NGINX</code> 抄来的。</p>
+
+<pre><code class="language-C">#include &lt;stdio.h&gt;
+int main() {
+    int i = 0x11223344;
+    char *p;
+
+    p = (char *) &amp;i;
+    if (*p == 0x44) {
+        printf(&quot;Little endian\n&quot;);
+    }
+    else {
+        printf(&quot;Big endian\n&quot;);
+    }
+    return 0;
+}
+</code></pre>
+
+<h2 id="有符号数与无符号数">有符号数与无符号数</h2>
+
+<h2 id="参考">参考</h2>
+
+<ol>
+<li><a href="https://blog.csdn.net/lwfcgz/article/details/50476051" target="_blank">判断计算机是大端还是小端</a></li>
+</ol>
 
     </div>
 

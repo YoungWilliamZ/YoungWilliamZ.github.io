@@ -97,7 +97,7 @@
     </item>
     
     <item>
-      <title>CSAPP 笔记 第三章《程序的机器级表示》</title>
+      <title>CSAPP 笔记 第三章《程序的机器级表示》Part.1</title>
       <link>https://youngwilliamz.github.io/post/csapp-note-3/</link>
       <pubDate>Sun, 22 Sep 2019 21:01:13 +0800</pubDate>
       <guid>https://youngwilliamz.github.io/post/csapp-note-3/</guid>
@@ -255,7 +255,7 @@ tmpfs           184M     0  184M   0% /run/user/0
 &lt;h2 id=&#34;为什么要用-二进制&#34;&gt;为什么要用「二进制」&lt;/h2&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;二值信号能够很容易地被表示、存储和传输，例如，可以表 示为穿孔卡片上有洞或无洞、导线上的高电压或低电压，或者顺时针或逆时针的磁场。对 二值信号进行存储和执行计算的电子电路非常简单和可靠，制造商能够在 一 个单独的硅片 上集成数百万甚至数十亿个这样的电路。&lt;/p&gt;
+&lt;p&gt;“二值信号能够很容易地被表示、存储和传输，例如，可以表示为穿孔卡片上有洞或无洞、导线上的高电压或低电压，或者顺时针或逆时针的磁场。对二值信号进行存储和执行计算的电子电路非常简单和可靠，制造商能够在一个单独的硅片上集成数百万甚至数十亿个这样的电路。”&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&#34;little-endian-小端-和-big-endian-大端&#34;&gt;&amp;ldquo;little endian(小端)&amp;ldquo;和 &amp;ldquo;big endian(大端)&amp;rdquo;&lt;/h2&gt;
@@ -297,6 +297,34 @@ tmpfs           184M     0  184M   0% /run/user/0
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+
+&lt;h3 id=&#34;如何分辨一台机器是大端还是小端&#34;&gt;如何分辨一台机器是大端还是小端&lt;/h3&gt;
+
+&lt;p&gt;以下代码从 &lt;code&gt;NGINX&lt;/code&gt; 抄来的。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;#include &amp;lt;stdio.h&amp;gt;
+int main() {
+    int i = 0x11223344;
+    char *p;
+
+    p = (char *) &amp;amp;i;
+    if (*p == 0x44) {
+        printf(&amp;quot;Little endian\n&amp;quot;);
+    }
+    else {
+        printf(&amp;quot;Big endian\n&amp;quot;);
+    }
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;有符号数与无符号数&#34;&gt;有符号数与无符号数&lt;/h2&gt;
+
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/lwfcgz/article/details/50476051&#34; target=&#34;_blank&#34;&gt;判断计算机是大端还是小端&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 </description>
     </item>
     
