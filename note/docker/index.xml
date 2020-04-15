@@ -65,7 +65,7 @@ tmpfs           184M     0  184M   0% /run/user/0
 
 &lt;p&gt;Overlay 文件系统是 Docker 中的一种 &lt;code&gt;storage driver&lt;/code&gt;，同时 &lt;code&gt;overlay2&lt;/code&gt; 也是官方推荐的联合挂载文件系统。&lt;/p&gt;
 
-&lt;h3 id=&#34;那什么是-storage-drivers-呢&#34;&gt;那什么是 &lt;code&gt;Storage drivers&lt;/code&gt; 呢？&lt;/h3&gt;
+&lt;h3 id=&#34;什么是-storage-drivers&#34;&gt;什么是 &lt;code&gt;Storage drivers&lt;/code&gt;&lt;/h3&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Storage drivers allow you to create data in the writable layer of your container. The files won’t be persisted after the container is deleted, and both read and write speeds are lower than native file system performance.&lt;/p&gt;

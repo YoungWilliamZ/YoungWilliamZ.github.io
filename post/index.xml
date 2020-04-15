@@ -5,12 +5,526 @@
     <link>https://youngwilliamz.github.io/post/</link>
       <atom:link href="https://youngwilliamz.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>文章列表</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><lastBuildDate>Mon, 07 Oct 2019 23:56:53 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><lastBuildDate>Tue, 14 Apr 2020 16:45:28 +0800</lastBuildDate>
     <image>
       <url>https://youngwilliamz.github.io/img/icon-192.png</url>
       <title>文章列表</title>
       <link>https://youngwilliamz.github.io/post/</link>
     </image>
+    
+    <item>
+      <title>2019年的暑期实习与秋招之路</title>
+      <link>https://youngwilliamz.github.io/post/my-journey-of-finding-jobs-2020/</link>
+      <pubDate>Tue, 14 Apr 2020 16:45:28 +0800</pubDate>
+      <guid>https://youngwilliamz.github.io/post/my-journey-of-finding-jobs-2020/</guid>
+      <description>
+
+&lt;h2 id=&#34;offer-汇总&#34;&gt;Offer 汇总&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;实习&lt;/strong&gt;：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;360 网络安全研究院 Web平台开发实习生&lt;/li&gt;
+&lt;li&gt;小赢科技 架构部 基础组件组 后端开发实习生&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;最终选择：小赢科技&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;秋招&lt;/strong&gt;：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;小米 后端开发（北京）&lt;/li&gt;
+&lt;li&gt;富途牛牛 后端开发（深圳）&lt;/li&gt;
+&lt;li&gt;欢聚时代 后端开发（广州）&lt;/li&gt;
+&lt;li&gt;华为 软件开发（深圳）&lt;/li&gt;
+&lt;li&gt;网易游戏 游戏应用与平台发展事业部 服务端平台开发（广州）&lt;/li&gt;
+&lt;li&gt;酷家乐 容器开发（杭州）&lt;/li&gt;
+&lt;li&gt;360搜索 后端开发（北京）&lt;/li&gt;
+&lt;li&gt;腾讯 TEG 基础架构部 运营开发（深圳）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;最终选择：腾讯&lt;/p&gt;
+
+&lt;p&gt;##暑期实习&lt;/p&gt;
+
+&lt;p&gt;先介绍下找实习前我的基本情况。&lt;/p&gt;
+
+&lt;p&gt;大一的时候，我已经知道系里要求每位同学都要进行实习，最好的时间点就在大三的暑假。于是在大一暑假我就开始试着找实习，因为当时只学了Java，所以只能在一位亲戚的帮助下去了顺德的一家小公司边学边做 Android APP 的开发。&lt;/p&gt;
+
+&lt;p&gt;大二暑假，我想靠自己找实习。但是当时没有那么强的驱动力和能力（计算机网络、操作系统都还没学呢），最后在学校跟两个同学一起做了一个查询校巴时间的微信小程序。虽然当时有500人的用户，但因为竞争不过校内同类型的小程序，最后不再维护。&lt;/p&gt;
+
+&lt;p&gt;在大三下的一开始，我就明确要开始找实习了。根据前两个暑假的摸索，我确定了自己不想做Android或者前端的开发工作，所以我选了后端开发作为我的方向。我的目标是腾讯，如果要进腾讯，那么C++是必须掌握的，所以我开始学习C++。从现在看来，对于C++的学习，我开始的太晚了，在找实习的关键时期才开始学。这也为我接下来找实习埋下了隐患。&lt;/p&gt;
+
+&lt;h3 id=&#34;找实习第零步-准备简历&#34;&gt;找实习第零步：准备简历&lt;/h3&gt;
+
+&lt;p&gt;对于简历，我是从大一就有开始准备的，大二的时候就已经找学校就业中心的老师指导完善，而且学长、导师也会帮忙过一下简历。&lt;/p&gt;
+
+&lt;p&gt;对于技术岗位的应聘，简历上只要写上基本的个人信息以及专业技能与重点项目就足够了。没有个人项目的同学可以直接写创新实验的项目以及课堂Pro，重点是要把其中的技术点表述清楚，让面试官一眼了然，甚至能够“诱导”面试官进行考察，准备的时候也好针对的进行准备。至于学校社团、英语证书什么的，其实面试官不是很在意。最后，写完简历自己多看看几遍，同时可以问问同学、老师的建议，甚至可以互相进行模拟面试。&lt;/p&gt;
+
+&lt;h3 id=&#34;找实习第一步-投简历&#34;&gt;找实习第一步：投简历&lt;/h3&gt;
+
+&lt;p&gt;不知那时哪来的自信，以为进入腾讯实习是很简单的事，毕竟每年有3000个实习岗位。于是，我在&lt;strong&gt;二月中旬&lt;/strong&gt;时通过学长的内推只投递了腾讯与阿里的实习岗位，然后就开始正常上课并抱着《C++ Primer》重点学习C++。&lt;/p&gt;
+
+&lt;p&gt;4月初时后悔莫及，因为这两家公司都没有面试通过，而想再投递其他公司时已经太晚了。而且不知道是学校知名度太低，还是我的水平有限，有些公司连暑期实习的笔试都不给，比如美团、虎牙。在4月底时，我还是0 offer，牛客网上的实习板块都不见了，但我没放弃，我一直在寻找机会，甚至下载了BOSS直聘。&lt;/p&gt;
+
+&lt;p&gt;对于找实习的同学，请记住：金3银4，就是三四月份是各大公司招聘暑期实习的主要时间。&lt;/p&gt;
+
+&lt;h3 id=&#34;找实习第二步-准备&#34;&gt;找实习第二步：准备&lt;/h3&gt;
+
+&lt;p&gt;在一开始时，我其实并没有注重针对面试做准备，因为自认为专业课学的比较扎实，所以一切按部就班的学习。但是在头两次面试碰壁之后，我心底开始慌了，原来自己对于基础知识的掌握的都太浅了。在同学的建议下，我开始疯狂刷面经（网上其他人的面试经验），在看了十几篇面经之后，效果提升显著，我已经掌握了面试的常规问题，但这只是一些基本的计算机基础知识。这时我已经有了能够通过腾讯一面，并能跟面试官谈笑风生的能力。然而，对于算法代码的实际操练还是太少，这让我在秋招时也吃了大亏。&lt;/p&gt;
+
+&lt;h3 id=&#34;找实习第三步-面试&#34;&gt;找实习第三步：面试&lt;/h3&gt;
+
+&lt;p&gt;我得到面试的机会说多不多说少不少。在学长的帮助下，腾讯我就面了3次之多（一次是微信部门直推、一次是提前批，一次是正式批），结果前两次一面就挂了，最后一次是二面挂了，挂的原因分别是算法题答不上来、常使用的方法名说不上来、简历上重点项目所使用工具不清楚背后原理。而后，是阿里区块链的部门直推，算法题答不上来。&lt;/p&gt;
+
+&lt;p&gt;在遭遇两次坎坷之后，我慌了，开始疯狂投简历。随后我又拿到了几次面试机会。&lt;/p&gt;
+
+&lt;p&gt;一次是在BOSS直聘上，在数十天的寻找之后，只有荔枝微课（获得A轮融资的知识分享平台）给予了我面试机会。面试是现场面试，一个下午就直接完成了笔试、技术面试、技术总监（架构师）面试、HR面。最后等了一星期通知，说是因为时间原因（他们要求5月份就开始实习，而我们学校6月才放假），无法给我发offer。HR还加了我微信，说“希望以后能有机会继续合作”。&lt;/p&gt;
+
+&lt;p&gt;还有一次机会是当时与我的导师王琦老师沟通时得知的。360网络安全研究院的一个部门刚好要搬到学校对面的智园，急招实习生，而且很可能留用。面试官那个周五还要来我们学校开讲座，导师建议我把握机会。很幸运，经历了三轮面试，我顺利拿到了口头offer。&lt;/p&gt;
+
+&lt;p&gt;幸运的事总是同时发生，又一个offer从天而降。当时我的创新实验项目是王琦导师与小赢科技一起合作的，而我们组每周都会去小赢科技那边与那边的导师开一次会。在得知我还没拿到offer之后，小赢科技的导师直接邀请我来小赢实习，而且不需要技术面试。&lt;/p&gt;
+
+&lt;p&gt;最终，我拿到了两个offer。&lt;/p&gt;
+
+&lt;p&gt;总结一下经验，每次面试基本都是10分钟至40分钟，越长代表通过的概率越大。面试失败了不要怕，最重要的事能够发现自己的不足，重新出发，相信自己最终一定能够拿到offer的。&lt;/p&gt;
+
+&lt;h3 id=&#34;找实习第四步-对比-offer&#34;&gt;找实习第四步：对比 Offer&lt;/h3&gt;
+
+&lt;p&gt;对比offer我花了足足三天。在咨询了导师以及其他同学的建议之后，我对比了实习的工作内容、所使用的技术栈、以及最重要的是为秋招做铺垫，最后我选择了小赢科技。虽然360名气比较大，可以为秋招加不少分，但技术栈是Python Web端，而我不喜欢Python，以后也不想做相关的工作。如果有的选，我会尽力不选Python相关的工作，因为我就是讨厌Python的全局解释器锁。&lt;/p&gt;
+
+&lt;h3 id=&#34;实习的收获&#34;&gt;实习的收获&lt;/h3&gt;
+
+&lt;p&gt;实习的过程中，我学习了Golang和许多工业上应用实践，也确定了自己以后想深入后端想法，同时我还发现了云原生等比较热门的技术。在秋招的过程中，实习的经历让我能够在许多关键时候让面试官眼前一亮。&lt;/p&gt;
+
+&lt;h2 id=&#34;秋招之路&#34;&gt;秋招之路&lt;/h2&gt;
+
+&lt;p&gt;在7月底，秋招就渐渐开始了。声势最大的是阿里的提前批，将整个牛课网的论坛都挤满了。&lt;/p&gt;
+
+&lt;h3 id=&#34;简历投递&#34;&gt;简历投递&lt;/h3&gt;
+
+&lt;p&gt;这次我不再敢只投腾讯、阿里。相反，我一开始疯狂投递其他的公司，而将腾讯阿里留在了8月中旬才投递，因为我怕一投递就被拉去面试，而我当时还在实习没有时间好好准备面试。同时我遵从了网友的建议，建了一张Excel表来记录我投递的公司、目前所在流程、流程终止的原因、是否拿到offer等情况。而且这次我不再只投递C++的岗位，而是服务端优先，其他感兴趣的也一起投。投递的城市也没有局限于广东。投递的方式也不在局限于牛课网，而是各个渠道都去收集信息，能够内推的争取内推，可谓是做好了打战的准备。&lt;/p&gt;
+
+&lt;p&gt;有点遗憾的是，阿里巴巴的岗位投递太晚，所以没有拿到面试机会，希望同学们能够放下顾虑，先投了简历再慢慢准备。不要因为自己觉得准备不足而错过机会。&lt;/p&gt;
+
+&lt;p&gt;以下是我建立的表格的一部分，一共57家公司，包括投递的公司名、投递时间以及岗位，有个别公司可能没有记录下来。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;公司&lt;/th&gt;
+&lt;th&gt;投递时间&lt;/th&gt;
+&lt;th&gt;职位&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;网易有道&lt;/td&gt;
+&lt;td&gt;2019.7.31&lt;/td&gt;
+&lt;td&gt;Java后台&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;网易游戏雷云&lt;/td&gt;
+&lt;td&gt;2019.7.31&lt;/td&gt;
+&lt;td&gt;C++后台&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;百度&lt;/td&gt;
+&lt;td&gt;2019.7.31&lt;/td&gt;
+&lt;td&gt;C++研发&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;大疆创新&lt;/td&gt;
+&lt;td&gt;2019.7.30&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;酷狗&lt;/td&gt;
+&lt;td&gt;2019.9.6&lt;/td&gt;
+&lt;td&gt;C++后端开发培训生&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Intel&lt;/td&gt;
+&lt;td&gt;2019.7.25&lt;/td&gt;
+&lt;td&gt;Linux Network Platform Software Development Engineer&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;小红书&lt;/td&gt;
+&lt;td&gt;2019.7.26&lt;/td&gt;
+&lt;td&gt;后端开发&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;4399&lt;/td&gt;
+&lt;td&gt;2019.8.20&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;360提前批&lt;/td&gt;
+&lt;td&gt;2019.8.8&lt;/td&gt;
+&lt;td&gt;golang&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;VIPKID&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;快手&lt;/td&gt;
+&lt;td&gt;CDN开发工程师&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;腾讯&lt;/td&gt;
+&lt;td&gt;2019.8.12&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;ThoughtWorks&lt;/td&gt;
+&lt;td&gt;2019.8.3&lt;/td&gt;
+&lt;td&gt;软件工程师&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;OPPO&lt;/td&gt;
+&lt;td&gt;2019.8.3&lt;/td&gt;
+&lt;td&gt;C++/JAVA&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;bilibili&lt;/td&gt;
+&lt;td&gt;2019.8.7&lt;/td&gt;
+&lt;td&gt;游戏后台&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;美团&lt;/td&gt;
+&lt;td&gt;2019.8.4&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;shopee&lt;/td&gt;
+&lt;td&gt;2019.8.20&lt;/td&gt;
+&lt;td&gt;后台开发&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;有赞&lt;/td&gt;
+&lt;td&gt;2019.8.20&lt;/td&gt;
+&lt;td&gt;中间件&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;贝壳&lt;/td&gt;
+&lt;td&gt;2019-07-17&lt;/td&gt;
+&lt;td&gt;C++ 研发&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;亚马逊&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;微软&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;小米&lt;/td&gt;
+&lt;td&gt;2019.8.8&lt;/td&gt;
+&lt;td&gt;Java软件开发&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;追一科技&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;深信服&lt;/td&gt;
+&lt;td&gt;2019.9.8&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;地平线&lt;/td&gt;
+&lt;td&gt;2019.8.24&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;顺风科技&lt;/td&gt;
+&lt;td&gt;2019.8.20&lt;/td&gt;
+&lt;td&gt;Java&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;招银网络&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;猫眼娱乐&lt;/td&gt;
+&lt;td&gt;2019.9.8&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;去哪儿&lt;/td&gt;
+&lt;td&gt;2019.8.14&lt;/td&gt;
+&lt;td&gt;后端&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;网宿科技&lt;/td&gt;
+&lt;td&gt;2019.8.14&lt;/td&gt;
+&lt;td&gt;Golang&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;富途牛牛&lt;/td&gt;
+&lt;td&gt;2019.9.5&lt;/td&gt;
+&lt;td&gt;C++&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;滴滴&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;快看漫画&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;字节跳动&lt;/td&gt;
+&lt;td&gt;2019.8.14&lt;/td&gt;
+&lt;td&gt;后端深圳&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;DELL&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;华为&lt;/td&gt;
+&lt;td&gt;2019.8.17&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;作业帮&lt;/td&gt;
+&lt;td&gt;2019.8.20&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;平安科技&lt;/td&gt;
+&lt;td&gt;2019.8.17&lt;/td&gt;
+&lt;td&gt;软件工程师-后端&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;虎牙&lt;/td&gt;
+&lt;td&gt;2019.8.22&lt;/td&gt;
+&lt;td&gt;中间件&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;酷家乐&lt;/td&gt;
+&lt;td&gt;2019.8.20&lt;/td&gt;
+&lt;td&gt;容器开发工程师&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;京东&lt;/td&gt;
+&lt;td&gt;2019.8.20&lt;/td&gt;
+&lt;td&gt;golang&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;依图科技&lt;/td&gt;
+&lt;td&gt;2019.8.22&lt;/td&gt;
+&lt;td&gt;软件开发&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;微众&lt;/td&gt;
+&lt;td&gt;2019.8.22&lt;/td&gt;
+&lt;td&gt;后台开发(C++开发方向)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;网易 游戏&lt;/td&gt;
+&lt;td&gt;2019.8.25&lt;/td&gt;
+&lt;td&gt;服务端开发工程师-虚拟化/加速器&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;阅文&lt;/td&gt;
+&lt;td&gt;2019.9.5&lt;/td&gt;
+&lt;td&gt;C++&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;旷视&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;三七互娱&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;VIVO&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;源辅导&lt;/td&gt;
+&lt;td&gt;2019.9.8&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;七牛云&lt;/td&gt;
+&lt;td&gt;2019.9.14&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;云从科技&lt;/td&gt;
+&lt;td&gt;2019.9.8&lt;/td&gt;
+&lt;td&gt;golang，重庆&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;搜狗&lt;/td&gt;
+&lt;td&gt;2019.9.5&lt;/td&gt;
+&lt;td&gt;APP搜索-后端&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;中兴&lt;/td&gt;
+&lt;td&gt;2019.9.5&lt;/td&gt;
+&lt;td&gt;软件&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;陌陌&lt;/td&gt;
+&lt;td&gt;2019.9.6&lt;/td&gt;
+&lt;td&gt;C++开发工程师&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;远景&lt;/td&gt;
+&lt;td&gt;2019.9.8&lt;/td&gt;
+&lt;td&gt;C++开发工程师&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;度小满&lt;/td&gt;
+&lt;td&gt;2019.9.8&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;IBM&lt;/td&gt;
+&lt;td&gt;2019.9.29&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;面试准备&#34;&gt;面试准备&lt;/h3&gt;
+
+&lt;p&gt;在不断的投递之后，我拿到了20多家公司的笔试机会，并最终拿到十几家公司的面试机会。在每次面试前，我都会将自己整理好的基础知识过一遍，同时将《剑指offer》中的算法也快速过一遍，做好最全面的准备。同时，针对面试的公司，进行最大程度的信息收集，包括业务、发展规模、创世人事迹等。&lt;/p&gt;
+
+&lt;p&gt;在为面试做最好的准备之时，也不忘为自己打预防针，告诉自己面试是”玄学“，不只靠自己，还得靠天时地利人和。能拿到offer是最好的，拿不到的话也要积极复盘，查漏补缺。&lt;/p&gt;
+
+&lt;h3 id=&#34;面试&#34;&gt;面试&lt;/h3&gt;
+
+&lt;p&gt;在这样的心态下，每次面试我都不在像实习面试时那么紧张不安了，脑子也清晰了许多。秋招中，如果能够现场面试，面试官一定会现场面试，退而求其次是视频面试，最后才是电话面试。在绝大部份的面试中，都需要写代码，或是手写，或是直接在屏幕敲，并且写完会直接跑。因为我代码能力没有专门训练，所以我更倾向于手写代码，不仅可以通过语言的表述让面试官理解，而且也可以避免因为代码无法测试通过的尴尬。&lt;/p&gt;
+
+&lt;h3 id=&#34;秋招的收获-复盘&#34;&gt;秋招的收获、复盘&lt;/h3&gt;
+
+&lt;p&gt;虽然有了找实习的经验铺垫，我的秋招还是做的不够好。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;信心不足，不敢投递国际大厂。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;除了先前说的阿里巴巴投递晚了，像微软和Google这种国际大厂其实也有学长能够内推。但自己信心不足，没有去尝试，白白失去了机会。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;代码能力没有好好锻炼，代码写一半容易卡壳。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;找实习时已经发现了这个问题，想着秋招前好好刷题，补补这一块。但是因为没有规划好，没有利用好暑假的实习期间好好刷题。好几个offer就是因为代码没写好，或者思路不清晰而飞走了，比如微信、字节跳动、百度。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;自我管理能力圈缺。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;在找实习时，我已经发现：我的基础知识不够扎实，需要重新啃教材。我的项目经验不够丰富，缺少更加深入的东西。虽然我发现了这些问题，但是，直到秋招结束，自己都没有足够的动力去填补。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;如果没有面试经验，就从小公司开始面。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;一方面是小公司的面试更多是线下的，比较容易沟通。一方面是小公司的面试比较简单，可以更早的拿到offer。不仅能够积累经验，也能让自己面试、谈薪的时候更加有底气。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;规划的太晚。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;不仅是找实习没有准备好，秋招我也觉得自己没有准备完善。如果能够提前半年甚至更早就开始准备，那么找工作也就没有这么折腾了。所以关键是要早，早点确定好目标，早点准备，早点完成。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; 实现以太坊 Call RPC接口的发送端</title>
+      <link>https://youngwilliamz.github.io/post/cpp-implementation-eth-call-rpc-client/</link>
+      <pubDate>Tue, 17 Mar 2020 16:14:03 +0800</pubDate>
+      <guid>https://youngwilliamz.github.io/post/cpp-implementation-eth-call-rpc-client/</guid>
+      <description>
+
+&lt;h2 id=&#34;起因&#34;&gt;起因&lt;/h2&gt;
+
+&lt;p&gt;目前做的毕设中，需要实现一个调用 &lt;code&gt;FISCO-BCOS&lt;/code&gt; 底层的一个RPC端口，看了&lt;a href=&#34;https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/api.html#call&#34; target=&#34;_blank&#34;&gt;官方文档&lt;/a&gt;以及&lt;a href=&#34;https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_call&#34; target=&#34;_blank&#34;&gt;以太坊的文档&lt;/a&gt;，发现参数中&lt;code&gt;params&lt;/code&gt;的&lt;code&gt;data&lt;/code&gt;的格式有一定要求，需要参照 &lt;code&gt;Solidity&lt;/code&gt; 的&lt;a href=&#34;https://solidity.readthedocs.io/en/latest/abi-spec.html&#34; target=&#34;_blank&#34;&gt;文档&lt;/a&gt;。&lt;/p&gt;
+
+&lt;h2 id=&#34;经过&#34;&gt;经过&lt;/h2&gt;
+
+&lt;h2 id=&#34;结尾&#34;&gt;结尾&lt;/h2&gt;
+</description>
+    </item>
     
     <item>
       <title>CSAPP 笔记 听课有感</title>
@@ -92,133 +606,6 @@
 &lt;li&gt;&lt;a href=&#34;https://wildestpixel.co.uk/enabling-quick-sync-video-on-handbrake-for-docker-on-synology/&#34; target=&#34;_blank&#34;&gt;Enabling Quick Sync Video on Handbrake for Docker on Synology&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.reddit.com/r/jellyfin/comments/bgbkye/trancoding_in_docker_using_qnap_nas_with_intel/&#34; target=&#34;_blank&#34;&gt;https://www.reddit.com/r/jellyfin/comments/bgbkye/trancoding_in_docker_using_qnap_nas_with_intel/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://ark.intel.com/content/www/us/en/ark/products/78867/intel-celeron-processor-j1900-2m-cache-up-to-2-42-ghz.html)&#34; target=&#34;_blank&#34;&gt;https://ark.intel.com/content/www/us/en/ark/products/78867/intel-celeron-processor-j1900-2m-cache-up-to-2-42-ghz.html)&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>CSAPP 笔记 第三章《程序的机器级表示》Part.1</title>
-      <link>https://youngwilliamz.github.io/post/csapp-note-3/</link>
-      <pubDate>Sun, 22 Sep 2019 21:01:13 +0800</pubDate>
-      <guid>https://youngwilliamz.github.io/post/csapp-note-3/</guid>
-      <description>
-
-&lt;p&gt;本章的 &lt;code&gt;3.7&lt;/code&gt; 节重点讲解了函数的调用过程在机器级的表示。&lt;/p&gt;
-
-&lt;p&gt;在 3.7 节之前，主要讲解的是汇编语句的格式、顺序执行、跳转控制。&lt;/p&gt;
-
-&lt;h2 id=&#34;过程&#34;&gt;过程&lt;/h2&gt;
-
-&lt;h3 id=&#34;基本概念&#34;&gt;基本概念&lt;/h3&gt;
-
-&lt;p&gt;不同的编程语言中，过程的形式不同：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;函数 (function)&lt;/li&gt;
-&lt;li&gt;方法 (method)&lt;/li&gt;
-&lt;li&gt;子例程 (subroutine)&lt;/li&gt;
-&lt;li&gt;处理函数 (handler)等等&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;但他们都有的共有特性。&lt;/p&gt;
-
-&lt;p&gt;要提供对过程的机器级支持，必须要处理许多不同的属性。&lt;/p&gt;
-
-&lt;p&gt;为了讨论方便，假设过程 p 调用过程 Q, Q 执行后返回到 P。这些动作包括下面一个或多个机制:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;传递控制。&lt;/strong&gt;
-在进入过程 Q 的时候，程序计数器必须被设置为 Q 的代码的起始地址，然后在返回时，要把程序计数器设置为 P 中调用 Q 后面那条指令的地址。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;传递数据&lt;/strong&gt;。
-P 必须能够向 Q 提供一个或多个参数， Q 必须能够向 P 返回一个值。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;分配和释放内存&lt;/strong&gt;。
-在开始时， Q 可能需要为局部变量分配空间，而在返回前，又必须
-释放这些存储空间。&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>CSAPP 笔记 第二章《信息的表示和处理》</title>
-      <link>https://youngwilliamz.github.io/post/csapp-note-2/</link>
-      <pubDate>Sun, 08 Sep 2019 20:56:59 +0800</pubDate>
-      <guid>https://youngwilliamz.github.io/post/csapp-note-2/</guid>
-      <description>
-
-&lt;p&gt;这章的内容非常基础并且重要，但为了节省篇幅，此篇笔记仅记录笔者不熟的或者认为非常重要且易出错的知识点。&lt;/p&gt;
-
-&lt;h2 id=&#34;为什么要用-二进制&#34;&gt;为什么要用「二进制」&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;“二值信号能够很容易地被表示、存储和传输，例如，可以表示为穿孔卡片上有洞或无洞、导线上的高电压或低电压，或者顺时针或逆时针的磁场。对二值信号进行存储和执行计算的电子电路非常简单和可靠，制造商能够在一个单独的硅片上集成数百万甚至数十亿个这样的电路。”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;little-endian-小端-和-big-endian-大端&#34;&gt;&amp;ldquo;little endian(小端)&amp;ldquo;和 &amp;ldquo;big endian(大端)&amp;rdquo;&lt;/h2&gt;
-
-&lt;p&gt;最低有效字节在最前面的方式，称为小端法 (little endian) 。&lt;/p&gt;
-
-&lt;p&gt;最高有效字节在最前面的方式，称为大端法 (big endian) 。&lt;/p&gt;
-
-&lt;p&gt;例子：&lt;/p&gt;
-
-&lt;p&gt;假设变量 x 的类型为 int ，位于地址 0x100 处，它的十六进制值为Ox01234567。&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;类型&lt;/th&gt;
-&lt;th&gt;0x100&lt;/th&gt;
-&lt;th&gt;0x101&lt;/th&gt;
-&lt;th&gt;0x102&lt;/th&gt;
-&lt;th&gt;0x103&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;大端&lt;/td&gt;
-&lt;td&gt;01&lt;/td&gt;
-&lt;td&gt;23&lt;/td&gt;
-&lt;td&gt;45&lt;/td&gt;
-&lt;td&gt;67&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;小端&lt;/td&gt;
-&lt;td&gt;67&lt;/td&gt;
-&lt;td&gt;45&lt;/td&gt;
-&lt;td&gt;23&lt;/td&gt;
-&lt;td&gt;01&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&#34;如何分辨一台机器是大端还是小端&#34;&gt;如何分辨一台机器是大端还是小端&lt;/h3&gt;
-
-&lt;p&gt;以下代码从 &lt;code&gt;NGINX&lt;/code&gt; 抄来的。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;#include &amp;lt;stdio.h&amp;gt;
-int main() {
-    int i = 0x11223344;
-    char *p;
-
-    p = (char *) &amp;amp;i;
-    if (*p == 0x44) {
-        printf(&amp;quot;Little endian\n&amp;quot;);
-    }
-    else {
-        printf(&amp;quot;Big endian\n&amp;quot;);
-    }
-    return 0;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;有符号数与无符号数&#34;&gt;有符号数与无符号数&lt;/h2&gt;
-
-&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/lwfcgz/article/details/50476051&#34; target=&#34;_blank&#34;&gt;判断计算机是大端还是小端&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
     </item>

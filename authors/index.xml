@@ -5,12 +5,20 @@
     <link>https://youngwilliamz.github.io/authors/</link>
       <atom:link href="https://youngwilliamz.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><lastBuildDate>Mon, 07 Oct 2019 23:56:53 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><lastBuildDate>Tue, 17 Mar 2020 16:14:03 +0800</lastBuildDate>
     <image>
       <url>https://youngwilliamz.github.io/img/icon-192.png</url>
       <title>Authors</title>
       <link>https://youngwilliamz.github.io/authors/</link>
     </image>
+    
+    <item>
+      <title>YoungWilliam</title>
+      <link>https://youngwilliamz.github.io/authors/youngwilliam/</link>
+      <pubDate>Tue, 17 Mar 2020 16:14:03 +0800</pubDate>
+      <guid>https://youngwilliamz.github.io/authors/youngwilliam/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title></title>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>YoungWilliam | New World</title>
+    <link>https://youngwilliamz.github.io/authors/youngwilliam/</link>
+      <atom:link href="https://youngwilliamz.github.io/authors/youngwilliam/index.xml" rel="self" type="application/rss+xml" />
+    <description>YoungWilliam</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><lastBuildDate>Tue, 17 Mar 2020 16:14:03 +0800</lastBuildDate>
+    <image>
+      <url>https://youngwilliamz.github.io/img/icon-192.png</url>
+      <title>YoungWilliam</title>
+      <link>https://youngwilliamz.github.io/authors/youngwilliam/</link>
+    </image>
+    
+    <item>
+      <title>C&#43;&#43; 实现以太坊 Call RPC接口的发送端</title>
+      <link>https://youngwilliamz.github.io/post/cpp-implementation-eth-call-rpc-client/</link>
+      <pubDate>Tue, 17 Mar 2020 16:14:03 +0800</pubDate>
+      <guid>https://youngwilliamz.github.io/post/cpp-implementation-eth-call-rpc-client/</guid>
+      <description>
+
+&lt;h2 id=&#34;起因&#34;&gt;起因&lt;/h2&gt;
+
+&lt;p&gt;目前做的毕设中，需要实现一个调用 &lt;code&gt;FISCO-BCOS&lt;/code&gt; 底层的一个RPC端口，看了&lt;a href=&#34;https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/api.html#call&#34; target=&#34;_blank&#34;&gt;官方文档&lt;/a&gt;以及&lt;a href=&#34;https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_call&#34; target=&#34;_blank&#34;&gt;以太坊的文档&lt;/a&gt;，发现参数中&lt;code&gt;params&lt;/code&gt;的&lt;code&gt;data&lt;/code&gt;的格式有一定要求，需要参照 &lt;code&gt;Solidity&lt;/code&gt; 的&lt;a href=&#34;https://solidity.readthedocs.io/en/latest/abi-spec.html&#34; target=&#34;_blank&#34;&gt;文档&lt;/a&gt;。&lt;/p&gt;
+
+&lt;h2 id=&#34;经过&#34;&gt;经过&lt;/h2&gt;
+
+&lt;h2 id=&#34;结尾&#34;&gt;结尾&lt;/h2&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

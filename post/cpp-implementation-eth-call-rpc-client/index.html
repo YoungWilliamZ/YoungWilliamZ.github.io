@@ -28,10 +28,11 @@
   
     
   
-  <meta name="description" content="New World | YoungWilliam">
+  <meta name="description" content=" 起因 目前做的毕设中，需要实现一个调用 FISCO-BCOS 底层的一个RPC端口，看了官方文档以及以太坊的文档，发现参数中params的data的格式有一定要求，需要参照 Solidity 的文档。
+经过 结尾 ">
 
   
-  <link rel="alternate" hreflang="zh-Hans" href="https://youngwilliamz.github.io/authors/admin/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://youngwilliamz.github.io/post/cpp-implementation-eth-call-rpc-client/">
 
   
 
@@ -107,14 +108,12 @@
   
 
   
-  <link rel="alternate" href="/authors/admin/index.xml" type="application/rss+xml" title="New World">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://youngwilliamz.github.io/authors/admin/">
+  <link rel="canonical" href="https://youngwilliamz.github.io/post/cpp-implementation-eth-call-rpc-client/">
 
   
   
@@ -127,12 +126,16 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="New World">
-  <meta property="og:url" content="https://youngwilliamz.github.io/authors/admin/">
-  <meta property="og:title" content=" | New World">
-  <meta property="og:description" content="New World | YoungWilliam"><meta property="og:image" content="https://youngwilliamz.github.io/img/icon-192.png">
+  <meta property="og:url" content="https://youngwilliamz.github.io/post/cpp-implementation-eth-call-rpc-client/">
+  <meta property="og:title" content="C&#43;&#43; 实现以太坊 Call RPC接口的发送端 | New World">
+  <meta property="og:description" content=" 起因 目前做的毕设中，需要实现一个调用 FISCO-BCOS 底层的一个RPC端口，看了官方文档以及以太坊的文档，发现参数中params的data的格式有一定要求，需要参照 Solidity 的文档。
+经过 结尾 "><meta property="og:image" content="https://youngwilliamz.github.io/img/icon-192.png">
   <meta property="twitter:image" content="https://youngwilliamz.github.io/img/icon-192.png"><meta property="og:locale" content="zh-Hans">
   
-    <meta property="og:updated_time" content="2019-10-07T23:56:53&#43;08:00">
+    
+      <meta property="article:published_time" content="2020-03-17T16:14:03&#43;08:00">
+    
+    <meta property="article:modified_time" content="2020-03-17T16:14:03&#43;08:00">
   
 
   
@@ -144,7 +147,7 @@
 
 
 
-  <title> | New World</title>
+  <title>C&#43;&#43; 实现以太坊 Call RPC接口的发送端 | New World</title>
 
 </head>
 
@@ -338,20 +341,7 @@
 </nav>
 
 
-  
-
-
-<section id="profile-page" class="pt-5">
-  <div class="container">
-    
-    
-      
-      
-      
-      
-
-
-
+  <article class="article" itemscope itemtype="http://schema.org/Article">
 
   
 
@@ -363,200 +353,300 @@
 
 
 
-<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email">
-  <div class="col-12 col-lg-4">
-    <div id="profile">
 
-      
-      <img class="portrait" src="https://s.gravatar.com/avatar/e0346ad067447d32122d495c65d9c70c?s=200')" itemprop="image" alt="Avatar">
-      
 
-      <div class="portrait-title">
-        <h2 itemprop="name">YoungWilliam</h2>
-        
 
-        
-        <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-          
-          <span itemprop="name">SUSTech</span>
-          
-        </h3>
-        
-      </div>
+  
 
-      <link itemprop="url" href="">
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">C&#43;&#43; 实现以太坊 Call RPC接口的发送端</h1>
 
-      <ul class="network-icon" aria-hidden="true">
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a itemprop="sameAs" href="/#contact" >
-            <i class="fas fa-envelope big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a itemprop="sameAs" href="https://github.com/YoungWilliamZ" target="_blank" rel="noopener">
-            <i class="fab fa-github big-icon"></i>
-          </a>
-        </li>
-        
-      </ul>
+  
 
-    </div>
-  </div>
-  <div class="col-12 col-lg-8" itemprop="description">
-
-    
+  
     
 
-    <ul>
-<li>初出茅庐开发仔</li>
-<li>拖延症晚期患者</li>
-<li>熬夜不累早起难</li>
-<li>云撸猫受益者</li>
-<li>B 站白嫖大师</li>
-</ul>
 
 
-    <div class="row">
+<meta content="2020-03-17 16:14:03 &#43;0800 CST" itemprop="datePublished">
+<meta content="2020-03-17 16:14:03 &#43;0800 CST" itemprop="dateModified">
 
-      
-      <div class="col-md-5">
-        <h3>兴趣爱好</h3>
-        <ul class="ul-interests">
-          
-          <li>Docker</li>
-          
-          <li>Service Mesh</li>
-          
-          <li>K8s</li>
-          
-        </ul>
-      </div>
-      
+<div class="article-metadata">
 
-      
-      <div class="col-md-7">
-        <h3>教育经历</h3>
-        <ul class="ul-edu fa-ul">
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">计算机科学与技术 学士, 2020</p>
-              <p class="institution">南方科技大学</p>
-            </div>
-          </li>
-          
-        </ul>
-      </div>
-      
+  
+  
+  
+  
+  <div>
+    
 
-    </div>
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/youngwilliam/">YoungWilliam</a></span>
+
   </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Mar 17, 2020</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    1 阅读时间（分钟）
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://youngwilliamz.github.io/post/cpp-implementation-eth-call-rpc-client/&amp;text=C&#43;&#43;%20%e5%ae%9e%e7%8e%b0%e4%bb%a5%e5%a4%aa%e5%9d%8a%20Call%20RPC%e6%8e%a5%e5%8f%a3%e7%9a%84%e5%8f%91%e9%80%81%e7%ab%af" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://youngwilliamz.github.io/post/cpp-implementation-eth-call-rpc-client/&amp;t=C&#43;&#43;%20%e5%ae%9e%e7%8e%b0%e4%bb%a5%e5%a4%aa%e5%9d%8a%20Call%20RPC%e6%8e%a5%e5%8f%a3%e7%9a%84%e5%8f%91%e9%80%81%e7%ab%af" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=C&#43;&#43;%20%e5%ae%9e%e7%8e%b0%e4%bb%a5%e5%a4%aa%e5%9d%8a%20Call%20RPC%e6%8e%a5%e5%8f%a3%e7%9a%84%e5%8f%91%e9%80%81%e7%ab%af&amp;body=https://youngwilliamz.github.io/post/cpp-implementation-eth-call-rpc-client/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://youngwilliamz.github.io/post/cpp-implementation-eth-call-rpc-client/&amp;title=C&#43;&#43;%20%e5%ae%9e%e7%8e%b0%e4%bb%a5%e5%a4%aa%e5%9d%8a%20Call%20RPC%e6%8e%a5%e5%8f%a3%e7%9a%84%e5%8f%91%e9%80%81%e7%ab%af" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=C&#43;&#43;%20%e5%ae%9e%e7%8e%b0%e4%bb%a5%e5%a4%aa%e5%9d%8a%20Call%20RPC%e6%8e%a5%e5%8f%a3%e7%9a%84%e5%8f%91%e9%80%81%e7%ab%af%20https://youngwilliamz.github.io/post/cpp-implementation-eth-call-rpc-client/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://youngwilliamz.github.io/post/cpp-implementation-eth-call-rpc-client/&amp;title=C&#43;&#43;%20%e5%ae%9e%e7%8e%b0%e4%bb%a5%e5%a4%aa%e5%9d%8a%20Call%20RPC%e6%8e%a5%e5%8f%a3%e7%9a%84%e5%8f%91%e9%80%81%e7%ab%af" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
 </div>
 
     
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<h2 id="起因">起因</h2>
+
+<p>目前做的毕设中，需要实现一个调用 <code>FISCO-BCOS</code> 底层的一个RPC端口，看了<a href="https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/api.html#call" target="_blank">官方文档</a>以及<a href="https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_call" target="_blank">以太坊的文档</a>，发现参数中<code>params</code>的<code>data</code>的格式有一定要求，需要参照 <code>Solidity</code> 的<a href="https://solidity.readthedocs.io/en/latest/abi-spec.html" target="_blank">文档</a>。</p>
+
+<h2 id="经过">经过</h2>
+
+<h2 id="结尾">结尾</h2>
+
+    </div>
+
     
+
+
     
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/cpp/">CPP</a>
+  
+  <a class="badge badge-light" href="/tags/eth/">ETH</a>
+  
+  <a class="badge badge-light" href="/tags/rpc/">RPC</a>
+  
+</div>
+
+
+
     
-    <div class="article-widget">
-      <div class="hr-light"></div>
-      <h3>最新</h3>
-      <ul>
-        
-        <li>
-          <a href="/post/csapp-note-4/">CSAPP 笔记 听课有感</a>
-        </li>
-        
-        <li>
-          <a href="/post/enable-quick-sync-video-for-jellyfin-on-docker-of-synology/">群晖系统中为 Jellyfin 开启硬件加速(Quick Sync Video)</a>
-        </li>
-        
-        <li>
-          <a href="/post/csapp-note-1/">CSAPP 笔记 第一章《计算机系统漫游》</a>
-        </li>
-        
-        <li>
-          <a href="/post/what-is-posix/">What is POSIX?</a>
-        </li>
-        
-        <li>
-          <a href="/post/ted/">TED 演讲吸收笔记与总结</a>
-        </li>
-        
-        <li>
-          <a href="/project/opencredit/">OpenCredit</a>
-        </li>
-        
-        <li>
-          <a href="/project/mydocker/">从 0 实现 Docker</a>
-        </li>
-        
-        <li>
-          <a href="/post/linux-proc/">Docker 背后： Linux 的 /proc</a>
-        </li>
-        
-        <li>
-          <a href="/post/coding-interviews-note-1/">《剑指Offer》笔记</a>
-        </li>
-        
-        <li>
-          <a href="/post/openwrt-ipv6-relay/">OpenWRT 18.06 IPv6 开启 Relay，LAN 口获取 IPv6 公网地址</a>
-        </li>
-        
-        <li>
-          <a href="/post/caoz-class-node/">Caoz《成长的烦恼》笔记</a>
-        </li>
-        
-        <li>
-          <a href="/project/sustctong/">南科通 微信小程序</a>
-        </li>
-        
-        <li>
-          <a href="/post/optimize-the-terminal-in-mac-os-x/">Mac OS X 下优化 Terminal，一篇就够了！</a>
-        </li>
-        
-        <li>
-          <a href="/post/hexo-markdown/">Hexo 使用 Markdown 编辑技巧大全</a>
-        </li>
-        
-        <li>
-          <a href="/post/hexo-image-edite-method/">Hexo 下特有的编辑图片方式，直接使用 img 标志</a>
-        </li>
-        
-        <li>
-          <a href="/post/hexoeditor/">HexoEditor, 一个写 Hexo 非常好用的 Markdown 编辑器</a>
-        </li>
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/authors/youngwilliam/"></a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
         
       </ul>
     </div>
-    
   </div>
+
+
+
+      
+      
+    
+
+    
+
+    
+<section id="comments">
+  
+    
+<div>
+    <aside id=comments>
+    <div id="gitalkContainer"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+    <script>
+        var gitalk = new Gitalk({
+            clientID: "d6e5e76d4a62818bb13b",
+            clientSecret: "4ca45620cd38f36e254fda2ea288ddcde569409e",
+            repo: "Gitment_Store",
+            owner: "youngwilliamz",
+            admin: ["youngwilliamz"],
+            id: '2020-03-17 16:14:03 \x2b0800 CST',      
+            labels: ["Comments"],
+            distractionFreeMode:  false ,  
+            pagerDirection: "last",
+            createIssueManually:  false ,
+            enableHotKey:  true ,
+            flipMoveOptions: {
+                staggerDelayBy:  null ,
+                appearAnimation:  null ,
+                enterAnimation:  null ,
+                leaveAnimation:  null ,
+            },
+        });
+        gitalk.render('gitalkContainer');
+    </script>
+</aside>
+</div>
+
+  
 </section>
+
+
+
+  </div>
+</article>
 
       
 
