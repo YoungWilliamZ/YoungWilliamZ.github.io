@@ -1,7 +1,7 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "CSAPP 笔记 第三章《程序的机器级表示》"
+title: "CSAPP 笔记 第三章《程序的机器级表示》Part.1"
 subtitle: "《深入理解计算机》学计算机必读书目"
 summary: "重点是理解机器级的函数调用"
 authors: ["admin"]
@@ -10,7 +10,7 @@ categories: ["学习"]
 date: 2019-09-22T21:01:13+08:00
 lastmod: 2019-09-22T21:01:13+08:00
 featured: false
-draft: false
+draft: true
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -44,8 +44,6 @@ projects: []
 * 处理函数 (handler)等等
 
 但他们都有的共有特性。
-
-
 
 要提供对过程的机器级支持，必须要处理许多不同的属性。
 

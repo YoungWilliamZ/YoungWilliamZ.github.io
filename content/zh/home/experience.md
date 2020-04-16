@@ -23,7 +23,7 @@ date_format = "Jan 2006"
   company_url = ""
   location = "深圳"
   date_start = "2019-06-17"
-  date_end = ""
+  date_end = "2019-10-17"
   description = """
   负责内容：
   

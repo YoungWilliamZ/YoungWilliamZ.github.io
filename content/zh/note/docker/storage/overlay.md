@@ -67,7 +67,7 @@ OverlayFS支持在上层文件系统中的 `whiteout` 和 `opaque` 目录，以�
 
 Overlay 文件系统是 Docker 中的一种 `storage driver`，同时 `overlay2` 也是官方推荐的联合挂载文件系统。
 
-### 那什么是 `Storage drivers` 呢？
+### 什么是 `Storage drivers`
 
 > Storage drivers allow you to create data in the writable layer of your container. The files won’t be persisted after the container is deleted, and both read and write speeds are lower than native file system performance.
 
