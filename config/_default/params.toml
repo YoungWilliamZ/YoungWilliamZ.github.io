@@ -1,5 +1,6 @@
 logoText = "New World"
 logoType = "short" # long, short
+logo = false
 description = "To recreate the world!"
 custom_css = []
 custom_js = []
@@ -49,7 +50,7 @@ bioImageUrl = ""
 useGravatar = true
 location = "Shenzhen, China"
 organization = ""
-link = "https://youngwilliamz.github.io/"
+link = "https://youngwilliam.io/"
 
 # sidebar
 enableBio = true
@@ -88,7 +89,7 @@ busuanziPagePV = true
 # rss
 updatePeriod = "" # Possible values: 'hourly', 'daily', 'weekly', 'monthly', or 'yearly'.
 updateFrequency = ""
-fullContents = false
+fullContents = true
 
 # comment
 enableComment = true
