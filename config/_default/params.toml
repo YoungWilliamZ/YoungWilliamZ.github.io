@@ -63,7 +63,7 @@ enableListSidebarTitles = true
 enableToc = true
 hideToc = false
 tocFolding = true
-tocPosition = "inner" # inner, outer
+tocPosition = "outer" # inner, outer
 enableTocSwitch = true
 itemsPerCategory = 5
 sidebarPosition = "right"
@@ -80,7 +80,7 @@ enableThemeChange = true
 # service
 googleTagManager = "" # GTM-XXXXXX
 baiduAnalytics = ""
-enableBusuanzi = false
+enableBusuanzi = true
 busuanziSiteUV = true
 busuanziSitePV = true
 busuanziPagePV = true
@@ -182,11 +182,11 @@ commento = false
   patreon = ""
 
 # possible share name: ["facebook","twitter", "reddit", "linkedin", "tumblr", "weibo", "douban", "line"]
-[[share]]
-  name = "facebook"
-  username = ""
-[[share]]
-  name = "twitter"
+# [[share]]
+#   name = ""
+#   username = ""
+# [[share]]
+#   name = ""
 
 [[footerLinks]]
   name = ""
