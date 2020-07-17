@@ -16,20 +16,6 @@ share: false  # Show social sharing links?
 profile: false  # Show author profile?
 comments: true  # Show comments?
 
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
-# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
-image:
-  caption: ""
-  focal_point: ""
-  preview_only: false
-
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects: []
 ---
 
 最近开始忙秋招，「码农翻身」公众号及同名书的作者老刘在知识星球里举办了读《CSAPP》的活动，之前一直没啃下来，希望能够借此机会逼自己一把，把这本厚厚的经典看完，并好好写笔记。

@@ -15,20 +15,6 @@ share: false  # Show social sharing links?
 profile: false  # Show author profile?
 comments: true  # Show comments?
 
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
-# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
-image:
-  caption: ""
-  focal_point: ""
-  preview_only: false
-
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects: []
 ---
 
 这章的内容非常基础并且重要，但为了节省篇幅，此篇笔记仅记录笔者不熟的或者认为非常重要且易出错的知识点。

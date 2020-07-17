@@ -10,7 +10,13 @@
 #   name = "图集"
 #   url = "gallery"
 #   weight = 3
-    
+
+[[main]]
+  identifier = "archive"
+  name = "Archive"
+  url = "archive"
+  weight = 2   
+
 [[main]]
   identifier = "about"
   name = "About"

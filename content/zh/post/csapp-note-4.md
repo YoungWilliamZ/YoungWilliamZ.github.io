@@ -12,20 +12,7 @@ lastmod: 2019-10-07T23:56:53+08:00
 featured: false
 draft: false
 
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
-# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
-image:
-  caption: ""
-  focal_point: ""
-  preview_only: false
 
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects: []
 ---
 
 最近在B站上看CSAPP的视频课，是CMU的公开课。最大的感触是国外大学对作弊抓的非常严格，平时作业连上网搜索都算作弊，更不要说看别人屏幕、让别人告诉你怎么写。一经被抓到直接不及格，并且成绩单上有永久记录。

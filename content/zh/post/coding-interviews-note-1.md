@@ -7,11 +7,6 @@ tags:
 categories:
   - 学习
 
-authors: ["admin"]
-reading_time: true  # Show estimated reading time?
-share: false  # Show social sharing links?
-profile: false  # Show author profile?
-comments: true  # Show comments?
 summary: "《剑指Offer》笔记，不定时更新～"
 ---
 

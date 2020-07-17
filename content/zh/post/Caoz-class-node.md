@@ -3,15 +3,9 @@ title: Caoz《成长的烦恼》笔记
 tags: ["Caoz","思维方式"]
 categories: ["学习"]
 date: 2018-12-28 21:48:55
-authors: ["admin"]
 
-reading_time: true  # Show estimated reading time?
-share: false  # Show social sharing links?
-profile: false  # Show author profile?
-comments: true  # Show comments?
-summary: "匆匆读一下 CaoZ 大佬在「易灵微课」开通的《成长的烦恼》笔记"
+summary: 记录一下～
 ---
-
 
 ## 背景
 
