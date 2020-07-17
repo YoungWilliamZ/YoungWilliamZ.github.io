@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Notes | New World</title>
-    <link>https://youngwilliamz.github.io/note/</link>
-      <atom:link href="https://youngwilliamz.github.io/note/index.xml" rel="self" type="application/rss+xml" />
-    <description>Notes</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language>
-    <image>
-      <url>https://youngwilliamz.github.io/img/icon-192.png</url>
-      <title>Notes</title>
-      <link>https://youngwilliamz.github.io/note/</link>
-    </image>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Notes on New World</title><link>https://youngwilliamz.github.io/note/</link><description>Recent content in Notes on New World</description><generator>Hugo -- gohugo.io</generator><language>zh</language><managingEditor>youngwilliam.zheng@gmail.com (YoungWilliam)</managingEditor><webMaster>youngwilliam.zheng@gmail.com (YoungWilliam)</webMaster><copyright>&amp;copy;{year}, All Rights Reserved</copyright><lastBuildDate>Thu, 22 Aug 2019 23:58:26 +0800</lastBuildDate><atom:link href="https://youngwilliamz.github.io/note/index.xml" rel="self" type="application/rss+xml"/><item><title>26. Remove Duplicates from Sorted Array 消去重复数</title><link>https://youngwilliamz.github.io/note/leetcode/array/26/</link><pubDate>Thu, 22 Aug 2019 23:58:26 +0800</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 23 Aug 2019 01:57:31 +0800</atom:modified><guid>https://youngwilliamz.github.io/note/leetcode/array/26/</guid><description>题目 难度：易 传送门： English 中文 思路 一开始没有仔细看题，以为只要求出消去重复数之后数组的长度就行了，没看到还要求最后的数组。于是用了很笨的方法。 后</description><dc:creator>YoungWilliam</dc:creator></item><item><title>169. Majority Element 求众数</title><link>https://youngwilliamz.github.io/note/leetcode/array/169/</link><pubDate>Tue, 13 Aug 2019 23:58:26 +0800</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Sat, 17 Aug 2019 03:22:58 +0800</atom:modified><guid>https://youngwilliamz.github.io/note/leetcode/array/169/</guid><description>题目 难度：易 给定一个大小为 n 的数组，找到其中的众数。众数是指在数组中出现次数大于 ⌊ n/2 ⌋ 的元素。 你可以假设数组是非空的，并且给定的数组总是存在</description><dc:creator>YoungWilliam</dc:creator></item></channel></rss>
