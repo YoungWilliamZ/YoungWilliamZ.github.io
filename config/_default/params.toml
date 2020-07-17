@@ -1,312 +1,196 @@
-# SITE SETUP
-# Guide: https://sourcethemes.com/academic/docs/get-started/
-# Documentation: https://sourcethemes.com/academic/docs/
-#
-# This file is formatted using TOML syntax - learn more at https://learnxinyminutes.com/docs/toml/
-# Each configuration section is defined by a name in square brackets (e.g. `[search]`).
+logoText = "New World"
+logoType = "short" # long, short
+description = "To recreate the world!"
+custom_css = []
+custom_js = []
+useFaviconGenerator = false # https://www.favicon-generator.org/
+meta_image = ""
+themecolor = ""
 
-############################
-## Theme
-############################
+themeOptions = ["dark", "light", "hacker", "solarized", "kimbie"]
+notAllowedTypesInHome = ["contact", "talks", "about", "showcase", "publication", "presentation", "resume"]
+notAllowedTypesInHomeSidebar = ["about", "archive", "showcase", "publication", "presentation", "resume"]
+notAllowedTypesInArchive = ["about", "talks", "showcase", "publication", "presentation", "resume"]
+notAllowedTypesInHomeFeed = ["about", "archive", "contact", "talks", "showcase", "publication", "presentation", "resume", "gallery"]
 
-# Choose a theme.
-#   Latest themes (may require updating): https://sourcethemes.com/academic/themes/
-#   Browse built-in themes in `themes/academic/data/themes/`
-#   Browse user installed themes in `data/themes/`
-theme = "minimal"
+viewportSize = "normal" # widest, wider, wide, normal, narrow
+enableUiAnimation = true
+hideSingleContentsWhenJSDisabled = false
+enablePinnedPosts = true
+minItemsToShowInTagCloud = 1 # Minimum items to show in tag cloud
 
-# Enable users to switch between day and night mode?
-day_night = true
+# header
+homeHeaderType = "text" # text, img, slide
 
-# Override the theme's font set (optional).
-#   Latest font sets (may require updating): https://sourcethemes.com/academic/themes/
-#   Browse built-in font sets in `themes/academic/data/fonts/`
-#   Browse user installed font sets in `data/fonts/`
-font = ""
+# menu
+showMobileMenuTerms = ["tags", "categories", "series"]
 
-# Choose a font size.
-# Sizes: XS (extra small), S (small), M (medium), L (large - DEFAULT), XL (extra large)
-font_size = "L"
+# body
+enableBreadcrumb = true
+enablePhotoSwipe = true
+enableSearch = true
+enableSearchHighlight = true
+enableGoToTop = true
+enableWhoami = true
+summaryShape = "classic" # card, classic, compact
+searchResultPosition = "main" # side, main
+archiveGroupByDate = "2006" # "2006-01": group by month, "2006": group by year
+archivePaginate = 13
+paginateWindow = 1
+talksPaginate = 5
+talksGroupByDate = "2006"
+pubPaginate = 20
 
-############################
-## Basic Info
-############################
-
-# Website type
-#   Improve how search engines understand your site.
-#   For personal sites, choose "Person".
-#   For organizations and projects, choose from https://schema.org/Organization#subtypes
-#   E.g. Person, Organization, LocalBusiness, Project, EducationalOrganization
-site_type = "Person"
-
-# Local business type (optional)
-# If you entered "LocalBusiness" above, choose the type of business from https://schema.org/LocalBusiness#subtypes
-local_business_type = ""
-
-# Organization name (optional)
-# Enter an organization or project name. Defaults to the site title from `config.toml`.
-org_name = ""
-
-# Description for social sharing and search engines. If undefined, superuser role is used in place.
-description = ""
-
-############################
-## Site Features
-############################
-
-# Enable source code highlighting? true/false
-# Documentation: https://sourcethemes.com/academic/docs/writing-markdown-latex/#highlighting-options
-highlight = true
-highlight_languages = ["r"]  # Add support for highlighting additional languages
-# highlight_style = "github"  # For supported styles, see https://cdnjs.com/libraries/highlight.js/
-
-# Enable LaTeX math rendering? true/false
-#   If false, you can enable math on a per page basis as needed.
-math = false
-
-# Enable diagram rendering? true/false
-#   If false, you can enable diagrams on a per page basis as needed.
-diagram = false
-
-# Privacy pack
-#   Show a cookie consent message to visitors
-#   Anonymize IP in Google Analytics (if enabled)
-privacy_pack = false
-
-# Enable visitors to edit pages?
-#   `repo` defines the repository URL. `editable` defines which page types can be edited.
-edit_page = {repo_url = "https://github.com/gcushen/hugo-academic", content_dir = "", repo_branch = "master", editable = {docs = true, page = false, post = false}}
-
-# Show related content at the bottom of pages?
-show_related = {docs = true, page = false, post = true, project = true, publication = true, talk = true}
-
-############################
-## Contact details
-##
-## These details power the Contact widget (if enabled).
-## Additionally, for organizations, these details may be used to enrich search engine results.
-############################
-
-# Enter contact details (optional). To hide a field, clear it to "".
+# whoami
+myname = "YoungWilliam"
 email = "youngwilliam.zheng@gmail.com"
-phone = ""
+whoami = "Developer"
+bioImageUrl = ""
+useGravatar = true
+location = "Shenzhen, China"
+organization = ""
+link = "https://youngwilliamz.github.io/"
 
-# Address
-# For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
-address = {street = "450 Serra Mall", city = "Stanford", region = "CA", postcode = "94305", country = "United States", country_code = "US"}
+# sidebar
+enableBio = true
+enableBioImage = true
+enableSidebar = true
+enableSidebarTags = true
+enableSidebarSeries = true
+enableSidebarCategories = true
+enableHomeSidebarTitles = true
+enableListSidebarTitles = true
+enableToc = true
+hideToc = false
+tocFolding = true
+tocPosition = "inner" # inner, outer
+enableTocSwitch = true
+itemsPerCategory = 5
+sidebarPosition = "right"
+tocLevels = ["h2", "h3", "h4"]
+enableSidebarPostsByOrder = false
 
-# Geographic coordinates
-# To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
-coordinates = {latitude = "37.4275", longitude = "-122.1697"}
+# footer
+showPoweredBy = true
+showFeedLinks = true
+showSocialLinks = true
+enableLangChange = true
+enableThemeChange = true
 
-# Directions for visitors to locate you.
-directions = ""
+# service
+googleTagManager = "" # GTM-XXXXXX
+baiduAnalytics = ""
+enableBusuanzi = false
+busuanziSiteUV = true
+busuanziSitePV = true
+busuanziPagePV = true
 
-# Office hours
-# A list of your office hours. To remove, set to an empty list `[]`.
-office_hours = []
+# rss
+updatePeriod = "" # Possible values: 'hourly', 'daily', 'weekly', 'monthly', or 'yearly'.
+updateFrequency = ""
+fullContents = false
 
-# Enter an optional link for booking appointments (e.g. calendly.com).
-appointment_url = ""
+# comment
+enableComment = true
+disqus_shortname = ""
+commento = false
 
-# Contact links
-#   Set to `[]` to disable, or comment out unwanted lines with a hash `#`.
-contact_links = [
-  # {icon = "twitter", icon_pack = "fab", name = "DM Me", link = "https://twitter.com/Twitter"},
-  # {icon = "skype", icon_pack = "fab", name = "Skype Me", link = "skype:echo123?call"},
-  # {icon = "keybase", icon_pack = "fab", name = "Chat on Keybase", link = "https://keybase.io/"},
-  # {icon = "comments", icon_pack = "fas", name = "Discuss on Forum", link = "https://discourse.gohugo.io"},
-  # {icon = "telegram", icon_pack = "fab", name = "Telegram Me", link = "https://telegram.me/@Telegram"},
-  ]
+[telegram]
+  enable = false
+  siteId = ""
+  dataLimit = 5
 
-############################
-## Social
-############################
+[gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
+  owner = ""              # Your GitHub ID
+  repo = ""               # The repo to store comments
+  clientId = ""           # Your client ID
+  clientSecret = ""       # Your client secret
 
-# Default image for social sharing and search engines. Place image in `static/img/` folder and specify image name here.
-sharing_image = ""
+[utterances]       # https://utteranc.es/
+  owner = ""              # Your GitHub ID
+  repo = ""               # The repo to store comments
 
-# Twitter username (without @). Used when a visitor shares your site on Twitter.
-twitter = ""
+[gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
+  owner = "youngwilliamz"              # Your GitHub ID
+  repo = "Gitment_Store"               # The repo to store comments
+  clientId = "d6e5e76d4a62818bb13b"           # Your client ID
+  clientSecret = "4ca45620cd38f36e254fda2ea288ddcde569409e"       # Your client secret
 
-############################
-## Regional Settings
-############################
+# Valine.
+# You can get your appid and appkey from https://leancloud.cn
+# more info please open https://valine.js.org
+[valine]
+  enable = false
+  appId = '你的appId'
+  appKey = '你的appKey'
+  notify = false  # mail notifier , https://github.com/xCss/Valine/wiki
+  verify = false # Verification code
+  avatar = 'mm' 
+  placeholder = '说点什么吧...'
+  visitor = false
 
-# Date and time format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )
-#   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
-date_format = "Jan 2, 2006"
-#   Examples: "3:04 pm" or "15:04"
-time_format = "3:04 PM"
+[changyan]
+  changyanAppid = ""        # Changyan app id             # 畅言
+  changyanAppkey = ""       # Changyan app key
 
-# Address format (choose from the [address_formats] list below or add you own to the list).
-address_format = "en-us"
+[livere]
+  livereUID = ""            # LiveRe UID                  # 来必力
 
-############################
-## Advanced
-############################
+# Isso: https://posativ.org/isso/
+[isso]
+  enable = false
+  scriptSrc = "" # "https://isso.example.com/js/embed.min.js"
+  dataAttrs = "" # "data-isso='https://isso.example.com' data-isso-require-author='true'"
 
-# Main menu alignment (l = left, c = center, r = right) and logo options.
-main_menu = {align = "l", show_logo = true, highlight_active_link = true, show_language = false}
+[socialOptions]
+  email = "youngwilliam.zheng@gmail.com"
+  phone = ""
+  facebook = ""
+  twitter = ""
+  github = "https://github.com/youngwilliamz"
+  stack-overflow = ""
+  instagram = ""
+  google-plus = ""
+  youtube = ""
+  medium = ""
+  tumblr = ""
+  linkedin = ""
+  pinterest = ""
+  stack-exchange = ""
+  telegram = ""
+  steam = ""
+  weibo = ""
+  douban = ""
+  csdn = ""
+  gitlab = ""
+  mastodon = ""
+  jianshu = ""
+  zhihu = ""
+  signal = ""
+  whatsapp = ""
+  matrix = ""
+  xmpp = ""
+  dev-to = ""
+  gitea = ""
+  google-scholar = ""
 
-# Show estimated reading time for posts? (true/false)
-reading_time = true
+[donationOptions]
+  enable = false
+  alipay = "" 
+  wechat = ""
+  paypal = ""
+  patreon = ""
 
-# Display next/previous section pager? (true/false)
-section_pager = false
-docs_section_pager = true  # Display pager in Docs layout (e.g. tutorials)?
+# possible share name: ["facebook","twitter", "reddit", "linkedin", "tumblr", "weibo", "douban", "line"]
+[[share]]
+  name = "facebook"
+  username = ""
+[[share]]
+  name = "twitter"
 
-# Enable in-built social sharing buttons? (true/false)
-sharing = true
-
-# Show a copyright license from creativecommons.org in the site footer?
-# Page specific copyright licenses are also possible by adding this option to a page's front matter.
-copyright_license = {enable = false, allow_derivatives = false, share_alike = true, allow_commercial = false, notice = "This work is licensed under {license}"}
-
-# Highlight the site author (superuser) in author lists? (true/false)
-highlight_superuser = false
-
-# Link authors to their profile page? (true/false)
-link_authors = true
-
-# Abstract length (characters) in the Compact and Portfolio Card list views. Also, see `summaryLength` in `config.toml`.
-abstract_length = 135
-
-# Load JS plugins
-#   E.g. To load `/assets/js/custom.js`, set `plugins_js = ["custom"]`.
-plugins_js  = []
-
-# Avatars.
-# An avatar is an image that appears next to a user's name.
-# An avatar can be uploaded as an image named `avatar` to each user's profile or fetched from Gravatar.com.
-[avatar]
-  # Get user avatars from Gravatar.com? (true/false)
-  gravatar = false
-
-  # Choose a shape for avatar images. Options: circle, square.
-  shape = "circle"
-
-# Available address formats.
-[address_formats]
-  en-us = {order = ['street', 'city', 'region', 'postcode'], delimiters = [', ', ', ', ' ', '']}
-  en-gb = {order = ['street', 'city', 'region', 'postcode'], delimiters = [', ', ', ', ', ', '']}
-  de = {order = ['street', 'postcode', 'city'], delimiters = ['<br>', ' ', '']}
-  fr-fr = {order = ['street', 'postcode', 'city'], delimiters = ['<br>', ' ', '']}
-  zh = {order = ['postcode', 'region', 'city', 'street'], delimiters = [' ', ' ', ' ', '']}
-
-# Configuration of publication pages.
-[publications]
-  # Date format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )
-  #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
-  date_format = "January 2006"
-
-  # Citation style ("apa" or "mla")
-  citation_style = "apa"
-
-# Configuration of project pages.
-[projects]
-  # Views for associated content.
-  #   1: List
-  #   2: Compact
-  #   3: Card
-  #   4: Citation (publications only)
-  post_view = 2
-  publication_view = 2
-  talk_view = 2
-
-############################
-## Comments
-############################
-[comments]
-  # Comment provider:
-  #   0: Disabled
-  #   1: Disqus (https://disqus.com)
-  #   2: Commento (https://commento.io)
-  #   3: Gitalk
-  engine = 3
-
-  # Which page types are commentable?
-  commentable = {page = true, post = true, docs = true, project = true, publication = true, talk = true}
-
-  # Configuration of Disqus.
-  [comments.disqus]
-    shortname = ""  # Paste the shortname from your Disqus dashboard.
-    show_count = true  # Show comment count in page header? (true/false)
-
-  # Configuration of Commento.
-  [comments.commento]
-    # If self-hosting Commento, enter its URL here (e.g. "https://commento.?.com"), otherwise leave empty.
-    url = ""
-   
-  # Configuration of Gitalk
-  [comments.gitalk]
-    on = true
-    clientID = "d6e5e76d4a62818bb13b"
-    clientSecret = "4ca45620cd38f36e254fda2ea288ddcde569409e"
-    repo  = "Gitment_Store"
-    owner = "youngwilliamz"
-    admin = ["youngwilliamz"]
-    labels = ["Comments"]  # default to ["Gitalk"]
-    distractionFreeMode = false
-    pagerDirection = 'last' # set to 'last' or 'first'
-    createIssueManually = false
-    enableHotKey = true  # cmd | ctrl + enter to commit comment
-    [gitalk.flipMoveOptions]
-        staggerDelayBy = 150
-        appearAnimation = 'elevator'
-        enterAnimation = 'elevator'
-        leaveAnimation = 'elevator'
-        
-############################
-## Search
-############################
-[search]
-  # Search provider:
-  #   0: No search engine
-  #   1: Academic (built-in)
-  #   2: Algolia (https://www.algolia.com)
-  engine = 1
-
-  # Configuration of Algolia search engine.
-  # Paste the values from your Algolia dashboard.
-  [search.algolia]
-    app_id = ""
-    api_key = ""
-    index_name = ""
-    show_logo = false
-
-############################
-## Maps
-############################
-[map]
-  # To show your address on a map in the Contact widget, enter your latitude and longitude (above)
-  # and choose a map provider below.
-  #
-  # To use Google Maps, set `engine` to 1 and enter your API key that can be obtained here:
-  #   https://developers.google.com/maps/documentation/javascript/get-api-key
-  # To use OpenStreetMap tiles, set `engine` to 2.
-  # To use OpenStreetMap on a high traffic site, set `engine` to 3 and enter your API key that can be obtained here:
-  #   https://www.mapbox.com/studio/account/tokens
-  #
-  # Map provider:
-  #   0: No map
-  #   1: Google Maps
-  #   2: OpenStreetMap (Mapnik)
-  #   3: OpenStreetMap (Mapbox)
-  engine = 2
-  api_key = ""
-  zoom = 15
-
-############################
-## Marketing
-############################
-[marketing]
-  google_analytics = ""
-  google_tag_manager = ""
-
-############################
-## Content Management System
-############################
-[cms]
-  # See https://sourcethemes.com/academic/docs/install/#install-with-web-browser
-  netlify_cms = true
+[[footerLinks]]
+  name = ""
+  link = ""
+[[footerLinks]]
+  name = ""
+  link = ""

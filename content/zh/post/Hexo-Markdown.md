@@ -15,7 +15,6 @@ comments: true  # Show comments?
 summary: "可能还不全，哈哈哈，看官请随意。"
 ---
 
-{{% toc %}}
 
 总结一下，`Hexo` 下 `Markdown` 的写法和一些奇技淫巧。
 

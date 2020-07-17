@@ -18,7 +18,6 @@ summary: "不了解一下？"
 > 本文用于记录以及简单的安装
 >
 
-{{% toc %}}
 
 <img src="https://i.loli.net/2018/06/24/5b2edf5139f61.png" width="50%" height="50%">
 

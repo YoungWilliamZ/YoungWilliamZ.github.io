@@ -12,7 +12,6 @@ comments: true  # Show comments?
 summary: "匆匆读一下 CaoZ 大佬在「易灵微课」开通的《成长的烦恼》笔记"
 ---
 
-{{% toc %}}
 
 ## 背景
 

@@ -1,0 +1,18 @@
+
+# [[main]]
+#   identifier = "posts"
+#   name = "博客"
+#   url = "post"
+#   weight = 2
+
+# [[main]]
+#   identifier = "gallery"
+#   name = "图集"
+#   url = "gallery"
+#   weight = 3
+    
+[[main]]
+  identifier = "about"
+  name = "About"
+  url = "about"
+  weight = 4
