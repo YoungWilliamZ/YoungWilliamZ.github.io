@@ -1,1 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>POSIX on New World | YoungWilliam's Blog</title><link>https://youngwilliam.io/tags/posix/</link><description>Recent content in POSIX on New World | YoungWilliam's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><managingEditor>youngwilliam.zheng@gmail.com (YoungWilliam)</managingEditor><webMaster>youngwilliam.zheng@gmail.com (YoungWilliam)</webMaster><copyright>&amp;copy;{year}, All Rights Reserved</copyright><lastBuildDate>Tue, 20 Aug 2019 02:10:40 +0800</lastBuildDate><atom:link href="https://youngwilliam.io/tags/posix/index.xml" rel="self" type="application/rss+xml"/><item><title>What is POSIX?</title><link>https://youngwilliam.io/post/what-is-posix/</link><pubDate>Tue, 20 Aug 2019 02:10:40 +0800</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 18:33:36 +0800</atom:modified><guid>https://youngwilliam.io/post/what-is-posix/</guid><description>总结一下 POSIX 标准</description><dc:creator>YoungWilliam</dc:creator><category>POSIX</category><category>UNIX</category><category>LINUX</category><category>学习</category></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>POSIX on New World | YoungWilliam's Blog</title><link>https://youngwilliam.io/tags/posix/</link><description>Recent content in POSIX on New World | YoungWilliam's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><managingEditor>youngwilliam.zheng@gmail.com (YoungWilliam)</managingEditor><webMaster>youngwilliam.zheng@gmail.com (YoungWilliam)</webMaster><copyright>&amp;copy;{year}, All Rights Reserved</copyright><lastBuildDate>Tue, 20 Aug 2019 02:10:40 +0800</lastBuildDate><atom:link href="https://youngwilliam.io/tags/posix/index.xml" rel="self" type="application/rss+xml"/><item><title>What is POSIX?</title><link>https://youngwilliam.io/post/what-is-posix/</link><pubDate>Tue, 20 Aug 2019 02:10:40 +0800</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 18:33:36 +0800</atom:modified><guid>https://youngwilliam.io/post/what-is-posix/</guid><description>总结一下 POSIX 标准</description><content:encoded>&lt;h2 id="定义">定义&lt;/h2>
+&lt;p>可移植操作系统接口（英语：&lt;code>Portable Operating System Interface&lt;/code>，缩写为&lt;code>POSIX&lt;/code>）是IEEE为要在各种 &lt;code>UNIX&lt;/code> 操作系统上运行软件，而定义 API 的一系列互相关联的&lt;strong>标准的总称&lt;/strong>，其正式称呼为&lt;code>IEEE Std 1003&lt;/code>，而国际标准名称为 &lt;code>ISO/IEC 9945&lt;/code>。&lt;/p>
+&lt;h2 id="来源">来源&lt;/h2>
+&lt;p>此标准源于一个大约开始于1985年的项目。&lt;/p>
+&lt;p>POSIX 这个名称是由理查德·斯托曼（RMS）应IEEE的要求而提议的一个易于记忆的名称。&lt;/p>
+&lt;p>它基本上是 Portable Operating System Interface（可移植操作系统接口）的缩写，而X则表明其对Unix API的传承。&lt;/p>
+&lt;h2 id="组成">组成&lt;/h2>
+&lt;p>当前的POSIX主要分为四个部分：&lt;/p>
+&lt;ul>
+&lt;li>Base Definitions&lt;/li>
+&lt;li>System Interfaces&lt;/li>
+&lt;li>Shell and Utilities&lt;/li>
+&lt;li>Rationale&lt;/li>
+&lt;/ul>
+&lt;h2 id="posix-操作系统">POSIX 操作系统&lt;/h2>
+&lt;p>正式认证的包括 macOS 等。&lt;/p>
+&lt;p>未得到正式认证，但基本符合 POSIX 标准的有 Android、FreeBSD 等。&lt;/p>
+&lt;h2 id="参考">参考&lt;/h2>
+&lt;ol>
+&lt;li>&lt;a href="https://en.wikipedia.org/wiki/POSIX">Wiki&lt;/a>&lt;/li>
+&lt;/ol></content:encoded><dc:creator>YoungWilliam</dc:creator><category>POSIX</category><category>UNIX</category><category>LINUX</category><category>学习</category></item></channel></rss>

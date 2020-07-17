@@ -1,1 +1,237 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Max OS X on New World | YoungWilliam's Blog</title><link>https://youngwilliam.io/tags/max-os-x/</link><description>Recent content in Max OS X on New World | YoungWilliam's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><managingEditor>youngwilliam.zheng@gmail.com (YoungWilliam)</managingEditor><webMaster>youngwilliam.zheng@gmail.com (YoungWilliam)</webMaster><copyright>&amp;copy;{year}, All Rights Reserved</copyright><lastBuildDate>Sat, 11 Aug 2018 13:52:00 +0000</lastBuildDate><atom:link href="https://youngwilliam.io/tags/max-os-x/index.xml" rel="self" type="application/rss+xml"/><item><title>Mac OS X 下优化 Terminal，一篇就够了！</title><link>https://youngwilliam.io/post/optimize-the-terminal-in-mac-os-x/</link><pubDate>Sat, 11 Aug 2018 13:52:00 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Wed, 14 Aug 2019 01:34:09 +0800</atom:modified><guid>https://youngwilliam.io/post/optimize-the-terminal-in-mac-os-x/</guid><description>Mac 大法好</description><dc:creator>YoungWilliam</dc:creator><category>Max OS X</category><category>工欲善其事</category></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Max OS X on New World | YoungWilliam's Blog</title><link>https://youngwilliam.io/tags/max-os-x/</link><description>Recent content in Max OS X on New World | YoungWilliam's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><managingEditor>youngwilliam.zheng@gmail.com (YoungWilliam)</managingEditor><webMaster>youngwilliam.zheng@gmail.com (YoungWilliam)</webMaster><copyright>&amp;copy;{year}, All Rights Reserved</copyright><lastBuildDate>Sat, 11 Aug 2018 13:52:00 +0000</lastBuildDate><atom:link href="https://youngwilliam.io/tags/max-os-x/index.xml" rel="self" type="application/rss+xml"/><item><title>Mac OS X 下优化 Terminal，一篇就够了！</title><link>https://youngwilliam.io/post/optimize-the-terminal-in-mac-os-x/</link><pubDate>Sat, 11 Aug 2018 13:52:00 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Wed, 14 Aug 2019 01:34:09 +0800</atom:modified><guid>https://youngwilliam.io/post/optimize-the-terminal-in-mac-os-x/</guid><description>Mac 大法好</description><content:encoded>&lt;p>先上最终效果图：&lt;/p>
+&lt;p>&lt;img src="https://i.imgur.com/0goJQf8.png" alt="" />&lt;/p>
+&lt;h2 id="目录">目录&lt;/h2>
+&lt;!-- TOC -->
+&lt;ul>
+&lt;li>&lt;a href="#%08%e7%9b%ae%e5%bd%95">目录&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#1-%e7%9b%b8%e5%85%b3%e5%b7%a5%e5%85%b7%e4%bb%8b%e7%bb%8d">1. 相关工具介绍&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#2-%e9%85%8d%e7%bd%ae%e6%80%bb%e8%a7%88">2. 配置总览&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#3-%e5%ae%89%e8%a3%85%e6%ad%a5%e9%aa%a4">3. 安装步骤&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#31-%e5%ae%89%e8%a3%85-iterm2">3.1. 安装 iTerm2&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#32-%e5%ae%89%e8%a3%85xcodes-command-line-tools">3.2. 安装XCode’s Command line tools&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#33-%e6%a3%80%e6%9f%a5-zsh-%e6%98%af%e5%90%a6%e5%b7%b2%e5%ae%89%e8%a3%85">3.3. 检查 &lt;code>zsh&lt;/code> 是否已安装&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#34-%e5%ae%89%e8%a3%85-oh-my-zsh">3.4. 安装 &lt;code>Oh-My-Zsh&lt;/code>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#35-%e5%ae%89%e8%a3%85-powerline-fonts">3.5. 安装 &lt;code>Powerline fonts&lt;/code>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#36-%e5%ae%89%e8%a3%85%e9%85%8d%e7%bd%ae%e4%b8%bb%e9%a2%98">3.6. 安装配置主题&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#37-%e4%bf%ae%e6%94%b9%e5%91%bd%e4%bb%a4%e6%8f%90%e7%a4%ba%e7%ac%a6">3.7. 修改命令提示符&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#38-%e9%85%8d%e7%bd%ae-zsh-%e5%91%bd%e4%bb%a4%e8%af%ad%e6%b3%95%e9%ab%98%e4%ba%ae">3.8. 配置 &lt;code>zsh&lt;/code> 命令语法高亮&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#4-%e5%a4%87%e7%94%a8%e4%b8%8b%e8%bd%bd%e9%93%be%e6%8e%a5">4. 备用下载链接&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#5-%e5%8f%82%e8%80%83%e5%8f%8a%e6%84%9f%e8%b0%a2">5. 参考及感谢&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;!-- /TOC -->
+&lt;!-- more -->
+&lt;h2 id="1-相关工具介绍">1. 相关工具介绍&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>iTerm2&lt;/strong>： Terminal 终端的替代品，拥有更多强大的功能，想了解更多请戳 &lt;a href="https://www.iterm2.com/">iTerm2 官网&lt;/a>；&lt;/li>
+&lt;li>&lt;strong>XCode’s Command line tools&lt;/strong>: 开发环境集成，包含 git、gcc 等重要工具；&lt;/li>
+&lt;li>&lt;strong>zsh&lt;/strong>：Linux 的一种 shell 外壳，强大的虚拟终端，和 bash 属于同类产品，OS X 已自带；&lt;/li>
+&lt;li>&lt;strong>Oh-My-Zsh&lt;/strong>: 用来管理 zsh 的配置，同时还有很多社区贡献的主题配置以及好用的插件可供使用，了解更多请戳 &lt;a href="https://ohmyz.sh/">Oh-My-Zsh 官网&lt;/a>；&lt;/li>
+&lt;/ol>
+&lt;h2 id="2-配置总览">2. 配置总览&lt;/h2>
+&lt;ol>
+&lt;li>iTerm2&lt;/li>
+&lt;li>Oh-My-Zsh&lt;/li>
+&lt;li>agnoster 主题&lt;/li>
+&lt;li>zsh 命令语法高亮&lt;/li>
+&lt;/ol>
+&lt;h2 id="3-安装步骤">3. 安装步骤&lt;/h2>
+&lt;h3 id="31-安装-iterm2">3.1. 安装 iTerm2&lt;/h3>
+&lt;p>进入&lt;a href="https://www.iterm2.com/downloads.html">官网下载页面&lt;/a>，点击 &lt;code>Stable Releases&lt;/code> 下面的 &lt;code>Download&lt;/code> 即可下载，解压后拖到应用程序中。这是简单的一小步，但是却是优化 &lt;code>Terminal&lt;/code> 的一大步！&lt;/p>
+&lt;p>PS: 网络环境不太好的同学不要担心，我已经把安装包传到百度云了，请到文章最后寻找链接下载。&lt;/p>
+&lt;h3 id="32-安装xcodes-command-line-tools">3.2. 安装XCode’s Command line tools&lt;/h3>
+&lt;p>XCode 13 个 G ,这里我们只需要 XCode’s Command line tools 来支撑 Git 的使用，所以我们不用费时费力装 XCode 来浪费那13个G。&lt;br />
+(从 Yosemite（10.10+）开始，Command Line Tools 可以单独安装。)&lt;/p>
+&lt;p>&lt;strong>安装方法&lt;/strong>: 打开终端，输入&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">xcode-select –install
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>点 &lt;code>install&lt;/code> ，同意，即可。&lt;/p>
+&lt;h3 id="33-检查-zsh-是否已安装">3.3. 检查 &lt;code>zsh&lt;/code> 是否已安装&lt;/h3>
+&lt;p>在命令行输入：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">zsh --version
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>如果显示&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">zsh 5.3 &lt;span class="o">(&lt;/span>x86_64-apple-darwin17.0&lt;span class="o">)&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>即zsh的当前版本号，就说明装好了，一般 OS X 自带有的。&lt;/p>
+&lt;p>如果没装则需要输入：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">brew install zsh zsh-completions
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这是用Homebrew装，需要 OS X 上有Homebrew，它的网站：https://brew.sh/&lt;/p>
+&lt;h3 id="34-安装-oh-my-zsh">3.4. 安装 &lt;code>Oh-My-Zsh&lt;/code>&lt;/h3>
+&lt;p>可以通过 &lt;code>curl&lt;/code> 或者 &lt;code>wget&lt;/code> 来安装&lt;/p>
+&lt;ul>
+&lt;li>curl&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">sh -c &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="k">$(&lt;/span>curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh&lt;span class="k">)&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>wget&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">sh -c &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="k">$(&lt;/span>wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -&lt;span class="k">)&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>网络好的话几秒就装好了。&lt;/p>
+&lt;p>一般安装程序会自动把默认的 shell 切换为 &lt;code>zsh&lt;/code>, 什么！你不懂 shell 是什么？我也不懂，你去问问度娘？或者直接右上角？其实不懂也正常，也不影响你拥有自己美美的终端。&lt;/p>
+&lt;p>如果想修改默认 shell 为原来的 bash：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">chsh -s /bin/bash
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>重启 iTerm2 就好了。&lt;/p>
+&lt;h3 id="35-安装-powerline-fonts">3.5. 安装 &lt;code>Powerline fonts&lt;/code>&lt;/h3>
+&lt;p>华丽丽的主题需要 &lt;a href="https://github.com/powerline/fonts">Powerline 字符集&lt;/a>的支持。&lt;br />
+通过 git 安装, 直接执行以下命令行：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">git clone https://github.com/powerline/fonts.git --depth&lt;span class="o">=&lt;/span>1&lt;span class="p">;&lt;/span> &lt;span class="nb">cd&lt;/span> fonts&lt;span class="p">;&lt;/span> ./install.sh&lt;span class="p">;&lt;/span> &lt;span class="nb">cd&lt;/span> ..&lt;span class="p">;&lt;/span> rm -rf fonts
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后到 iterm2 配置，设置字体&lt;/p>
+&lt;ol>
+&lt;li>打开 &lt;strong>Preferences&lt;/strong>，选择 &lt;strong>Profiles&lt;/strong>&lt;br />
+&lt;img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fu4hnix30uj30ye0d5wfk.jpg" alt="" />&lt;/li>
+&lt;li>选择 &lt;strong>Text&lt;/strong>，点击 &lt;strong>Change Font&lt;/strong>&lt;br />
+&lt;img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fu4i6ep6kcj30pi0ciaai.jpg" alt="" />&lt;/li>
+&lt;li>选择&lt;strong>固定宽度&lt;/strong>，选择自己喜欢的字体。&lt;strong>注意&lt;/strong>： iTerm2 可以实时看到效果，结尾不是 &lt;code>for Powerline&lt;/code> 的会乱码。&lt;br />
+&lt;img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fu4i94dy0uj30ht0eqdg3.jpg" alt="" />&lt;/li>
+&lt;li>接着修改字体颜色，选择另一项 &lt;code>Colors&lt;/code>, 点击 &lt;code>Color Presets&lt;/code>, 选择&lt;code>Solarized Dark&lt;/code>&lt;br />
+&lt;img src="https://ws1.sinaimg.cn/large/b48b5d8dly1fu4m84ux8uj20ps0ci40g.jpg" alt="" />&lt;br />
+&lt;img src="https://i.imgur.com/T8jzFpm.png" alt="" />&lt;/li>
+&lt;/ol>
+&lt;h3 id="36-安装配置主题">3.6. 安装配置主题&lt;/h3>
+&lt;p>装好之后就可以换到 agnoster 主题，Oh My Zsh 一般自带有这个主题。&lt;/p>
+&lt;p>可以看看其它的默认主题：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">ls ~/.oh-my-zsh/themes
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>需要修改主题只需：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">vim ~/.zshrc
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后把里面 ZSH_THEME 的值改为 ZSH_THEME=&amp;quot;agnoster&amp;rdquo;，保存退出。&lt;/p>
+&lt;p>修改和保存的过程为：&lt;/p>
+&lt;ol>
+&lt;li>按下 &lt;code>i&lt;/code> 开始编辑&lt;/li>
+&lt;li>通过方向键控制光标的位置&lt;/li>
+&lt;li>定位到 &lt;code>ZSH_THEME&lt;/code>&lt;/li>
+&lt;li>改为 &lt;code>ZSH_THEME=&amp;quot;agnoster&amp;quot;&lt;/code>&lt;/li>
+&lt;li>按下 &lt;code>ESC&lt;/code>, 输入 &lt;code>:wq&lt;/code>, 回车&lt;/li>
+&lt;li>搞定！&lt;/li>
+&lt;/ol>
+&lt;p>（&lt;a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Themes#agnoster">点击这里&lt;/a>还有各种主题预览，任君翻牌~）&lt;/p>
+&lt;h3 id="37-修改命令提示符">3.7. 修改命令提示符&lt;/h3>
+&lt;p>默认的命令提示符为 user@userdemackbookPro，这样的提示符配合 powerlevel9k 主题太过冗长，因此我选择将该冗长的提示符去掉，在 &lt;code>~/.zshrc&lt;/code> 配置文件后面追加如下内容：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="c1"># 注意：DEFAULT_USER 的值必须要是系统用户名才能生效&lt;/span>
+&lt;span class="nv">DEFAULT_USER&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;user&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>编辑方法同上。&lt;/p>
+&lt;h3 id="38-配置-zsh-命令语法高亮">3.8. 配置 &lt;code>zsh&lt;/code> 命令语法高亮&lt;/h3>
+&lt;p>&lt;a href="https://github.com/zsh-users/zsh-syntax-highlighting">zsh-syntax-highlighting&lt;/a> 插件可以使你终端输入的命令有语法高亮效果，安装方法如下（oh-my-zsh 插件管理的方式安装）：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>复制文件到插件目录&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">git clone https://github.com/zsh-users/zsh-syntax-highlighting.git &lt;span class="si">${&lt;/span>&lt;span class="nv">ZSH_CUSTOM&lt;/span>&lt;span class="k">:-&lt;/span>&lt;span class="p">~/.oh-my-zsh/custom&lt;/span>&lt;span class="si">}&lt;/span>/plugins/zsh-syntax-highlighting
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>修改 &lt;code>~/.zshrc&lt;/code> 添加插件&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="c1"># 注意：zsh-syntax-highlighting 必须放在最后面（官方推荐）&lt;/span>
+&lt;span class="nv">plugins&lt;/span>&lt;span class="o">=(&lt;/span> &lt;span class="o">[&lt;/span>plugins...&lt;span class="o">]&lt;/span> zsh-syntax-highlighting&lt;span class="o">)&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://i.imgur.com/N6db1vG.png" alt="" />&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>应用修改&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="nb">source&lt;/span> ~/.zshrc
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;/ol>
+&lt;p>大功告成~有问题欢迎留言讨论~&lt;/p>
+&lt;h2 id="4-备用下载链接">4. 备用下载链接&lt;/h2>
+&lt;p>iTerm2 ( 3.2.0 )： 链接: &lt;a href="https://pan.baidu.com/s/1Wm7NjtGfA81LpGFYAaEAPQ">https://pan.baidu.com/s/1Wm7NjtGfA81LpGFYAaEAPQ&lt;/a> 密码: ksgv&lt;/p>
+&lt;h2 id="5-参考及感谢">5. 参考及感谢&lt;/h2>
+&lt;ol>
+&lt;li>&lt;a href="https://blog.csdn.net/qianghaohao/article/details/79440961">我的 Mac 终端配置（Mac OSX + iTerm2 + Zsh + Oh-My-Zsh）&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.csdn.net/huihut/article/details/61418136">iTerm2 + OhMyZsh + agnoster + Powerline + solarized = 漂亮的Mac终端&lt;/a>&lt;/li>
+&lt;/ol></content:encoded><dc:creator>YoungWilliam</dc:creator><category>Max OS X</category><category>工欲善其事</category></item></channel></rss>

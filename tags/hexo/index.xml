@@ -1,1 +1,376 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Hexo on New World | YoungWilliam's Blog</title><link>https://youngwilliam.io/tags/hexo/</link><description>Recent content in Hexo on New World | YoungWilliam's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><managingEditor>youngwilliam.zheng@gmail.com (YoungWilliam)</managingEditor><webMaster>youngwilliam.zheng@gmail.com (YoungWilliam)</webMaster><copyright>&amp;copy;{year}, All Rights Reserved</copyright><lastBuildDate>Tue, 10 Jul 2018 15:29:00 +0000</lastBuildDate><atom:link href="https://youngwilliam.io/tags/hexo/index.xml" rel="self" type="application/rss+xml"/><item><title>Hexo 使用 Markdown 编辑技巧大全</title><link>https://youngwilliam.io/post/hexo-markdown/</link><pubDate>Tue, 10 Jul 2018 15:29:00 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 17:19:01 +0800</atom:modified><guid>https://youngwilliam.io/post/hexo-markdown/</guid><description>可能还不全，哈哈哈，看官请随意。</description><dc:creator>YoungWilliam</dc:creator><category>Hexo</category><category>Markdown</category><category>Markdown</category></item><item><title>Hexo 下特有的编辑图片方式，直接使用 img 标志</title><link>https://youngwilliam.io/post/hexo-image-edite-method/</link><pubDate>Sun, 24 Jun 2018 08:02:00 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Wed, 14 Aug 2019 01:25:12 +0800</atom:modified><guid>https://youngwilliam.io/post/hexo-image-edite-method/</guid><description>Hexo 小技巧</description><dc:creator>YoungWilliam</dc:creator><category>Hexo</category><category>Markdown</category><category>Hexo</category></item><item><title>HexoEditor, 一个写 Hexo 非常好用的 Markdown 编辑器</title><link>https://youngwilliam.io/post/hexoeditor/</link><pubDate>Sun, 24 Jun 2018 06:08:00 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 17:19:01 +0800</atom:modified><guid>https://youngwilliam.io/post/hexoeditor/</guid><description>不了解一下？</description><dc:creator>YoungWilliam</dc:creator><category>编辑器</category><category>Hexo</category><category>Markdown</category><category>Hexo</category></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Hexo on New World | YoungWilliam's Blog</title><link>https://youngwilliam.io/tags/hexo/</link><description>Recent content in Hexo on New World | YoungWilliam's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><managingEditor>youngwilliam.zheng@gmail.com (YoungWilliam)</managingEditor><webMaster>youngwilliam.zheng@gmail.com (YoungWilliam)</webMaster><copyright>&amp;copy;{year}, All Rights Reserved</copyright><lastBuildDate>Tue, 10 Jul 2018 15:29:00 +0000</lastBuildDate><atom:link href="https://youngwilliam.io/tags/hexo/index.xml" rel="self" type="application/rss+xml"/><item><title>Hexo 使用 Markdown 编辑技巧大全</title><link>https://youngwilliam.io/post/hexo-markdown/</link><pubDate>Tue, 10 Jul 2018 15:29:00 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 17:19:01 +0800</atom:modified><guid>https://youngwilliam.io/post/hexo-markdown/</guid><description>可能还不全，哈哈哈，看官请随意。</description><content:encoded>&lt;p>总结一下，&lt;code>Hexo&lt;/code> 下 &lt;code>Markdown&lt;/code> 的写法和一些奇技淫巧。&lt;/p>
+&lt;p>&lt;strong>说明&lt;/strong>：&lt;code>Hexo&lt;/code> 主题为 &lt;a href="https://github.com/iissnan/hexo-theme-next">Next&lt;/a>&lt;/p>
+&lt;!-- more -->
+&lt;h2 id="标题及分类">标题及分类&lt;/h2>
+&lt;p>格式：(使用 &lt;a href="https://github.com/zhuzhuyule/HexoEditor">HexoEditor&lt;/a> 新建Post 可以自动生成以下内容)&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-md" data-lang="md">---
+title: Hexo 使用 Markdown 编辑技巧大全
+tags:
+&lt;span class="k">-&lt;/span> Hexo
+&lt;span class="k">-&lt;/span> Markdown
+categories:
+&lt;span class="k">-&lt;/span> Markdown
+date: 2018-07-10 15:29:00
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="阅读更多">阅读更多&lt;/h2>
+&lt;p>Hexo 主页每篇文章可以显示 &lt;code>Read More&lt;/code> 按钮，只显示以下这一行以上的文章内容。&lt;br />
+格式：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="c">&amp;lt;!-- more --&amp;gt;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="markdown-语法">Markdown 语法&lt;/h2>
+&lt;p>Markdown 语法主要分为如下几大部分：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>标题&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>段落&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>区块引用&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>代码区块&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>强调&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>列表&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>分割线&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>链接&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>图片&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>反斜杠 &lt;code>\&lt;/code>&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>符号'`&amp;rsquo;&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h4 id="标题">标题&lt;/h4>
+&lt;p>两种形式：&lt;br />
+1）使用&lt;code>=&lt;/code>和&lt;code>-&lt;/code>标记一级和二级标题。&lt;/p>
+&lt;blockquote>
+&lt;p>一级标题&lt;br />
+&lt;code>=========&lt;/code>&lt;br />
+二级标题 &lt;br />
+&lt;code>---------&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;p>效果：&lt;/p>
+&lt;blockquote>
+&lt;h1 id="一级标题">一级标题&lt;/h1>
+&lt;h2 id="二级标题">二级标题&lt;/h2>
+&lt;/blockquote>
+&lt;p>2）使用&lt;code>#&lt;/code>，可表示1-6级标题。&lt;/p>
+&lt;blockquote>
+&lt;p># 一级标题&lt;br />
+## 二级标题&lt;br />
+### 三级标题&lt;br />
+#### 四级标题&lt;br />
+##### 五级标题&lt;br />
+###### 六级标题&lt;/p>
+&lt;/blockquote>
+&lt;p>效果：&lt;/p>
+&lt;blockquote>
+&lt;h1 id="一级标题-1">一级标题&lt;/h1>
+&lt;h2 id="二级标题-1">二级标题&lt;/h2>
+&lt;h3 id="三级标题">三级标题&lt;/h3>
+&lt;h4 id="四级标题">四级标题&lt;/h4>
+&lt;h5 id="五级标题">五级标题&lt;/h5>
+&lt;h6 id="六级标题">六级标题&lt;/h6>
+&lt;/blockquote>
+&lt;h4 id="段落">段落&lt;/h4>
+&lt;p>段落的前后要有空行，所谓的空行是指没有文字内容。若想在段内强制换行的方式是使用&lt;strong>两个以上&lt;/strong>空格加上回车（引用中换行省略回车）。&lt;/p>
+&lt;h4 id="区块引用">区块引用&lt;/h4>
+&lt;p>在段落的每行或者只在第一行使用符号&lt;code>&amp;gt;&lt;/code>,还可使用多个嵌套引用，如：&lt;/p>
+&lt;blockquote>
+&lt;p>&amp;gt; 区块引用&lt;br />
+&amp;gt;&amp;gt; 嵌套引用&lt;/p>
+&lt;/blockquote>
+&lt;p>效果：&lt;/p>
+&lt;blockquote>
+&lt;p>区块引用&lt;/p>
+&lt;blockquote>
+&lt;p>嵌套引用&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;h4 id="代码区块">代码区块&lt;/h4>
+&lt;p>代码区块的建立是在每行加上4个空格或者一个制表符（如同写代码一样）。如 &lt;br />
+普通段落：&lt;/p>
+&lt;p>void main() &lt;br />
+{ &lt;br />
+printf(&amp;ldquo;Hello, Markdown.&amp;quot;); &lt;br />
+}&lt;/p>
+&lt;p>代码区块：&lt;br />
+如：&lt;/p>
+&lt;blockquote>
+&lt;p>``` C&lt;br />
+void main()&lt;br />
+{&lt;br />
+printf(&amp;ldquo;Hello, Markdown.&amp;quot;);&lt;br />
+}&lt;br />
+```&lt;/p>
+&lt;/blockquote>
+&lt;p>效果：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-C" data-lang="C"> &lt;span class="kt">void&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;span class="p">{&lt;/span>
+&lt;span class="n">printf&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;Hello, Markdown.&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>注意&lt;/strong>: ``` 之后可以添加语言种类如 &lt;code>C&lt;/code>、&lt;code>Java&lt;/code>、&lt;code>Bash&lt;/code>, 需要和普通段落之间存在空行。&lt;/p>
+&lt;h4 id="强调">强调&lt;/h4>
+&lt;p>在强调内容两侧分别加上&lt;code>*&lt;/code>或者&lt;code>_&lt;/code>，如：&lt;/p>
+&lt;blockquote>
+&lt;p>*斜体*，_斜体_ &lt;br />
+**粗体**，__粗体__&lt;/p>
+&lt;/blockquote>
+&lt;p>效果：&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>斜体&lt;/em>，&lt;em>斜体&lt;/em> &lt;br />
+&lt;strong>粗体&lt;/strong>，&lt;strong>粗体&lt;/strong>&lt;/p>
+&lt;/blockquote>
+&lt;h4 id="列表">列表&lt;/h4>
+&lt;p>使用&lt;code>·&lt;/code>、&lt;code>+&lt;/code>、或&lt;code>-&lt;/code>标记无序列表，如：&lt;/p>
+&lt;blockquote>
+&lt;p>-（+*） 第一项&lt;br />
+-（+*） 第二项&lt;br />
+- （+*）第三项&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>注意&lt;/strong>：标记后面最少有一个_空格_或_制表符_。若不在引用区块中，必须和前方段落之间存在空行。&lt;/p>
+&lt;p>效果：&lt;/p>
+&lt;blockquote>
+&lt;ul>
+&lt;li>第一项&lt;/li>
+&lt;li>第二项&lt;/li>
+&lt;li>第三项&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;p>有序列表的标记方式是将上述的符号换成数字,并辅以&lt;code>.&lt;/code>，如：&lt;/p>
+&lt;blockquote>
+&lt;p>1 . 第一项&lt;br />
+2 . 第二项 &lt;br />
+3 . 第三项&lt;/p>
+&lt;/blockquote>
+&lt;p>效果：&lt;/p>
+&lt;blockquote>
+&lt;ol>
+&lt;li>第一项&lt;/li>
+&lt;li>第二项&lt;/li>
+&lt;li>第三项&lt;/li>
+&lt;/ol>
+&lt;/blockquote>
+&lt;h4 id="分割线">分割线&lt;/h4>
+&lt;p>分割线最常使用就是三个或以上&lt;code>*&lt;/code>，还可以使用&lt;code>-&lt;/code>和&lt;code>_&lt;/code>。&lt;/p>
+&lt;h4 id="链接">链接&lt;/h4>
+&lt;p>链接可以由两种形式生成：&lt;strong>行内式&lt;/strong>和&lt;strong>参考式&lt;/strong>。 &lt;br />
+&lt;strong>行内式&lt;/strong>：&lt;/p>
+&lt;blockquote>
+&lt;p>[YoungWilliam的博客](https://youngwilliamz.github.io/)&lt;/p>
+&lt;/blockquote>
+&lt;p>效果：&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a href="https://youngwilliamz.github.io/">YoungWilliam的博客&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>参考式&lt;/strong>：&lt;/p>
+&lt;blockquote>
+&lt;p>[YoungWilliam的博客1][1] &lt;br />
+[YoungWilliam的博客2][2] &lt;br />
+[1]:https://youngwilliamz.github.io/&lt;br />
+[2]:https://youngwilliamz.github.io/&lt;/p>
+&lt;/blockquote>
+&lt;p>效果：&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a href="https://youngwilliamz.github.io/">YoungWilliam的博客1&lt;/a> &lt;br />
+&lt;a href="https://youngwilliamz.github.io/">YoungWilliam的博客2&lt;/a> &lt;br />
+&lt;a href="https://youngwilliamz.github.io/">YoungWilliam的博客3&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>注意&lt;/strong>：上述的&lt;code>[1]:https://youngwilliamz.github.io/&lt;/code>不出现在区块中。&lt;/p>
+&lt;h4 id="图片">图片&lt;/h4>
+&lt;p>添加图片的形式和链接相似，只需在链接的基础上前方加一个&lt;code>！&lt;/code>。&lt;/p>
+&lt;h4 id="反斜杠">反斜杠&lt;code>\&lt;/code>&lt;/h4>
+&lt;p>相当于&lt;strong>反转义&lt;/strong>作用。使符号成为普通符号。&lt;/p>
+&lt;h4 id="符号-">符号 &lt;em>`&lt;/em>&lt;/h4>
+&lt;p>起到标记作用。如：&lt;/p>
+&lt;blockquote>
+&lt;p>`ctrl+a`&lt;/p>
+&lt;/blockquote>
+&lt;p>效果：&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;code>ctrl+a&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;hr />
+&lt;p>&lt;strong>注意&lt;/strong>：不同的Markdown解释器或工具对相应语法（扩展语法）的解释效果不尽相同，具体可参见工具的使用说明。&lt;br />
+虽然有人想出面搞一个所谓的标准化的Markdown，[没想到还惹怒了健在的创始人John Gruber]&lt;br />
+(&lt;a href="http://blog.codinghorror.com/standard-markdown-is-now-common-markdown/">http://blog.codinghorror.com/standard-markdown-is-now-common-markdown/&lt;/a>)。&lt;/p>
+&lt;hr />
+&lt;p>以上基本是所有traditonal markdown的语法。&lt;/p>
+&lt;h3 id="其它">其它&lt;/h3>
+&lt;p>列表的使用(非traditonal markdown)：&lt;/p>
+&lt;p>用&lt;code>|&lt;/code>表示表格纵向边界，表头和表内容用&lt;code>-&lt;/code>隔开，并可用&lt;code>:&lt;/code>进行对齐设置，两边都有&lt;code>:&lt;/code>则表示居中，若不加&lt;code>:&lt;/code>则默认左对齐。&lt;br />
+格式：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-md" data-lang="md">|代码库 |链接 |
+|:------------------------------------:|------------------------------------|
+|MarkDown |[https://github.com/younghz/Markdown](https://github.com/younghz/Markdown &amp;#34;Markdown&amp;#34;)|
+|MarkDownCopy |[https://github.com/younghz/Markdown](https://github.com/younghz/Markdown &amp;#34;Markdown&amp;#34;)|
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>效果:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th align="center">代码库&lt;/th>
+&lt;th>链接&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td align="center">MarkDown&lt;/td>
+&lt;td>&lt;a href="https://github.com/younghz/Markdown" title="Markdown">https://github.com/younghz/Markdown&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td align="center">MarkDownCopy&lt;/td>
+&lt;td>&lt;a href="https://github.com/younghz/Markdown" title="Markdown">https://github.com/younghz/Markdown&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>关于其它扩展语法可参见具体工具的使用说明。&lt;/p>
+&lt;h2 id="参考文章">参考文章&lt;/h2>
+&lt;p>&lt;a href="https://younghz.github.io/Markdown/">Markdown 基本语法&lt;/a>&lt;/p></content:encoded><dc:creator>YoungWilliam</dc:creator><category>Hexo</category><category>Markdown</category><category>Markdown</category></item><item><title>Hexo 下特有的编辑图片方式，直接使用 img 标志</title><link>https://youngwilliam.io/post/hexo-image-edite-method/</link><pubDate>Sun, 24 Jun 2018 08:02:00 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Wed, 14 Aug 2019 01:25:12 +0800</atom:modified><guid>https://youngwilliam.io/post/hexo-image-edite-method/</guid><description>Hexo 小技巧</description><content:encoded>&lt;p>直接上代码，src对应的是图片 url&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">img&lt;/span> &lt;span class="na">src&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;https://i.loli.net/2018/06/24/5b2edf5139f61.png&amp;#34;&lt;/span> &lt;span class="na">width&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;50%&amp;#34;&lt;/span> &lt;span class="na">height&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;50%&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>效果图如下：（使用的是 &lt;a href="https://sm.ms/">SM.MS图床&lt;/a>）&lt;/p>
+&lt;img src="https://i.loli.net/2018/06/24/5b2edf5139f61.png" width="50%" height="50%"></content:encoded><dc:creator>YoungWilliam</dc:creator><category>Hexo</category><category>Markdown</category><category>Hexo</category></item><item><title>HexoEditor, 一个写 Hexo 非常好用的 Markdown 编辑器</title><link>https://youngwilliam.io/post/hexoeditor/</link><pubDate>Sun, 24 Jun 2018 06:08:00 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 17:19:01 +0800</atom:modified><guid>https://youngwilliam.io/post/hexoeditor/</guid><description>不了解一下？</description><content:encoded>&lt;blockquote>
+&lt;p>本文用于记录以及简单的安装&lt;/p>
+&lt;/blockquote>
+&lt;img src="https://i.loli.net/2018/06/24/5b2edf5139f61.png" width="50%" height="50%">
+&lt;h2 id="简单介绍">简单介绍&lt;/h2>
+&lt;p>&lt;a href="https://github.com/zhuzhuyule/HexoEditor">HexoEditor&lt;/a> 是 Github 上一款开源的 Markdown 编辑器。&lt;/p>
+&lt;p>引用原作者说的话：&lt;/p>
+&lt;blockquote>
+&lt;p>这是一款为 Hexo 做了优化的 Markdown 编辑器。&lt;br />
+使用 Electron 做框架&lt;br />
+修改自 Moeditor, 我只是为了让他更好的去为 Hexo 下的博客更好的去书写内容。&lt;/p>
+&lt;/blockquote>
+&lt;p>同时它还包括很多功能，其中我觉得最有用的就是：&lt;/p>
+&lt;blockquote>
+&lt;p>预览内容与 Hexo 生成页面内容高度相似&lt;/p>
+&lt;/blockquote>
+&lt;p>更多详情介绍请点击&lt;a href="https://github.com/zhuzhuyule/HexoEditor/blob/master/doc/cn/README.md#%E5%8A%9F%E8%83%BD">这里&lt;/a>。&lt;/p>
+&lt;h2 id="安装过程">安装过程&lt;/h2>
+&lt;p>整个过程参照&lt;a href="https://github.com/zhuzhuyule/HexoEditor/blob/master/doc/en/Building.md">官方文档&lt;/a>。&lt;/p>
+&lt;h3 id="1准备工作">1.准备工作&lt;/h3>
+&lt;h4 id="安装-git">安装 &lt;code>git&lt;/code>&lt;/h4>
+&lt;ul>
+&lt;li>&lt;a href="https://git-scm.com/download/mac">Download Page for Mac OS X&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://git-scm.com/download/win">Download Page for Windows&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://git-scm.com/download/linux">Download Page for Linux/Unix&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h4 id="安装-nodejs">安装 &lt;code>nodejs&lt;/code>&lt;/h4>
+&lt;ul>
+&lt;li>&lt;a href="https://nodejs.org/en/download/">Download Page&lt;/a> (English)&lt;/li>
+&lt;li>&lt;a href="https://nodejs.org/zh-cn/download/">下载地址&lt;/a> (中文)&lt;/li>
+&lt;/ul>
+&lt;h3 id="2下载配置-hexo">2.下载配置 &lt;code>Hexo&lt;/code>&lt;/h3>
+&lt;h3 id="3设置-npm-缓存路径">3.设置 &lt;code>npm&lt;/code> 缓存路径&lt;/h3>
+&lt;h4 id="windows-下">Windows 下&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">npm config &lt;span class="nb">set&lt;/span> prefix &lt;span class="s2">&amp;#34;C:/Program Files/nodejs/npm_global&amp;#34;&lt;/span>
+npm config &lt;span class="nb">set&lt;/span> cache &lt;span class="s2">&amp;#34;C:/Program Files/nodejs/npm_cache&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="linuxmac-下">Linux\Mac 下&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">npm config &lt;span class="nb">set&lt;/span> prefix &lt;span class="s2">&amp;#34;~/nodejs/npm_global&amp;#34;&lt;/span>
+npm config &lt;span class="nb">set&lt;/span> cache &lt;span class="s2">&amp;#34;~/nodejs/npm_cache&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>注意&lt;/strong>：这里的路径是你安装 &lt;code>nodejs&lt;/code> 的子目录下对应的路径&lt;/p>
+&lt;h3 id="4设置下载来源镜像加速下载">4.设置下载来源（镜像），加速下载&lt;/h3>
+&lt;p>来自原作者好心提醒：&lt;br />
+在中国，你应该设置淘宝镜像来加速下载。(PS: 这个我没试过，我是直接通过代理的)&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">npm config &lt;span class="nb">set&lt;/span> registry &lt;span class="s2">&amp;#34;https://registry.npm.taobao.org/&amp;#34;&lt;/span>
+npm config &lt;span class="nb">set&lt;/span> electron_mirror &lt;span class="s2">&amp;#34;https://npm.taobao.org/mirrors/electron/&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="5下载-github-上最新的版本并安装">5.下载 GitHub 上最新的版本并安装&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">git clone https://github.com/zhuzhuyule/HexoEditor.git
+&lt;span class="nb">cd&lt;/span> HexoEditor
+npm install
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="6启动">6.启动&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">npm start
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后，当当当，启动啦~&lt;/p>
+&lt;h2 id="设置快捷方式">设置快捷方式&lt;/h2>
+&lt;p>在 HexoEditor 子目录下，新建 &lt;code>start.sh&lt;/code> ，编辑（右键-&amp;gt;打开方式-&amp;gt;NotePad++），输入（其实就是启动）&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">npm start
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>保存，退出，双击一下 &lt;code>start.sh&lt;/code> ，看看效果如何~&lt;br />
+顺利的话，&lt;code>gitbash&lt;/code> 会弹出来，然后 HexoEditor就会弹出来了~&lt;/p>
+&lt;img src="https://i.loli.net/2018/06/24/5b2ede1e2a6cc.png" width="50%" height="50%">
+&lt;p>本教程到此就结束了，希望大家玩的开心~&lt;/p></content:encoded><dc:creator>YoungWilliam</dc:creator><category>编辑器</category><category>Hexo</category><category>Markdown</category><category>Hexo</category></item></channel></rss>

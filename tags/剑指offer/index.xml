@@ -1,1 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>剑指Offer on New World | YoungWilliam's Blog</title><link>https://youngwilliam.io/tags/%E5%89%91%E6%8C%87offer/</link><description>Recent content in 剑指Offer on New World | YoungWilliam's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><managingEditor>youngwilliam.zheng@gmail.com (YoungWilliam)</managingEditor><webMaster>youngwilliam.zheng@gmail.com (YoungWilliam)</webMaster><copyright>&amp;copy;{year}, All Rights Reserved</copyright><lastBuildDate>Sun, 28 Jul 2019 18:17:25 +0000</lastBuildDate><atom:link href="https://youngwilliam.io/tags/%E5%89%91%E6%8C%87offer/index.xml" rel="self" type="application/rss+xml"/><item><title>《剑指Offer》笔记</title><link>https://youngwilliam.io/post/coding-interviews-note-1/</link><pubDate>Sun, 28 Jul 2019 18:17:25 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 18:33:36 +0800</atom:modified><guid>https://youngwilliam.io/post/coding-interviews-note-1/</guid><description>《剑指Offer》笔记，不定时更新～</description><dc:creator>YoungWilliam</dc:creator><category>笔记</category><category>剑指Offer</category><category>学习</category></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>剑指Offer on New World | YoungWilliam's Blog</title><link>https://youngwilliam.io/tags/%E5%89%91%E6%8C%87offer/</link><description>Recent content in 剑指Offer on New World | YoungWilliam's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><managingEditor>youngwilliam.zheng@gmail.com (YoungWilliam)</managingEditor><webMaster>youngwilliam.zheng@gmail.com (YoungWilliam)</webMaster><copyright>&amp;copy;{year}, All Rights Reserved</copyright><lastBuildDate>Sun, 28 Jul 2019 18:17:25 +0000</lastBuildDate><atom:link href="https://youngwilliam.io/tags/%E5%89%91%E6%8C%87offer/index.xml" rel="self" type="application/rss+xml"/><item><title>《剑指Offer》笔记</title><link>https://youngwilliam.io/post/coding-interviews-note-1/</link><pubDate>Sun, 28 Jul 2019 18:17:25 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 18:33:36 +0800</atom:modified><guid>https://youngwilliam.io/post/coding-interviews-note-1/</guid><description>《剑指Offer》笔记，不定时更新～</description><content:encoded>&lt;p>还没好好看一遍《剑指Offer》，希望在阅读的过程中能记录一下，同时也方便以后复习。&lt;/p>
+&lt;!-- more -->
+&lt;h2 id="3-高质量的代码">3. 高质量的代码&lt;/h2>
+&lt;h3 id="32-代码的规范性">3.2 代码的规范性&lt;/h3>
+&lt;h4 id="代码的完整性">代码的完整性:&lt;/h4>
+&lt;ul>
+&lt;li>功能测试：要满足基本功能、尽量突破常规思维的限制&lt;/li>
+&lt;li>边界测试：考虑循环、递归终止条件；字符串转整数时确保极大极小值等。&lt;/li>
+&lt;li>负面测试：各种可能的错误输入&lt;/li>
+&lt;/ul>
+&lt;h4 id="3-种错误处理的方法">3 种错误处理的方法：&lt;/h4>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;/th>
+&lt;th>优点&lt;/th>
+&lt;th>缺点&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>返回值&lt;/td>
+&lt;td>和系统 API 一致，0 为正常，其他为错误&lt;/td>
+&lt;td>不能方便使用计算结果&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>全局变量&lt;/td>
+&lt;td>可以直接得到计算结果，方便使用&lt;/td>
+&lt;td>很容易忘记检查&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>异常&lt;/td>
+&lt;td>逻辑清晰，明确定义错误类型&lt;/td>
+&lt;td>一些语言不支持，对性能有负面影响&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>具体用哪种需要考虑具体场景，可以和面试讨论一下采用哪种比较合适。&lt;/p></content:encoded><dc:creator>YoungWilliam</dc:creator><category>笔记</category><category>剑指Offer</category><category>学习</category></item></channel></rss>

@@ -1,1 +1,1786 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>New World | YoungWilliam's Blog</title><link>https://youngwilliam.io/</link><description>Recent content on New World | YoungWilliam's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><managingEditor>youngwilliam.zheng@gmail.com (YoungWilliam)</managingEditor><webMaster>youngwilliam.zheng@gmail.com (YoungWilliam)</webMaster><copyright>&amp;copy;{year}, All Rights Reserved</copyright><atom:link href="https://youngwilliam.io/index.xml" rel="self" type="application/rss+xml"/><item><title>2019年的暑期实习与秋招之路</title><link>https://youngwilliam.io/post/my-journey-of-finding-jobs-2020/</link><pubDate>Tue, 14 Apr 2020 16:45:28 +0800</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 18:33:36 +0800</atom:modified><guid>https://youngwilliam.io/post/my-journey-of-finding-jobs-2020/</guid><description>南科大2020届CS毕业生找工作那点事儿</description><dc:creator>YoungWilliam</dc:creator></item><item><title>CSAPP 笔记 听课有感</title><link>https://youngwilliam.io/post/csapp-note-4/</link><pubDate>Mon, 07 Oct 2019 23:56:53 +0800</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 18:33:36 +0800</atom:modified><guid>https://youngwilliam.io/post/csapp-note-4/</guid><description>国外大学对于学术造假真的严</description><dc:creator>YoungWilliam</dc:creator><category>CSAPP</category><category>学习</category></item><item><title>群晖系统中为 Jellyfin 开启硬件加速(Quick Sync Video)</title><link>https://youngwilliam.io/post/enable-quick-sync-video-for-jellyfin-on-docker-of-synology/</link><pubDate>Tue, 01 Oct 2019 03:16:51 +0800</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 18:33:36 +0800</atom:modified><guid>https://youngwilliam.io/post/enable-quick-sync-video-for-jellyfin-on-docker-of-synology/</guid><description>把踩的坑总结一下，记录下来</description><dc:creator>YoungWilliam</dc:creator><category>群晖</category><category>docker</category><category>Jellyfin</category><category>硬件加速</category><category>搞机</category></item><item><title>CSAPP 笔记 第一章《计算机系统漫游》</title><link>https://youngwilliam.io/post/csapp-note-1/</link><pubDate>Sun, 01 Sep 2019 22:40:06 +0800</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 18:33:36 +0800</atom:modified><guid>https://youngwilliam.io/post/csapp-note-1/</guid><description>大四了才开始读这本书，是不是晚了？</description><dc:creator>YoungWilliam</dc:creator><category>CSAPP</category><category>学习</category></item><item><title>26. Remove Duplicates from Sorted Array 消去重复数</title><link>https://youngwilliam.io/note/leetcode/array/26/</link><pubDate>Thu, 22 Aug 2019 23:58:26 +0800</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 23 Aug 2019 01:57:31 +0800</atom:modified><guid>https://youngwilliam.io/note/leetcode/array/26/</guid><description>题目 难度：易 传送门： English 中文 思路 一开始没有仔细看题，以为只要求出消去重复数之后数组的长度就行了，没看到还要求最后的数组。于是用了很笨的方法。 后</description><dc:creator>YoungWilliam</dc:creator></item><item><title>What is POSIX?</title><link>https://youngwilliam.io/post/what-is-posix/</link><pubDate>Tue, 20 Aug 2019 02:10:40 +0800</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 18:33:36 +0800</atom:modified><guid>https://youngwilliam.io/post/what-is-posix/</guid><description>总结一下 POSIX 标准</description><dc:creator>YoungWilliam</dc:creator><category>POSIX</category><category>UNIX</category><category>LINUX</category><category>学习</category></item><item><title>TED 演讲吸收笔记与总结</title><link>https://youngwilliam.io/post/ted/</link><pubDate>Sat, 17 Aug 2019 02:48:55 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Sat, 14 Sep 2019 23:47:52 +0800</atom:modified><guid>https://youngwilliam.io/post/ted/</guid><description>我的 TED 观影笔记，希望以后能保持经常更新～</description><dc:creator>YoungWilliam</dc:creator><category>TED</category><category>思维方式</category><category>笔记</category><category>学习</category></item><item><title>169. Majority Element 求众数</title><link>https://youngwilliam.io/note/leetcode/array/169/</link><pubDate>Tue, 13 Aug 2019 23:58:26 +0800</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Sat, 17 Aug 2019 03:22:58 +0800</atom:modified><guid>https://youngwilliam.io/note/leetcode/array/169/</guid><description>题目 难度：易 给定一个大小为 n 的数组，找到其中的众数。众数是指在数组中出现次数大于 ⌊ n/2 ⌋ 的元素。 你可以假设数组是非空的，并且给定的数组总是存在</description><dc:creator>YoungWilliam</dc:creator></item><item><title>Docker 背后： Linux 的 /proc</title><link>https://youngwilliam.io/post/linux-proc/</link><pubDate>Fri, 02 Aug 2019 02:04:09 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Wed, 14 Aug 2019 01:25:12 +0800</atom:modified><guid>https://youngwilliam.io/post/linux-proc/</guid><description>我的 Docker 原理探索之路</description><dc:creator>YoungWilliam</dc:creator><category>linux</category><category>docker</category><category>proc</category><category>学习</category></item><item><title>《剑指Offer》笔记</title><link>https://youngwilliam.io/post/coding-interviews-note-1/</link><pubDate>Sun, 28 Jul 2019 18:17:25 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 18:33:36 +0800</atom:modified><guid>https://youngwilliam.io/post/coding-interviews-note-1/</guid><description>《剑指Offer》笔记，不定时更新～</description><dc:creator>YoungWilliam</dc:creator><category>笔记</category><category>剑指Offer</category><category>学习</category></item><item><title>OpenWRT 18.06 IPv6 开启 Relay，LAN 口获取 IPv6 公网地址</title><link>https://youngwilliam.io/post/openwrt-ipv6-relay/</link><pubDate>Sun, 10 Mar 2019 09:48:55 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Wed, 14 Aug 2019 01:25:12 +0800</atom:modified><guid>https://youngwilliam.io/post/openwrt-ipv6-relay/</guid><description>此方案失败了，但还是可以参考的，说不定你就成功了？</description><dc:creator>YoungWilliam</dc:creator><category>OpenWRT</category><category>IPv6</category><category>搞机</category></item><item><title>Caoz《成长的烦恼》笔记</title><link>https://youngwilliam.io/post/caoz-class-node/</link><pubDate>Fri, 28 Dec 2018 21:48:55 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 18:33:36 +0800</atom:modified><guid>https://youngwilliam.io/post/caoz-class-node/</guid><description>记录一下～</description><dc:creator>YoungWilliam</dc:creator><category>Caoz</category><category>思维方式</category><category>学习</category></item><item><title>Mac OS X 下优化 Terminal，一篇就够了！</title><link>https://youngwilliam.io/post/optimize-the-terminal-in-mac-os-x/</link><pubDate>Sat, 11 Aug 2018 13:52:00 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Wed, 14 Aug 2019 01:34:09 +0800</atom:modified><guid>https://youngwilliam.io/post/optimize-the-terminal-in-mac-os-x/</guid><description>Mac 大法好</description><dc:creator>YoungWilliam</dc:creator><category>Max OS X</category><category>工欲善其事</category></item><item><title>Hexo 使用 Markdown 编辑技巧大全</title><link>https://youngwilliam.io/post/hexo-markdown/</link><pubDate>Tue, 10 Jul 2018 15:29:00 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 17:19:01 +0800</atom:modified><guid>https://youngwilliam.io/post/hexo-markdown/</guid><description>可能还不全，哈哈哈，看官请随意。</description><dc:creator>YoungWilliam</dc:creator><category>Hexo</category><category>Markdown</category><category>Markdown</category></item><item><title>Hexo 下特有的编辑图片方式，直接使用 img 标志</title><link>https://youngwilliam.io/post/hexo-image-edite-method/</link><pubDate>Sun, 24 Jun 2018 08:02:00 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Wed, 14 Aug 2019 01:25:12 +0800</atom:modified><guid>https://youngwilliam.io/post/hexo-image-edite-method/</guid><description>Hexo 小技巧</description><dc:creator>YoungWilliam</dc:creator><category>Hexo</category><category>Markdown</category><category>Hexo</category></item><item><title>HexoEditor, 一个写 Hexo 非常好用的 Markdown 编辑器</title><link>https://youngwilliam.io/post/hexoeditor/</link><pubDate>Sun, 24 Jun 2018 06:08:00 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 17:19:01 +0800</atom:modified><guid>https://youngwilliam.io/post/hexoeditor/</guid><description>不了解一下？</description><dc:creator>YoungWilliam</dc:creator><category>编辑器</category><category>Hexo</category><category>Markdown</category><category>Hexo</category></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>New World | YoungWilliam's Blog</title><link>https://youngwilliam.io/</link><description>Recent content on New World | YoungWilliam's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><managingEditor>youngwilliam.zheng@gmail.com (YoungWilliam)</managingEditor><webMaster>youngwilliam.zheng@gmail.com (YoungWilliam)</webMaster><copyright>&amp;copy;{year}, All Rights Reserved</copyright><atom:link href="https://youngwilliam.io/index.xml" rel="self" type="application/rss+xml"/><item><title>2019年的暑期实习与秋招之路</title><link>https://youngwilliam.io/post/my-journey-of-finding-jobs-2020/</link><pubDate>Tue, 14 Apr 2020 16:45:28 +0800</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 18:33:36 +0800</atom:modified><guid>https://youngwilliam.io/post/my-journey-of-finding-jobs-2020/</guid><description>南科大2020届CS毕业生找工作那点事儿</description><content:encoded>&lt;h2 id="offer-汇总">Offer 汇总&lt;/h2>
+&lt;p>&lt;strong>实习&lt;/strong>：&lt;/p>
+&lt;ul>
+&lt;li>360 网络安全研究院 Web平台开发实习生&lt;/li>
+&lt;li>小赢科技 架构部 基础组件组 后端开发实习生&lt;/li>
+&lt;/ul>
+&lt;p>最终选择：小赢科技&lt;/p>
+&lt;p>&lt;strong>秋招&lt;/strong>：&lt;/p>
+&lt;ul>
+&lt;li>小米 后端开发（北京）&lt;/li>
+&lt;li>富途牛牛 后端开发（深圳）&lt;/li>
+&lt;li>欢聚时代 后端开发（广州）&lt;/li>
+&lt;li>华为 软件开发（深圳）&lt;/li>
+&lt;li>网易游戏 游戏应用与平台发展事业部 服务端平台开发（广州）&lt;/li>
+&lt;li>酷家乐 容器开发（杭州）&lt;/li>
+&lt;li>360搜索 后端开发（北京）&lt;/li>
+&lt;li>腾讯 TEG 基础架构部 运营开发（深圳）&lt;/li>
+&lt;/ul>
+&lt;p>最终选择：腾讯&lt;/p>
+&lt;p>##暑期实习&lt;/p>
+&lt;p>先介绍下找实习前我的基本情况。&lt;/p>
+&lt;p>大一的时候，我已经知道系里要求每位同学都要进行实习，最好的时间点就在大三的暑假。于是在大一暑假我就开始试着找实习，因为当时只学了Java，所以只能在一位亲戚的帮助下去了顺德的一家小公司边学边做 Android APP 的开发。&lt;/p>
+&lt;p>大二暑假，我想靠自己找实习。但是当时没有那么强的驱动力和能力（计算机网络、操作系统都还没学呢），最后在学校跟两个同学一起做了一个查询校巴时间的微信小程序。虽然当时有500人的用户，但因为竞争不过校内同类型的小程序，最后不再维护。&lt;/p>
+&lt;p>在大三下的一开始，我就明确要开始找实习了。根据前两个暑假的摸索，我确定了自己不想做Android或者前端的开发工作，所以我选了后端开发作为我的方向。我的目标是腾讯，如果要进腾讯，那么C++是必须掌握的，所以我开始学习C++。从现在看来，对于C++的学习，我开始的太晚了，在找实习的关键时期才开始学。这也为我接下来找实习埋下了隐患。&lt;/p>
+&lt;h3 id="找实习第零步准备简历">找实习第零步：准备简历&lt;/h3>
+&lt;p>对于简历，我是从大一就有开始准备的，大二的时候就已经找学校就业中心的老师指导完善，而且学长、导师也会帮忙过一下简历。&lt;/p>
+&lt;p>对于技术岗位的应聘，简历上只要写上基本的个人信息以及专业技能与重点项目就足够了。没有个人项目的同学可以直接写创新实验的项目以及课堂Pro，重点是要把其中的技术点表述清楚，让面试官一眼了然，甚至能够“诱导”面试官进行考察，准备的时候也好针对的进行准备。至于学校社团、英语证书什么的，其实面试官不是很在意。最后，写完简历自己多看看几遍，同时可以问问同学、老师的建议，甚至可以互相进行模拟面试。&lt;/p>
+&lt;h3 id="找实习第一步投简历">找实习第一步：投简历&lt;/h3>
+&lt;p>不知那时哪来的自信，以为进入腾讯实习是很简单的事，毕竟每年有3000个实习岗位。于是，我在&lt;strong>二月中旬&lt;/strong>时通过学长的内推只投递了腾讯与阿里的实习岗位，然后就开始正常上课并抱着《C++ Primer》重点学习C++。&lt;/p>
+&lt;p>4月初时后悔莫及，因为这两家公司都没有面试通过，而想再投递其他公司时已经太晚了。而且不知道是学校知名度太低，还是我的水平有限，有些公司连暑期实习的笔试都不给，比如美团、虎牙。在4月底时，我还是0 offer，牛客网上的实习板块都不见了，但我没放弃，我一直在寻找机会，甚至下载了BOSS直聘。&lt;/p>
+&lt;p>对于找实习的同学，请记住：金3银4，就是三四月份是各大公司招聘暑期实习的主要时间。&lt;/p>
+&lt;h3 id="找实习第二步准备">找实习第二步：准备&lt;/h3>
+&lt;p>在一开始时，我其实并没有注重针对面试做准备，因为自认为专业课学的比较扎实，所以一切按部就班的学习。但是在头两次面试碰壁之后，我心底开始慌了，原来自己对于基础知识的掌握的都太浅了。在同学的建议下，我开始疯狂刷面经（网上其他人的面试经验），在看了十几篇面经之后，效果提升显著，我已经掌握了面试的常规问题，但这只是一些基本的计算机基础知识。这时我已经有了能够通过腾讯一面，并能跟面试官谈笑风生的能力。然而，对于算法代码的实际操练还是太少，这让我在秋招时也吃了大亏。&lt;/p>
+&lt;h3 id="找实习第三步面试">找实习第三步：面试&lt;/h3>
+&lt;p>我得到面试的机会说多不多说少不少。在学长的帮助下，腾讯我就面了3次之多（一次是微信部门直推、一次是提前批，一次是正式批），结果前两次一面就挂了，最后一次是二面挂了，挂的原因分别是算法题答不上来、常使用的方法名说不上来、简历上重点项目所使用工具不清楚背后原理。而后，是阿里区块链的部门直推，算法题答不上来。&lt;/p>
+&lt;p>在遭遇两次坎坷之后，我慌了，开始疯狂投简历。随后我又拿到了几次面试机会。&lt;/p>
+&lt;p>一次是在BOSS直聘上，在数十天的寻找之后，只有荔枝微课（获得A轮融资的知识分享平台）给予了我面试机会。面试是现场面试，一个下午就直接完成了笔试、技术面试、技术总监（架构师）面试、HR面。最后等了一星期通知，说是因为时间原因（他们要求5月份就开始实习，而我们学校6月才放假），无法给我发offer。HR还加了我微信，说“希望以后能有机会继续合作”。&lt;/p>
+&lt;p>还有一次机会是当时与我的导师王琦老师沟通时得知的。360网络安全研究院的一个部门刚好要搬到学校对面的智园，急招实习生，而且很可能留用。面试官那个周五还要来我们学校开讲座，导师建议我把握机会。很幸运，经历了三轮面试，我顺利拿到了口头offer。&lt;/p>
+&lt;p>幸运的事总是同时发生，又一个offer从天而降。当时我的创新实验项目是王琦导师与小赢科技一起合作的，而我们组每周都会去小赢科技那边与那边的导师开一次会。在得知我还没拿到offer之后，小赢科技的导师直接邀请我来小赢实习，而且不需要技术面试。&lt;/p>
+&lt;p>最终，我拿到了两个offer。&lt;/p>
+&lt;p>总结一下经验，每次面试基本都是10分钟至40分钟，越长代表通过的概率越大。面试失败了不要怕，最重要的事能够发现自己的不足，重新出发，相信自己最终一定能够拿到offer的。&lt;/p>
+&lt;h3 id="找实习第四步对比-offer">找实习第四步：对比 Offer&lt;/h3>
+&lt;p>对比offer我花了足足三天。在咨询了导师以及其他同学的建议之后，我对比了实习的工作内容、所使用的技术栈、以及最重要的是为秋招做铺垫，最后我选择了小赢科技。虽然360名气比较大，可以为秋招加不少分，但技术栈是Python Web端，而我不喜欢Python，以后也不想做相关的工作。如果有的选，我会尽力不选Python相关的工作，因为我就是讨厌Python的全局解释器锁。&lt;/p>
+&lt;h3 id="实习的收获">实习的收获&lt;/h3>
+&lt;p>实习的过程中，我学习了Golang和许多工业上应用实践，也确定了自己以后想深入后端想法，同时我还发现了云原生等比较热门的技术。在秋招的过程中，实习的经历让我能够在许多关键时候让面试官眼前一亮。&lt;/p>
+&lt;h2 id="秋招之路">秋招之路&lt;/h2>
+&lt;p>在7月底，秋招就渐渐开始了。声势最大的是阿里的提前批，将整个牛课网的论坛都挤满了。&lt;/p>
+&lt;h3 id="简历投递">简历投递&lt;/h3>
+&lt;p>这次我不再敢只投腾讯、阿里。相反，我一开始疯狂投递其他的公司，而将腾讯阿里留在了8月中旬才投递，因为我怕一投递就被拉去面试，而我当时还在实习没有时间好好准备面试。同时我遵从了网友的建议，建了一张Excel表来记录我投递的公司、目前所在流程、流程终止的原因、是否拿到offer等情况。而且这次我不再只投递C++的岗位，而是服务端优先，其他感兴趣的也一起投。投递的城市也没有局限于广东。投递的方式也不在局限于牛课网，而是各个渠道都去收集信息，能够内推的争取内推，可谓是做好了打战的准备。&lt;/p>
+&lt;p>有点遗憾的是，阿里巴巴的岗位投递太晚，所以没有拿到面试机会，希望同学们能够放下顾虑，先投了简历再慢慢准备。不要因为自己觉得准备不足而错过机会。&lt;/p>
+&lt;p>以下是我建立的表格的一部分，一共57家公司，包括投递的公司名、投递时间以及岗位，有个别公司可能没有记录下来。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>公司&lt;/th>
+&lt;th>投递时间&lt;/th>
+&lt;th>职位&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>网易有道&lt;/td>
+&lt;td>2019.7.31&lt;/td>
+&lt;td>Java后台&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>网易游戏雷云&lt;/td>
+&lt;td>2019.7.31&lt;/td>
+&lt;td>C++后台&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>百度&lt;/td>
+&lt;td>2019.7.31&lt;/td>
+&lt;td>C++研发&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>大疆创新&lt;/td>
+&lt;td>2019.7.30&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>酷狗&lt;/td>
+&lt;td>2019.9.6&lt;/td>
+&lt;td>C++后端开发培训生&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Intel&lt;/td>
+&lt;td>2019.7.25&lt;/td>
+&lt;td>Linux Network Platform Software Development Engineer&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>小红书&lt;/td>
+&lt;td>2019.7.26&lt;/td>
+&lt;td>后端开发&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>4399&lt;/td>
+&lt;td>2019.8.20&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>360提前批&lt;/td>
+&lt;td>2019.8.8&lt;/td>
+&lt;td>golang&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>VIPKID&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>快手&lt;/td>
+&lt;td>CDN开发工程师&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>腾讯&lt;/td>
+&lt;td>2019.8.12&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ThoughtWorks&lt;/td>
+&lt;td>2019.8.3&lt;/td>
+&lt;td>软件工程师&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>OPPO&lt;/td>
+&lt;td>2019.8.3&lt;/td>
+&lt;td>C++/JAVA&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>bilibili&lt;/td>
+&lt;td>2019.8.7&lt;/td>
+&lt;td>游戏后台&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>美团&lt;/td>
+&lt;td>2019.8.4&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>shopee&lt;/td>
+&lt;td>2019.8.20&lt;/td>
+&lt;td>后台开发&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>有赞&lt;/td>
+&lt;td>2019.8.20&lt;/td>
+&lt;td>中间件&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>贝壳&lt;/td>
+&lt;td>2019-07-17&lt;/td>
+&lt;td>C++ 研发&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>亚马逊&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>微软&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>小米&lt;/td>
+&lt;td>2019.8.8&lt;/td>
+&lt;td>Java软件开发&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>追一科技&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>深信服&lt;/td>
+&lt;td>2019.9.8&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>地平线&lt;/td>
+&lt;td>2019.8.24&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>顺风科技&lt;/td>
+&lt;td>2019.8.20&lt;/td>
+&lt;td>Java&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>招银网络&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>猫眼娱乐&lt;/td>
+&lt;td>2019.9.8&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>去哪儿&lt;/td>
+&lt;td>2019.8.14&lt;/td>
+&lt;td>后端&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>网宿科技&lt;/td>
+&lt;td>2019.8.14&lt;/td>
+&lt;td>Golang&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>富途牛牛&lt;/td>
+&lt;td>2019.9.5&lt;/td>
+&lt;td>C++&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>滴滴&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>快看漫画&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>字节跳动&lt;/td>
+&lt;td>2019.8.14&lt;/td>
+&lt;td>后端深圳&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>DELL&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>华为&lt;/td>
+&lt;td>2019.8.17&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>作业帮&lt;/td>
+&lt;td>2019.8.20&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>平安科技&lt;/td>
+&lt;td>2019.8.17&lt;/td>
+&lt;td>软件工程师-后端&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>虎牙&lt;/td>
+&lt;td>2019.8.22&lt;/td>
+&lt;td>中间件&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>酷家乐&lt;/td>
+&lt;td>2019.8.20&lt;/td>
+&lt;td>容器开发工程师&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>京东&lt;/td>
+&lt;td>2019.8.20&lt;/td>
+&lt;td>golang&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>依图科技&lt;/td>
+&lt;td>2019.8.22&lt;/td>
+&lt;td>软件开发&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>微众&lt;/td>
+&lt;td>2019.8.22&lt;/td>
+&lt;td>后台开发(C++开发方向)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>网易 游戏&lt;/td>
+&lt;td>2019.8.25&lt;/td>
+&lt;td>服务端开发工程师-虚拟化/加速器&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>阅文&lt;/td>
+&lt;td>2019.9.5&lt;/td>
+&lt;td>C++&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>旷视&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>三七互娱&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>VIVO&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>源辅导&lt;/td>
+&lt;td>2019.9.8&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>七牛云&lt;/td>
+&lt;td>2019.9.14&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>云从科技&lt;/td>
+&lt;td>2019.9.8&lt;/td>
+&lt;td>golang，重庆&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>搜狗&lt;/td>
+&lt;td>2019.9.5&lt;/td>
+&lt;td>APP搜索-后端&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>中兴&lt;/td>
+&lt;td>2019.9.5&lt;/td>
+&lt;td>软件&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>陌陌&lt;/td>
+&lt;td>2019.9.6&lt;/td>
+&lt;td>C++开发工程师&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>远景&lt;/td>
+&lt;td>2019.9.8&lt;/td>
+&lt;td>C++开发工程师&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>度小满&lt;/td>
+&lt;td>2019.9.8&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>IBM&lt;/td>
+&lt;td>2019.9.29&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="面试准备">面试准备&lt;/h3>
+&lt;p>在不断的投递之后，我拿到了20多家公司的笔试机会，并最终拿到十几家公司的面试机会。在每次面试前，我都会将自己整理好的基础知识过一遍，同时将《剑指offer》中的算法也快速过一遍，做好最全面的准备。同时，针对面试的公司，进行最大程度的信息收集，包括业务、发展规模、创世人事迹等。&lt;/p>
+&lt;p>在为面试做最好的准备之时，也不忘为自己打预防针，告诉自己面试是”玄学“，不只靠自己，还得靠天时地利人和。能拿到offer是最好的，拿不到的话也要积极复盘，查漏补缺。&lt;/p>
+&lt;h3 id="面试">面试&lt;/h3>
+&lt;p>在这样的心态下，每次面试我都不在像实习面试时那么紧张不安了，脑子也清晰了许多。秋招中，如果能够现场面试，面试官一定会现场面试，退而求其次是视频面试，最后才是电话面试。在绝大部份的面试中，都需要写代码，或是手写，或是直接在屏幕敲，并且写完会直接跑。因为我代码能力没有专门训练，所以我更倾向于手写代码，不仅可以通过语言的表述让面试官理解，而且也可以避免因为代码无法测试通过的尴尬。&lt;/p>
+&lt;h3 id="秋招的收获复盘">秋招的收获、复盘&lt;/h3>
+&lt;p>虽然有了找实习的经验铺垫，我的秋招还是做的不够好。&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>信心不足，不敢投递国际大厂。&lt;/p>
+&lt;p>除了先前说的阿里巴巴投递晚了，像微软和Google这种国际大厂其实也有学长能够内推。但自己信心不足，没有去尝试，白白失去了机会。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>代码能力没有好好锻炼，代码写一半容易卡壳。&lt;/p>
+&lt;p>找实习时已经发现了这个问题，想着秋招前好好刷题，补补这一块。但是因为没有规划好，没有利用好暑假的实习期间好好刷题。好几个offer就是因为代码没写好，或者思路不清晰而飞走了，比如微信、字节跳动、百度。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>自我管理能力圈缺。&lt;/p>
+&lt;p>在找实习时，我已经发现：我的基础知识不够扎实，需要重新啃教材。我的项目经验不够丰富，缺少更加深入的东西。虽然我发现了这些问题，但是，直到秋招结束，自己都没有足够的动力去填补。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>如果没有面试经验，就从小公司开始面。&lt;/p>
+&lt;p>一方面是小公司的面试更多是线下的，比较容易沟通。一方面是小公司的面试比较简单，可以更早的拿到offer。不仅能够积累经验，也能让自己面试、谈薪的时候更加有底气。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>规划的太晚。&lt;/p>
+&lt;p>不仅是找实习没有准备好，秋招我也觉得自己没有准备完善。如果能够提前半年甚至更早就开始准备，那么找工作也就没有这么折腾了。所以关键是要早，早点确定好目标，早点准备，早点完成。&lt;/p>
+&lt;/li>
+&lt;/ol></content:encoded><dc:creator>YoungWilliam</dc:creator></item><item><title>CSAPP 笔记 听课有感</title><link>https://youngwilliam.io/post/csapp-note-4/</link><pubDate>Mon, 07 Oct 2019 23:56:53 +0800</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 18:33:36 +0800</atom:modified><guid>https://youngwilliam.io/post/csapp-note-4/</guid><description>国外大学对于学术造假真的严</description><content:encoded>&lt;p>最近在B站上看CSAPP的视频课，是CMU的公开课。最大的感触是国外大学对作弊抓的非常严格，平时作业连上网搜索都算作弊，更不要说看别人屏幕、让别人告诉你怎么写。一经被抓到直接不及格，并且成绩单上有永久记录。&lt;/p>
+&lt;p>反观我们学校，或者说内地的绝大多数大学，只有在考试时作弊才会被严惩，而平时作业几乎不管，就算被发现抄作业也只是口头警告。&lt;/p>
+&lt;p>对此我只能感叹中国教育不知道需要多少年才能追上美国。&lt;/p>
+&lt;p>在我将以上感想发到「星球」上，想要了解更多国内外关于学术造假的情况。得到一下回复：&lt;/p>
+&lt;p>球友「Ahus」说：&lt;/p>
+&lt;blockquote>
+&lt;p>在瑞典读过半年书，平时作业查重力度确实比国内要高出不少，在网络上借鉴没问题但照抄的被查到后果很严重。最初会被校方约谈，之后再犯可能会被劝退或者转学&lt;/p>
+&lt;/blockquote>
+&lt;p>球友「Carl Li」说：&lt;/p>
+&lt;blockquote>
+&lt;p>暑假刚刚亲身体验 CSAPP（CMU 这门课叫做 15-213/513），其实 15-213 这门课对于作弊的界定真的太严了，超过我之前在加州大学圣地亚哥分校上过的本科课。&lt;/p>
+&lt;p>15-213 第一课一个小时二十分钟有大半的时间在讨论学术道德的问题，针对很多刚刚入学的同学，首先是对于 CMU 学术标准的一个基本介绍（CMU 容忍两次学术不端行为，第一次这门课直接挂掉，第二次开除），以及对于这门课而言哪些行为会被认定为学术不端，包括在任何搜索引擎中直接搜索课名和课号都不可以，都会直接算作弊。虽然美国大学都把学术道德问题看得非常重要，如此严厉的我还是第一次见到。&lt;/p>
+&lt;p>除此之外，15-213 也不允许和任何人讨论代码，但是可以讨论顶层设计（high-level design），例如你在写 malloc 的时候可以讨论 checkheap 函数具体包含什么内容、写 proxy 的时候可以和别人讨论任何顶层设计，但是代码讨论是绝对禁止的。&lt;/p>
+&lt;p>另外 15-213 不是公开课，教授亲口说过的。其实只是 CMU 一直没处理中文互联网上传的这些视频内容……能学习到的球友也建议且看且珍惜&lt;/p>
+&lt;/blockquote>
+&lt;p>球友「荼蘼」说：&lt;/p>
+&lt;blockquote>
+&lt;p>大学是种外合办的学校，前几年去澳洲念研究生基本不要什么成绩，后来听说有个学长在澳洲念研究生作弊被劝退了，导致我们这些晚辈要去澳洲的要求分数提高了10多分&lt;/p>
+&lt;/blockquote>
+&lt;p>对此，不知道各位看官老爷有没有想法想要分享的呢？欢迎评论。&lt;/p>
+&lt;p>PS. 如果有球友不想让自己的想法在此出现，请及时与我联系删除。&lt;/p></content:encoded><dc:creator>YoungWilliam</dc:creator><category>CSAPP</category><category>学习</category></item><item><title>群晖系统中为 Jellyfin 开启硬件加速(Quick Sync Video)</title><link>https://youngwilliam.io/post/enable-quick-sync-video-for-jellyfin-on-docker-of-synology/</link><pubDate>Tue, 01 Oct 2019 03:16:51 +0800</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 18:33:36 +0800</atom:modified><guid>https://youngwilliam.io/post/enable-quick-sync-video-for-jellyfin-on-docker-of-synology/</guid><description>把踩的坑总结一下，记录下来</description><content:encoded>&lt;h2 id="起因">起因&lt;/h2>
+&lt;p>最近折腾群晖，发现 &lt;code>Jellyfin&lt;/code> 这个玩具，可以解决用网页看视频的需求。&lt;/p>
+&lt;p>折腾的途中发现有硬件加速的功能，然后发现确实有些编码格式的视频播放的时候CPU占用很高。&lt;/p>
+&lt;p>看了一些&lt;a href="http://tech.feng.com/2015-12-23/Synology_DiskStation_DS716+_FengLab_2.shtml">评测&lt;/a>之后发现硬件加速可以很大程度上提升视频解码的能力，同时CPU占用不会很高。&lt;/p>
+&lt;p>然后发现我的 U，&lt;code>J1900&lt;/code> 在 &lt;a href="https://ark.intel.com/content/www/us/en/ark/products/78867/intel-celeron-processor-j1900-2m-cache-up-to-2-42-ghz.html">Intel 官网的介绍&lt;/a> 中是支持 &lt;code>Quick Sync Video&lt;/code>。&lt;/p>
+&lt;p>于是开始了新一轮的折腾之路。&lt;/p>
+&lt;h2 id="过程">过程&lt;/h2>
+&lt;p>查阅一些资料之后发现，起硬件加速作用的主要是 &lt;code>/dev/dri&lt;/code>。&lt;/p>
+&lt;p>在映射 &lt;code>/dev/dri&lt;/code> 到 docker 之后，选择 Jellyfin 硬件加速的 &lt;code>Intel Quick Sync Video&lt;/code> 选项发现CPU的占用率几乎没有改变。这是怎么回事？&lt;/p>
+&lt;p>正百思不得其解时，突然在&lt;a href="https://www.reddit.com/r/jellyfin/comments/bgbkye/trancoding_in_docker_using_qnap_nas_with_intel/">论坛&lt;/a>中发现 &lt;code>Intel Quick Sync Video&lt;/code> 选项只对 &lt;code>Windows&lt;/code> 的版本有用。 &lt;code>Linux&lt;/code> 都是统一用 &lt;code>VA API&lt;/code> 这个选项。&lt;/p>
+&lt;h2 id="结果">结果&lt;/h2>
+&lt;p>在使用硬件加速之后，确实效果有提升，而且CPU占用是肉眼可见的降低了，由原来的 99% 降低到 50%。播放也不卡顿了。&lt;/p>
+&lt;h2 id="参考">参考&lt;/h2>
+&lt;ol>
+&lt;li>&lt;a href="https://wildestpixel.co.uk/enabling-quick-sync-video-on-handbrake-for-docker-on-synology/">Enabling Quick Sync Video on Handbrake for Docker on Synology&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.reddit.com/r/jellyfin/comments/bgbkye/trancoding_in_docker_using_qnap_nas_with_intel/">https://www.reddit.com/r/jellyfin/comments/bgbkye/trancoding_in_docker_using_qnap_nas_with_intel/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://ark.intel.com/content/www/us/en/ark/products/78867/intel-celeron-processor-j1900-2m-cache-up-to-2-42-ghz.html">https://ark.intel.com/content/www/us/en/ark/products/78867/intel-celeron-processor-j1900-2m-cache-up-to-2-42-ghz.html&lt;/a>)&lt;/li>
+&lt;/ol></content:encoded><dc:creator>YoungWilliam</dc:creator><category>群晖</category><category>docker</category><category>Jellyfin</category><category>硬件加速</category><category>搞机</category></item><item><title>CSAPP 笔记 第一章《计算机系统漫游》</title><link>https://youngwilliam.io/post/csapp-note-1/</link><pubDate>Sun, 01 Sep 2019 22:40:06 +0800</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 18:33:36 +0800</atom:modified><guid>https://youngwilliam.io/post/csapp-note-1/</guid><description>大四了才开始读这本书，是不是晚了？</description><content:encoded>&lt;p>最近开始忙秋招，「码农翻身」公众号及同名书的作者老刘在知识星球里举办了读《CSAPP》的活动，之前一直没啃下来，希望能够借此机会逼自己一把，把这本厚厚的经典看完，并好好写笔记。&lt;/p>
+&lt;p>计算机系统 = 硬件 + 系统软件&lt;/p>
+&lt;p>作者如是说：&lt;/p>
+&lt;blockquote>
+&lt;p>“如果你全力投身学习本书中的概念，完全理解底 层计算机系统以及它对应用程序的影响，那么你会步上成为为数不多的“大牛&amp;quot;的道路。”&lt;/p>
+&lt;/blockquote>
+&lt;p>看完这本书你将会学到：&lt;/p>
+&lt;ol>
+&lt;li>实践技巧&lt;/li>
+&lt;li>优化代码小窍门&lt;/li>
+&lt;li>了解编译器如何实现&lt;/li>
+&lt;li>如何识别和避免连接时那些令人讨厌的错误&lt;/li>
+&lt;li>如何编写自己的 Unix shell&lt;/li>
+&lt;li>认识并发的陷阱&lt;/li>
+&lt;/ol>
+&lt;h2 id="1-信息就是位上下文">1. 信息就是「位+上下文」&lt;/h2>
+&lt;p>hello 程序生命周期开端：hel lo.c 源文件&lt;/p>
+&lt;ul>
+&lt;li>由2进制的 ASCII 编码后的字符组成&lt;/li>
+&lt;/ul>
+&lt;p>文本文件：只有ASCII字符构成的文件。如：hello.c&lt;/p>
+&lt;p>二进制文件：非文本文件。&lt;/p>
+&lt;p>因此，在计算机的世界中，所有的信息都是由一串比特表示。&lt;/p>
+&lt;p>区分不同数据对象的唯一方法是我们读到这些数据对象时的上下文。&lt;/p>
+&lt;h2 id="2-程序被其他程序翻译成不同的格式">2. 程序被其他程序翻译成不同的格式&lt;/h2>
+&lt;p>hello 程序生命周期：可执行文件，或者叫「目标程序」&lt;/p>
+&lt;p>编译器驱动程序：能够将「源文件」转化「目标文件」，如&lt;code>gcc&lt;/code>&lt;/p>
+&lt;p>例子：&lt;/p>
+&lt;pre>&lt;code>linux&amp;gt; gee -o hello hello.c
+&lt;/code>&lt;/pre>&lt;p>这一过程又叫翻译，可分为四个阶段：&lt;/p>
+&lt;p>&lt;img src="./image/CSAPP1-3.png" alt="" />&lt;/p>
+&lt;p>执行这四个阶段的程序一起构成「编译系统」(compilation system)。&lt;/p>
+&lt;ul>
+&lt;li>预处理阶段：修改源文件，得到另一个 C 程序。
+&lt;ul>
+&lt;li>删除部分#开头的命令&lt;/li>
+&lt;li>插入一些系统头文件，如&lt;code>stdio.h&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>编译阶段：翻译成汇编文本文件。&lt;/li>
+&lt;li>汇编阶段：将汇编文本文件翻译成机器语言指令，并打包成「可重定位目标程序」(relocatable object program)的格式。&lt;/li>
+&lt;li>链接阶段：合并一些调用的头文件，得到最终的可执行文件。&lt;/li>
+&lt;/ul>
+&lt;h2 id="3-了解编译系统如何工作">3. 了解编译系统如何工作&lt;/h2>
+&lt;p>程序员必须知道编译系统如何工作的重要原因：&lt;/p>
+&lt;ul>
+&lt;li>优化程序性能&lt;/li>
+&lt;li>理解连接时出现的错误&lt;/li>
+&lt;li>避免安全漏洞&lt;/li>
+&lt;/ul>
+&lt;h2 id="4-处理器读并解释储存在内存中的指令">4. 处理器读并解释储存在内存中的指令&lt;/h2>
+&lt;p>系统的硬件：&lt;/p>
+&lt;ul>
+&lt;li>总线（BUS）
+&lt;ul>
+&lt;li>贯穿整个系统的一组电子管道&lt;/li>
+&lt;li>通常总线被设计成传送定长的字节块，也就是字 (word)。字长是一个基本的系统参数，一般为 4 个字节( 32 位）或者 8 个字节（64位）。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>I/O设备
+&lt;ul>
+&lt;li>系统与外部世界的联系通道。&lt;/li>
+&lt;li>每个I/O设备都通过一个控制器或适配器与I/O总线相连。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>主存(Main Memory)
+&lt;ul>
+&lt;li>临时存储设备&lt;/li>
+&lt;li>物理上：动态随机存取储存器(DRAM)。&lt;/li>
+&lt;li>逻辑上：线性字节数组，每个字节都有其唯一的地址。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>处理器（CPU）
+&lt;ul>
+&lt;li>解释(或执行)存储在主存中指令的引擎&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>运行 hello 文件：&lt;/p>
+&lt;ol>
+&lt;li>在 shell 中输入&lt;code>./hello&lt;/code> 之后，shell 程序将字符逐一读入寄存器，再把它放入内存。&lt;/li>
+&lt;li>回车后，shell知道输入完成，开始执行一系列指令来加载可执行的 hello 文件。&lt;/li>
+&lt;li>这些指令将 hello 目标文件从磁盘复制到内存中。&lt;/li>
+&lt;li>处理器将目标文件中的机器语言指令复制到寄存器中，开始解析里面的指令并执行。&lt;/li>
+&lt;li>数据被现实在屏幕上。&lt;/li>
+&lt;/ol>
+&lt;p>注：利用 DMA 技术可以不通过处理器而直接从磁盘到达主存。&lt;/p>
+&lt;h2 id="5-高速缓存至关重要">5. 高速缓存至关重要&lt;/h2>
+&lt;p>上一个运行 hello 程序的例子中，信息需要依次经过：磁盘，主存，寄存器。&lt;/p>
+&lt;p>这样会造成开销，减慢程序。&lt;/p>
+&lt;p>因此，需要使得这些复制操作尽可能快的完成。&lt;/p>
+&lt;h2 id="6-储存设备形成层次结构">6 储存设备形成层次结构&lt;/h2>
+&lt;p>&lt;img src="./image/CSAPP1-9.png" alt="" />&lt;/p>
+&lt;h2 id="7-操作系统管理硬件">7 操作系统管理硬件&lt;/h2>
+&lt;p>操作系统：应用程序和硬件之间插入的一层软件。&lt;/p>
+&lt;p>操作系统两大基本功能：&lt;/p>
+&lt;ul>
+&lt;li>防止硬件被失控的应用程序滥用&lt;/li>
+&lt;li>向应用程序提供简单一致的机制来控制复杂而又通常大不相同的低级硬件设备。&lt;/li>
+&lt;/ul>
+&lt;p>操作系统提供三种基本的抽象：&lt;/p>
+&lt;ol>
+&lt;li>文件是对I/O设备的抽象&lt;/li>
+&lt;li>虚拟内存是对主存和磁盘的抽象&lt;/li>
+&lt;li>进程是处理器、主存和I/O设备的抽象&lt;/li>
+&lt;/ol>
+&lt;h2 id="8-系统之间利用网络通信">8 系统之间利用网络通信&lt;/h2>
+&lt;p>网络可视为一个I/O设备。&lt;/p>
+&lt;h2 id="9-重要主题">9 重要主题&lt;/h2>
+&lt;p>Amdahl定律：&lt;/p>
+&lt;p>并发和并行&lt;/p>
+&lt;p>计算机抽象&lt;/p></content:encoded><dc:creator>YoungWilliam</dc:creator><category>CSAPP</category><category>学习</category></item><item><title>26. Remove Duplicates from Sorted Array 消去重复数</title><link>https://youngwilliam.io/note/leetcode/array/26/</link><pubDate>Thu, 22 Aug 2019 23:58:26 +0800</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 23 Aug 2019 01:57:31 +0800</atom:modified><guid>https://youngwilliam.io/note/leetcode/array/26/</guid><description>题目 难度：易 传送门： English 中文 思路 一开始没有仔细看题，以为只要求出消去重复数之后数组的长度就行了，没看到还要求最后的数组。于是用了很笨的方法。 后</description><content:encoded>&lt;h2 id="题目">题目&lt;/h2>
+&lt;p>难度：&lt;code>易&lt;/code>&lt;/p>
+&lt;p>传送门：&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array/">English&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/">中文&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="思路">思路&lt;/h2>
+&lt;p>一开始没有仔细看题，以为只要求出消去重复数之后数组的长度就行了，没看到还要求最后的数组。于是用了很笨的方法。&lt;/p>
+&lt;p>后来看了解答，双指针，很快就出来了。&lt;/p>
+&lt;p>不过，但是还是卡了一下，因为没有判断数组为空的情况。以后得引起注意啊。&lt;/p>
+&lt;h2 id="代码">代码&lt;/h2>
+&lt;p>时间复杂度：O(n)&lt;/p>
+&lt;p>空间复杂度：O(1)&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-cpp" data-lang="cpp">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="k">public&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;span class="kt">int&lt;/span> &lt;span class="n">removeDuplicates&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">vector&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">int&lt;/span>&lt;span class="o">&amp;gt;&amp;amp;&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">nums&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">size&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="k">return&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">j&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">j&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">size&lt;/span>&lt;span class="p">();&lt;/span> &lt;span class="n">j&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">!=&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">])&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="n">i&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="k">return&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="p">};&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="结果">结果&lt;/h2>
+&lt;p>Runtime: 24 ms, faster than 59.96% of C++ online submissions&amp;hellip;.&lt;/p>
+&lt;p>Memory Usage: 9.9 MB, less than 83.75% of C++ online submissions&amp;hellip;.&lt;/p>
+&lt;h2 id="可能优化的点">可能优化的点&lt;/h2>
+&lt;p>运行时间还是太慢，但一时找不到优化的点。&lt;/p></content:encoded><dc:creator>YoungWilliam</dc:creator></item><item><title>What is POSIX?</title><link>https://youngwilliam.io/post/what-is-posix/</link><pubDate>Tue, 20 Aug 2019 02:10:40 +0800</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 18:33:36 +0800</atom:modified><guid>https://youngwilliam.io/post/what-is-posix/</guid><description>总结一下 POSIX 标准</description><content:encoded>&lt;h2 id="定义">定义&lt;/h2>
+&lt;p>可移植操作系统接口（英语：&lt;code>Portable Operating System Interface&lt;/code>，缩写为&lt;code>POSIX&lt;/code>）是IEEE为要在各种 &lt;code>UNIX&lt;/code> 操作系统上运行软件，而定义 API 的一系列互相关联的&lt;strong>标准的总称&lt;/strong>，其正式称呼为&lt;code>IEEE Std 1003&lt;/code>，而国际标准名称为 &lt;code>ISO/IEC 9945&lt;/code>。&lt;/p>
+&lt;h2 id="来源">来源&lt;/h2>
+&lt;p>此标准源于一个大约开始于1985年的项目。&lt;/p>
+&lt;p>POSIX 这个名称是由理查德·斯托曼（RMS）应IEEE的要求而提议的一个易于记忆的名称。&lt;/p>
+&lt;p>它基本上是 Portable Operating System Interface（可移植操作系统接口）的缩写，而X则表明其对Unix API的传承。&lt;/p>
+&lt;h2 id="组成">组成&lt;/h2>
+&lt;p>当前的POSIX主要分为四个部分：&lt;/p>
+&lt;ul>
+&lt;li>Base Definitions&lt;/li>
+&lt;li>System Interfaces&lt;/li>
+&lt;li>Shell and Utilities&lt;/li>
+&lt;li>Rationale&lt;/li>
+&lt;/ul>
+&lt;h2 id="posix-操作系统">POSIX 操作系统&lt;/h2>
+&lt;p>正式认证的包括 macOS 等。&lt;/p>
+&lt;p>未得到正式认证，但基本符合 POSIX 标准的有 Android、FreeBSD 等。&lt;/p>
+&lt;h2 id="参考">参考&lt;/h2>
+&lt;ol>
+&lt;li>&lt;a href="https://en.wikipedia.org/wiki/POSIX">Wiki&lt;/a>&lt;/li>
+&lt;/ol></content:encoded><dc:creator>YoungWilliam</dc:creator><category>POSIX</category><category>UNIX</category><category>LINUX</category><category>学习</category></item><item><title>TED 演讲吸收笔记与总结</title><link>https://youngwilliam.io/post/ted/</link><pubDate>Sat, 17 Aug 2019 02:48:55 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Sat, 14 Sep 2019 23:47:52 +0800</atom:modified><guid>https://youngwilliam.io/post/ted/</guid><description>我的 TED 观影笔记，希望以后能保持经常更新～</description><content:encoded>&lt;h2 id="what-do-top-students-do-differently">What do top students do differently?&lt;/h2>
+&lt;blockquote>
+&lt;p>&lt;a href="https://www.youtube.com/watch?v=Na8m4GPqA30">视频连接&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>重点：&lt;/p>
+&lt;ul>
+&lt;li>Don&amp;rsquo;t worry about IQ. 获得高分的决定因素不是 IQ，而是方法与努力。而且或者 IQ 是天生的，是你无法控制的。&lt;/li>
+&lt;li>Don&amp;rsquo;t &lt;code>just&lt;/code> aim to work hard. 方法至关重要，只会努力可能还会带来更坏的结果。&lt;/li>
+&lt;/ul>
+&lt;p>例子：&lt;/p>
+&lt;ul>
+&lt;li>通过调查发现，考前大部分考生会一直重复地看书或者笔记，而考高分的那一部分同学则会一直做练习题。因为考试考的不是记忆，而是知识的运用。&lt;/li>
+&lt;li>许多人会指定短期的计划，比如一周的时间表。但实际上很少人能够坚持自己的时间表。通过研究那些能够坚持的人例子，发现他们经常会在每天某一个时间段设置一个自己喜欢的活动，比如打篮球，这样每天过的有盼头。而那些早早放弃的人一般会把时间安排的非常经凑，没有一个时间段是自己喜欢真心喜欢的（娱乐）活动，因此容易厌倦，坚持不下去。&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-learn-everything--jsoh-kaufman--tedxcsu">How to learn everything | Jsoh Kaufman | TEDxCSU&lt;/h2>
+&lt;blockquote>
+&lt;p>&lt;a href="https://www.youtube.com/watch?v=Na8m4GPqA30">视频连接&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>问题：人到中年，突然意识到没有自由时间去学习了。&lt;/p>
+&lt;p>然后讲者发现：Florida State university 的一位教授，K. Anders Ericsson 最先提出 1万小时理论，即花费1万小时去学习一个新知识，最终能够成为这个领域的专家。随后还有一本书专门讲 1w 小时理论。&lt;/p>
+&lt;p>但是，讲者时间有限，没有1w小时慢慢学啊。&lt;/p>
+&lt;p>学习是有曲线的，前期只要一点点练习就可以达到相对高的高度。&lt;/p>
+&lt;p>讲者研究出来的最有效的时间是 &lt;strong>20 小时&lt;/strong>。&lt;/p>
+&lt;p>四步学习法：&lt;/p>
+&lt;ol>
+&lt;li>Deconstruct the skill 分解技能/知识点。&lt;/li>
+&lt;li>Learn enough to self-correct&lt;/li>
+&lt;li>Remove the practice barrier 降低学习门槛&lt;/li>
+&lt;li>Practice at least 20 hours 最少练习/学习 20 小时&lt;/li>
+&lt;/ol>
+&lt;p>时间分段：&lt;/p>
+&lt;ol>
+&lt;li>前2小时，保证所需要的东西齐全。&lt;/li>
+&lt;li>开始练习&lt;/li>
+&lt;/ol>
+&lt;p>现在阻止你的不是学习的难度了，而是你想学什么？What do you want to learn？&lt;/p>
+&lt;h2 id="what-one-skill--an-awesome-life--dr-shimi-kang">What one skill = an awesome life? | Dr. Shimi Kang&lt;/h2>
+&lt;blockquote>
+&lt;p>&lt;a href="https://www.youtube.com/watch?v=1EHZAQmw2JA">视频连接&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>一个技巧就能让你拥有一个 awesome（棒极了） 的生活?&lt;/p>
+&lt;p>讲者是一位哈佛高材生、医生，但却依旧活的很累（in trouble），连三个孩子都照顾不过来，完全比不过当初成功养育她兄弟姐妹五个人的妈妈。&lt;/p>
+&lt;p>她在一番思考总结之后发现，最重要的是 Adaptability（适应能力）。&lt;/p>
+&lt;p>同时，她拿海豚作为例子进行讲解她总结的「POD」理论，也就是 Adaptability 的关键：&lt;/p>
+&lt;ul>
+&lt;li>P: Play. 儿时那种无忧无虑的玩耍，没有规则，可以随意畅想。&lt;/li>
+&lt;li>O: Others. Why we adapt？O 是我们适应的源头，我们需要社交，需要交流，要不然会生病，心理疾病。&lt;/li>
+&lt;li>D: Downtime. When we adapt? 要有一段专门放松的时间。“压力是21世纪第一病因”。&lt;/li>
+&lt;/ul>
+&lt;p>讲者提出三个单词时，都说了这个是对自己的 reward（奖励），奖励自己努力工作，努力学习。&lt;/p>
+&lt;p>我的感想：&lt;/p>
+&lt;ol>
+&lt;li>首先，通过这个演讲我学的最多就是讲者吐字清晰，一字一停，完全不会因为自己是 native speaker 而说的很快。而我平时喜欢说话很快，老是无法清晰的表达自己的观点。这点值得我学习。&lt;/li>
+&lt;li>其次，她的「POD」能够成书，还能畅销世界，我觉得实在厉害。虽然这个理论可能很多人都懂，但能够说出来，总结出来，并写成书的还是很少的。可见人与人的差距还是非常大的，而且随着现代人越来越忙，突然发现有人说「放松」、「玩耍」可以拥有更好的生活，岂不是找到偷懒的借口？&lt;/li>
+&lt;/ol></content:encoded><dc:creator>YoungWilliam</dc:creator><category>TED</category><category>思维方式</category><category>笔记</category><category>学习</category></item><item><title>169. Majority Element 求众数</title><link>https://youngwilliam.io/note/leetcode/array/169/</link><pubDate>Tue, 13 Aug 2019 23:58:26 +0800</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Sat, 17 Aug 2019 03:22:58 +0800</atom:modified><guid>https://youngwilliam.io/note/leetcode/array/169/</guid><description>题目 难度：易 给定一个大小为 n 的数组，找到其中的众数。众数是指在数组中出现次数大于 ⌊ n/2 ⌋ 的元素。 你可以假设数组是非空的，并且给定的数组总是存在</description><content:encoded>&lt;h2 id="题目">题目&lt;/h2>
+&lt;p>难度：&lt;code>易&lt;/code>&lt;/p>
+&lt;p>给定一个大小为 n 的数组，找到其中的众数。众数是指在数组中出现次数大于 ⌊ n/2 ⌋ 的元素。&lt;/p>
+&lt;p>你可以假设数组是非空的，并且给定的数组总是存在众数。&lt;/p>
+&lt;p>示例 1:&lt;/p>
+&lt;pre>&lt;code>输入: [3,2,3]
+输出: 3
+&lt;/code>&lt;/pre>&lt;p>示例 2:&lt;/p>
+&lt;pre>&lt;code>输入: [2,2,1,1,1,2,2]
+输出: 2
+&lt;/code>&lt;/pre>&lt;p>传送门：&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://leetcode.com/problems/majority-element/">English&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://leetcode-cn.com/problems/majority-element/solution/">中文&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="思路">思路&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>算法&lt;/th>
+&lt;th>时间复杂度&lt;/th>
+&lt;th>空间复杂度&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>暴力&lt;/td>
+&lt;td>O(n^2)&lt;/td>
+&lt;td>O(n)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>哈希表&lt;/td>
+&lt;td>O(n)&lt;/td>
+&lt;td>O(n)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>排序&lt;/td>
+&lt;td>O(nlogn)&lt;/td>
+&lt;td>O(1)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>分治&lt;/td>
+&lt;td>O(nlogn)&lt;/td>
+&lt;td>O(logn)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Boyer-Moore 投票算法&lt;/td>
+&lt;td>O(n)&lt;/td>
+&lt;td>O(1)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4 id="分治">分治&lt;/h4>
+&lt;p>一分为二，求两边众数的次数，很复杂。&lt;/p>
+&lt;h4 id="boyer-moore-投票算法">Boyer-Moore 投票算法&lt;/h4>
+&lt;p>寻找数组中超过一半的数字，这意味着数组中&lt;strong>其他数字出现次数的总和都是比不上这个数字出现的次数&lt;/strong>&lt;/p>
+&lt;p>即如果把 该众数记为 &lt;code>+1&lt;/code> ，把其他数记为 &lt;code>−1&lt;/code> ，将它们全部加起来，和是大于 0 的。&lt;/p>
+&lt;h2 id="代码">代码&lt;/h2>
+&lt;p>大致操作：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>设置两个变量 candidate 和 count，candidate 用来保存数组中遍历到的某个数字，count 表示当前数字的出现次数，一开始 candidate 保存为数组中的第一个数字，count 为 1&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>遍历整个数组&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>如果数字与之前 candidate 保存的数字相同，则 count 加 1&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>如果数字与之前 candidate 保存的数字不同，则 count 减 1&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>如果出现次数 count 变为 0 ，candidate 进行变化，保存为当前遍历的那个数字，并且同时把 count 重置为 1&lt;/strong>（这里是细节，同时也需要好好理解）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>遍历完数组中的所有数字即可得到结果&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;p>参考：https://leetcode-cn.com/problems/two-sum/solution/du-le-le-bu-ru-zhong-le-le-ru-he-zhuang-bi-de-q&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-c++" data-lang="c++">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="k">public&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;span class="kt">int&lt;/span> &lt;span class="n">majorityElement&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">vector&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">int&lt;/span>&lt;span class="o">&amp;gt;&amp;amp;&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="kt">int&lt;/span> &lt;span class="n">candidate&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;span class="kt">int&lt;/span> &lt;span class="n">counter&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">size&lt;/span>&lt;span class="p">();&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="p">{&lt;/span>
+&lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">candidate&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="o">++&lt;/span>&lt;span class="n">counter&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="p">}&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="o">--&lt;/span>&lt;span class="n">counter&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">counter&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="n">candidate&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;span class="n">counter&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="k">return&lt;/span> &lt;span class="n">candidate&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="p">};&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="小结">小结&lt;/h2>
+&lt;p>这种题的最优解普通人的很难想到，既简单又高效，这个摩尔有点东西。果然还是得多刷题，不过这道题得注意一下细节。&lt;/p></content:encoded><dc:creator>YoungWilliam</dc:creator></item><item><title>Docker 背后： Linux 的 /proc</title><link>https://youngwilliam.io/post/linux-proc/</link><pubDate>Fri, 02 Aug 2019 02:04:09 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Wed, 14 Aug 2019 01:25:12 +0800</atom:modified><guid>https://youngwilliam.io/post/linux-proc/</guid><description>我的 Docker 原理探索之路</description><content:encoded>&lt;h2 id="为什么要有-proc">为什么要有 &lt;code>/proc&lt;/code>？&lt;/h2>
+&lt;p>想必在日常开发&lt;del>写&lt;/del>查 BUG 中，你会经常用到像 &lt;code>top&lt;/code>、&lt;code>ps&lt;/code> 这样的 Linux 命令来查看进程、CPU 的状态吧。&lt;/p>
+&lt;p>那你是否有想过：这些不都是内核才知道的吗？而作为身处 shell （用户态）的我们又是通过什么途径知道这些的呢？&lt;/p>
+&lt;p>是有什么 system call 吗？是有什么高级的接口吗？&lt;/p>
+&lt;p>不不不，其实是通过一个神奇的目录，也就是今天的主角 &lt;code>/proc&lt;/code>。&lt;/p>
+&lt;p>实际上，&lt;code>top&lt;/code> 中的数据就是读取 &lt;code>/proc/stat&lt;/code> 文件获得的，&lt;code>/proc/stat&lt;/code> 文件被读取时会自动更新，从而 &lt;code>top&lt;/code> 获得最新的 CPU 占用率情况。&lt;/p>
+&lt;h2 id="proc-是什么">&lt;code>/proc&lt;/code> 是什么？&lt;/h2>
+&lt;p>&lt;code>/proc&lt;/code> 其实不是一个“真正”的文件目录，而是一个“虚拟”的文件系统（virtual filesystem）。&lt;/p>
+&lt;p>为什么是虚拟的呢？因为它不写入&lt;strong>外存&lt;/strong>空间，只存在于&lt;strong>内存&lt;/strong>中。&lt;/p>
+&lt;p>它包含了系统运行时的信息，包括：&lt;/p>
+&lt;ul>
+&lt;li>当前运行进程信息&lt;/li>
+&lt;li>系统内存&lt;/li>
+&lt;li>mount 设备信息&lt;/li>
+&lt;li>一些硬件配置&lt;/li>
+&lt;li>&amp;hellip;等。&lt;/li>
+&lt;/ul>
+&lt;p>因此，可以把它当作&lt;strong>内核&lt;/strong>的信息中心。&lt;/p>
+&lt;p>当然许多系统工具都是通过简单读取该目录下的某些内容。&lt;/p>
+&lt;p>比如：&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>lsmod&lt;/code> = &lt;code>cat /proc/modules&lt;/code>&lt;/li>
+&lt;li>&lt;code>lspci&lt;/code> = &lt;code>cat /proc/pci&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;p>在系统正在运行时，你甚至可以通过修改 &lt;code>/proc&lt;/code> 目录下文件，来读取修改系统的内核参数（sysctl）。&lt;/p>
+&lt;h2 id="proc-基本目录结构">&lt;code>/proc&lt;/code> 基本目录结构&lt;/h2>
+&lt;p>因为文件都在内存中，如果你去看每个文件的大小，你会发现都是 0，除了 &lt;code>kcore&lt;/code>, &lt;code>mtrr&lt;/code> and &lt;code>self&lt;/code>。&lt;/p>
+&lt;p>当遍历这个目录的时候，会发现有些数字，这些都是为每个进程创建的空间，数字就是它们的 PID。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;span class="lnt">43
+&lt;/span>&lt;span class="lnt">44
+&lt;/span>&lt;span class="lnt">45
+&lt;/span>&lt;span class="lnt">46
+&lt;/span>&lt;span class="lnt">47
+&lt;/span>&lt;span class="lnt">48
+&lt;/span>&lt;span class="lnt">49
+&lt;/span>&lt;span class="lnt">50
+&lt;/span>&lt;span class="lnt">51
+&lt;/span>&lt;span class="lnt">52
+&lt;/span>&lt;span class="lnt">53
+&lt;/span>&lt;span class="lnt">54
+&lt;/span>&lt;span class="lnt">55
+&lt;/span>&lt;span class="lnt">56
+&lt;/span>&lt;span class="lnt">57
+&lt;/span>&lt;span class="lnt">58
+&lt;/span>&lt;span class="lnt">59
+&lt;/span>&lt;span class="lnt">60
+&lt;/span>&lt;span class="lnt">61
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="o">[&lt;/span>go_dev@0f8b372ed635 proc&lt;span class="o">]&lt;/span>$ ll /proc
+total &lt;span class="m">0&lt;/span>
+dr-xr-xr-x &lt;span class="m">9&lt;/span> go_dev go_dev &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 &lt;span class="m">1&lt;/span>
+dr-xr-xr-x &lt;span class="m">9&lt;/span> go_dev go_dev &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 &lt;span class="m">30&lt;/span>
+drwxrwxrwt &lt;span class="m">2&lt;/span> root root &lt;span class="m">40&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 acpi
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 buddyinfo
+dr-xr-xr-x &lt;span class="m">4&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 bus
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 cgroups
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 cmdline
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">23709&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 config.gz
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 consoles
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 cpuinfo
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 crypto
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 devices
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 diskstats
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 dma
+dr-xr-xr-x &lt;span class="m">2&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 driver
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 execdomains
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 fb
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 filesystems
+dr-xr-xr-x &lt;span class="m">8&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 fs
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 interrupts
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 iomem
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 ioports
+dr-xr-xr-x &lt;span class="m">31&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 irq
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 kallsyms
+crw-rw-rw- &lt;span class="m">1&lt;/span> root root 1, &lt;span class="m">3&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 kcore
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 key-users
+crw-rw-rw- &lt;span class="m">1&lt;/span> root root 1, &lt;span class="m">3&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 keys
+-r-------- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 kmsg
+-r-------- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 kpagecgroup
+-r-------- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 kpagecount
+-r-------- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 kpageflags
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 loadavg
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 locks
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 meminfo
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 misc
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 modules
+lrwxrwxrwx &lt;span class="m">1&lt;/span> root root &lt;span class="m">11&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 mounts -&amp;gt; self/mounts
+dr-xr-xr-x &lt;span class="m">2&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 mpt
+-rw-r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 mtrr
+lrwxrwxrwx &lt;span class="m">1&lt;/span> root root &lt;span class="m">8&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 net -&amp;gt; self/net
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 pagetypeinfo
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 partitions
+crw-rw-rw- &lt;span class="m">1&lt;/span> root root 1, &lt;span class="m">3&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 sched_debug
+lrwxrwxrwx &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 self -&amp;gt; &lt;span class="m">30&lt;/span>
+-rw------- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 slabinfo
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 softirqs
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 stat
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 swaps
+dr-xr-xr-x &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 sys
+--w------- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 sysrq-trigger
+dr-xr-xr-x &lt;span class="m">2&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 sysvipc
+lrwxrwxrwx &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 thread-self -&amp;gt; 30/task/30
+crw-rw-rw- &lt;span class="m">1&lt;/span> root root 1, &lt;span class="m">3&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 timer_list
+dr-xr-xr-x &lt;span class="m">4&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 tty
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 uptime
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 version
+-r-------- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 vmallocinfo
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 vmstat
+-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 zoneinfo
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>在此介绍几个比较重要的部分：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>/proc/N&lt;/th>
+&lt;th>PID 为 N 的进程信息&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>/proc/N/cmdline&lt;/td>
+&lt;td>进程启动命令&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>/proc/N/cwd&lt;/td>
+&lt;td>链接到进程当前工作目录&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>/proc/N/environ&lt;/td>
+&lt;td>进程环境变量列表&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>/proc/N/exe&lt;/td>
+&lt;td>链接到进程的执行命令文件&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>/proc/N/fd&lt;/td>
+&lt;td>包含进程相关的所有文件描述符&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>/proc/N/maps&lt;/td>
+&lt;td>与进程相关的内存映射信息&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>/proc/N/mem&lt;/td>
+&lt;td>指代进程持有的内存，不可读&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>/proc/N/root&lt;/td>
+&lt;td>链接到进程的根目录&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>/proc/N/stat&lt;/td>
+&lt;td>进程的状态&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>/proc/N/statm&lt;/td>
+&lt;td>进程使用的内存状态&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>/proc/N/status&lt;/td>
+&lt;td>进程状态信息，比 stat/statm 更具可读性&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>/proc/self/&lt;/td>
+&lt;td>链接到当前正在运行的进程&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>如果像了解更多的话，请自行 google 或者看看 &lt;a href="https://www.tldp.org/LDP/Linux-Filesystem-Hierarchy/html/proc.html">Linux Filesystem Hierarchy: 1.14. /proc&lt;/a>。&lt;/p>
+&lt;h2 id="docker-如何利用到-proc">Docker 如何利用到 &lt;code>/proc&lt;/code>？&lt;/h2>
+&lt;h2 id="参考">参考&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;a href="https://www.tldp.org/LDP/Linux-Filesystem-Hierarchy/html/proc.html">Linux Filesystem Hierarchy: 1.14. /proc&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://book.douban.com/subject/27082348/">《自己动手写Docker》&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://en.wikipedia.org/wiki/Procfs">wiki: procfs&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol></content:encoded><dc:creator>YoungWilliam</dc:creator><category>linux</category><category>docker</category><category>proc</category><category>学习</category></item><item><title>《剑指Offer》笔记</title><link>https://youngwilliam.io/post/coding-interviews-note-1/</link><pubDate>Sun, 28 Jul 2019 18:17:25 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 18:33:36 +0800</atom:modified><guid>https://youngwilliam.io/post/coding-interviews-note-1/</guid><description>《剑指Offer》笔记，不定时更新～</description><content:encoded>&lt;p>还没好好看一遍《剑指Offer》，希望在阅读的过程中能记录一下，同时也方便以后复习。&lt;/p>
+&lt;!-- more -->
+&lt;h2 id="3-高质量的代码">3. 高质量的代码&lt;/h2>
+&lt;h3 id="32-代码的规范性">3.2 代码的规范性&lt;/h3>
+&lt;h4 id="代码的完整性">代码的完整性:&lt;/h4>
+&lt;ul>
+&lt;li>功能测试：要满足基本功能、尽量突破常规思维的限制&lt;/li>
+&lt;li>边界测试：考虑循环、递归终止条件；字符串转整数时确保极大极小值等。&lt;/li>
+&lt;li>负面测试：各种可能的错误输入&lt;/li>
+&lt;/ul>
+&lt;h4 id="3-种错误处理的方法">3 种错误处理的方法：&lt;/h4>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;/th>
+&lt;th>优点&lt;/th>
+&lt;th>缺点&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>返回值&lt;/td>
+&lt;td>和系统 API 一致，0 为正常，其他为错误&lt;/td>
+&lt;td>不能方便使用计算结果&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>全局变量&lt;/td>
+&lt;td>可以直接得到计算结果，方便使用&lt;/td>
+&lt;td>很容易忘记检查&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>异常&lt;/td>
+&lt;td>逻辑清晰，明确定义错误类型&lt;/td>
+&lt;td>一些语言不支持，对性能有负面影响&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>具体用哪种需要考虑具体场景，可以和面试讨论一下采用哪种比较合适。&lt;/p></content:encoded><dc:creator>YoungWilliam</dc:creator><category>笔记</category><category>剑指Offer</category><category>学习</category></item><item><title>OpenWRT 18.06 IPv6 开启 Relay，LAN 口获取 IPv6 公网地址</title><link>https://youngwilliam.io/post/openwrt-ipv6-relay/</link><pubDate>Sun, 10 Mar 2019 09:48:55 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Wed, 14 Aug 2019 01:25:12 +0800</atom:modified><guid>https://youngwilliam.io/post/openwrt-ipv6-relay/</guid><description>此方案失败了，但还是可以参考的，说不定你就成功了？</description><content:encoded>&lt;blockquote>
+&lt;p>此方案已失败，但还是可以参考的，说不定你就成功了？&lt;/p>
+&lt;/blockquote>
+&lt;!-- more -->
+&lt;p>宿舍的路由器一直不太好用，今天把之前买的 K2P 重新刷了 OpenWRT 新版系统。&lt;code>WAN 6&lt;/code> 可以获取到 &lt;code>IPv6&lt;/code> 的公网地址，可是发现 &lt;code>LAN&lt;/code> 口只能获取本地的 &lt;code>IPv6&lt;/code>，用不了，连不上北邮人，每次都得切到 &lt;code>SUSTC-Wifi&lt;/code> 才能连，实在非常不方便。于是就研究了几小时绕了一大圈才找到可行的解决办法。在此记录下。&lt;/p>
+&lt;h1 id="wan-6-设置">&lt;code>WAN 6&lt;/code> 设置&lt;/h1>
+&lt;p>协议：&lt;code>DHCPv6 客户端&lt;/code>&lt;br />
+请求 IPv6 地址：&lt;code>try&lt;/code>（不能选 force）&lt;/p>
+&lt;h1 id="lan-设置">&lt;code>LAN&lt;/code> 设置&lt;/h1>
+&lt;p>最下面 &lt;code>DHCP 服务器&lt;/code> 中 &lt;code>IPv6 设置&lt;/code> 下：&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>路由通告服务&lt;/code>、&lt;code>DHCPv6 服务&lt;/code>、&lt;code>NDP 代理&lt;/code>全部选为&lt;code>混合模式&lt;/code>。这样 &lt;code>WAN 6&lt;/code> 和 &lt;code>LAN&lt;/code> 就都可以获得公网 &lt;code>IPv6&lt;/code>。&lt;/li>
+&lt;li>&lt;code>DHCPv6 模式&lt;/code> 选择 &lt;code>无状态的 + 有状态的&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;p>“上面「一般配置-物理设置」，找到「接口」，点击最右边的小三角，弹出下拉菜单。默认这里「交换机 VLAN eth0.2 (lan, wan, wan6)」是没有选上的吧？勾选上这个。为啥选这个呢？因为它有 wan6 哇～”&lt;/p>
+&lt;p>保存并应用。等一段时间还没有生效的话，就重启。我是重启完立马就有了原生 &lt;code>IPv6&lt;/code>。&lt;/p>
+&lt;h1 id="主要参考">主要参考&lt;/h1>
+&lt;p>&lt;a href="https://haoyu.love/blog646.html">OpenWrt IPv6 中继&lt;/a>&lt;/p>
+&lt;h1 id="ps">PS&lt;/h1>
+&lt;p>我自己在之前的教程中修改了 &lt;code>/etc/config/dhcp&lt;/code>，不知道有没有影响。&lt;br />
+只是在&lt;code>config dhcp 'lan'&lt;/code> 的最下面添加了 &lt;code>option master '1'&lt;/code>。如果上诉方法对你不起作用，可以试试这个或者使用 &lt;code>NAT&lt;/code>。&lt;/p></content:encoded><dc:creator>YoungWilliam</dc:creator><category>OpenWRT</category><category>IPv6</category><category>搞机</category></item><item><title>Caoz《成长的烦恼》笔记</title><link>https://youngwilliam.io/post/caoz-class-node/</link><pubDate>Fri, 28 Dec 2018 21:48:55 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 18:33:36 +0800</atom:modified><guid>https://youngwilliam.io/post/caoz-class-node/</guid><description>记录一下～</description><content:encoded>&lt;h2 id="背景">背景&lt;/h2>
+&lt;p>这门课是张哥（stormzhang）在朋友圈推荐的，买的话可以直接进入 Caoz 的星球。我主要是冲着星球去的，因为星球价值真的高啊。其实之前本来就打算进星球的，无奈刚换电脑，比较拮据，就只好等待机会。进了星球，发现一堆创业大佬，就是一个人脉圈啊，有没有作用，就看你的本事了。以上就是星球附赠的课程《成长的烦恼》的由来。因为时间限制，28 号晚上就会无法访问，就想称此机会好好读读。&lt;/p>
+&lt;h2 id="1-读书时代">1. 读书时代&lt;/h2>
+&lt;h3 id="11-尽早确立职场目标并准备">1.1. 尽早确立职场目标并准备&lt;/h3>
+&lt;p>曹大在这里描述了一下自己的学生生涯，悔恨自己当初没有好好学好专业课，以至于错失许多机会。&lt;/p>
+&lt;p>摘录：&lt;/p>
+&lt;blockquote>
+&lt;p>对于专业技能，特别是计算机的专业技能，我建议是一精多通：你能在某个特定领域达到足够的高度，而其他相关领域达到一定的标准。原因：&lt;/p>
+&lt;ol>
+&lt;li>需要跟不同领域的人沟通时，更好地理解对方，换位思考，降低沟通成本。&lt;/li>
+&lt;li>可以在特殊情况下自己干。&lt;/li>
+&lt;li>企业喜欢这种全才。&lt;/li>
+&lt;/ol>
+&lt;/blockquote>
+&lt;h3 id="12-切忌陷入自以为是的境地">1.2. 切忌陷入自以为是的境地&lt;/h3>
+&lt;blockquote>
+&lt;p>为什么自以为是？信息获取的渠道很窄。=》价值观趋同，社会认知趋同。&lt;/p>
+&lt;p>很多真正很有价值的真相，在读书的时候是看不见的。你从媒体看互联网，你从那些成功者的演说里看互联网，你是看不到真相的。&lt;/p>
+&lt;p>如何解决？&lt;br />
+多跟不同人群沟通。&lt;br />
+尽早实习，多跟不同部门沟通。&lt;/p>
+&lt;p>例子1:&lt;br />
+遇到没有听说过的的公司可以去搜一下资料，并且听听他们的宣讲。&lt;br />
+“今天见到李开复咯，收获好大哦～收获了啥呢？朋友圈的赞。。。”&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="13-基础思想和逻辑需要尽早培养">1.3. 基础思想和逻辑需要尽早培养&lt;/h3>
+&lt;p>理解公式来锻炼自己的理解能力。&lt;/p>
+&lt;p>世界上大部分人不具备逻辑能力。无法用最优解的思想去思考。&lt;/p>
+&lt;p>学好基础，培养思想，而不是去学工具。&lt;/p>
+&lt;h2 id="2-关于求职">2. 关于求职&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>经常的错误：不尊重职场。&lt;br />
+求职前要有准备，要调研，要在简历中体现你的准备和思考。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>要谦虚和积极。&lt;br />
+愿意从基层做起，从小事做起。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>职场要体面一点。&lt;br />
+初次相遇，一切重要场合还是需要的。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>面试问问题。要有准备。基于企业的公开信息进行提问，挖掘出深度问题。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="3-个人职场定位">3. 个人职场定位&lt;/h2>
+&lt;h3 id="31-找到个人专长">3.1. 找到个人专长&lt;/h3>
+&lt;p>“看上去很全能，其实不堪一击。”&lt;/p>
+&lt;h3 id="32-好奇心是动力之源">3.2. 好奇心是动力之源&lt;/h3>
+&lt;p>“一定要知道自己最痴迷什么？”&lt;/p>
+&lt;p>“我是怎么甄别信息的，其实很简单，就是好奇心。对某一个新闻，有些人有好奇心就会去挖掘这些信息，而大多数人是不关心的。”&lt;/p>
+&lt;h3 id="33-要建立全局意识和整体感">3.3. 要建立全局意识和整体感&lt;/h3>
+&lt;p>“对行业、专业的要有认知，知道机会和方向在哪儿，要知道自己更上台阶需要去哪儿。”&lt;/p>
+&lt;p>“所以我经常建议年轻人，读书的，没毕业的或刚毕业的多多看看行业内顶尖企业的财报，了解行业发展的规模/竞争态势。”&lt;/p>
+&lt;p>“新兴领域、新兴机会也要多看看，比如百度的热榜，爱站指数，认真挖掘，对行业认知的其实会增加许多。”&lt;/p>
+&lt;p>提到几位人物：余军、边江、高少星&lt;/p>
+&lt;p>“多去了解企业整体架构。了解公司的核心价值和主要方向。”&lt;/p>
+&lt;p>“职场秘密：快速拓展的公司，很多中层为了自己的发展，快速启动新的项目团队，每个项目看上去都很有价值很有机会，然后大家忙忙碌碌为了新的机会各种打拼。但是，其实从公司战略和格局来说，绝大多数都是试验品、甚至是垃圾。等到市场风向逆转的时候，老板开始核查成本，这些乱七八糟的玩意儿全部砍掉。你觉自己很拼，很有贡献，可在老板眼里一文不值。”&lt;/p>
+&lt;p>“一定要站的高一点，站在上司的位置看问题，看机会，看方向。如果看不到，多问！”&lt;/p>
+&lt;p>“把四五个人的工作量给一个人做，可能会发现只有少数的事有必要做。”&lt;/p>
+&lt;p>佩服的人：李兴平，做网站特别强。在没有资源的情况下，比专业人士做的好。&lt;/p>
+&lt;h3 id="34-关于个人待遇的话题">3.4. 关于个人待遇的话题&lt;/h3>
+&lt;p>“职场定位，你要对自己的发展目标有整体的认识。”&lt;/p>
+&lt;ul>
+&lt;li>发展期：20-30 关注成长，只有吃苦。只有少数人能真正踩对路，少走弯路。&lt;/li>
+&lt;li>成熟期：30-35 达到Top10% 提高企业职位、提高业界影响力、建立人脉。
+&lt;ul>
+&lt;li>“不需要顶尖水平，因为很多顶尖水平的人没意识到这一点。”&lt;/li>
+&lt;li>“达到领域内 Top 10% 并不难，绝大部分人又懒又爱给自己找借口。”&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>变现期：35之后务必快速走入变现期。能力够了，影响力和口碑够了。这个时候就要让自己价值最大化。&lt;/li>
+&lt;/ul>
+&lt;p>索要期权，知道整个期权的比例。要有概念。&lt;/p>
+&lt;p>创业要确定好退出条款。毕竟「能共患难，不一定能共享福。」&lt;/p>
+&lt;h3 id="35-互相成就">3.5. 互相成就&lt;/h3>
+&lt;p>写工作报告的时候将帮助过自己的人写进去，不仅可以帮助别人，对自己也没什么损失，何乐而不为呢？&lt;/p>
+&lt;h2 id="4-谈谈创业">4. 谈谈创业&lt;/h2>
+&lt;p>这个部分曹大讲了许多自己的例子。大部分内容在曹大的文章都有提及，就不一一粘贴了。&lt;/p>
+&lt;h3 id="41-创业需要视野和格局">4.1. 创业需要视野和格局&lt;/h3>
+&lt;p>“所以创业有几个教训：1. 居安思危，眼光要长远。 2. 动作要快，行动力要强。 3. 必要的时候需要魄力，需要团队，需要资金，不能当干。单干格局太低。”&lt;/p>
+&lt;p>“你写了很多代码，很酷的技术，没有人用，很少人用，你技术再牛又怎么样呢？&lt;strong>你代码很简单，被广泛用起来，而且为别人真正带来了价值，你的工作就是很有价值。&lt;/strong>”&lt;/p>
+&lt;p>创业历程：&lt;/p>
+&lt;ul>
+&lt;li>上世纪末：
+&lt;ul>
+&lt;li>交换链。错失 hao123&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>2004：
+&lt;ul>
+&lt;li>OA系统，一个人，安装包压缩到 5m。代码量大，但用的人不多。&lt;/li>
+&lt;li>统计系统。代码量少，但很多人用。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="42-创业需要懂得价值评估">4.2. 创业需要懂得价值评估&lt;/h3>
+&lt;h3 id="43-更好的理解人性">4.3. 更好的理解人性&lt;/h3>
+&lt;h3 id="44-财务和数据">4.4. 财务和数据&lt;/h3>
+&lt;h2 id="5-总结与回复">5. 总结与回复&lt;/h2>
+&lt;h2 id="6-最后的感受">6. 最后的感受&lt;/h2>
+&lt;p>这是我自己听完曹大课的感受。曹大在这期课程里着重强调了看待事物的全局观和自己的好奇心。&lt;/p>
+&lt;p>先说说全局观，我觉得全局观就是在多个角度想问题：从领导角度也好，从别的部门角度也好，总之就是多想想，多看看，搞明白市场的变化方向，理解最重要的核心，理解好利益冲突。&lt;/p>
+&lt;p>再说说好奇心，曹大的信息筛选全凭好奇心。而曹大的好奇心有点跟我的不太一样，他对许多未知的事物都感到好奇，希望更多地了解，会从一则小新闻里衍生地去查很多相关资料。&lt;/p>
+&lt;p>另外说一句，有实效性的课程真的能够克服懒癌，能够逼着自己去读完听完而不浪费难得的机会。想想躺在书架上的那么多书还没怎么翻过，还有「极客时间」里的十几个课程还只看了一点点，而我却没有一丝愧疚。可能我还不够优秀吧。&lt;/p></content:encoded><dc:creator>YoungWilliam</dc:creator><category>Caoz</category><category>思维方式</category><category>学习</category></item><item><title>Mac OS X 下优化 Terminal，一篇就够了！</title><link>https://youngwilliam.io/post/optimize-the-terminal-in-mac-os-x/</link><pubDate>Sat, 11 Aug 2018 13:52:00 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Wed, 14 Aug 2019 01:34:09 +0800</atom:modified><guid>https://youngwilliam.io/post/optimize-the-terminal-in-mac-os-x/</guid><description>Mac 大法好</description><content:encoded>&lt;p>先上最终效果图：&lt;/p>
+&lt;p>&lt;img src="https://i.imgur.com/0goJQf8.png" alt="" />&lt;/p>
+&lt;h2 id="目录">目录&lt;/h2>
+&lt;!-- TOC -->
+&lt;ul>
+&lt;li>&lt;a href="#%08%e7%9b%ae%e5%bd%95">目录&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#1-%e7%9b%b8%e5%85%b3%e5%b7%a5%e5%85%b7%e4%bb%8b%e7%bb%8d">1. 相关工具介绍&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#2-%e9%85%8d%e7%bd%ae%e6%80%bb%e8%a7%88">2. 配置总览&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#3-%e5%ae%89%e8%a3%85%e6%ad%a5%e9%aa%a4">3. 安装步骤&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#31-%e5%ae%89%e8%a3%85-iterm2">3.1. 安装 iTerm2&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#32-%e5%ae%89%e8%a3%85xcodes-command-line-tools">3.2. 安装XCode’s Command line tools&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#33-%e6%a3%80%e6%9f%a5-zsh-%e6%98%af%e5%90%a6%e5%b7%b2%e5%ae%89%e8%a3%85">3.3. 检查 &lt;code>zsh&lt;/code> 是否已安装&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#34-%e5%ae%89%e8%a3%85-oh-my-zsh">3.4. 安装 &lt;code>Oh-My-Zsh&lt;/code>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#35-%e5%ae%89%e8%a3%85-powerline-fonts">3.5. 安装 &lt;code>Powerline fonts&lt;/code>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#36-%e5%ae%89%e8%a3%85%e9%85%8d%e7%bd%ae%e4%b8%bb%e9%a2%98">3.6. 安装配置主题&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#37-%e4%bf%ae%e6%94%b9%e5%91%bd%e4%bb%a4%e6%8f%90%e7%a4%ba%e7%ac%a6">3.7. 修改命令提示符&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#38-%e9%85%8d%e7%bd%ae-zsh-%e5%91%bd%e4%bb%a4%e8%af%ad%e6%b3%95%e9%ab%98%e4%ba%ae">3.8. 配置 &lt;code>zsh&lt;/code> 命令语法高亮&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#4-%e5%a4%87%e7%94%a8%e4%b8%8b%e8%bd%bd%e9%93%be%e6%8e%a5">4. 备用下载链接&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#5-%e5%8f%82%e8%80%83%e5%8f%8a%e6%84%9f%e8%b0%a2">5. 参考及感谢&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;!-- /TOC -->
+&lt;!-- more -->
+&lt;h2 id="1-相关工具介绍">1. 相关工具介绍&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>iTerm2&lt;/strong>： Terminal 终端的替代品，拥有更多强大的功能，想了解更多请戳 &lt;a href="https://www.iterm2.com/">iTerm2 官网&lt;/a>；&lt;/li>
+&lt;li>&lt;strong>XCode’s Command line tools&lt;/strong>: 开发环境集成，包含 git、gcc 等重要工具；&lt;/li>
+&lt;li>&lt;strong>zsh&lt;/strong>：Linux 的一种 shell 外壳，强大的虚拟终端，和 bash 属于同类产品，OS X 已自带；&lt;/li>
+&lt;li>&lt;strong>Oh-My-Zsh&lt;/strong>: 用来管理 zsh 的配置，同时还有很多社区贡献的主题配置以及好用的插件可供使用，了解更多请戳 &lt;a href="https://ohmyz.sh/">Oh-My-Zsh 官网&lt;/a>；&lt;/li>
+&lt;/ol>
+&lt;h2 id="2-配置总览">2. 配置总览&lt;/h2>
+&lt;ol>
+&lt;li>iTerm2&lt;/li>
+&lt;li>Oh-My-Zsh&lt;/li>
+&lt;li>agnoster 主题&lt;/li>
+&lt;li>zsh 命令语法高亮&lt;/li>
+&lt;/ol>
+&lt;h2 id="3-安装步骤">3. 安装步骤&lt;/h2>
+&lt;h3 id="31-安装-iterm2">3.1. 安装 iTerm2&lt;/h3>
+&lt;p>进入&lt;a href="https://www.iterm2.com/downloads.html">官网下载页面&lt;/a>，点击 &lt;code>Stable Releases&lt;/code> 下面的 &lt;code>Download&lt;/code> 即可下载，解压后拖到应用程序中。这是简单的一小步，但是却是优化 &lt;code>Terminal&lt;/code> 的一大步！&lt;/p>
+&lt;p>PS: 网络环境不太好的同学不要担心，我已经把安装包传到百度云了，请到文章最后寻找链接下载。&lt;/p>
+&lt;h3 id="32-安装xcodes-command-line-tools">3.2. 安装XCode’s Command line tools&lt;/h3>
+&lt;p>XCode 13 个 G ,这里我们只需要 XCode’s Command line tools 来支撑 Git 的使用，所以我们不用费时费力装 XCode 来浪费那13个G。&lt;br />
+(从 Yosemite（10.10+）开始，Command Line Tools 可以单独安装。)&lt;/p>
+&lt;p>&lt;strong>安装方法&lt;/strong>: 打开终端，输入&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">xcode-select –install
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>点 &lt;code>install&lt;/code> ，同意，即可。&lt;/p>
+&lt;h3 id="33-检查-zsh-是否已安装">3.3. 检查 &lt;code>zsh&lt;/code> 是否已安装&lt;/h3>
+&lt;p>在命令行输入：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">zsh --version
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>如果显示&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">zsh 5.3 &lt;span class="o">(&lt;/span>x86_64-apple-darwin17.0&lt;span class="o">)&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>即zsh的当前版本号，就说明装好了，一般 OS X 自带有的。&lt;/p>
+&lt;p>如果没装则需要输入：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">brew install zsh zsh-completions
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这是用Homebrew装，需要 OS X 上有Homebrew，它的网站：https://brew.sh/&lt;/p>
+&lt;h3 id="34-安装-oh-my-zsh">3.4. 安装 &lt;code>Oh-My-Zsh&lt;/code>&lt;/h3>
+&lt;p>可以通过 &lt;code>curl&lt;/code> 或者 &lt;code>wget&lt;/code> 来安装&lt;/p>
+&lt;ul>
+&lt;li>curl&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">sh -c &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="k">$(&lt;/span>curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh&lt;span class="k">)&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>wget&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">sh -c &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="k">$(&lt;/span>wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -&lt;span class="k">)&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>网络好的话几秒就装好了。&lt;/p>
+&lt;p>一般安装程序会自动把默认的 shell 切换为 &lt;code>zsh&lt;/code>, 什么！你不懂 shell 是什么？我也不懂，你去问问度娘？或者直接右上角？其实不懂也正常，也不影响你拥有自己美美的终端。&lt;/p>
+&lt;p>如果想修改默认 shell 为原来的 bash：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">chsh -s /bin/bash
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>重启 iTerm2 就好了。&lt;/p>
+&lt;h3 id="35-安装-powerline-fonts">3.5. 安装 &lt;code>Powerline fonts&lt;/code>&lt;/h3>
+&lt;p>华丽丽的主题需要 &lt;a href="https://github.com/powerline/fonts">Powerline 字符集&lt;/a>的支持。&lt;br />
+通过 git 安装, 直接执行以下命令行：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">git clone https://github.com/powerline/fonts.git --depth&lt;span class="o">=&lt;/span>1&lt;span class="p">;&lt;/span> &lt;span class="nb">cd&lt;/span> fonts&lt;span class="p">;&lt;/span> ./install.sh&lt;span class="p">;&lt;/span> &lt;span class="nb">cd&lt;/span> ..&lt;span class="p">;&lt;/span> rm -rf fonts
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后到 iterm2 配置，设置字体&lt;/p>
+&lt;ol>
+&lt;li>打开 &lt;strong>Preferences&lt;/strong>，选择 &lt;strong>Profiles&lt;/strong>&lt;br />
+&lt;img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fu4hnix30uj30ye0d5wfk.jpg" alt="" />&lt;/li>
+&lt;li>选择 &lt;strong>Text&lt;/strong>，点击 &lt;strong>Change Font&lt;/strong>&lt;br />
+&lt;img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fu4i6ep6kcj30pi0ciaai.jpg" alt="" />&lt;/li>
+&lt;li>选择&lt;strong>固定宽度&lt;/strong>，选择自己喜欢的字体。&lt;strong>注意&lt;/strong>： iTerm2 可以实时看到效果，结尾不是 &lt;code>for Powerline&lt;/code> 的会乱码。&lt;br />
+&lt;img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fu4i94dy0uj30ht0eqdg3.jpg" alt="" />&lt;/li>
+&lt;li>接着修改字体颜色，选择另一项 &lt;code>Colors&lt;/code>, 点击 &lt;code>Color Presets&lt;/code>, 选择&lt;code>Solarized Dark&lt;/code>&lt;br />
+&lt;img src="https://ws1.sinaimg.cn/large/b48b5d8dly1fu4m84ux8uj20ps0ci40g.jpg" alt="" />&lt;br />
+&lt;img src="https://i.imgur.com/T8jzFpm.png" alt="" />&lt;/li>
+&lt;/ol>
+&lt;h3 id="36-安装配置主题">3.6. 安装配置主题&lt;/h3>
+&lt;p>装好之后就可以换到 agnoster 主题，Oh My Zsh 一般自带有这个主题。&lt;/p>
+&lt;p>可以看看其它的默认主题：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">ls ~/.oh-my-zsh/themes
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>需要修改主题只需：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">vim ~/.zshrc
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后把里面 ZSH_THEME 的值改为 ZSH_THEME=&amp;quot;agnoster&amp;rdquo;，保存退出。&lt;/p>
+&lt;p>修改和保存的过程为：&lt;/p>
+&lt;ol>
+&lt;li>按下 &lt;code>i&lt;/code> 开始编辑&lt;/li>
+&lt;li>通过方向键控制光标的位置&lt;/li>
+&lt;li>定位到 &lt;code>ZSH_THEME&lt;/code>&lt;/li>
+&lt;li>改为 &lt;code>ZSH_THEME=&amp;quot;agnoster&amp;quot;&lt;/code>&lt;/li>
+&lt;li>按下 &lt;code>ESC&lt;/code>, 输入 &lt;code>:wq&lt;/code>, 回车&lt;/li>
+&lt;li>搞定！&lt;/li>
+&lt;/ol>
+&lt;p>（&lt;a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Themes#agnoster">点击这里&lt;/a>还有各种主题预览，任君翻牌~）&lt;/p>
+&lt;h3 id="37-修改命令提示符">3.7. 修改命令提示符&lt;/h3>
+&lt;p>默认的命令提示符为 user@userdemackbookPro，这样的提示符配合 powerlevel9k 主题太过冗长，因此我选择将该冗长的提示符去掉，在 &lt;code>~/.zshrc&lt;/code> 配置文件后面追加如下内容：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="c1"># 注意：DEFAULT_USER 的值必须要是系统用户名才能生效&lt;/span>
+&lt;span class="nv">DEFAULT_USER&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;user&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>编辑方法同上。&lt;/p>
+&lt;h3 id="38-配置-zsh-命令语法高亮">3.8. 配置 &lt;code>zsh&lt;/code> 命令语法高亮&lt;/h3>
+&lt;p>&lt;a href="https://github.com/zsh-users/zsh-syntax-highlighting">zsh-syntax-highlighting&lt;/a> 插件可以使你终端输入的命令有语法高亮效果，安装方法如下（oh-my-zsh 插件管理的方式安装）：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>复制文件到插件目录&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">git clone https://github.com/zsh-users/zsh-syntax-highlighting.git &lt;span class="si">${&lt;/span>&lt;span class="nv">ZSH_CUSTOM&lt;/span>&lt;span class="k">:-&lt;/span>&lt;span class="p">~/.oh-my-zsh/custom&lt;/span>&lt;span class="si">}&lt;/span>/plugins/zsh-syntax-highlighting
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>修改 &lt;code>~/.zshrc&lt;/code> 添加插件&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="c1"># 注意：zsh-syntax-highlighting 必须放在最后面（官方推荐）&lt;/span>
+&lt;span class="nv">plugins&lt;/span>&lt;span class="o">=(&lt;/span> &lt;span class="o">[&lt;/span>plugins...&lt;span class="o">]&lt;/span> zsh-syntax-highlighting&lt;span class="o">)&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://i.imgur.com/N6db1vG.png" alt="" />&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>应用修改&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="nb">source&lt;/span> ~/.zshrc
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;/ol>
+&lt;p>大功告成~有问题欢迎留言讨论~&lt;/p>
+&lt;h2 id="4-备用下载链接">4. 备用下载链接&lt;/h2>
+&lt;p>iTerm2 ( 3.2.0 )： 链接: &lt;a href="https://pan.baidu.com/s/1Wm7NjtGfA81LpGFYAaEAPQ">https://pan.baidu.com/s/1Wm7NjtGfA81LpGFYAaEAPQ&lt;/a> 密码: ksgv&lt;/p>
+&lt;h2 id="5-参考及感谢">5. 参考及感谢&lt;/h2>
+&lt;ol>
+&lt;li>&lt;a href="https://blog.csdn.net/qianghaohao/article/details/79440961">我的 Mac 终端配置（Mac OSX + iTerm2 + Zsh + Oh-My-Zsh）&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.csdn.net/huihut/article/details/61418136">iTerm2 + OhMyZsh + agnoster + Powerline + solarized = 漂亮的Mac终端&lt;/a>&lt;/li>
+&lt;/ol></content:encoded><dc:creator>YoungWilliam</dc:creator><category>Max OS X</category><category>工欲善其事</category></item><item><title>Hexo 使用 Markdown 编辑技巧大全</title><link>https://youngwilliam.io/post/hexo-markdown/</link><pubDate>Tue, 10 Jul 2018 15:29:00 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 17:19:01 +0800</atom:modified><guid>https://youngwilliam.io/post/hexo-markdown/</guid><description>可能还不全，哈哈哈，看官请随意。</description><content:encoded>&lt;p>总结一下，&lt;code>Hexo&lt;/code> 下 &lt;code>Markdown&lt;/code> 的写法和一些奇技淫巧。&lt;/p>
+&lt;p>&lt;strong>说明&lt;/strong>：&lt;code>Hexo&lt;/code> 主题为 &lt;a href="https://github.com/iissnan/hexo-theme-next">Next&lt;/a>&lt;/p>
+&lt;!-- more -->
+&lt;h2 id="标题及分类">标题及分类&lt;/h2>
+&lt;p>格式：(使用 &lt;a href="https://github.com/zhuzhuyule/HexoEditor">HexoEditor&lt;/a> 新建Post 可以自动生成以下内容)&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-md" data-lang="md">---
+title: Hexo 使用 Markdown 编辑技巧大全
+tags:
+&lt;span class="k">-&lt;/span> Hexo
+&lt;span class="k">-&lt;/span> Markdown
+categories:
+&lt;span class="k">-&lt;/span> Markdown
+date: 2018-07-10 15:29:00
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="阅读更多">阅读更多&lt;/h2>
+&lt;p>Hexo 主页每篇文章可以显示 &lt;code>Read More&lt;/code> 按钮，只显示以下这一行以上的文章内容。&lt;br />
+格式：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="c">&amp;lt;!-- more --&amp;gt;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="markdown-语法">Markdown 语法&lt;/h2>
+&lt;p>Markdown 语法主要分为如下几大部分：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>标题&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>段落&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>区块引用&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>代码区块&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>强调&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>列表&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>分割线&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>链接&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>图片&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>反斜杠 &lt;code>\&lt;/code>&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>符号'`&amp;rsquo;&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h4 id="标题">标题&lt;/h4>
+&lt;p>两种形式：&lt;br />
+1）使用&lt;code>=&lt;/code>和&lt;code>-&lt;/code>标记一级和二级标题。&lt;/p>
+&lt;blockquote>
+&lt;p>一级标题&lt;br />
+&lt;code>=========&lt;/code>&lt;br />
+二级标题 &lt;br />
+&lt;code>---------&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;p>效果：&lt;/p>
+&lt;blockquote>
+&lt;h1 id="一级标题">一级标题&lt;/h1>
+&lt;h2 id="二级标题">二级标题&lt;/h2>
+&lt;/blockquote>
+&lt;p>2）使用&lt;code>#&lt;/code>，可表示1-6级标题。&lt;/p>
+&lt;blockquote>
+&lt;p># 一级标题&lt;br />
+## 二级标题&lt;br />
+### 三级标题&lt;br />
+#### 四级标题&lt;br />
+##### 五级标题&lt;br />
+###### 六级标题&lt;/p>
+&lt;/blockquote>
+&lt;p>效果：&lt;/p>
+&lt;blockquote>
+&lt;h1 id="一级标题-1">一级标题&lt;/h1>
+&lt;h2 id="二级标题-1">二级标题&lt;/h2>
+&lt;h3 id="三级标题">三级标题&lt;/h3>
+&lt;h4 id="四级标题">四级标题&lt;/h4>
+&lt;h5 id="五级标题">五级标题&lt;/h5>
+&lt;h6 id="六级标题">六级标题&lt;/h6>
+&lt;/blockquote>
+&lt;h4 id="段落">段落&lt;/h4>
+&lt;p>段落的前后要有空行，所谓的空行是指没有文字内容。若想在段内强制换行的方式是使用&lt;strong>两个以上&lt;/strong>空格加上回车（引用中换行省略回车）。&lt;/p>
+&lt;h4 id="区块引用">区块引用&lt;/h4>
+&lt;p>在段落的每行或者只在第一行使用符号&lt;code>&amp;gt;&lt;/code>,还可使用多个嵌套引用，如：&lt;/p>
+&lt;blockquote>
+&lt;p>&amp;gt; 区块引用&lt;br />
+&amp;gt;&amp;gt; 嵌套引用&lt;/p>
+&lt;/blockquote>
+&lt;p>效果：&lt;/p>
+&lt;blockquote>
+&lt;p>区块引用&lt;/p>
+&lt;blockquote>
+&lt;p>嵌套引用&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;h4 id="代码区块">代码区块&lt;/h4>
+&lt;p>代码区块的建立是在每行加上4个空格或者一个制表符（如同写代码一样）。如 &lt;br />
+普通段落：&lt;/p>
+&lt;p>void main() &lt;br />
+{ &lt;br />
+printf(&amp;ldquo;Hello, Markdown.&amp;quot;); &lt;br />
+}&lt;/p>
+&lt;p>代码区块：&lt;br />
+如：&lt;/p>
+&lt;blockquote>
+&lt;p>``` C&lt;br />
+void main()&lt;br />
+{&lt;br />
+printf(&amp;ldquo;Hello, Markdown.&amp;quot;);&lt;br />
+}&lt;br />
+```&lt;/p>
+&lt;/blockquote>
+&lt;p>效果：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-C" data-lang="C"> &lt;span class="kt">void&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;span class="p">{&lt;/span>
+&lt;span class="n">printf&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;Hello, Markdown.&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>注意&lt;/strong>: ``` 之后可以添加语言种类如 &lt;code>C&lt;/code>、&lt;code>Java&lt;/code>、&lt;code>Bash&lt;/code>, 需要和普通段落之间存在空行。&lt;/p>
+&lt;h4 id="强调">强调&lt;/h4>
+&lt;p>在强调内容两侧分别加上&lt;code>*&lt;/code>或者&lt;code>_&lt;/code>，如：&lt;/p>
+&lt;blockquote>
+&lt;p>*斜体*，_斜体_ &lt;br />
+**粗体**，__粗体__&lt;/p>
+&lt;/blockquote>
+&lt;p>效果：&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>斜体&lt;/em>，&lt;em>斜体&lt;/em> &lt;br />
+&lt;strong>粗体&lt;/strong>，&lt;strong>粗体&lt;/strong>&lt;/p>
+&lt;/blockquote>
+&lt;h4 id="列表">列表&lt;/h4>
+&lt;p>使用&lt;code>·&lt;/code>、&lt;code>+&lt;/code>、或&lt;code>-&lt;/code>标记无序列表，如：&lt;/p>
+&lt;blockquote>
+&lt;p>-（+*） 第一项&lt;br />
+-（+*） 第二项&lt;br />
+- （+*）第三项&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>注意&lt;/strong>：标记后面最少有一个_空格_或_制表符_。若不在引用区块中，必须和前方段落之间存在空行。&lt;/p>
+&lt;p>效果：&lt;/p>
+&lt;blockquote>
+&lt;ul>
+&lt;li>第一项&lt;/li>
+&lt;li>第二项&lt;/li>
+&lt;li>第三项&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;p>有序列表的标记方式是将上述的符号换成数字,并辅以&lt;code>.&lt;/code>，如：&lt;/p>
+&lt;blockquote>
+&lt;p>1 . 第一项&lt;br />
+2 . 第二项 &lt;br />
+3 . 第三项&lt;/p>
+&lt;/blockquote>
+&lt;p>效果：&lt;/p>
+&lt;blockquote>
+&lt;ol>
+&lt;li>第一项&lt;/li>
+&lt;li>第二项&lt;/li>
+&lt;li>第三项&lt;/li>
+&lt;/ol>
+&lt;/blockquote>
+&lt;h4 id="分割线">分割线&lt;/h4>
+&lt;p>分割线最常使用就是三个或以上&lt;code>*&lt;/code>，还可以使用&lt;code>-&lt;/code>和&lt;code>_&lt;/code>。&lt;/p>
+&lt;h4 id="链接">链接&lt;/h4>
+&lt;p>链接可以由两种形式生成：&lt;strong>行内式&lt;/strong>和&lt;strong>参考式&lt;/strong>。 &lt;br />
+&lt;strong>行内式&lt;/strong>：&lt;/p>
+&lt;blockquote>
+&lt;p>[YoungWilliam的博客](https://youngwilliamz.github.io/)&lt;/p>
+&lt;/blockquote>
+&lt;p>效果：&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a href="https://youngwilliamz.github.io/">YoungWilliam的博客&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>参考式&lt;/strong>：&lt;/p>
+&lt;blockquote>
+&lt;p>[YoungWilliam的博客1][1] &lt;br />
+[YoungWilliam的博客2][2] &lt;br />
+[1]:https://youngwilliamz.github.io/&lt;br />
+[2]:https://youngwilliamz.github.io/&lt;/p>
+&lt;/blockquote>
+&lt;p>效果：&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a href="https://youngwilliamz.github.io/">YoungWilliam的博客1&lt;/a> &lt;br />
+&lt;a href="https://youngwilliamz.github.io/">YoungWilliam的博客2&lt;/a> &lt;br />
+&lt;a href="https://youngwilliamz.github.io/">YoungWilliam的博客3&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>注意&lt;/strong>：上述的&lt;code>[1]:https://youngwilliamz.github.io/&lt;/code>不出现在区块中。&lt;/p>
+&lt;h4 id="图片">图片&lt;/h4>
+&lt;p>添加图片的形式和链接相似，只需在链接的基础上前方加一个&lt;code>！&lt;/code>。&lt;/p>
+&lt;h4 id="反斜杠">反斜杠&lt;code>\&lt;/code>&lt;/h4>
+&lt;p>相当于&lt;strong>反转义&lt;/strong>作用。使符号成为普通符号。&lt;/p>
+&lt;h4 id="符号-">符号 &lt;em>`&lt;/em>&lt;/h4>
+&lt;p>起到标记作用。如：&lt;/p>
+&lt;blockquote>
+&lt;p>`ctrl+a`&lt;/p>
+&lt;/blockquote>
+&lt;p>效果：&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;code>ctrl+a&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;hr />
+&lt;p>&lt;strong>注意&lt;/strong>：不同的Markdown解释器或工具对相应语法（扩展语法）的解释效果不尽相同，具体可参见工具的使用说明。&lt;br />
+虽然有人想出面搞一个所谓的标准化的Markdown，[没想到还惹怒了健在的创始人John Gruber]&lt;br />
+(&lt;a href="http://blog.codinghorror.com/standard-markdown-is-now-common-markdown/">http://blog.codinghorror.com/standard-markdown-is-now-common-markdown/&lt;/a>)。&lt;/p>
+&lt;hr />
+&lt;p>以上基本是所有traditonal markdown的语法。&lt;/p>
+&lt;h3 id="其它">其它&lt;/h3>
+&lt;p>列表的使用(非traditonal markdown)：&lt;/p>
+&lt;p>用&lt;code>|&lt;/code>表示表格纵向边界，表头和表内容用&lt;code>-&lt;/code>隔开，并可用&lt;code>:&lt;/code>进行对齐设置，两边都有&lt;code>:&lt;/code>则表示居中，若不加&lt;code>:&lt;/code>则默认左对齐。&lt;br />
+格式：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-md" data-lang="md">|代码库 |链接 |
+|:------------------------------------:|------------------------------------|
+|MarkDown |[https://github.com/younghz/Markdown](https://github.com/younghz/Markdown &amp;#34;Markdown&amp;#34;)|
+|MarkDownCopy |[https://github.com/younghz/Markdown](https://github.com/younghz/Markdown &amp;#34;Markdown&amp;#34;)|
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>效果:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th align="center">代码库&lt;/th>
+&lt;th>链接&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td align="center">MarkDown&lt;/td>
+&lt;td>&lt;a href="https://github.com/younghz/Markdown" title="Markdown">https://github.com/younghz/Markdown&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td align="center">MarkDownCopy&lt;/td>
+&lt;td>&lt;a href="https://github.com/younghz/Markdown" title="Markdown">https://github.com/younghz/Markdown&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>关于其它扩展语法可参见具体工具的使用说明。&lt;/p>
+&lt;h2 id="参考文章">参考文章&lt;/h2>
+&lt;p>&lt;a href="https://younghz.github.io/Markdown/">Markdown 基本语法&lt;/a>&lt;/p></content:encoded><dc:creator>YoungWilliam</dc:creator><category>Hexo</category><category>Markdown</category><category>Markdown</category></item><item><title>Hexo 下特有的编辑图片方式，直接使用 img 标志</title><link>https://youngwilliam.io/post/hexo-image-edite-method/</link><pubDate>Sun, 24 Jun 2018 08:02:00 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Wed, 14 Aug 2019 01:25:12 +0800</atom:modified><guid>https://youngwilliam.io/post/hexo-image-edite-method/</guid><description>Hexo 小技巧</description><content:encoded>&lt;p>直接上代码，src对应的是图片 url&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">img&lt;/span> &lt;span class="na">src&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;https://i.loli.net/2018/06/24/5b2edf5139f61.png&amp;#34;&lt;/span> &lt;span class="na">width&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;50%&amp;#34;&lt;/span> &lt;span class="na">height&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;50%&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>效果图如下：（使用的是 &lt;a href="https://sm.ms/">SM.MS图床&lt;/a>）&lt;/p>
+&lt;img src="https://i.loli.net/2018/06/24/5b2edf5139f61.png" width="50%" height="50%"></content:encoded><dc:creator>YoungWilliam</dc:creator><category>Hexo</category><category>Markdown</category><category>Hexo</category></item><item><title>HexoEditor, 一个写 Hexo 非常好用的 Markdown 编辑器</title><link>https://youngwilliam.io/post/hexoeditor/</link><pubDate>Sun, 24 Jun 2018 06:08:00 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 17:19:01 +0800</atom:modified><guid>https://youngwilliam.io/post/hexoeditor/</guid><description>不了解一下？</description><content:encoded>&lt;blockquote>
+&lt;p>本文用于记录以及简单的安装&lt;/p>
+&lt;/blockquote>
+&lt;img src="https://i.loli.net/2018/06/24/5b2edf5139f61.png" width="50%" height="50%">
+&lt;h2 id="简单介绍">简单介绍&lt;/h2>
+&lt;p>&lt;a href="https://github.com/zhuzhuyule/HexoEditor">HexoEditor&lt;/a> 是 Github 上一款开源的 Markdown 编辑器。&lt;/p>
+&lt;p>引用原作者说的话：&lt;/p>
+&lt;blockquote>
+&lt;p>这是一款为 Hexo 做了优化的 Markdown 编辑器。&lt;br />
+使用 Electron 做框架&lt;br />
+修改自 Moeditor, 我只是为了让他更好的去为 Hexo 下的博客更好的去书写内容。&lt;/p>
+&lt;/blockquote>
+&lt;p>同时它还包括很多功能，其中我觉得最有用的就是：&lt;/p>
+&lt;blockquote>
+&lt;p>预览内容与 Hexo 生成页面内容高度相似&lt;/p>
+&lt;/blockquote>
+&lt;p>更多详情介绍请点击&lt;a href="https://github.com/zhuzhuyule/HexoEditor/blob/master/doc/cn/README.md#%E5%8A%9F%E8%83%BD">这里&lt;/a>。&lt;/p>
+&lt;h2 id="安装过程">安装过程&lt;/h2>
+&lt;p>整个过程参照&lt;a href="https://github.com/zhuzhuyule/HexoEditor/blob/master/doc/en/Building.md">官方文档&lt;/a>。&lt;/p>
+&lt;h3 id="1准备工作">1.准备工作&lt;/h3>
+&lt;h4 id="安装-git">安装 &lt;code>git&lt;/code>&lt;/h4>
+&lt;ul>
+&lt;li>&lt;a href="https://git-scm.com/download/mac">Download Page for Mac OS X&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://git-scm.com/download/win">Download Page for Windows&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://git-scm.com/download/linux">Download Page for Linux/Unix&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h4 id="安装-nodejs">安装 &lt;code>nodejs&lt;/code>&lt;/h4>
+&lt;ul>
+&lt;li>&lt;a href="https://nodejs.org/en/download/">Download Page&lt;/a> (English)&lt;/li>
+&lt;li>&lt;a href="https://nodejs.org/zh-cn/download/">下载地址&lt;/a> (中文)&lt;/li>
+&lt;/ul>
+&lt;h3 id="2下载配置-hexo">2.下载配置 &lt;code>Hexo&lt;/code>&lt;/h3>
+&lt;h3 id="3设置-npm-缓存路径">3.设置 &lt;code>npm&lt;/code> 缓存路径&lt;/h3>
+&lt;h4 id="windows-下">Windows 下&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">npm config &lt;span class="nb">set&lt;/span> prefix &lt;span class="s2">&amp;#34;C:/Program Files/nodejs/npm_global&amp;#34;&lt;/span>
+npm config &lt;span class="nb">set&lt;/span> cache &lt;span class="s2">&amp;#34;C:/Program Files/nodejs/npm_cache&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="linuxmac-下">Linux\Mac 下&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">npm config &lt;span class="nb">set&lt;/span> prefix &lt;span class="s2">&amp;#34;~/nodejs/npm_global&amp;#34;&lt;/span>
+npm config &lt;span class="nb">set&lt;/span> cache &lt;span class="s2">&amp;#34;~/nodejs/npm_cache&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>注意&lt;/strong>：这里的路径是你安装 &lt;code>nodejs&lt;/code> 的子目录下对应的路径&lt;/p>
+&lt;h3 id="4设置下载来源镜像加速下载">4.设置下载来源（镜像），加速下载&lt;/h3>
+&lt;p>来自原作者好心提醒：&lt;br />
+在中国，你应该设置淘宝镜像来加速下载。(PS: 这个我没试过，我是直接通过代理的)&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">npm config &lt;span class="nb">set&lt;/span> registry &lt;span class="s2">&amp;#34;https://registry.npm.taobao.org/&amp;#34;&lt;/span>
+npm config &lt;span class="nb">set&lt;/span> electron_mirror &lt;span class="s2">&amp;#34;https://npm.taobao.org/mirrors/electron/&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="5下载-github-上最新的版本并安装">5.下载 GitHub 上最新的版本并安装&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">git clone https://github.com/zhuzhuyule/HexoEditor.git
+&lt;span class="nb">cd&lt;/span> HexoEditor
+npm install
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="6启动">6.启动&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">npm start
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后，当当当，启动啦~&lt;/p>
+&lt;h2 id="设置快捷方式">设置快捷方式&lt;/h2>
+&lt;p>在 HexoEditor 子目录下，新建 &lt;code>start.sh&lt;/code> ，编辑（右键-&amp;gt;打开方式-&amp;gt;NotePad++），输入（其实就是启动）&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">npm start
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>保存，退出，双击一下 &lt;code>start.sh&lt;/code> ，看看效果如何~&lt;br />
+顺利的话，&lt;code>gitbash&lt;/code> 会弹出来，然后 HexoEditor就会弹出来了~&lt;/p>
+&lt;img src="https://i.loli.net/2018/06/24/5b2ede1e2a6cc.png" width="50%" height="50%">
+&lt;p>本教程到此就结束了，希望大家玩的开心~&lt;/p></content:encoded><dc:creator>YoungWilliam</dc:creator><category>编辑器</category><category>Hexo</category><category>Markdown</category><category>Hexo</category></item></channel></rss>

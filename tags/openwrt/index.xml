@@ -1,1 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>OpenWRT on New World | YoungWilliam's Blog</title><link>https://youngwilliam.io/tags/openwrt/</link><description>Recent content in OpenWRT on New World | YoungWilliam's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><managingEditor>youngwilliam.zheng@gmail.com (YoungWilliam)</managingEditor><webMaster>youngwilliam.zheng@gmail.com (YoungWilliam)</webMaster><copyright>&amp;copy;{year}, All Rights Reserved</copyright><lastBuildDate>Sun, 10 Mar 2019 09:48:55 +0000</lastBuildDate><atom:link href="https://youngwilliam.io/tags/openwrt/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenWRT 18.06 IPv6 开启 Relay，LAN 口获取 IPv6 公网地址</title><link>https://youngwilliam.io/post/openwrt-ipv6-relay/</link><pubDate>Sun, 10 Mar 2019 09:48:55 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Wed, 14 Aug 2019 01:25:12 +0800</atom:modified><guid>https://youngwilliam.io/post/openwrt-ipv6-relay/</guid><description>此方案失败了，但还是可以参考的，说不定你就成功了？</description><dc:creator>YoungWilliam</dc:creator><category>OpenWRT</category><category>IPv6</category><category>搞机</category></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>OpenWRT on New World | YoungWilliam's Blog</title><link>https://youngwilliam.io/tags/openwrt/</link><description>Recent content in OpenWRT on New World | YoungWilliam's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><managingEditor>youngwilliam.zheng@gmail.com (YoungWilliam)</managingEditor><webMaster>youngwilliam.zheng@gmail.com (YoungWilliam)</webMaster><copyright>&amp;copy;{year}, All Rights Reserved</copyright><lastBuildDate>Sun, 10 Mar 2019 09:48:55 +0000</lastBuildDate><atom:link href="https://youngwilliam.io/tags/openwrt/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenWRT 18.06 IPv6 开启 Relay，LAN 口获取 IPv6 公网地址</title><link>https://youngwilliam.io/post/openwrt-ipv6-relay/</link><pubDate>Sun, 10 Mar 2019 09:48:55 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Wed, 14 Aug 2019 01:25:12 +0800</atom:modified><guid>https://youngwilliam.io/post/openwrt-ipv6-relay/</guid><description>此方案失败了，但还是可以参考的，说不定你就成功了？</description><content:encoded>&lt;blockquote>
+&lt;p>此方案已失败，但还是可以参考的，说不定你就成功了？&lt;/p>
+&lt;/blockquote>
+&lt;!-- more -->
+&lt;p>宿舍的路由器一直不太好用，今天把之前买的 K2P 重新刷了 OpenWRT 新版系统。&lt;code>WAN 6&lt;/code> 可以获取到 &lt;code>IPv6&lt;/code> 的公网地址，可是发现 &lt;code>LAN&lt;/code> 口只能获取本地的 &lt;code>IPv6&lt;/code>，用不了，连不上北邮人，每次都得切到 &lt;code>SUSTC-Wifi&lt;/code> 才能连，实在非常不方便。于是就研究了几小时绕了一大圈才找到可行的解决办法。在此记录下。&lt;/p>
+&lt;h1 id="wan-6-设置">&lt;code>WAN 6&lt;/code> 设置&lt;/h1>
+&lt;p>协议：&lt;code>DHCPv6 客户端&lt;/code>&lt;br />
+请求 IPv6 地址：&lt;code>try&lt;/code>（不能选 force）&lt;/p>
+&lt;h1 id="lan-设置">&lt;code>LAN&lt;/code> 设置&lt;/h1>
+&lt;p>最下面 &lt;code>DHCP 服务器&lt;/code> 中 &lt;code>IPv6 设置&lt;/code> 下：&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>路由通告服务&lt;/code>、&lt;code>DHCPv6 服务&lt;/code>、&lt;code>NDP 代理&lt;/code>全部选为&lt;code>混合模式&lt;/code>。这样 &lt;code>WAN 6&lt;/code> 和 &lt;code>LAN&lt;/code> 就都可以获得公网 &lt;code>IPv6&lt;/code>。&lt;/li>
+&lt;li>&lt;code>DHCPv6 模式&lt;/code> 选择 &lt;code>无状态的 + 有状态的&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;p>“上面「一般配置-物理设置」，找到「接口」，点击最右边的小三角，弹出下拉菜单。默认这里「交换机 VLAN eth0.2 (lan, wan, wan6)」是没有选上的吧？勾选上这个。为啥选这个呢？因为它有 wan6 哇～”&lt;/p>
+&lt;p>保存并应用。等一段时间还没有生效的话，就重启。我是重启完立马就有了原生 &lt;code>IPv6&lt;/code>。&lt;/p>
+&lt;h1 id="主要参考">主要参考&lt;/h1>
+&lt;p>&lt;a href="https://haoyu.love/blog646.html">OpenWrt IPv6 中继&lt;/a>&lt;/p>
+&lt;h1 id="ps">PS&lt;/h1>
+&lt;p>我自己在之前的教程中修改了 &lt;code>/etc/config/dhcp&lt;/code>，不知道有没有影响。&lt;br />
+只是在&lt;code>config dhcp 'lan'&lt;/code> 的最下面添加了 &lt;code>option master '1'&lt;/code>。如果上诉方法对你不起作用，可以试试这个或者使用 &lt;code>NAT&lt;/code>。&lt;/p></content:encoded><dc:creator>YoungWilliam</dc:creator><category>OpenWRT</category><category>IPv6</category><category>搞机</category></item></channel></rss>
