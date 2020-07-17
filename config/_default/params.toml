@@ -1,12 +1,11 @@
 logoText = "New World"
 logoType = "short" # long, short
-logo = false
 description = "To recreate the world!"
 custom_css = []
 custom_js = []
 useFaviconGenerator = false # https://www.favicon-generator.org/
 meta_image = ""
-themecolor = ""
+themecolor = "light"
 
 themeOptions = ["dark", "light", "hacker", "solarized", "kimbie"]
 notAllowedTypesInHome = ["contact", "talks", "about", "showcase", "publication", "presentation", "resume"]
