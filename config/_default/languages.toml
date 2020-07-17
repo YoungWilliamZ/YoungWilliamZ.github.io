@@ -1,12 +1,15 @@
-[en]
-  title = "New World | YoungWilliam"
-  languageName = "English"
+[zh]
+  title = "New World | YoungWilliam's Blog"
+  languageName = "中文"
   weight = 1
+  languagedir = "ltr"
+  contentdir = "content/zh"
+  
+[en]
+  title = "New World | YoungWilliam's Blog"
+  languageName = "English"
+  weight = 2
   languagedir = "ltr"
   contentdir = "content/en"
 
-[zh]
- languageCode = "zh-Hans"
-  weight = 2
-  languagedir = "ltr"
-  contentdir = "content/zh"
+

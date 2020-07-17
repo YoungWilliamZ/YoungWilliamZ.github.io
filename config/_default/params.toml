@@ -44,7 +44,7 @@ pubPaginate = 20
 # whoami
 myname = "YoungWilliam"
 email = "youngwilliam.zheng@gmail.com"
-whoami = "Developer"
+whoami = "Stay young and optimatic."
 bioImageUrl = ""
 useGravatar = true
 location = "Shenzhen, China"
