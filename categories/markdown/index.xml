@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Markdown on New World | YoungWilliam's Blog</title><link>https://youngwilliam.io/categories/markdown/</link><description>Recent content in Markdown on New World | YoungWilliam's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><managingEditor>youngwilliam.zheng@gmail.com (YoungWilliam)</managingEditor><webMaster>youngwilliam.zheng@gmail.com (YoungWilliam)</webMaster><copyright>&amp;copy;{year}, All Rights Reserved</copyright><lastBuildDate>Tue, 10 Jul 2018 15:29:00 +0000</lastBuildDate><atom:link href="https://youngwilliam.io/categories/markdown/index.xml" rel="self" type="application/rss+xml"/><item><title>Hexo 使用 Markdown 编辑技巧大全</title><link>https://youngwilliam.io/post/hexo-markdown/</link><pubDate>Tue, 10 Jul 2018 15:29:00 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 17:19:01 +0800</atom:modified><guid>https://youngwilliam.io/post/hexo-markdown/</guid><description>可能还不全，哈哈哈，看官请随意。</description><content:encoded>&lt;p>总结一下，&lt;code>Hexo&lt;/code> 下 &lt;code>Markdown&lt;/code> 的写法和一些奇技淫巧。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Markdown on New World | YoungWilliam's Blog</title><link>https://youngwilli.am/categories/markdown/</link><description>Recent content in Markdown on New World | YoungWilliam's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><managingEditor>youngwilliam.zheng@gmail.com (YoungWilliam)</managingEditor><webMaster>youngwilliam.zheng@gmail.com (YoungWilliam)</webMaster><copyright>&amp;copy;{year}, All Rights Reserved</copyright><lastBuildDate>Tue, 10 Jul 2018 15:29:00 +0000</lastBuildDate><atom:link href="https://youngwilli.am/categories/markdown/index.xml" rel="self" type="application/rss+xml"/><item><title>Hexo 使用 Markdown 编辑技巧大全</title><link>https://youngwilli.am/post/hexo-markdown/</link><pubDate>Tue, 10 Jul 2018 15:29:00 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 17:19:01 +0800</atom:modified><guid>https://youngwilli.am/post/hexo-markdown/</guid><description>可能还不全，哈哈哈，看官请随意。</description><content:encoded>&lt;p>总结一下，&lt;code>Hexo&lt;/code> 下 &lt;code>Markdown&lt;/code> 的写法和一些奇技淫巧。&lt;/p>
 &lt;p>&lt;strong>说明&lt;/strong>：&lt;code>Hexo&lt;/code> 主题为 &lt;a href="https://github.com/iissnan/hexo-theme-next">Next&lt;/a>&lt;/p>
 &lt;!-- more -->
 &lt;h2 id="标题及分类">标题及分类&lt;/h2>
 &lt;p>格式：(使用 &lt;a href="https://github.com/zhuzhuyule/HexoEditor">HexoEditor&lt;/a> 新建Post 可以自动生成以下内容)&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
 &lt;/span>&lt;span class="lnt">3
 &lt;/span>&lt;span class="lnt">4
@@ -16,27 +16,27 @@
 &lt;/span>&lt;span class="lnt">9
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-md" data-lang="md">---
-title: Hexo 使用 Markdown 编辑技巧大全
-tags:
-&lt;span class="k">-&lt;/span> Hexo
-&lt;span class="k">-&lt;/span> Markdown
-categories:
-&lt;span class="k">-&lt;/span> Markdown
-date: 2018-07-10 15:29:00
----
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">---
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">title: Hexo 使用 Markdown 编辑技巧大全
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">tags:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">-&lt;/span> Hexo
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">-&lt;/span> Markdown
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">categories:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">-&lt;/span> Markdown
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">date: 2018-07-10 15:29:00
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">---
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h2 id="阅读更多">阅读更多&lt;/h2>
 &lt;p>Hexo 主页每篇文章可以显示 &lt;code>Read More&lt;/code> 按钮，只显示以下这一行以上的文章内容。&lt;br />
 格式：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="c">&amp;lt;!-- more --&amp;gt;&lt;/span>
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">&lt;span class="c">&amp;lt;!-- more --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h2 id="markdown-语法">Markdown 语法&lt;/h2>
 &lt;p>Markdown 语法主要分为如下几大部分：&lt;/p>
@@ -51,7 +51,7 @@ date: 2018-07-10 15:29:00
 &lt;li>&lt;strong>链接&lt;/strong>&lt;/li>
 &lt;li>&lt;strong>图片&lt;/strong>&lt;/li>
 &lt;li>&lt;strong>反斜杠 &lt;code>\&lt;/code>&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>符号'`&amp;rsquo;&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>符号&amp;rsquo;`&amp;rsquo;&lt;/strong>&lt;/li>
 &lt;/ul>
 &lt;h4 id="标题">标题&lt;/h4>
 &lt;p>两种形式：&lt;br />
@@ -105,7 +105,7 @@ date: 2018-07-10 15:29:00
 普通段落：&lt;/p>
 &lt;p>void main() &lt;br />
 { &lt;br />
-printf(&amp;ldquo;Hello, Markdown.&amp;quot;); &lt;br />
+printf(&amp;ldquo;Hello, Markdown.&amp;rdquo;); &lt;br />
 }&lt;/p>
 &lt;p>代码区块：&lt;br />
 如：&lt;/p>
@@ -113,24 +113,24 @@ printf(&amp;ldquo;Hello, Markdown.&amp;quot;); &lt;br />
 &lt;p>``` C&lt;br />
 void main()&lt;br />
 {&lt;br />
-printf(&amp;ldquo;Hello, Markdown.&amp;quot;);&lt;br />
+printf(&amp;ldquo;Hello, Markdown.&amp;rdquo;);&lt;br />
 }&lt;br />
 ```&lt;/p>
 &lt;/blockquote>
 &lt;p>效果：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
 &lt;/span>&lt;span class="lnt">3
 &lt;/span>&lt;span class="lnt">4
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-C" data-lang="C"> &lt;span class="kt">void&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;span class="p">{&lt;/span>
-&lt;span class="n">printf&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;Hello, Markdown.&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;span class="p">}&lt;/span>
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-C" data-lang="C">&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">void&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">printf&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;Hello, Markdown.&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>&lt;strong>注意&lt;/strong>: ``` 之后可以添加语言种类如 &lt;code>C&lt;/code>、&lt;code>Java&lt;/code>、&lt;code>Bash&lt;/code>, 需要和普通段落之间存在空行。&lt;/p>
 &lt;h4 id="强调">强调&lt;/h4>
@@ -225,17 +225,17 @@ printf(&amp;ldquo;Hello, Markdown.&amp;quot;);&lt;br />
 格式：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
 &lt;/span>&lt;span class="lnt">3
 &lt;/span>&lt;span class="lnt">4
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-md" data-lang="md">|代码库 |链接 |
-|:------------------------------------:|------------------------------------|
-|MarkDown |[https://github.com/younghz/Markdown](https://github.com/younghz/Markdown &amp;#34;Markdown&amp;#34;)|
-|MarkDownCopy |[https://github.com/younghz/Markdown](https://github.com/younghz/Markdown &amp;#34;Markdown&amp;#34;)|
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">|代码库 |链接 |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">|:------------------------------------:|------------------------------------|
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">|MarkDown |[https://github.com/younghz/Markdown](https://github.com/younghz/Markdown &amp;#34;Markdown&amp;#34;)|
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">|MarkDownCopy |[https://github.com/younghz/Markdown](https://github.com/younghz/Markdown &amp;#34;Markdown&amp;#34;)|
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>效果:&lt;/p>
 &lt;table>

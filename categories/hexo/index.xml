@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Hexo on New World | YoungWilliam's Blog</title><link>https://youngwilliam.io/categories/hexo/</link><description>Recent content in Hexo on New World | YoungWilliam's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><managingEditor>youngwilliam.zheng@gmail.com (YoungWilliam)</managingEditor><webMaster>youngwilliam.zheng@gmail.com (YoungWilliam)</webMaster><copyright>&amp;copy;{year}, All Rights Reserved</copyright><lastBuildDate>Sun, 24 Jun 2018 08:02:00 +0000</lastBuildDate><atom:link href="https://youngwilliam.io/categories/hexo/index.xml" rel="self" type="application/rss+xml"/><item><title>Hexo 下特有的编辑图片方式，直接使用 img 标志</title><link>https://youngwilliam.io/post/hexo-image-edite-method/</link><pubDate>Sun, 24 Jun 2018 08:02:00 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Wed, 14 Aug 2019 01:25:12 +0800</atom:modified><guid>https://youngwilliam.io/post/hexo-image-edite-method/</guid><description>Hexo 小技巧</description><content:encoded>&lt;p>直接上代码，src对应的是图片 url&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Hexo on New World | YoungWilliam's Blog</title><link>https://youngwilli.am/categories/hexo/</link><description>Recent content in Hexo on New World | YoungWilliam's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><managingEditor>youngwilliam.zheng@gmail.com (YoungWilliam)</managingEditor><webMaster>youngwilliam.zheng@gmail.com (YoungWilliam)</webMaster><copyright>&amp;copy;{year}, All Rights Reserved</copyright><lastBuildDate>Sun, 24 Jun 2018 08:02:00 +0000</lastBuildDate><atom:link href="https://youngwilli.am/categories/hexo/index.xml" rel="self" type="application/rss+xml"/><item><title>Hexo 下特有的编辑图片方式，直接使用 img 标志</title><link>https://youngwilli.am/post/hexo-image-edite-method/</link><pubDate>Sun, 24 Jun 2018 08:02:00 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Wed, 14 Aug 2019 01:25:12 +0800</atom:modified><guid>https://youngwilli.am/post/hexo-image-edite-method/</guid><description>Hexo 小技巧</description><content:encoded>&lt;p>直接上代码，src对应的是图片 url&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">img&lt;/span> &lt;span class="na">src&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;https://i.loli.net/2018/06/24/5b2edf5139f61.png&amp;#34;&lt;/span> &lt;span class="na">width&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;50%&amp;#34;&lt;/span> &lt;span class="na">height&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;50%&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">img&lt;/span> &lt;span class="na">src&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;https://i.loli.net/2018/06/24/5b2edf5139f61.png&amp;#34;&lt;/span> &lt;span class="na">width&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;50%&amp;#34;&lt;/span> &lt;span class="na">height&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;50%&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>效果图如下：（使用的是 &lt;a href="https://sm.ms/">SM.MS图床&lt;/a>）&lt;/p>
-&lt;img src="https://i.loli.net/2018/06/24/5b2edf5139f61.png" width="50%" height="50%"></content:encoded><dc:creator>YoungWilliam</dc:creator><category>Hexo</category><category>Markdown</category><category>Hexo</category></item><item><title>HexoEditor, 一个写 Hexo 非常好用的 Markdown 编辑器</title><link>https://youngwilliam.io/post/hexoeditor/</link><pubDate>Sun, 24 Jun 2018 06:08:00 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 17:19:01 +0800</atom:modified><guid>https://youngwilliam.io/post/hexoeditor/</guid><description>不了解一下？</description><content:encoded>&lt;blockquote>
+&lt;img src="https://i.loli.net/2018/06/24/5b2edf5139f61.png" width="50%" height="50%"></content:encoded><dc:creator>YoungWilliam</dc:creator><category>Hexo</category><category>Markdown</category><category>Hexo</category></item><item><title>HexoEditor, 一个写 Hexo 非常好用的 Markdown 编辑器</title><link>https://youngwilli.am/post/hexoeditor/</link><pubDate>Sun, 24 Jun 2018 06:08:00 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 17:19:01 +0800</atom:modified><guid>https://youngwilli.am/post/hexoeditor/</guid><description>不了解一下？</description><content:encoded>&lt;blockquote>
 &lt;p>本文用于记录以及简单的安装&lt;/p>
 &lt;/blockquote>
 &lt;img src="https://i.loli.net/2018/06/24/5b2edf5139f61.png" width="50%" height="50%">
@@ -44,24 +44,24 @@
 &lt;h4 id="windows-下">Windows 下&lt;/h4>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">npm config &lt;span class="nb">set&lt;/span> prefix &lt;span class="s2">&amp;#34;C:/Program Files/nodejs/npm_global&amp;#34;&lt;/span>
-npm config &lt;span class="nb">set&lt;/span> cache &lt;span class="s2">&amp;#34;C:/Program Files/nodejs/npm_cache&amp;#34;&lt;/span>
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">npm config &lt;span class="nb">set&lt;/span> prefix &lt;span class="s2">&amp;#34;C:/Program Files/nodejs/npm_global&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">npm config &lt;span class="nb">set&lt;/span> cache &lt;span class="s2">&amp;#34;C:/Program Files/nodejs/npm_cache&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h4 id="linuxmac-下">Linux\Mac 下&lt;/h4>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">npm config &lt;span class="nb">set&lt;/span> prefix &lt;span class="s2">&amp;#34;~/nodejs/npm_global&amp;#34;&lt;/span>
-npm config &lt;span class="nb">set&lt;/span> cache &lt;span class="s2">&amp;#34;~/nodejs/npm_cache&amp;#34;&lt;/span>
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">npm config &lt;span class="nb">set&lt;/span> prefix &lt;span class="s2">&amp;#34;~/nodejs/npm_global&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">npm config &lt;span class="nb">set&lt;/span> cache &lt;span class="s2">&amp;#34;~/nodejs/npm_cache&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>&lt;strong>注意&lt;/strong>：这里的路径是你安装 &lt;code>nodejs&lt;/code> 的子目录下对应的路径&lt;/p>
 &lt;h3 id="4设置下载来源镜像加速下载">4.设置下载来源（镜像），加速下载&lt;/h3>
@@ -69,46 +69,46 @@ npm config &lt;span class="nb">set&lt;/span> cache &lt;span class="s2">&amp;#34;
 在中国，你应该设置淘宝镜像来加速下载。(PS: 这个我没试过，我是直接通过代理的)&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">npm config &lt;span class="nb">set&lt;/span> registry &lt;span class="s2">&amp;#34;https://registry.npm.taobao.org/&amp;#34;&lt;/span>
-npm config &lt;span class="nb">set&lt;/span> electron_mirror &lt;span class="s2">&amp;#34;https://npm.taobao.org/mirrors/electron/&amp;#34;&lt;/span>
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">npm config &lt;span class="nb">set&lt;/span> registry &lt;span class="s2">&amp;#34;https://registry.npm.taobao.org/&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">npm config &lt;span class="nb">set&lt;/span> electron_mirror &lt;span class="s2">&amp;#34;https://npm.taobao.org/mirrors/electron/&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h3 id="5下载-github-上最新的版本并安装">5.下载 GitHub 上最新的版本并安装&lt;/h3>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
 &lt;/span>&lt;span class="lnt">3
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">git clone https://github.com/zhuzhuyule/HexoEditor.git
-&lt;span class="nb">cd&lt;/span> HexoEditor
-npm install
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">git clone https://github.com/zhuzhuyule/HexoEditor.git
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> HexoEditor
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">npm install
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h3 id="6启动">6.启动&lt;/h3>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">npm start
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">npm start
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>然后，当当当，启动啦~&lt;/p>
 &lt;h2 id="设置快捷方式">设置快捷方式&lt;/h2>
 &lt;p>在 HexoEditor 子目录下，新建 &lt;code>start.sh&lt;/code> ，编辑（右键-&amp;gt;打开方式-&amp;gt;NotePad++），输入（其实就是启动）&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">npm start
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">npm start
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>保存，退出，双击一下 &lt;code>start.sh&lt;/code> ，看看效果如何~&lt;br />
 顺利的话，&lt;code>gitbash&lt;/code> 会弹出来，然后 HexoEditor就会弹出来了~&lt;/p>

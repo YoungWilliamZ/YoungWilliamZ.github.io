@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>学习 on New World | YoungWilliam's Blog</title><link>https://youngwilliam.io/categories/%E5%AD%A6%E4%B9%A0/</link><description>Recent content in 学习 on New World | YoungWilliam's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><managingEditor>youngwilliam.zheng@gmail.com (YoungWilliam)</managingEditor><webMaster>youngwilliam.zheng@gmail.com (YoungWilliam)</webMaster><copyright>&amp;copy;{year}, All Rights Reserved</copyright><lastBuildDate>Mon, 07 Oct 2019 23:56:53 +0800</lastBuildDate><atom:link href="https://youngwilliam.io/categories/%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml"/><item><title>CSAPP 笔记 听课有感</title><link>https://youngwilliam.io/post/csapp-note-4/</link><pubDate>Mon, 07 Oct 2019 23:56:53 +0800</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 18:33:36 +0800</atom:modified><guid>https://youngwilliam.io/post/csapp-note-4/</guid><description>国外大学对于学术造假真的严</description><content:encoded>&lt;p>最近在B站上看CSAPP的视频课，是CMU的公开课。最大的感触是国外大学对作弊抓的非常严格，平时作业连上网搜索都算作弊，更不要说看别人屏幕、让别人告诉你怎么写。一经被抓到直接不及格，并且成绩单上有永久记录。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>学习 on New World | YoungWilliam's Blog</title><link>https://youngwilli.am/categories/%E5%AD%A6%E4%B9%A0/</link><description>Recent content in 学习 on New World | YoungWilliam's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><managingEditor>youngwilliam.zheng@gmail.com (YoungWilliam)</managingEditor><webMaster>youngwilliam.zheng@gmail.com (YoungWilliam)</webMaster><copyright>&amp;copy;{year}, All Rights Reserved</copyright><lastBuildDate>Mon, 07 Oct 2019 23:56:53 +0800</lastBuildDate><atom:link href="https://youngwilli.am/categories/%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml"/><item><title>CSAPP 笔记 听课有感</title><link>https://youngwilli.am/post/csapp-note-4/</link><pubDate>Mon, 07 Oct 2019 23:56:53 +0800</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 18:33:36 +0800</atom:modified><guid>https://youngwilli.am/post/csapp-note-4/</guid><description>国外大学对于学术造假真的严</description><content:encoded>&lt;p>最近在B站上看CSAPP的视频课，是CMU的公开课。最大的感触是国外大学对作弊抓的非常严格，平时作业连上网搜索都算作弊，更不要说看别人屏幕、让别人告诉你怎么写。一经被抓到直接不及格，并且成绩单上有永久记录。&lt;/p>
 &lt;p>反观我们学校，或者说内地的绝大多数大学，只有在考试时作弊才会被严惩，而平时作业几乎不管，就算被发现抄作业也只是口头警告。&lt;/p>
 &lt;p>对此我只能感叹中国教育不知道需要多少年才能追上美国。&lt;/p>
 &lt;p>在我将以上感想发到「星球」上，想要了解更多国内外关于学术造假的情况。得到一下回复：&lt;/p>
@@ -18,7 +18,7 @@
 &lt;p>大学是种外合办的学校，前几年去澳洲念研究生基本不要什么成绩，后来听说有个学长在澳洲念研究生作弊被劝退了，导致我们这些晚辈要去澳洲的要求分数提高了10多分&lt;/p>
 &lt;/blockquote>
 &lt;p>对此，不知道各位看官老爷有没有想法想要分享的呢？欢迎评论。&lt;/p>
-&lt;p>PS. 如果有球友不想让自己的想法在此出现，请及时与我联系删除。&lt;/p></content:encoded><dc:creator>YoungWilliam</dc:creator><category>CSAPP</category><category>学习</category></item><item><title>CSAPP 笔记 第一章《计算机系统漫游》</title><link>https://youngwilliam.io/post/csapp-note-1/</link><pubDate>Sun, 01 Sep 2019 22:40:06 +0800</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 18:33:36 +0800</atom:modified><guid>https://youngwilliam.io/post/csapp-note-1/</guid><description>大四了才开始读这本书，是不是晚了？</description><content:encoded>&lt;p>最近开始忙秋招，「码农翻身」公众号及同名书的作者老刘在知识星球里举办了读《CSAPP》的活动，之前一直没啃下来，希望能够借此机会逼自己一把，把这本厚厚的经典看完，并好好写笔记。&lt;/p>
+&lt;p>PS. 如果有球友不想让自己的想法在此出现，请及时与我联系删除。&lt;/p></content:encoded><dc:creator>YoungWilliam</dc:creator><category>CSAPP</category><category>学习</category></item><item><title>CSAPP 笔记 第一章《计算机系统漫游》</title><link>https://youngwilli.am/post/csapp-note-1/</link><pubDate>Sun, 01 Sep 2019 22:40:06 +0800</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 18:33:36 +0800</atom:modified><guid>https://youngwilli.am/post/csapp-note-1/</guid><description>大四了才开始读这本书，是不是晚了？</description><content:encoded>&lt;p>最近开始忙秋招，「码农翻身」公众号及同名书的作者老刘在知识星球里举办了读《CSAPP》的活动，之前一直没啃下来，希望能够借此机会逼自己一把，把这本厚厚的经典看完，并好好写笔记。&lt;/p>
 &lt;p>计算机系统 = 硬件 + 系统软件&lt;/p>
 &lt;p>作者如是说：&lt;/p>
 &lt;blockquote>
@@ -46,7 +46,7 @@
 &lt;p>hello 程序生命周期：可执行文件，或者叫「目标程序」&lt;/p>
 &lt;p>编译器驱动程序：能够将「源文件」转化「目标文件」，如&lt;code>gcc&lt;/code>&lt;/p>
 &lt;p>例子：&lt;/p>
-&lt;pre>&lt;code>linux&amp;gt; gee -o hello hello.c
+&lt;pre tabindex="0">&lt;code>linux&amp;gt; gee -o hello hello.c
 &lt;/code>&lt;/pre>&lt;p>这一过程又叫翻译，可分为四个阶段：&lt;/p>
 &lt;p>&lt;img src="./image/CSAPP1-3.png" alt="" />&lt;/p>
 &lt;p>执行这四个阶段的程序一起构成「编译系统」(compilation system)。&lt;/p>
@@ -129,7 +129,7 @@
 &lt;h2 id="9-重要主题">9 重要主题&lt;/h2>
 &lt;p>Amdahl定律：&lt;/p>
 &lt;p>并发和并行&lt;/p>
-&lt;p>计算机抽象&lt;/p></content:encoded><dc:creator>YoungWilliam</dc:creator><category>CSAPP</category><category>学习</category></item><item><title>What is POSIX?</title><link>https://youngwilliam.io/post/what-is-posix/</link><pubDate>Tue, 20 Aug 2019 02:10:40 +0800</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 18:33:36 +0800</atom:modified><guid>https://youngwilliam.io/post/what-is-posix/</guid><description>总结一下 POSIX 标准</description><content:encoded>&lt;h2 id="定义">定义&lt;/h2>
+&lt;p>计算机抽象&lt;/p></content:encoded><dc:creator>YoungWilliam</dc:creator><category>CSAPP</category><category>学习</category></item><item><title>What is POSIX?</title><link>https://youngwilli.am/post/what-is-posix/</link><pubDate>Tue, 20 Aug 2019 02:10:40 +0800</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 18:33:36 +0800</atom:modified><guid>https://youngwilli.am/post/what-is-posix/</guid><description>总结一下 POSIX 标准</description><content:encoded>&lt;h2 id="定义">定义&lt;/h2>
 &lt;p>可移植操作系统接口（英语：&lt;code>Portable Operating System Interface&lt;/code>，缩写为&lt;code>POSIX&lt;/code>）是IEEE为要在各种 &lt;code>UNIX&lt;/code> 操作系统上运行软件，而定义 API 的一系列互相关联的&lt;strong>标准的总称&lt;/strong>，其正式称呼为&lt;code>IEEE Std 1003&lt;/code>，而国际标准名称为 &lt;code>ISO/IEC 9945&lt;/code>。&lt;/p>
 &lt;h2 id="来源">来源&lt;/h2>
 &lt;p>此标准源于一个大约开始于1985年的项目。&lt;/p>
@@ -149,7 +149,7 @@
 &lt;h2 id="参考">参考&lt;/h2>
 &lt;ol>
 &lt;li>&lt;a href="https://en.wikipedia.org/wiki/POSIX">Wiki&lt;/a>&lt;/li>
-&lt;/ol></content:encoded><dc:creator>YoungWilliam</dc:creator><category>POSIX</category><category>UNIX</category><category>LINUX</category><category>学习</category></item><item><title>TED 演讲吸收笔记与总结</title><link>https://youngwilliam.io/post/ted/</link><pubDate>Sat, 17 Aug 2019 02:48:55 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Sat, 14 Sep 2019 23:47:52 +0800</atom:modified><guid>https://youngwilliam.io/post/ted/</guid><description>我的 TED 观影笔记，希望以后能保持经常更新～</description><content:encoded>&lt;h2 id="what-do-top-students-do-differently">What do top students do differently?&lt;/h2>
+&lt;/ol></content:encoded><dc:creator>YoungWilliam</dc:creator><category>POSIX</category><category>UNIX</category><category>LINUX</category><category>学习</category></item><item><title>TED 演讲吸收笔记与总结</title><link>https://youngwilli.am/post/ted/</link><pubDate>Sat, 17 Aug 2019 02:48:55 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Sat, 14 Sep 2019 23:47:52 +0800</atom:modified><guid>https://youngwilli.am/post/ted/</guid><description>我的 TED 观影笔记，希望以后能保持经常更新～</description><content:encoded>&lt;h2 id="what-do-top-students-do-differently">What do top students do differently?&lt;/h2>
 &lt;blockquote>
 &lt;p>&lt;a href="https://www.youtube.com/watch?v=Na8m4GPqA30">视频连接&lt;/a>&lt;/p>
 &lt;/blockquote>
@@ -203,7 +203,7 @@
 &lt;ol>
 &lt;li>首先，通过这个演讲我学的最多就是讲者吐字清晰，一字一停，完全不会因为自己是 native speaker 而说的很快。而我平时喜欢说话很快，老是无法清晰的表达自己的观点。这点值得我学习。&lt;/li>
 &lt;li>其次，她的「POD」能够成书，还能畅销世界，我觉得实在厉害。虽然这个理论可能很多人都懂，但能够说出来，总结出来，并写成书的还是很少的。可见人与人的差距还是非常大的，而且随着现代人越来越忙，突然发现有人说「放松」、「玩耍」可以拥有更好的生活，岂不是找到偷懒的借口？&lt;/li>
-&lt;/ol></content:encoded><dc:creator>YoungWilliam</dc:creator><category>TED</category><category>思维方式</category><category>笔记</category><category>学习</category></item><item><title>Docker 背后： Linux 的 /proc</title><link>https://youngwilliam.io/post/linux-proc/</link><pubDate>Fri, 02 Aug 2019 02:04:09 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Wed, 14 Aug 2019 01:25:12 +0800</atom:modified><guid>https://youngwilliam.io/post/linux-proc/</guid><description>我的 Docker 原理探索之路</description><content:encoded>&lt;h2 id="为什么要有-proc">为什么要有 &lt;code>/proc&lt;/code>？&lt;/h2>
+&lt;/ol></content:encoded><dc:creator>YoungWilliam</dc:creator><category>TED</category><category>思维方式</category><category>笔记</category><category>学习</category></item><item><title>Docker 背后： Linux 的 /proc</title><link>https://youngwilli.am/post/linux-proc/</link><pubDate>Fri, 02 Aug 2019 02:04:09 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Wed, 14 Aug 2019 01:25:12 +0800</atom:modified><guid>https://youngwilli.am/post/linux-proc/</guid><description>我的 Docker 原理探索之路</description><content:encoded>&lt;h2 id="为什么要有-proc">为什么要有 &lt;code>/proc&lt;/code>？&lt;/h2>
 &lt;p>想必在日常开发&lt;del>写&lt;/del>查 BUG 中，你会经常用到像 &lt;code>top&lt;/code>、&lt;code>ps&lt;/code> 这样的 Linux 命令来查看进程、CPU 的状态吧。&lt;/p>
 &lt;p>那你是否有想过：这些不都是内核才知道的吗？而作为身处 shell （用户态）的我们又是通过什么途径知道这些的呢？&lt;/p>
 &lt;p>是有什么 system call 吗？是有什么高级的接口吗？&lt;/p>
@@ -233,7 +233,7 @@
 &lt;p>当遍历这个目录的时候，会发现有些数字，这些都是为每个进程创建的空间，数字就是它们的 PID。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
 &lt;/span>&lt;span class="lnt"> 2
 &lt;/span>&lt;span class="lnt"> 3
 &lt;/span>&lt;span class="lnt"> 4
@@ -296,68 +296,68 @@
 &lt;/span>&lt;span class="lnt">61
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="o">[&lt;/span>go_dev@0f8b372ed635 proc&lt;span class="o">]&lt;/span>$ ll /proc
-total &lt;span class="m">0&lt;/span>
-dr-xr-xr-x &lt;span class="m">9&lt;/span> go_dev go_dev &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 &lt;span class="m">1&lt;/span>
-dr-xr-xr-x &lt;span class="m">9&lt;/span> go_dev go_dev &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 &lt;span class="m">30&lt;/span>
-drwxrwxrwt &lt;span class="m">2&lt;/span> root root &lt;span class="m">40&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 acpi
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 buddyinfo
-dr-xr-xr-x &lt;span class="m">4&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 bus
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 cgroups
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 cmdline
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">23709&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 config.gz
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 consoles
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 cpuinfo
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 crypto
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 devices
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 diskstats
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 dma
-dr-xr-xr-x &lt;span class="m">2&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 driver
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 execdomains
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 fb
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 filesystems
-dr-xr-xr-x &lt;span class="m">8&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 fs
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 interrupts
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 iomem
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 ioports
-dr-xr-xr-x &lt;span class="m">31&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 irq
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 kallsyms
-crw-rw-rw- &lt;span class="m">1&lt;/span> root root 1, &lt;span class="m">3&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 kcore
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 key-users
-crw-rw-rw- &lt;span class="m">1&lt;/span> root root 1, &lt;span class="m">3&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 keys
--r-------- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 kmsg
--r-------- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 kpagecgroup
--r-------- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 kpagecount
--r-------- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 kpageflags
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 loadavg
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 locks
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 meminfo
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 misc
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 modules
-lrwxrwxrwx &lt;span class="m">1&lt;/span> root root &lt;span class="m">11&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 mounts -&amp;gt; self/mounts
-dr-xr-xr-x &lt;span class="m">2&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 mpt
--rw-r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 mtrr
-lrwxrwxrwx &lt;span class="m">1&lt;/span> root root &lt;span class="m">8&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 net -&amp;gt; self/net
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 pagetypeinfo
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 partitions
-crw-rw-rw- &lt;span class="m">1&lt;/span> root root 1, &lt;span class="m">3&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 sched_debug
-lrwxrwxrwx &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 self -&amp;gt; &lt;span class="m">30&lt;/span>
--rw------- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 slabinfo
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 softirqs
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 stat
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 swaps
-dr-xr-xr-x &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 sys
---w------- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 sysrq-trigger
-dr-xr-xr-x &lt;span class="m">2&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 sysvipc
-lrwxrwxrwx &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 thread-self -&amp;gt; 30/task/30
-crw-rw-rw- &lt;span class="m">1&lt;/span> root root 1, &lt;span class="m">3&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 timer_list
-dr-xr-xr-x &lt;span class="m">4&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 tty
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 uptime
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 version
--r-------- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 vmallocinfo
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 vmstat
--r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 zoneinfo
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="o">[&lt;/span>go_dev@0f8b372ed635 proc&lt;span class="o">]&lt;/span>$ ll /proc
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">total &lt;span class="m">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">dr-xr-xr-x &lt;span class="m">9&lt;/span> go_dev go_dev &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 &lt;span class="m">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">dr-xr-xr-x &lt;span class="m">9&lt;/span> go_dev go_dev &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 &lt;span class="m">30&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxrwxrwt &lt;span class="m">2&lt;/span> root root &lt;span class="m">40&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 acpi
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 buddyinfo
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">dr-xr-xr-x &lt;span class="m">4&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 bus
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 cgroups
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 cmdline
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">23709&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 config.gz
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 consoles
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 cpuinfo
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 crypto
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 devices
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 diskstats
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 dma
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">dr-xr-xr-x &lt;span class="m">2&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 driver
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 execdomains
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 fb
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 filesystems
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">dr-xr-xr-x &lt;span class="m">8&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 fs
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 interrupts
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 iomem
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 ioports
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">dr-xr-xr-x &lt;span class="m">31&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 irq
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 kallsyms
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">crw-rw-rw- &lt;span class="m">1&lt;/span> root root 1, &lt;span class="m">3&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 kcore
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 key-users
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">crw-rw-rw- &lt;span class="m">1&lt;/span> root root 1, &lt;span class="m">3&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 keys
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r-------- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 kmsg
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r-------- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 kpagecgroup
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r-------- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 kpagecount
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r-------- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 kpageflags
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 loadavg
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 locks
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 meminfo
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 misc
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 modules
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">lrwxrwxrwx &lt;span class="m">1&lt;/span> root root &lt;span class="m">11&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 mounts -&amp;gt; self/mounts
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">dr-xr-xr-x &lt;span class="m">2&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 mpt
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 mtrr
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">lrwxrwxrwx &lt;span class="m">1&lt;/span> root root &lt;span class="m">8&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 net -&amp;gt; self/net
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 pagetypeinfo
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 partitions
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">crw-rw-rw- &lt;span class="m">1&lt;/span> root root 1, &lt;span class="m">3&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 sched_debug
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">lrwxrwxrwx &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 self -&amp;gt; &lt;span class="m">30&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw------- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 slabinfo
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 softirqs
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 stat
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 swaps
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">dr-xr-xr-x &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 sys
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">--w------- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 sysrq-trigger
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">dr-xr-xr-x &lt;span class="m">2&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 sysvipc
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">lrwxrwxrwx &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 thread-self -&amp;gt; 30/task/30
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">crw-rw-rw- &lt;span class="m">1&lt;/span> root root 1, &lt;span class="m">3&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:43 timer_list
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">dr-xr-xr-x &lt;span class="m">4&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 tty
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 uptime
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 version
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r-------- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 vmallocinfo
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 vmstat
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-r--r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">0&lt;/span> Aug &lt;span class="m">1&lt;/span> 18:44 zoneinfo
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>在此介绍几个比较重要的部分：&lt;/p>
 &lt;table>
@@ -431,7 +431,7 @@ dr-xr-xr-x &lt;span class="m">4&lt;/span> root root &lt;span class="m">0&lt;/spa
 &lt;li>
 &lt;p>&lt;a href="https://en.wikipedia.org/wiki/Procfs">wiki: procfs&lt;/a>&lt;/p>
 &lt;/li>
-&lt;/ol></content:encoded><dc:creator>YoungWilliam</dc:creator><category>linux</category><category>docker</category><category>proc</category><category>学习</category></item><item><title>《剑指Offer》笔记</title><link>https://youngwilliam.io/post/coding-interviews-note-1/</link><pubDate>Sun, 28 Jul 2019 18:17:25 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 18:33:36 +0800</atom:modified><guid>https://youngwilliam.io/post/coding-interviews-note-1/</guid><description>《剑指Offer》笔记，不定时更新～</description><content:encoded>&lt;p>还没好好看一遍《剑指Offer》，希望在阅读的过程中能记录一下，同时也方便以后复习。&lt;/p>
+&lt;/ol></content:encoded><dc:creator>YoungWilliam</dc:creator><category>linux</category><category>docker</category><category>proc</category><category>学习</category></item><item><title>《剑指Offer》笔记</title><link>https://youngwilli.am/post/coding-interviews-note-1/</link><pubDate>Sun, 28 Jul 2019 18:17:25 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 18:33:36 +0800</atom:modified><guid>https://youngwilli.am/post/coding-interviews-note-1/</guid><description>《剑指Offer》笔记，不定时更新～</description><content:encoded>&lt;p>还没好好看一遍《剑指Offer》，希望在阅读的过程中能记录一下，同时也方便以后复习。&lt;/p>
 &lt;!-- more -->
 &lt;h2 id="3-高质量的代码">3. 高质量的代码&lt;/h2>
 &lt;h3 id="32-代码的规范性">3.2 代码的规范性&lt;/h3>
@@ -468,7 +468,7 @@ dr-xr-xr-x &lt;span class="m">4&lt;/span> root root &lt;span class="m">0&lt;/spa
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;p>具体用哪种需要考虑具体场景，可以和面试讨论一下采用哪种比较合适。&lt;/p></content:encoded><dc:creator>YoungWilliam</dc:creator><category>笔记</category><category>剑指Offer</category><category>学习</category></item><item><title>Caoz《成长的烦恼》笔记</title><link>https://youngwilliam.io/post/caoz-class-node/</link><pubDate>Fri, 28 Dec 2018 21:48:55 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 18:33:36 +0800</atom:modified><guid>https://youngwilliam.io/post/caoz-class-node/</guid><description>记录一下～</description><content:encoded>&lt;h2 id="背景">背景&lt;/h2>
+&lt;p>具体用哪种需要考虑具体场景，可以和面试讨论一下采用哪种比较合适。&lt;/p></content:encoded><dc:creator>YoungWilliam</dc:creator><category>笔记</category><category>剑指Offer</category><category>学习</category></item><item><title>Caoz《成长的烦恼》笔记</title><link>https://youngwilli.am/post/caoz-class-node/</link><pubDate>Fri, 28 Dec 2018 21:48:55 +0000</pubDate><author>youngwilliam.zheng@gmail.com (YoungWilliam)</author><atom:modified>Fri, 17 Jul 2020 18:33:36 +0800</atom:modified><guid>https://youngwilli.am/post/caoz-class-node/</guid><description>记录一下～</description><content:encoded>&lt;h2 id="背景">背景&lt;/h2>
 &lt;p>这门课是张哥（stormzhang）在朋友圈推荐的，买的话可以直接进入 Caoz 的星球。我主要是冲着星球去的，因为星球价值真的高啊。其实之前本来就打算进星球的，无奈刚换电脑，比较拮据，就只好等待机会。进了星球，发现一堆创业大佬，就是一个人脉圈啊，有没有作用，就看你的本事了。以上就是星球附赠的课程《成长的烦恼》的由来。因为时间限制，28 号晚上就会无法访问，就想称此机会好好读读。&lt;/p>
 &lt;h2 id="1-读书时代">1. 读书时代&lt;/h2>
 &lt;h3 id="11-尽早确立职场目标并准备">1.1. 尽早确立职场目标并准备&lt;/h3>
